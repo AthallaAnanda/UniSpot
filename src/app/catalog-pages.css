@@ -9,8 +9,8 @@
 .calendar-card h3 { overflow-wrap:anywhere; }
 .calendar-follow-small { position:relative;z-index:1;display:inline-flex;align-items:center;gap:4px;font-size:12px;line-height:18px;font-weight:500;background:#353535;color:#fff;padding:4px 8px;border-radius:8px;border:0;transition:background .2s; }
 .calendar-follow-small:hover { background:#555; }
-.calendar-follow-small.following { background:#353535;color:#fff; }
-.calendar-follow-small.following:hover { background:#555; }
+.calendar-follow-small.following { background:rgba(21,21,21,.05);color:var(--text-secondary); }
+.calendar-follow-small.following:hover { background:rgba(21,21,21,.09); }
 .primary-button.calendar-create-button { background:var(--brand-pink);color:#fff; }
 .primary-button.calendar-create-button:hover { background:#dc1074; }
 .calendar-card-count { display:flex;align-items:center;gap:4px;font-size:12px;line-height:18px;color:var(--text-tertiary);margin-top:12px; }

@@ -103,12 +103,12 @@
 }
 
 .partner-calendar-follow.is-following {
-  background: #353535;
-  color: #fff;
+  background: rgba(21, 21, 21, .05);
+  color: var(--text-secondary);
 }
 
 .partner-calendar-follow.is-following:hover {
-  background: #555;
+  background: rgba(21, 21, 21, .09);
 }
 
 .partner-calendar-profile h1 {

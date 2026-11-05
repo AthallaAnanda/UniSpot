@@ -5,6 +5,7 @@ import { mkdirSync } from "node:fs";
 import path from "node:path";
 import { seedCatalog, calendarOrganization } from "@/lib/catalog-seed";
 import { categories } from "@/lib/unispot";
+import { defaultTimeZone, formatOpportunitySchedule } from "@/lib/opportunity-time";
 import type { CatalogData, CategoryId, ManagedOpportunity, Opportunity, PartnerCalendar } from "@/types/unispot";
 
 let database: DatabaseSync | undefined;
@@ -67,8 +68,12 @@ export function getOpportunity(id: string): Opportunity | undefined {
   return row ? JSON.parse(row.data) : undefined;
 }
 export function getOpportunityOrganization(opportunity: Opportunity) {
-  const catalog = getCatalog();
-  return catalog.organizations.find(organization => organization.id === opportunity.organizationId);
+  const seeded = seedCatalog.organizations.find(organization => organization.id === opportunity.organizationId);
+  if (seeded) return seeded;
+  // Community organization IDs are the calendar primary key. Detail pages need
+  // one indexed lookup, not every calendar and every published opportunity.
+  const row = db().prepare("SELECT data FROM calendars WHERE id=?").get(opportunity.organizationId) as { data: string } | undefined;
+  return row ? calendarOrganization(JSON.parse(row.data) as PartnerCalendar) : undefined;
 }
 export function requireOwner(slug: string, token?: string) {
   const calendar = getCalendar(slug, token);
@@ -105,12 +110,21 @@ function opportunityInput(value: unknown, calendar: PartnerCalendar, status: "dr
   const format = text(input, "format", 30) || "In person";
   if (!["In person", "Online", "Hybrid", "International"].includes(format)) throw new CatalogError("Please choose a valid format.");
   const date = dateValue(input, "date"), endDate = dateValue(input, "endDate"), deadline = dateValue(input, "deadline");
+  const startTime = text(input, "startTime", 5) || undefined;
+  const endTime = text(input, "endTime", 5) || undefined;
+  const timeZone = text(input, "timeZone", 100) || defaultTimeZone;
+  try { new Intl.DateTimeFormat("en-US", { timeZone }); }
+  catch { throw new CatalogError("Please choose a valid time zone."); }
+  if ([startTime, endTime].some(time => time && !/^([01]\d|2[0-3]):[0-5]\d$/.test(time))) throw new CatalogError("Please enter a valid time in HH:MM format.");
+  if (startTime && !date) throw new CatalogError("Add a start date before setting a time.");
+  if (endTime && !startTime) throw new CatalogError("Add a start time before setting an end time.");
+  if (startTime && endTime && (!endDate || endDate === date) && endTime <= startTime) throw new CatalogError("The end time must be after the start time.");
   if (endDate && (!date || endDate < date)) throw new CatalogError("The end date must be on or after the event date.");
   if (published && category === "events" && !date) throw new CatalogError("Please add an event date before publishing.");
   if (published && category === "scholarships" && !deadline) throw new CatalogError("Please add an application deadline before publishing.");
   const benefits = input.benefits;
   if (benefits !== undefined && (!Array.isArray(benefits) || benefits.length > 20 || benefits.some(item => typeof item !== "string" || item.length > 300))) throw new CatalogError("Add up to 20 benefits, with no more than 300 characters each.");
-  return { id: existing?.id ?? `opp-${randomUUID()}`, title: text(input, "title", 180, true), category: category as CategoryId, calendarId: calendar.id, organizationId: calendar.organizationId, description: text(input, "description", 12000, published), city: text(input, "city", 100, published) || (format === "Online" ? "Online" : "Across Indonesia"), location: text(input, "location", 250, published), format: format as Opportunity["format"], schedule: text(input, "schedule", 180) || (date ? new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }) : deadline ? `Applications close ${deadline}` : "Explore the program"), date, endDate, deadline, fee: text(input, "fee", 180, published) || "See organizer", eligibility: text(input, "eligibility", 4000, published), benefits: (benefits as string[] | undefined)?.map(item => item.trim()).filter(Boolean) ?? [], source: webUrl(text(input, "source", 2000), "registration or information link", published), sourceName: calendar.name, actionLabel: text(input, "actionLabel", 80) || "View details & register", image: imageUrl(text(input, "image", 2000)) || calendar.logo, imageFit: text(input, "image", 2000) ? "cover" : "contain", color: calendar.color, publishedAt: published ? existing?.publishedAt ?? new Date().toISOString() : existing?.publishedAt };
+  return { id: existing?.id ?? `opp-${randomUUID()}`, title: text(input, "title", 180, true), category: category as CategoryId, calendarId: calendar.id, organizationId: calendar.organizationId, description: text(input, "description", 12000, published), city: text(input, "city", 100, published) || (format === "Online" ? "Online" : "Across Indonesia"), location: text(input, "location", 250, published), format: format as Opportunity["format"], schedule: text(input, "schedule", 180) || formatOpportunitySchedule({ date, endDate, startTime, endTime, timeZone }) || (date ? new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }) : deadline ? `Applications close ${deadline}` : "Explore the program"), date, endDate, startTime, endTime, timeZone, deadline, fee: text(input, "fee", 180, published) || "See organizer", eligibility: text(input, "eligibility", 4000, published), benefits: (benefits as string[] | undefined)?.map(item => item.trim()).filter(Boolean) ?? [], source: webUrl(text(input, "source", 2000), "registration or information link", published), sourceName: calendar.name, actionLabel: text(input, "actionLabel", 80) || "View details & register", image: imageUrl(text(input, "image", 2000)) || calendar.logo, imageFit: text(input, "image", 2000) ? "cover" : "contain", color: calendar.color, publishedAt: published ? existing?.publishedAt ?? new Date().toISOString() : existing?.publishedAt };
 }
 export function saveOpportunity(slug: string, value: unknown, token?: string, id?: string) {
   const calendar = requireOwner(slug, token);

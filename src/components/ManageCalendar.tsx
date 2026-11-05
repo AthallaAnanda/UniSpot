@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState, type FormEvent } from "react";
 import { ArrowLeft, ArrowUpRight, Plus } from "lucide-react";
 import { categories } from "@/lib/unispot";
@@ -50,7 +51,8 @@ function displayDate(value: string) {
 }
 
 export default function ManageCalendar({ initialCalendar }: { initialCalendar: PartnerCalendar }) {
-  const { refresh, notify } = useCatalog();
+  const router = useRouter();
+  const { commitOpportunity, notify } = useCatalog();
   const [manager, setManager] = useState<ManagerData | null>(null);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState("");
@@ -70,6 +72,7 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
   const apiBase = `/api/calendars/${encodeURIComponent(initialCalendar.slug)}`;
   const calendar = manager?.calendar ?? initialCalendar;
   const publicUrl = `/calendars/${encodeURIComponent(calendar.slug)}`;
+  const createUrl = `/create?calendar=${encodeURIComponent(initialCalendar.slug)}`;
 
   const loadManager = useCallback(async (background = false) => {
     loadingRequest.current?.abort();
@@ -114,9 +117,9 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
   useEffect(() => {
     if (manager && !openedFromLink.current) {
       openedFromLink.current = true;
-      if (new URLSearchParams(window.location.search).get("new") === "1") setEditorOpen(true);
+      if (new URLSearchParams(window.location.search).get("new") === "1") router.replace(createUrl);
     }
-  }, [manager]);
+  }, [manager, router, createUrl]);
 
   function update<K extends keyof EditorFields>(key: K, value: EditorFields[K]) {
     setFields(previous => ({ ...previous, [key]: value }));
@@ -157,8 +160,7 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
       if (mounted.current) {
         // Keep the persisted result even if the follow-up GET is temporarily unavailable.
         setManager(previous => previous ? { ...previous, opportunities: [opportunity, ...previous.opportunities.filter(item => item.id !== opportunity.id)] } : previous);
-        // A follow-up refresh must not turn a committed save into a failed POST.
-        await Promise.allSettled([loadManager(true), refresh()]);
+        commitOpportunity(opportunity);
       }
       return opportunity;
     } catch (problem) {
@@ -214,8 +216,8 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
     <section className="calendar-publishing-page">
       <Link href={publicUrl} className="calendar-publishing-back"><ArrowLeft size={16} aria-hidden="true" />View calendar</Link>
       <header className="calendar-publishing-heading calendar-publishing-heading-row">
-        <div><p className="calendar-publishing-eyebrow">Manage calendar</p><h1>{calendar.name}</h1><p>Publish opportunities for your community and keep drafts private.</p></div>
-        {manager && !forbidden && <button type="button" className="calendar-publishing-button calendar-publishing-primary" disabled={!!pending || loading} onClick={() => openEditor()}><Plus size={16} aria-hidden="true" />New opportunity</button>}
+        <div><p className="calendar-publishing-eyebrow">Manage calendar</p><h1>{calendar.name}</h1></div>
+        {manager && !forbidden && <button type="button" className="calendar-publishing-button calendar-publishing-primary" disabled={!!pending || loading} onClick={() => router.push(createUrl)}><Plus size={16} aria-hidden="true" />New opportunity</button>}
       </header>
 
       {loading && <div className="calendar-publishing-card calendar-publishing-state" role="status">Loading calendar management…</div>}
@@ -230,7 +232,6 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
         {manager && <>
           <section className="calendar-publishing-card calendar-publishing-list" aria-labelledby="calendar-opportunities-heading" aria-busy={!!pending || loading}>
             <div className="calendar-publishing-section-heading"><h2 id="calendar-opportunities-heading">Opportunities</h2><span>{manager.opportunities.length}</span></div>
-            <p className="calendar-publishing-hint">Published opportunities appear in the public catalog. Drafts are private; unpublishing removes an opportunity from the catalog.</p>
             {manager.opportunities.length ? <ul className="calendar-publishing-posts">{manager.opportunities.map(opportunity => <li key={opportunity.id} className="calendar-publishing-post">
               <div className="calendar-publishing-post-details"><h3>{opportunity.title}</h3><div className="calendar-publishing-post-meta"><span className={`calendar-publishing-badge calendar-publishing-badge-${opportunity.status}`}>{opportunity.status === "published" ? "Published" : "Draft"}</span><span>{opportunity.date ? `Event: ${displayDate(opportunity.date)}` : opportunity.deadline ? `Deadline: ${displayDate(opportunity.deadline)}` : `Updated ${displayDate(opportunity.updatedAt)}`}</span></div></div>
               <div className="calendar-publishing-post-actions">
@@ -238,7 +239,7 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
                 <button type="button" className="calendar-publishing-button" disabled={!!pending || loading} aria-label={`Edit ${opportunity.title}`} onClick={() => openEditor(opportunity)}>Edit</button>
                 <button type="button" className="calendar-publishing-button" disabled={!!pending || loading} aria-label={`${opportunity.status === "published" ? "Unpublish" : "Publish"} ${opportunity.title}`} onClick={() => void changeStatus(opportunity)}>{pending === opportunity.id ? "Updating…" : opportunity.status === "published" ? "Unpublish" : "Publish"}</button>
               </div>
-            </li>)}</ul> : <div className="calendar-publishing-empty"><h3>No opportunities yet</h3><p>Start with a draft, or publish when the details are ready.</p><button type="button" className="calendar-publishing-button" disabled={!!pending || loading} onClick={() => openEditor()}><Plus size={16} aria-hidden="true" />New opportunity</button></div>}
+            </li>)}</ul> : <div className="calendar-publishing-empty"><h3>No opportunities yet</h3></div>}
           </section>
 
           {editorOpen && <form ref={editorForm} className="calendar-publishing-card calendar-publishing-editor" onSubmit={publish} aria-labelledby="calendar-editor-heading" aria-busy={!!pending}>

@@ -1,101 +1,203 @@
 {
-  "checkedOn": "2026-11-04",
+  "checkedOn": "2026-11-05",
   "opportunities": [
     {
       "id": "devfest-cloud-jakarta-2026",
       "title": "DevFest Cloud Jakarta 2026",
       "url": "https://gdg.community.dev/events/details/google-gdg-cloud-jakarta-presents-devfest-cloud-jakarta-2026/",
-      "date": "2026-12-12"
+      "date": "2026-12-12",
+      "reviewedOn": "2026-11-04"
     },
     {
       "id": "lpdp-naist-2026",
       "title": "LPDP–NAIST: take your STEM ambitions to Japan",
       "url": "https://lpdp.kemenkeu.go.id/beasiswa/beasiswa-kemitraan-double-degree-joint-degree/lpdp-naist2026",
-      "deadline": "2026-12-01"
+      "deadline": "2026-12-01",
+      "reviewedOn": "2026-11-04"
     },
     {
       "id": "google-ai-essentials",
       "title": "Google AI Essentials: turn curiosity into a new skill",
-      "url": "https://grow.google/intl/id_id/ai-essentials/"
+      "url": "https://grow.google/intl/id_id/ai-essentials/",
+      "reviewedOn": "2026-11-04"
     },
     {
       "id": "icmns-2026",
       "title": "The 9th International Conference on Mathematics and Natural Sciences",
       "url": "https://itb.ac.id/agenda/info/the-9th-international-conference-on-mathematics-and-natural-sciences:448",
-      "date": "2026-11-05"
+      "date": "2026-11-05",
+      "reviewedOn": "2026-11-04"
     },
     {
       "id": "indorelawan-opportunities",
       "title": "Find a cause. Make a difference with Indorelawan.",
-      "url": "https://www.indorelawan.org"
+      "url": "https://www.indorelawan.org",
+      "reviewedOn": "2026-11-04"
     },
     {
       "id": "erasmus-study-abroad",
       "title": "Erasmus+: a different campus, a wider perspective",
-      "url": "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/studying-abroad"
-    },
-    {
-      "id": "lpdp-ucd-2026",
-      "title": "LPDP–UCD: your next chapter in Dublin",
-      "url": "https://lpdp.kemenkeu.go.id/beasiswa/beasiswa-kemitraan-double-degree-joint-degree/lpdp-ucd2026",
-      "deadline": "2026-12-01"
-    },
-    {
-      "id": "google-career-certificates",
-      "title": "Build your next career with Google Career Certificates",
-      "url": "https://grow.google/intl/id_id/certificates/"
-    },
-    {
-      "id": "kaggle-titanic",
-      "title": "Titanic: Machine Learning from Disaster",
-      "url": "https://www.kaggle.com/competitions/titanic"
-    },
-    {
-      "id": "gdg-on-campus",
-      "title": "Find your people with GDG on Campus",
-      "url": "https://developers.google.com/community/gdg"
-    },
-    {
-      "id": "devfest-depok-2026",
-      "title": "DevFest Depok 2026",
-      "url": "https://gdg.community.dev/events/details/google-gdg-depok-presents-devfest-depok-2026/",
-      "date": "2026-12-05"
-    },
-    {
-      "id": "devfest-bandung-2026",
-      "title": "Devfest Bandung 2026 : Tech Meets Human",
-      "url": "https://gdg.community.dev/events/details/google-gdg-bandung-presents-devfest-bandung-2026-tech-meets-human/",
-      "date": "2026-12-19"
-    },
-    {
-      "id": "devfest-bogor-2026",
-      "title": "DevFest Bogor 2026",
-      "url": "https://gdg.community.dev/events/details/google-gdg-bogor-presents-devfest-bogor-2026/",
-      "date": "2026-11-28"
-    },
-    {
-      "id": "devfest-cloud-bandung-2026",
-      "title": "Cloud DevFest Bandung 2026",
-      "url": "https://gdg.community.dev/events/details/google-gdg-cloud-bandung-presents-cloud-devfest-bandung-2026-1/",
-      "date": "2026-11-28"
-    },
-    {
-      "id": "devfest-cloud-surabaya-2026",
-      "title": "DevFest Cloud Surabaya '26: Building Safe, Secure & Scalable Solutions with AI and Cloud",
-      "url": "https://gdg.community.dev/events/details/google-gdg-cloud-surabaya-presents-devfest-cloud-surabaya-26-building-safe-secure-amp-scalable-solutions-with-ai-and-cloud/",
-      "date": "2026-11-21"
-    },
-    {
-      "id": "devfest-surabaya-2026",
-      "title": "DevFest 2026 Surabaya : Build Secure and Scalable Agent",
-      "url": "https://gdg.community.dev/events/details/google-gdg-surabaya-presents-devfest-2026-surabaya-build-secure-and-scalable-agent/",
-      "date": "2026-12-12"
+      "url": "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/studying-abroad",
+      "reviewedOn": "2026-11-04"
     },
     {
       "id": "devfest-jogjakarta-2026",
       "title": "DevFest Jogjakarta 2026",
       "url": "https://gdg.community.dev/events/details/google-gdg-jogjakarta-presents-devfest-jogjakarta-2026/",
-      "date": "2026-11-08"
+      "date": "2026-11-08",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "devfest-cloud-surabaya-2026",
+      "title": "DevFest Cloud Surabaya '26: Building Safe, Secure & Scalable Solutions with AI and Cloud",
+      "url": "https://gdg.community.dev/events/details/google-gdg-cloud-surabaya-presents-devfest-cloud-surabaya-26-building-safe-secure-amp-scalable-solutions-with-ai-and-cloud/",
+      "date": "2026-11-21",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "devfest-bogor-2026",
+      "title": "DevFest Bogor 2026",
+      "url": "https://gdg.community.dev/events/details/google-gdg-bogor-presents-devfest-bogor-2026/",
+      "date": "2026-11-28",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "devfest-cloud-bandung-2026",
+      "title": "Cloud DevFest Bandung 2026",
+      "url": "https://gdg.community.dev/events/details/google-gdg-cloud-bandung-presents-cloud-devfest-bandung-2026-1/",
+      "date": "2026-11-28",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "lpdp-ucd-2026",
+      "title": "LPDP–UCD: your next chapter in Dublin",
+      "url": "https://lpdp.kemenkeu.go.id/beasiswa/beasiswa-kemitraan-double-degree-joint-degree/lpdp-ucd2026",
+      "deadline": "2026-12-01",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "devfest-depok-2026",
+      "title": "DevFest Depok 2026",
+      "url": "https://gdg.community.dev/events/details/google-gdg-depok-presents-devfest-depok-2026/",
+      "date": "2026-12-05",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "devfest-surabaya-2026",
+      "title": "DevFest 2026 Surabaya : Build Secure and Scalable Agent",
+      "url": "https://gdg.community.dev/events/details/google-gdg-surabaya-presents-devfest-2026-surabaya-build-secure-and-scalable-agent/",
+      "date": "2026-12-12",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "devfest-bandung-2026",
+      "title": "Devfest Bandung 2026 : Tech Meets Human",
+      "url": "https://gdg.community.dev/events/details/google-gdg-bandung-presents-devfest-bandung-2026-tech-meets-human/",
+      "date": "2026-12-19",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "fulbright-masters-2027",
+      "title": "Fulbright Master’s Degree Scholarship: study in the United States",
+      "url": "https://www.aminef.or.id/grants-for-indonesians/fulbright-programs/scholarship/fulbright-masters-degree-scholarship/",
+      "deadline": "2027-02-15",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "aiesec-global-volunteer",
+      "title": "AIESEC Global Volunteer: contribute to the Sustainable Development Goals",
+      "url": "https://aiesec.org/global-volunteer",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "aws-builder-workshops",
+      "title": "AWS Builder Center: hands-on cloud workshops",
+      "url": "https://builder.aws.com/build/workshops",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "aws-educate-cloud-skills",
+      "title": "AWS Educate: start building cloud skills",
+      "url": "https://aws.amazon.com/education/awseducate/",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "aws-student-builder-groups",
+      "title": "AWS Student Builder Groups: build with your campus community",
+      "url": "https://builder.aws.com/community/student-builder-groups",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "daad-scholarship-database",
+      "title": "DAAD Scholarship Database: funding for study and research",
+      "url": "https://www.daad.de/en/study-and-research-in-germany/scholarships/",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "gdg-on-campus",
+      "title": "Find your people with GDG on Campus",
+      "url": "https://developers.google.com/community/gdg",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "google-career-certificates",
+      "title": "Build your next career with Google Career Certificates",
+      "url": "https://grow.google/intl/id_id/certificates/",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "google-cloud-skills-labs",
+      "title": "Google Skills: hands-on cloud and AI learning",
+      "url": "https://www.cloudskillsboost.google/catalog",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "isep-direct-programs",
+      "title": "ISEP Direct: choose a semester or year abroad",
+      "url": "https://www.isepstudyabroad.org/isepdirect",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "isep-exchange",
+      "title": "ISEP Exchange: study at a partner university abroad",
+      "url": "https://www.isepstudyabroad.org/programs/program-types-and-deadlines/isep-exchange",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "kaggle-house-prices",
+      "title": "House Prices: Advanced Regression Techniques",
+      "url": "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "kaggle-spaceship-titanic",
+      "title": "Spaceship Titanic: predict who was transported",
+      "url": "https://www.kaggle.com/competitions/spaceship-titanic",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "kaggle-titanic",
+      "title": "Titanic: Machine Learning from Disaster",
+      "url": "https://www.kaggle.com/competitions/titanic",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "id": "microsoft-learn-career-paths",
+      "title": "Microsoft Learn: explore technical career paths",
+      "url": "https://learn.microsoft.com/en-us/training/career-paths/",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "python-community",
+      "title": "Python Community: find events, groups, and spaces to learn",
+      "url": "https://www.python.org/community/",
+      "reviewedOn": "2026-11-05"
+    },
+    {
+      "id": "unv-online-volunteering",
+      "title": "UN Volunteers: remote online volunteering assignments",
+      "url": "https://www.unv.org/become-online-volunteer",
+      "reviewedOn": "2026-11-05"
     }
   ],
   "organizations": [
@@ -126,6 +228,38 @@
     {
       "name": "Kaggle",
       "url": "https://www.kaggle.com/competitions"
+    },
+    {
+      "name": "AMINEF · Fulbright Indonesia",
+      "url": "https://www.aminef.or.id"
+    },
+    {
+      "name": "DAAD",
+      "url": "https://www.daad.de/en/study-and-research-in-germany/scholarships/"
+    },
+    {
+      "name": "AWS",
+      "url": "https://aws.amazon.com/"
+    },
+    {
+      "name": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/"
+    },
+    {
+      "name": "AIESEC",
+      "url": "https://aiesec.org/global-volunteer"
+    },
+    {
+      "name": "United Nations Volunteers",
+      "url": "https://www.unv.org/become-volunteer"
+    },
+    {
+      "name": "ISEP Study Abroad",
+      "url": "https://www.isepstudyabroad.org/"
+    },
+    {
+      "name": "Python Software Foundation",
+      "url": "https://www.python.org/community/"
     }
   ]
 }

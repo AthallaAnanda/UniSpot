@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, type CSSProperties } from "react";
+import { memo, useMemo, useState, type CSSProperties } from "react";
 import Link from "next/link";
 import { CalendarDays, CalendarPlus, Check, ChevronDown, ChevronLeft, ChevronRight, Plus, Search, Settings, X } from "lucide-react";
 import { useOpportunitySelection } from "@/hooks/useOpportunitySelection";
@@ -11,25 +11,29 @@ import EventFeed from "./EventFeed";
 import OpportunityDetails from "./OpportunityDetails";
 import SiteShell from "./SiteShell";
 import CalendarSocialLinks from "./CalendarSocialLinks";
+import CatalogImage from "./CatalogImage";
 import "./PartnerCalendarPage.css";
 
 type Period = "Upcoming" | "Past" | "All";
 const periods: Period[] = ["Upcoming", "Past", "All"];
 const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const fullDateFormatter = new Intl.DateTimeFormat("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+const monthFormatter = new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+const shortDateFormatter = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 
 function dateKey(date: Date) {
   return date.toISOString().slice(0, 10);
 }
 
 function dateLabel(key: string) {
-  return new Date(`${key}T12:00:00Z`).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+  return fullDateFormatter.format(new Date(`${key}T12:00:00Z`));
 }
 
 function fallsOn(opportunity: Opportunity, key: string) {
   return opportunity.deadline === key || (!!opportunity.date && opportunity.date <= key && (opportunity.endDate ?? opportunity.date) >= key);
 }
 
-function MonthPicker({ month, today, selectedDate, opportunities, onMonthChange, onSelect }: {
+const MonthPicker = memo(function MonthPicker({ month, today, selectedDate, opportunities, onMonthChange, onSelect }: {
   month: Date;
   today: string;
   selectedDate: string | null;
@@ -42,7 +46,13 @@ function MonthPicker({ month, today, selectedDate, opportunities, onMonthChange,
   const firstWeekday = new Date(Date.UTC(year, monthIndex, 1)).getUTCDay();
   const daysInMonth = new Date(Date.UTC(year, monthIndex + 1, 0)).getUTCDate();
   const cellCount = Math.max(35, Math.ceil((firstWeekday + daysInMonth) / 7) * 7);
-  const heading = month.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+  const heading = monthFormatter.format(month);
+  const cells = useMemo(() => Array.from({ length: cellCount }, (_, index) => {
+    const date = new Date(Date.UTC(year, monthIndex, index - firstWeekday + 1));
+    const key = dateKey(date);
+    const count = opportunities.filter(opportunity => fallsOn(opportunity, key)).length;
+    return { date, key, count, outside: date.getUTCMonth() !== monthIndex, label: dateLabel(key) };
+  }), [year, monthIndex, firstWeekday, cellCount, opportunities]);
 
   return <div className="partner-month-picker" role="group" aria-label="Filter opportunities by date">
     <div className="partner-month-heading">
@@ -54,16 +64,12 @@ function MonthPicker({ month, today, selectedDate, opportunities, onMonthChange,
     </div>
     <div className="partner-month-weekdays" aria-hidden="true">{weekdays.map(day => <span key={day}>{day.slice(0, 1)}</span>)}</div>
     <div className="partner-month-days">
-      {Array.from({ length: cellCount }, (_, index) => {
-        const date = new Date(Date.UTC(year, monthIndex, index - firstWeekday + 1));
-        const key = dateKey(date);
-        const count = opportunities.filter(opportunity => fallsOn(opportunity, key)).length;
-        const outside = date.getUTCMonth() !== monthIndex;
+      {cells.map(({ date, key, count, outside, label }) => {
         return <button
           key={key}
           type="button"
           className={`partner-month-day${outside ? " is-outside" : ""}${key === today ? " is-today" : ""}${key === selectedDate ? " is-selected" : ""}`}
-          aria-label={`${dateLabel(key)}${count ? `, ${count} ${count === 1 ? "opportunity" : "opportunities"}` : ", no opportunities"}`}
+          aria-label={`${label}${count ? `, ${count} ${count === 1 ? "opportunity" : "opportunities"}` : ", no opportunities"}`}
           aria-pressed={key === selectedDate}
           aria-current={key === today ? "date" : undefined}
           onClick={() => {
@@ -75,7 +81,7 @@ function MonthPicker({ month, today, selectedDate, opportunities, onMonthChange,
     </div>
     <p className="partner-month-hint"><span className="partner-month-dot" aria-hidden="true" />Opportunity dates & deadlines · UTC</p>
   </div>;
-}
+});
 
 export default function PartnerCalendarPage({ initialCalendar }: { initialCalendar: PartnerCalendar }) {
   const catalog = useCatalog();
@@ -114,11 +120,11 @@ export default function PartnerCalendarPage({ initialCalendar }: { initialCalend
   return <SiteShell wide className="calendar-shell">
     <section className="partner-calendar-profile" aria-labelledby="partner-calendar-name" style={{ "--partner-calendar-color": calendar.color } as CSSProperties}>
       <div className={`partner-calendar-cover${calendar.cover ? " has-image" : ""}`} aria-hidden="true">
-        {calendar.cover ? <img src={calendar.cover} alt="" /> : <CalendarDays className="partner-calendar-cover-icon" strokeWidth={1} />}
+        {calendar.cover ? <CatalogImage src={calendar.cover} alt="" width={1100} height={320} sizes="(max-width:650px) 640px, 1100px" loading="eager" /> : <CalendarDays className="partner-calendar-cover-icon" strokeWidth={1} />}
       </div>
       <div className="partner-calendar-profile-body">
         <div className="partner-calendar-profile-top">
-          <div className="partner-calendar-avatar">{calendar.logo ? <img src={calendar.logo} alt={`${calendar.name} logo`} width={96} height={96} /> : <CalendarDays size={32} aria-hidden="true" />}</div>
+          <div className="partner-calendar-avatar">{calendar.logo ? <CatalogImage src={calendar.logo} alt={`${calendar.name} logo`} width={96} height={96} /> : <CalendarDays size={32} aria-hidden="true" />}</div>
           <button type="button" className={`partner-calendar-follow${following ? " is-following" : ""}`} aria-pressed={following} onClick={() => catalog.toggleFollow(calendar.id)}>
             {following ? <Check size={16} aria-hidden="true" /> : <Plus size={16} aria-hidden="true" />}{following ? "Following" : "Follow"}
           </button>
@@ -128,7 +134,7 @@ export default function PartnerCalendarPage({ initialCalendar }: { initialCalend
         <CalendarSocialLinks calendar={calendar} />
         {canManage && <div className="partner-calendar-management">
           <Link className="partner-calendar-action" href={`${calendarPath}/manage`}><Settings size={15} aria-hidden="true" />Manage calendar</Link>
-          <Link className="partner-calendar-action" href={`${calendarPath}/manage?new=1`}><Plus size={15} aria-hidden="true" />Add opportunity</Link>
+          <Link className="partner-calendar-action" href={`/create?calendar=${encodeURIComponent(calendar.slug)}`}><Plus size={15} aria-hidden="true" />Add opportunity</Link>
         </div>}
       </div>
     </section>
@@ -141,7 +147,7 @@ export default function PartnerCalendarPage({ initialCalendar }: { initialCalend
         </div>
         <div className="partner-calendar-feed-tools">
           <Link href={`/explore?calendar=${encodeURIComponent(calendar.slug)}`} className="partner-calendar-search"><Search size={14} aria-hidden="true" />Search in this calendar</Link>
-          {selectedDate && <div className="partner-calendar-date-filter"><span>{new Date(`${selectedDate}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })}</span><button type="button" onClick={() => setSelectedDate(null)}><X size={12} aria-hidden="true" />Clear date</button></div>}
+          {selectedDate && <div className="partner-calendar-date-filter"><span>{shortDateFormatter.format(new Date(`${selectedDate}T12:00:00Z`))}</span><button type="button" onClick={() => setSelectedDate(null)}><X size={12} aria-hidden="true" />Clear date</button></div>}
         </div>
         {catalog.error && <div className="partner-calendar-error" role="status"><span>{catalog.error}</span><button type="button" onClick={() => void catalog.refresh()} disabled={catalog.loading}>{catalog.loading ? "Retrying…" : "Try again"}</button></div>}
         <div aria-busy={catalog.loading}>

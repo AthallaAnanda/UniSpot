@@ -8,7 +8,7 @@ const root = process.cwd();
 const readJson = async p => JSON.parse(await readFile(path.join(root,p),'utf8'));
 const data = await readJson('src/data/unispot-seed.json');
 const gdg = await readJson('docs/research/unispot/gdg-events.json');
-const manifest=[];
+const manifest=data.organizations.filter(organization=>!organization.logoSource).map(organization=>({source:'Created for UniSpot',file:organization.logo,local:true}));
 const headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36'};
 async function download(source,file) {
   const target=path.join(root,'public',file);
@@ -45,7 +45,7 @@ for(let i=0;i<gdg.length;i+=4) {
 }
 const featured=['devfest-cloud-jakarta-2026','lpdp-naist-2026','google-ai-essentials','icmns-2026','indorelawan-opportunities','erasmus-study-abroad'];
 data.opportunities.sort((a,b)=>{const x=featured.indexOf(a.id),y=featured.indexOf(b.id);return (x===-1?100:x)-(y===-1?100:y)||(a.date??a.deadline??'9999').localeCompare(b.date??b.deadline??'9999')||a.id.localeCompare(b.id);});
-const assets=[...data.organizations.map(o=>({source:o.logoSource,file:o.logo})),...data.opportunities.filter(o=>o.imageSource).map(o=>({source:o.imageSource,file:o.image}))];
+const assets=[...data.organizations.filter(o=>o.logoSource).map(o=>({source:o.logoSource,file:o.logo})),...data.opportunities.filter(o=>o.imageSource).map(o=>({source:o.imageSource,file:o.image}))];
 const unique=[...new Map(assets.map(a=>[a.file,a])).values()];
 for(let i=0;i<unique.length;i+=4) await Promise.all(unique.slice(i,i+4).map(a=>download(a.source,a.file)));
 const logo=await readFile(path.join(root,'mulmod-docs/UniSpot_Logo.svg'),'utf8');
@@ -55,5 +55,5 @@ const icon=logo.replace(/width="1891" height="559" viewBox="124 85 1891 559"/,'w
 await writeFile(path.join(root,'public/brand/unispot-icon.svg'),icon);
 await writeFile(path.join(root,'src/data/unispot.json'),JSON.stringify(data,null,2)+'\n');
 await writeFile(path.join(root,'docs/research/unispot/asset-manifest.json'),JSON.stringify(manifest,null,2)+'\n');
-await writeFile(path.join(root,'docs/research/unispot/sources.json'),JSON.stringify({checkedOn:'2026-11-04',opportunities:data.opportunities.map(o=>({id:o.id,title:o.title,url:o.source,date:o.date,deadline:o.deadline})),organizations:data.organizations.map(o=>({name:o.name,url:o.url}))},null,2)+'\n');
+await writeFile(path.join(root,'docs/research/unispot/sources.json'),JSON.stringify({checkedOn:'2026-11-05',opportunities:data.opportunities.map(o=>({id:o.id,title:o.title,url:o.source,date:o.date,deadline:o.deadline,reviewedOn:o.reviewedAt??'2026-11-04'})),organizations:data.organizations.map(o=>({name:o.name,url:o.url}))},null,2)+'\n');
 console.log(`Prepared ${data.opportunities.length} opportunities, ${data.organizations.length} organizations and ${new Set(manifest.map(a=>a.file)).size} local content assets.`);

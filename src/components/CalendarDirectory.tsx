@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 import Link from "next/link";
 import { CalendarDays, Search, X } from "lucide-react";
 import { categories } from "@/lib/unispot";
@@ -20,12 +20,26 @@ export default function CalendarDirectory() {
   const [view, setView] = useState("All calendars");
   const [sort, setSort] = useState("featured");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const calendars = useMemo(() => catalog.calendars.filter(calendar =>
-    (view !== "Following" || catalog.followed.includes(calendar.id)) &&
-    (view !== "My calendars" || calendar.canManage) &&
-    `${calendar.name} ${calendar.description}`.toLowerCase().includes(query.trim().toLowerCase()) &&
-    (!selectedCategories.length || catalog.opportunities.some(opportunity => opportunity.calendarId === calendar.id && selectedCategories.includes(opportunity.category)))
-  ).sort((a, b) => sort === "title" ? a.name.localeCompare(b.name) : sort === "newest" ? b.createdAt.localeCompare(a.createdAt) : 0), [catalog.calendars, catalog.opportunities, catalog.followed, query, view, sort, selectedCategories]);
+  const search = useDeferredValue(query);
+  const index = useMemo(() => catalog.calendars.map(calendar => ({ calendar, text: `${calendar.name} ${calendar.description}`.toLowerCase() })), [catalog.calendars]);
+  const calendarCategories = useMemo(() => {
+    const result = new Map<string, Set<string>>();
+    for (const opportunity of catalog.opportunities) {
+      if (!opportunity.calendarId) continue;
+      if (!result.has(opportunity.calendarId)) result.set(opportunity.calendarId, new Set());
+      result.get(opportunity.calendarId)!.add(opportunity.category);
+    }
+    return result;
+  }, [catalog.opportunities]);
+  const calendars = useMemo(() => {
+    const followed = new Set(catalog.followed);
+    const term = search.trim().toLowerCase();
+    return index.filter(({ calendar, text }) =>
+      (view !== "Following" || followed.has(calendar.id)) &&
+      (view !== "My calendars" || calendar.canManage) && text.includes(term) &&
+      (!selectedCategories.length || selectedCategories.some(category => calendarCategories.get(calendar.id)?.has(category)))
+    ).map(entry => entry.calendar).sort((a, b) => sort === "title" ? a.name.localeCompare(b.name) : sort === "newest" ? b.createdAt.localeCompare(a.createdAt) : 0);
+  }, [index, calendarCategories, catalog.followed, search, view, sort, selectedCategories]);
 
   const hasFilters = !!query || view !== "All calendars" || selectedCategories.length > 0;
   const reset = () => { setQuery(""); setView("All calendars"); setSort("featured"); setSelectedCategories([]); };
@@ -48,7 +62,7 @@ export default function CalendarDirectory() {
           <FilterChoices label="Calendar categories" options={categories.map(category => ({ value: category.id, label: category.name }))} selected={selectedCategories} onToggle={toggleCategory} />
         </FilterGroup>
       </FilterSidebar>
-      <section className="section-block directory-results catalog-search-results" aria-label="Calendars" aria-busy={catalog.loading}>
+      <section className="section-block directory-results catalog-search-results" aria-label="Calendars" aria-busy={catalog.loading || query !== search}>
         <div className="section-heading"><h2 aria-live="polite">{calendars.length} {calendars.length === 1 ? "calendar" : "calendars"}</h2><CatalogViewToggle view={layout} onChange={setLayout} /></div>
         {calendars.length ? <MotionResults transitionKey={resultTransition} view={layout}><CalendarCards calendars={calendars} view={layout} /></MotionResults> : <div className="empty-state"><CalendarDays size={48} strokeWidth={1} /><h3>{query || selectedCategories.length ? "No calendars found" : view === "Following" ? "Follow your first calendar" : "Create your first calendar"}</h3><p>{query || selectedCategories.length ? "Try another name or reset your filters." : view === "Following" ? "Follow a calendar to keep your communities together here." : "Bring your community’s opportunities together in one place."}</p>{hasFilters ? <button className="secondary-button" onClick={reset}>Browse all calendars</button> : <Link className="primary-button calendar-create-button" href="/calendars/new">Create calendar</Link>}</div>}
       </section>

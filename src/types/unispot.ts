@@ -11,6 +11,9 @@ export interface Opportunity {
   schedule: string;
   date?: string;
   endDate?: string;
+  startTime?: string;
+  endTime?: string;
+  timeZone?: string;
   deadline?: string;
   fee: string;
   eligibility: string;
@@ -21,9 +24,11 @@ export interface Opportunity {
   image: string;
   imageSource?: string;
   imageFit?: "cover" | "contain";
+  imageScale?: number;
   color: string;
   calendarId?: string;
   publishedAt?: string;
+  reviewedAt?: string;
 }
 export interface Organization {
   id: string;
@@ -32,7 +37,7 @@ export interface Organization {
   topic: string;
   url: string;
   logo: string;
-  logoSource: string;
+  logoSource?: string;
   calendarSlug?: string;
 }
 

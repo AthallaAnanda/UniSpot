@@ -12,8 +12,8 @@ const socialLinks: Record<string, CalendarSocialLinks> = {
 };
 export const seedCatalog: CatalogData = {
   organizations: data.organizations.map(organization => ({ ...organization, calendarSlug: slugs[organization.id] })),
-  opportunities: data.opportunities.map(opportunity => ({ ...opportunity, calendarId: opportunity.organizationId })) as Opportunity[],
-  calendars: data.organizations.map(organization => ({ id: organization.id, slug: slugs[organization.id], name: organization.name, description: organization.description, logo: organization.logo, color: colors[organization.id], website: organization.url, socialLinks: socialLinks[organization.id], organizationId: organization.id, curated: true, createdAt: "2026-11-04T00:00:00.000Z" })) as PartnerCalendar[],
+  opportunities: data.opportunities.map(opportunity => ({ ...opportunity, calendarId: slugs[opportunity.organizationId] ? opportunity.organizationId : undefined })) as Opportunity[],
+  calendars: data.organizations.filter(organization => slugs[organization.id]).map(organization => ({ id: organization.id, slug: slugs[organization.id], name: organization.name, description: organization.description, logo: organization.logo, color: colors[organization.id], website: organization.url, socialLinks: socialLinks[organization.id], organizationId: organization.id, curated: true, createdAt: "2026-11-04T00:00:00.000Z" })) as PartnerCalendar[],
 };
 
 export function calendarOrganization(calendar: PartnerCalendar) {

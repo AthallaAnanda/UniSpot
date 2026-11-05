@@ -84,9 +84,9 @@ Mutations validate required publishing fields, categories, formats, real calenda
 
 ## Content and sources
 
-Content was reviewed on **November 4, 2026** using official LPDP, ITB, Google Developer Groups, Grow with Google, Indorelawan, Erasmus+, and Kaggle sources.
+The original catalog was reviewed on **November 4, 2026**. Additional opportunities across every category were checked against official AMINEF/Fulbright, DAAD, Google Skills, AWS, Microsoft Learn, AIESEC, United Nations Volunteers, ISEP, Python, and Kaggle sources on **November 5, 2026**. Per-opportunity review dates are recorded in `docs/research/unispot/sources.json` and shown on detail pages.
 
-The catalog distinguishes dated events, scholarship calls, self-paced learning, and program directories. Registration and enrollment take place on the organizer's website. Costs and eligibility are described according to the source; unknown event pricing is left to the organizer.
+The catalog distinguishes dated events, scholarship calls, self-paced learning, and program directories. Some listings are ongoing catalogs rather than individual dated calls; check the organizer’s page for current availability, deadlines, costs, and eligibility. Registration and enrollment take place on the organizer's website. Unknown event pricing is left to the organizer.
 
 - `src/data/unispot-seed.json`: curated program information and organization definitions.
 - `docs/research/unispot/gdg-events.json`: Indonesian DevFest event dates and links extracted from Google's official map.

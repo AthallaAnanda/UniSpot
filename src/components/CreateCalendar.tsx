@@ -2,12 +2,20 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useRef, useState, type FormEvent } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useRef, useState, type CSSProperties, type FormEvent } from "react";
+import { ArrowLeft, CalendarDays, Check, ChevronDown, Globe2, ImagePlus } from "lucide-react";
 import type { CalendarSocialLinks, PartnerCalendar } from "@/types/unispot";
 import { useCatalog } from "./CatalogProvider";
 import SiteShell from "./SiteShell";
-import "./CalendarPublishing.css";
+import PublishingImagePicker from "./PublishingImagePicker";
+import "./PublishingForms.css";
+
+const colors = [
+  { name: "Gray", value: "#8b8b8b" }, { name: "Pink", value: "#bb267e" },
+  { name: "Purple", value: "#9760ce" }, { name: "Blue", value: "#3974d8" },
+  { name: "Green", value: "#459775" }, { name: "Yellow", value: "#d4a52a" },
+  { name: "Orange", value: "#e38b4e" }, { name: "Red", value: "#d25c67" },
+];
 
 function calendarSlug(name: string) {
   return name.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
@@ -16,7 +24,7 @@ function calendarSlug(name: string) {
 
 export default function CreateCalendar() {
   const router = useRouter();
-  const { refresh, notify } = useCatalog();
+  const { commitCalendar, notify } = useCatalog();
   const [name, setName] = useState("");
   const [slug, setSlug] = useState("");
   const [slugEdited, setSlugEdited] = useState(false);
@@ -53,65 +61,39 @@ export default function CreateCalendar() {
       setPending(false);
       return;
     }
-    // The calendar is already persisted: a refresh failure must not invite a duplicate POST.
-    try { await refresh(); } catch { /* The destination can load the persisted calendar directly. */ }
+    commitCalendar(created);
     notify("Calendar created.");
-    router.push(`/calendars/${encodeURIComponent(created.slug)}/manage?new=1`);
+    router.push(`/calendars/${encodeURIComponent(created.slug)}/manage`);
   }
 
-  return <SiteShell className="calendar-publishing-shell">
-    <section className="calendar-publishing-page">
-      <Link href="/calendars" className="calendar-publishing-back"><ArrowLeft size={16} aria-hidden="true" />Back to calendars</Link>
-      <header className="calendar-publishing-heading">
-        <h1>Create a calendar</h1>
-        <p>Bring your community’s opportunities together. Create a home for your organization, student group, or partner community.</p>
-      </header>
-      <form className="calendar-publishing-card calendar-publishing-create" onSubmit={create} aria-busy={pending}>
-        <fieldset className="calendar-publishing-fields" disabled={pending}>
-          <div className="calendar-publishing-field">
-            <label htmlFor="calendar-name">Calendar name <span aria-hidden="true">*</span></label>
-            <input id="calendar-name" name="name" value={name} maxLength={100} required onChange={event => { setName(event.target.value); if (!slugEdited) setSlug(calendarSlug(event.target.value)); }} />
+  return <SiteShell className="publishing-shell calendar-builder-shell">
+    <section className="publishing-page">
+      <Link href="/calendars" className="publishing-back"><ArrowLeft size={15} />Calendars</Link>
+      <header className="publishing-heading"><h1>Create calendar</h1><p>A home for your community’s opportunities.</p></header>
+      <form onSubmit={create} aria-busy={pending}>
+        <fieldset className="publishing-fieldset" disabled={pending}>
+          <div className="calendar-builder-preview" style={{ "--calendar-tint": color } as CSSProperties}>
+            <div className="calendar-builder-cover">{cover && <img src={cover} alt="Calendar cover preview" decoding="async" />}<div className="calendar-builder-cover-art" aria-hidden="true" hidden={!!cover}><span /><span /><span /></div><PublishingImagePicker label="Change cover" value={cover} onChange={setCover} /></div>
+            <div className="calendar-builder-identity">
+              <PublishingImagePicker label="Change calendar logo" className="calendar-builder-logo" value={logo} onChange={setLogo}>{logo ? <img src={logo} alt="Calendar logo" /> : <CalendarDays size={30} strokeWidth={1.5} />}<span><ImagePlus size={12} /></span></PublishingImagePicker>
+              <label htmlFor="calendar-name" className="sr-only">Calendar name</label>
+              <input id="calendar-name" className="calendar-builder-name" name="name" placeholder="Calendar name" value={name} maxLength={100} required onChange={event => { setName(event.target.value); if (!slugEdited) setSlug(calendarSlug(event.target.value)); }} />
+              <label htmlFor="calendar-description" className="sr-only">Description</label>
+              <textarea id="calendar-description" name="description" placeholder="Tell students a little about your community…" rows={2} value={description} required maxLength={1500} onChange={event => setDescription(event.target.value)} />
+            </div>
           </div>
-          <div className="calendar-publishing-field">
-            <label htmlFor="calendar-slug">Calendar URL <span aria-hidden="true">*</span></label>
-            <input id="calendar-slug" name="slug" value={slug} required minLength={3} maxLength={80} pattern="[a-z0-9]+(-[a-z0-9]+)*" title="Use at least 3 lowercase letters, numbers, or hyphens, without a leading or trailing hyphen." autoCapitalize="none" spellCheck={false} aria-describedby="calendar-slug-hint" onChange={event => { setSlugEdited(true); setSlug(event.target.value); }} />
-            <p id="calendar-slug-hint" className="calendar-publishing-hint">Your public address: <span className="calendar-publishing-url">/calendars/{slug || "…"}</span></p>
-          </div>
-          <div className="calendar-publishing-field">
-            <label htmlFor="calendar-description">Description <span aria-hidden="true">*</span></label>
-            <textarea id="calendar-description" name="description" rows={5} value={description} required maxLength={1500} aria-describedby="calendar-description-hint" onChange={event => setDescription(event.target.value)} />
-            <p id="calendar-description-hint" className="calendar-publishing-hint">Tell students who you are and what you share. Up to 1,500 characters.</p>
-          </div>
-          <div className="calendar-publishing-field">
-            <label htmlFor="calendar-website">Website <span className="calendar-publishing-optional">Optional</span></label>
-            <input id="calendar-website" name="website" type="url" pattern="https?://.*" maxLength={2000} value={website} onChange={event => setWebsite(event.target.value)} />
-          </div>
-          <div className="calendar-publishing-field">
-            <label htmlFor="calendar-logo">Logo URL <span className="calendar-publishing-optional">Optional</span></label>
-            <input id="calendar-logo" name="logo" type="url" pattern="https?://.*" maxLength={2000} value={logo} aria-describedby="calendar-logo-hint" onChange={event => setLogo(event.target.value)} />
-            <p id="calendar-logo-hint" className="calendar-publishing-hint">Use an http(s) image URL, or leave blank to use the UniSpot icon.</p>
-          </div>
-          <details className="calendar-publishing-social-fields">
-            <summary>Social links <span>Optional</span></summary>
-            <div>{([['instagram', 'Instagram'], ['tiktok', 'TikTok'], ['linkedin', 'LinkedIn']] as const).map(([platform, label]) => <div className="calendar-publishing-field" key={platform}>
-              <label htmlFor={`calendar-${platform}`}>{label} URL</label>
-              <input id={`calendar-${platform}`} name={platform} type="url" pattern="https?://.*" maxLength={2000} value={socialLinks[platform] ?? ""} onChange={event => setSocialLinks(previous => ({ ...previous, [platform]: event.target.value }))} />
-            </div>)}</div>
-          </details>
-          <div className="calendar-publishing-field">
-            <label htmlFor="calendar-cover">Cover image URL <span className="calendar-publishing-optional">Optional</span></label>
-            <input id="calendar-cover" name="cover" type="url" pattern="https?://.*" maxLength={2000} value={cover} onChange={event => setCover(event.target.value)} />
-          </div>
-          <div className="calendar-publishing-field">
-            <label htmlFor="calendar-color">Calendar color</label>
-            <div className="calendar-publishing-color"><input id="calendar-color" name="color" type="color" value={color} onChange={event => setColor(event.target.value)} /><span>{color}</span></div>
-          </div>
+
+          <section className="publishing-card" aria-labelledby="calendar-customization-heading"><h2 id="calendar-customization-heading">Customization</h2>
+            <div className="calendar-customization-grid">
+              <div className="publishing-field"><span className="publishing-label" id="calendar-tint-label">Tint color</span><div className="calendar-color-options" role="group" aria-labelledby="calendar-tint-label">{colors.map(swatch => <button type="button" key={swatch.value} className="calendar-color-swatch" style={{ "--swatch": swatch.value } as CSSProperties} aria-label={swatch.name} aria-pressed={color === swatch.value} onClick={() => setColor(swatch.value)}>{color === swatch.value && <Check size={13} strokeWidth={2.5} />}</button>)}<label className="calendar-custom-color" title="Custom color"><span className="sr-only">Custom color</span><input type="color" value={color} onChange={event => setColor(event.target.value)} /></label></div><span className="publishing-hint">A little color to make it yours.</span></div>
+              <div className="publishing-field"><label htmlFor="calendar-slug">Public URL</label><div className="publishing-url-input"><span>/calendars/</span><input id="calendar-slug" name="slug" placeholder="your-community" value={slug} required minLength={3} maxLength={80} pattern="[a-z0-9]+(-[a-z0-9]+)*" title="Use at least 3 lowercase letters, numbers, or hyphens, without a leading or trailing hyphen." autoCapitalize="none" spellCheck={false} onChange={event => { setSlugEdited(true); setSlug(event.target.value); }} /></div><span className="publishing-hint">Your community’s address on UniSpot.</span></div>
+            </div>
+          </section>
+
+          <details className="publishing-card publishing-disclosure"><summary><span><Globe2 size={16} />Links & socials<small>Optional</small></span><ChevronDown size={16} /></summary><div className="publishing-disclosure-content"><div className="publishing-field"><label htmlFor="calendar-website">Website</label><input id="calendar-website" name="website" type="url" pattern="https?://.*" placeholder="https://your-community.com" maxLength={2000} value={website} onChange={event => setWebsite(event.target.value)} /></div>{([['instagram', 'Instagram'], ['tiktok', 'TikTok'], ['linkedin', 'LinkedIn']] as const).map(([platform, label]) => <div className="publishing-field" key={platform}><label htmlFor={`calendar-${platform}`}>{label}</label><input id={`calendar-${platform}`} name={platform} type="url" pattern="https?://.*" placeholder={`https://${platform}.com/…`} maxLength={2000} value={socialLinks[platform] ?? ""} onChange={event => setSocialLinks(previous => ({ ...previous, [platform]: event.target.value }))} /></div>)}</div></details>
         </fieldset>
-        {error && <p className="calendar-publishing-error" role="alert">{error}</p>}
-        <p className="calendar-publishing-note">You can manage this calendar from the browser you create it in.</p>
-        <div className="calendar-publishing-actions">
-          <button type="submit" className="calendar-publishing-button calendar-publishing-primary calendar-create-button" disabled={pending}>{pending ? "Creating…" : "Create calendar"}{!pending && <ArrowRight size={16} aria-hidden="true" />}</button>
-        </div>
+        {error && <p className="publishing-error" role="alert">{error}</p>}
+        <div className="calendar-builder-submit"><button type="submit" className="publishing-primary" disabled={pending}><Check size={16} />{pending ? "Creating…" : "Create calendar"}</button><p className="publishing-hint">Managed from the browser you create it in.</p></div>
       </form>
     </section>
   </SiteShell>;

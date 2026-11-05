@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowDown, Bookmark, Search, X } from "lucide-react";
 import { categories } from "@/lib/unispot";
+import { opportunitySearchIndex } from "@/lib/catalog-search";
 import { useOpportunitySelection } from "@/hooks/useOpportunitySelection";
 import { useCatalogView } from "@/hooks/useCatalogView";
 import SiteShell from "./SiteShell";
@@ -20,7 +21,6 @@ const initial = { q: "", category: "all", location: "all", calendar: "all", form
 type Filters = typeof initial;
 type ChoiceFilter = "category" | "location" | "calendar" | "format";
 const selectedValues = (value: string) => value === "all" ? [] : value.split("|").filter(Boolean);
-const matches = (filter: string, value: string) => filter === "all" || selectedValues(filter).includes(value);
 
 export default function ExplorePage({ savedOnly = false }: { savedOnly?: boolean }) {
   const catalog = useCatalog();
@@ -29,6 +29,10 @@ export default function ExplorePage({ savedOnly = false }: { savedOnly?: boolean
   const [ready, setReady] = useState(false);
   const [limit, setLimit] = useState(12);
   const selection = useOpportunitySelection(catalog.opportunities);
+  const query = useDeferredValue(filters.q);
+  const searchIndex = useMemo(() => opportunitySearchIndex(catalog.opportunities, catalog.calendars), [catalog.opportunities, catalog.calendars]);
+  const savedFilter = savedOnly ? catalog.saved : null;
+  const savedFilterIds = useMemo(() => new Set(savedFilter ?? []), [savedFilter]);
 
   useEffect(() => {
     const restore = () => {
@@ -66,31 +70,34 @@ export default function ExplorePage({ savedOnly = false }: { savedOnly?: boolean
   const reset = () => { setFilters(initial); setLimit(12); };
 
   const filtered = useMemo(() => {
-    const terms = filters.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
-    return catalog.opportunities.filter(opportunity => {
-      const calendar = catalog.calendars.find(calendar => calendar.id === opportunity.calendarId);
-      const text = `${opportunity.title} ${opportunity.description} ${opportunity.city} ${opportunity.sourceName} ${opportunity.category} ${categories.find(category => category.id === opportunity.category)?.name} ${calendar?.name ?? ""}`.toLowerCase();
+    const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    const categoryIds = new Set(selectedValues(filters.category));
+    const locations = new Set(selectedValues(filters.location));
+    const calendars = new Set(selectedValues(filters.calendar));
+    const formats = new Set(selectedValues(filters.format));
+    return searchIndex.filter(({ opportunity, calendarSlug, text }) => {
       const date = opportunity.date ?? opportunity.deadline;
-      return (!savedOnly || catalog.saved.includes(opportunity.id)) && terms.every(term => text.includes(term)) &&
-        matches(filters.category, opportunity.category) && matches(filters.location, opportunity.city) &&
-        matches(filters.calendar, calendar?.slug ?? "") && matches(filters.format, opportunity.format) &&
+      return (!savedOnly || savedFilterIds.has(opportunity.id)) && terms.every(term => text.includes(term)) &&
+        (!categoryIds.size || categoryIds.has(opportunity.category)) && (!locations.size || locations.has(opportunity.city)) &&
+        (!calendars.size || calendars.has(calendarSlug)) && (!formats.size || formats.has(opportunity.format)) &&
         (!filters.from || (!!date && (opportunity.endDate ?? date) >= filters.from)) && (!filters.to || (!!date && date <= filters.to));
-    }).sort((a, b) => filters.sort === "title" ? a.title.localeCompare(b.title) : filters.sort === "newest" ?
+    }).map(entry => entry.opportunity).sort((a, b) => filters.sort === "title" ? a.title.localeCompare(b.title) : filters.sort === "newest" ?
       (b.publishedAt ?? "2026-11-04").localeCompare(a.publishedAt ?? "2026-11-04") :
       (a.date ?? a.deadline ?? "9999").localeCompare(b.date ?? b.deadline ?? "9999"));
-  }, [catalog.opportunities, catalog.calendars, catalog.saved, savedOnly, filters]);
+  }, [searchIndex, savedFilterIds, savedOnly, query, filters.category, filters.location, filters.calendar, filters.format, filters.from, filters.to, filters.sort]);
 
   const organizationMap = useMemo(() => Object.fromEntries(catalog.organizations.map(organization => [organization.id, organization])), [catalog.organizations]);
   const selectedIndex = selection.selected ? filtered.findIndex(opportunity => opportunity.id === selection.selected!.id) : -1;
-  const locations = [...new Set(catalog.opportunities.map(opportunity => opportunity.city))].sort();
+  const locations = useMemo(() => [...new Set(catalog.opportunities.map(opportunity => opportunity.city))].sort(), [catalog.opportunities]);
+  const visible = useMemo(() => filtered.slice(0, limit), [filtered, limit]);
   const hasFilters = Object.entries(filters).some(([key, value]) => key !== "sort" && value !== initial[key as keyof Filters]);
   const activeCount = (["category", "location", "calendar", "format"] as ChoiceFilter[]).reduce((count, key) => count + selectedValues(filters[key]).length, 0) + Number(!!filters.q) + Number(!!filters.from || !!filters.to);
   const resultTransition = JSON.stringify([view, filters.category, filters.location, filters.calendar, filters.format, filters.sort, filters.from, filters.to]);
   // Opening/closing a detail panel should not reconcile every card beneath it.
   const resultCards = useMemo(() => view === "list" && filters.sort === "soonest" ?
-    <EventFeed opportunities={filtered.slice(0, limit)} organizations={organizationMap} saved={catalog.saved} onSave={catalog.toggleSave} onOpen={selection.open} /> :
-    <div className={view === "grid" ? "opportunity-catalog-grid" : "opportunity-grid"}>{filtered.slice(0, limit).map(opportunity => <OpportunityCard key={opportunity.id} view={view} opportunity={opportunity} organization={organizationMap[opportunity.organizationId]} saved={catalog.saved.includes(opportunity.id)} onSave={() => catalog.toggleSave(opportunity)} onOpen={() => selection.open(opportunity)} />)}</div>,
-  [view, filters.sort, filtered, limit, organizationMap, catalog.saved, catalog.toggleSave, selection.open]);
+    <EventFeed opportunities={visible} organizations={organizationMap} saved={catalog.saved} onSave={catalog.toggleSave} onOpen={selection.open} /> :
+    <div className={view === "grid" ? "opportunity-catalog-grid" : "opportunity-grid"}>{visible.map(opportunity => <OpportunityCard key={opportunity.id} view={view} opportunity={opportunity} organization={organizationMap[opportunity.organizationId]} saved={catalog.saved.includes(opportunity.id)} onSave={catalog.toggleSave} onOpen={selection.open} />)}</div>,
+  [view, filters.sort, visible, organizationMap, catalog.saved, catalog.toggleSave, selection.open]);
 
   return <SiteShell wide className="catalog-sidebar-shell">
     <section className="intro-section">
@@ -120,7 +127,7 @@ export default function ExplorePage({ savedOnly = false }: { savedOnly?: boolean
           <div className="catalog-sidebar-dates"><label><span>From</span><input type="date" aria-label="From date" value={filters.from} max={filters.to || undefined} onChange={event => update("from", event.target.value)} /></label><label><span>To</span><input type="date" aria-label="To date" value={filters.to} min={filters.from || undefined} onChange={event => update("to", event.target.value)} /></label></div>
         </FilterGroup>
       </FilterSidebar>
-      <section className="section-block explore-results catalog-search-results" aria-labelledby="explore-results-title" aria-busy={catalog.loading}>
+      <section className="section-block explore-results catalog-search-results" aria-labelledby="explore-results-title" aria-busy={catalog.loading || filters.q !== query}>
         <div className="section-heading"><h2 id="explore-results-title"><span aria-live="polite">{filtered.length}</span> {filtered.length === 1 ? "opportunity" : "opportunities"}</h2><CatalogViewToggle view={view} onChange={setView} /></div>
         {filtered.length ? <>
           <MotionResults transitionKey={resultTransition} view={view}>{resultCards}</MotionResults>

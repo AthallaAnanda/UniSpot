@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 112" role="img" aria-label="UN Volunteers">
+  <rect width="160" height="112" rx="18" fill="#1467a8"/>
+  <circle cx="43" cy="42" r="21" fill="#fff" fill-opacity=".16"/>
+  <path d="M34 31v15a9 9 0 0 0 18 0V31" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+  <path d="M65 54V31l18 23V31" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+  <text x="80" y="83" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">VOLUNTEERS</text>
+</svg>

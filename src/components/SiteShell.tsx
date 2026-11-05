@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { Dialog } from "radix-ui";
 import { X } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -11,11 +11,13 @@ export default function SiteShell({ children, wide = false, className = "" }: { 
   const [about, setAbout] = useState(false);
   const router = useRouter();
   const navigation = useNavigationMotion();
+  const openAbout = useCallback(() => setAbout(true), []);
+  const discover = useCallback(() => router.push("/discover"), [router]);
   return <div className={`unispot-app ${className}`}>
     <a className="skip-content" href="#main-content">Skip to content</a>
     <div className="brand-atmosphere" aria-hidden="true" /><Header />
     <main key={navigation.pathname} id="main-content" data-motion-enter={navigation.enter ? "true" : undefined} className={`page-container${wide ? " wide-container" : ""}`}>
-      {children}<Footer onAbout={() => setAbout(true)} onDiscover={() => router.push("/discover")} />
+      {children}<Footer onAbout={openAbout} onDiscover={discover} />
     </main>
     <Dialog.Root open={about} onOpenChange={setAbout}><Dialog.Portal><Dialog.Overlay className="detail-overlay about-overlay"><Dialog.Content className="about-panel">
       <Dialog.Close className="icon-button about-close" aria-label="Close about UniSpot"><X size={19} /></Dialog.Close>

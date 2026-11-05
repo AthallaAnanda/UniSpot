@@ -2,10 +2,16 @@
 
 import { Bookmark, Globe, Ticket } from "lucide-react";
 import Link from "next/link";
+import { memo } from "react";
 import { categoryFor, downloadCalendar, opportunityStatus } from "@/lib/unispot";
 import type { Opportunity, Organization } from "@/types/unispot";
 import LumaIcon from "./LumaIcon";
+import CatalogImage from "./CatalogImage";
 import "./EventContent.css";
+
+const eventDateFormatter = new Intl.DateTimeFormat("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" });
+const monthFormatter = new Intl.DateTimeFormat("en-US", { month: "short", timeZone: "UTC" });
+const reviewedFormatter = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 
 export interface EventContentProps {
   opportunity: Opportunity;
@@ -16,16 +22,17 @@ export interface EventContentProps {
   mode?: "panel" | "page";
 }
 
-export default function EventContent({ opportunity, organization, saved, onSave, onNotify, mode = "panel" }: EventContentProps) {
+export default memo(function EventContent({ opportunity, organization, saved, onSave, onNotify, mode = "panel" }: EventContentProps) {
   const category = categoryFor(opportunity.category);
   const status = opportunityStatus(opportunity);
+  const reviewedAt = opportunity.reviewedAt ?? "2026-11-04";
   const calendarDate = opportunity.date ?? opportunity.deadline;
   // Date-only values are formatted in UTC so their day stays the same in every timezone.
   const date = calendarDate ? new Date(`${calendarDate}T12:00:00Z`) : undefined;
   const hasDate = date !== undefined && !Number.isNaN(date.getTime());
   const deadlineOnly = !opportunity.date && Boolean(opportunity.deadline);
   const dateLabel = hasDate
-    ? date.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" })
+    ? eventDateFormatter.format(date)
     : opportunity.schedule;
   const Heading = mode === "page" ? "h1" : "h2";
   const SectionHeading = mode === "page" ? "h2" : "h3";
@@ -36,8 +43,8 @@ export default function EventContent({ opportunity, organization, saved, onSave,
     <div className={`event-content-layout mode-${mode}`}>
       <div className="event-visual">
         <div className={`event-cover${opportunity.imageFit === "contain" ? " event-cover-contained" : ""}`} style={{ backgroundColor: opportunity.color }}>
-          <img className="event-cover-glow" src={opportunity.image} alt="" aria-hidden="true" />
-          <img className="event-cover-image" src={opportunity.image} alt={opportunity.title} />
+          <CatalogImage className="event-cover-glow" src={opportunity.image} alt="" aria-hidden="true" width={64} height={64} sizes="64px" loading="eager" />
+          <CatalogImage className="event-cover-image" src={opportunity.image} alt={opportunity.title} width={384} height={384} sizes={mode === "panel" ? "280px" : "(max-width:650px) 360px, 330px"} loading="eager" fetchPriority={mode === "page" ? "high" : undefined} />
         </div>
       </div>
 
@@ -47,7 +54,7 @@ export default function EventContent({ opportunity, organization, saved, onSave,
         </Heading>
         {mode === "panel" && (
           <Link className="event-host-row" href={hostUrl} target={hostUrl.startsWith("/") ? undefined : "_blank"} rel={hostUrl.startsWith("/") ? undefined : "noopener noreferrer"}>
-            {organization?.logo && <img src={organization.logo} alt="" width={18} height={18} />}
+            {organization?.logo && <CatalogImage src={organization.logo} alt="" width={18} height={18} />}
             <span>Hosted by {hostName}</span><LumaIcon name="External" size={12} />
           </Link>
         )}
@@ -56,7 +63,7 @@ export default function EventContent({ opportunity, organization, saved, onSave,
           <div className="event-fact">
             <div className={`event-fact-icon${hasDate ? " event-date-icon" : ""}`} aria-hidden="true">
               {hasDate ? <>
-                <span className="event-date-month">{date.toLocaleDateString("en-US", { month: "short", timeZone: "UTC" })}</span>
+                <span className="event-date-month">{monthFormatter.format(date)}</span>
                 <span className="event-date-day">{date.getUTCDate()}</span>
               </> : <LumaIcon name="Calendar" size={20} />}
             </div>
@@ -121,7 +128,7 @@ export default function EventContent({ opportunity, organization, saved, onSave,
             <span>{opportunity.sourceName}</span>
             <LumaIcon name="External" size={14} />
           </a>
-          <p className="event-reviewed">{opportunity.publishedAt ? <>Published <time dateTime={opportunity.publishedAt}>{new Date(opportunity.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })}</time></> : <>Reviewed <time dateTime="2026-11-04">Nov 4, 2026</time></>}</p>
+          <p className="event-reviewed">{opportunity.publishedAt ? <>Published <time dateTime={opportunity.publishedAt}>{reviewedFormatter.format(new Date(opportunity.publishedAt))}</time></> : <>Reviewed <time dateTime={reviewedAt}>{reviewedFormatter.format(new Date(`${reviewedAt}T12:00:00Z`))}</time></>}</p>
         </section>
       </div>
 
@@ -130,7 +137,7 @@ export default function EventContent({ opportunity, organization, saved, onSave,
           <div className="event-sidebar-host">
             <SectionHeading className="event-section-label">Hosted By</SectionHeading>
             <Link className="event-sidebar-host-link" href={hostUrl} target={hostUrl.startsWith("/") ? undefined : "_blank"} rel={hostUrl.startsWith("/") ? undefined : "noopener noreferrer"}>
-              {organization?.logo && <img src={organization.logo} alt="" width={24} height={24} />}
+              {organization?.logo && <CatalogImage src={organization.logo} alt="" width={24} height={24} />}
               <span>{hostName}</span>
             </Link>
           </div>
@@ -151,4 +158,4 @@ export default function EventContent({ opportunity, organization, saved, onSave,
       </aside>
     </div>
   );
-}
+});

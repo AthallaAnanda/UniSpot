@@ -12,10 +12,13 @@ export const categories: { id: CategoryId; name: string; color: string; backgrou
   { id: "communities", name: "Communities", color: "#4d9caa", background: "#eaf5f6" },
 ];
 
-export function categoryFor(id: CategoryId) { return categories.find(c => c.id === id)!; }
+const categoryMap = new Map(categories.map(category => [category.id, category]));
+const jakartaDate = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Jakarta" });
+
+export function categoryFor(id: CategoryId) { return categoryMap.get(id)!; }
 
 export function opportunityStatus(opportunity: Opportunity) {
-  const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Jakarta" });
+  const today = jakartaDate.format(new Date());
   if (opportunity.deadline) return opportunity.deadline < today ? "Applications closed" : "Applications open";
   if (opportunity.date) return (opportunity.endDate ?? opportunity.date) < today ? "Event ended" : "Upcoming event";
   if (["workshops", "career"].includes(opportunity.category)) return "Self-paced learning";

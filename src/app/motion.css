@@ -49,8 +49,42 @@ body :is(.primary-button,.secondary-button,.header-create,.calendar-follow-small
 @keyframes motion-toast-in { from { opacity:0;translate:0 8px; } to { opacity:1;translate:0 0; } }
 @keyframes motion-toast-out { from { opacity:1;translate:0 0; } to { opacity:0;translate:0 8px; } }
 
+/* New account and publishing pages use the same soft motion vocabulary.
+   Animate small sections instead of promoting an entire long form to a layer.
+   Nothing restarts on input edits, background refreshes, or query-only changes. */
+:is(.profile-shell,.publishing-shell) > .page-container[data-motion-enter="true"] { animation:none; }
+.profile-shell > .page-container[data-motion-enter="true"] :is(.profile-summary,.profile-collections,.profile-calendars),
+.publishing-shell > .page-container[data-motion-enter="true"] :is(.publishing-back,.publishing-heading,.calendar-builder-preview,.publishing-fieldset > .publishing-card,.calendar-builder-submit,.opportunity-builder-aside,.opportunity-builder-main) {
+  animation:motion-page-enter var(--motion-page) var(--motion-ease-soft) backwards;
+}
+.profile-shell > .page-container[data-motion-enter="true"] .profile-collections,
+.publishing-shell > .page-container[data-motion-enter="true"] :is(.opportunity-builder-main,.publishing-fieldset > .publishing-card) { animation-delay:20ms; }
+.profile-shell > .page-container[data-motion-enter="true"] .profile-calendars,
+.publishing-shell > .page-container[data-motion-enter="true"] .calendar-builder-submit { animation-delay:40ms; }
+
+:is(.publishing-dialog-overlay,.profile-dialog-overlay)[data-state="open"] { animation:motion-backdrop-in var(--motion-backdrop) ease; }
+:is(.publishing-dialog-overlay,.profile-dialog-overlay)[data-state="closed"] { animation:motion-backdrop-out var(--motion-panel-exit) ease;pointer-events:none; }
+:is(.publishing-dialog,.profile-dialog)[data-state="open"] { animation:motion-about-in var(--motion-page) var(--motion-ease-soft); }
+:is(.publishing-dialog,.profile-dialog)[data-state="closed"] { animation:motion-about-out var(--motion-panel-exit) var(--motion-ease-exit);pointer-events:none; }
+.header-account-menu { transform-origin:var(--radix-dropdown-menu-content-transform-origin); }
+.header-account-menu[data-state="open"] { animation:motion-menu-in var(--motion-feedback) var(--motion-ease-soft); }
+.header-account-menu[data-state="closed"] { animation:motion-menu-out var(--motion-press) var(--motion-ease-exit);pointer-events:none; }
+@keyframes motion-menu-in { from { opacity:0;translate:0 -4px;scale:.98; } to { opacity:1;translate:0 0;scale:1; } }
+@keyframes motion-menu-out { from { opacity:1;scale:1; } to { opacity:0;scale:.99; } }
+
+body :is(.publishing-primary,.publishing-secondary,.publishing-image-button,.publishing-dialog-close,.profile-edit-button,.profile-new-calendar,.profile-dialog-close,.profile-form-actions button,.opportunity-detail-trigger,.opportunity-cover-button,.opportunity-timezone,.calendar-builder-logo,.calendar-color-swatch,.header-account):not(:disabled) {
+  transition:background-color var(--motion-feedback) ease,color var(--motion-feedback) ease,border-color var(--motion-feedback) ease,scale var(--motion-press) var(--motion-ease-soft);
+}
+body :is(.publishing-primary,.publishing-secondary,.publishing-image-button,.publishing-dialog-close,.profile-new-calendar,.profile-dialog-close,.profile-form-actions button,.opportunity-detail-trigger,.opportunity-cover-button,.opportunity-timezone,.calendar-builder-logo,.calendar-color-swatch,.header-account):not(:disabled):active { scale:.98; }
+.calendar-color-swatch[aria-pressed="true"] > svg { animation:motion-confirm var(--motion-feedback) var(--motion-ease-soft); }
+:is(.publishing-disclosure[open] > .publishing-disclosure-content,.opportunity-more-details[open] > .publishing-field,.publishing-error,.profile-form-error) { animation:motion-field-reveal var(--motion-feedback) var(--motion-ease-soft); }
+@keyframes motion-field-reveal { from { opacity:.8;translate:0 3px; } to { opacity:1;translate:0 0; } }
+
 @media (prefers-reduced-motion:reduce) {
   .page-container[data-motion-enter="true"] { animation:none; }
   body :is(.opportunity-card.luma-event-card,.opportunity-card.opportunity-tile,.organization-card.calendar-card,.calendar-list-card,.category-tile):hover { translate:none; }
   body :is(.primary-button,.secondary-button,.header-create,.calendar-follow-small,.partner-calendar-follow,.event-registration-action,.calendar-publishing-button,.icon-button,.luma-event-card-save,.opportunity-tile-save,.event-panel-button):active { scale:1; }
+  :is(.profile-shell,.publishing-shell) > .page-container[data-motion-enter="true"] *,
+  :is(.publishing-dialog-overlay,.profile-dialog-overlay,.publishing-dialog,.profile-dialog,.header-account-menu,.publishing-disclosure-content,.opportunity-more-details > .publishing-field,.publishing-error,.profile-form-error,.calendar-color-swatch > svg) { animation:none!important; }
+  body :is(.publishing-primary,.publishing-secondary,.publishing-image-button,.publishing-dialog-close,.profile-new-calendar,.profile-dialog-close,.profile-form-actions button,.opportunity-detail-trigger,.opportunity-cover-button,.opportunity-timezone,.calendar-builder-logo,.calendar-color-swatch,.header-account):active { scale:1; }
 }
