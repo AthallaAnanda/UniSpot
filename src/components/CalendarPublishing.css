@@ -1,0 +1,413 @@
+.calendar-publishing-shell > .page-container {
+  max-width: 820px;
+  padding: 92px 16px 64px;
+}
+
+.calendar-publishing-shell > .brand-atmosphere {
+  background: none;
+}
+
+.calendar-publishing-page {
+  min-width: 0;
+}
+
+.calendar-publishing-back,
+.calendar-publishing-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary, #606060);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.calendar-publishing-back {
+  min-height: 38px;
+  margin-bottom: 16px;
+}
+
+.calendar-publishing-back:hover,
+.calendar-publishing-text-link:hover {
+  color: #151515;
+}
+
+.calendar-publishing-heading {
+  margin-bottom: 24px;
+}
+
+.calendar-publishing-heading h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 33.6px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.calendar-publishing-heading p {
+  max-width: 620px;
+  margin: 12px 0 0;
+  color: var(--text-secondary, #606060);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.calendar-publishing-heading .calendar-publishing-eyebrow {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.calendar-publishing-heading-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.calendar-publishing-heading-row > div {
+  min-width: 0;
+}
+
+.calendar-publishing-heading-row > button {
+  flex-shrink: 0;
+}
+
+.calendar-publishing-card {
+  margin-bottom: 24px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 24px;
+  corner-shape: superellipse(2);
+  background: #fff;
+}
+
+.calendar-publishing-create,
+.calendar-publishing-editor {
+  width: 100%;
+  max-width: 680px;
+}
+
+.calendar-publishing-fields {
+  display: grid;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  border: 0;
+}
+
+.calendar-publishing-editor-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 20px;
+}
+
+.calendar-publishing-full {
+  grid-column: 1 / -1;
+}
+
+.calendar-publishing-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 6px;
+}
+
+.calendar-publishing-field label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.calendar-publishing-field label > span {
+  color: var(--text-secondary, #606060);
+}
+
+.calendar-publishing-field label .calendar-publishing-optional {
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.calendar-publishing-field input,
+.calendar-publishing-field select,
+.calendar-publishing-field textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  padding: 7px 10px;
+  border: 1px solid rgba(0, 0, 0, .16);
+  border-radius: 8px;
+  background: #fff;
+  color: #151515;
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.calendar-publishing-field input,
+.calendar-publishing-field select {
+  height: 40px;
+}
+
+.calendar-publishing-field textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.calendar-publishing-field :is(input, select, textarea):focus-visible {
+  border-color: #6b6b6b;
+  outline: 2px solid rgba(21, 21, 21, .4);
+  outline-offset: 2px;
+}
+
+.calendar-publishing-fields:disabled :is(input, select, textarea) {
+  background: #f8f8f8;
+  opacity: .65;
+}
+
+.calendar-publishing-hint,
+.calendar-publishing-note {
+  margin: 0;
+  color: var(--text-secondary, #606060);
+  font-size: 13px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+.calendar-publishing-note {
+  margin-top: 20px;
+}
+
+.calendar-publishing-url {
+  color: #151515;
+}
+
+.calendar-publishing-color {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-secondary, #606060);
+}
+
+.calendar-publishing-color input {
+  width: 56px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.calendar-publishing-actions,
+.calendar-publishing-post-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.calendar-publishing-actions {
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.calendar-publishing-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  min-height: 38px;
+  padding: 7px 12px;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 8px;
+  background: rgba(21, 21, 21, .04);
+  color: #454545;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  transition: background .15s;
+}
+
+.calendar-publishing-button:hover:not(:disabled) {
+  background: rgba(21, 21, 21, .08);
+}
+
+.calendar-publishing-button.calendar-publishing-primary {
+  border-color: transparent;
+  background: #353535;
+  color: #fff;
+}
+
+.calendar-publishing-button.calendar-publishing-primary:hover:not(:disabled) {
+  background: #555;
+}
+
+.calendar-publishing-create .calendar-publishing-button.calendar-create-button {
+  background: var(--brand-pink);
+  color: #fff;
+}
+
+.calendar-publishing-create .calendar-publishing-button.calendar-create-button:hover:not(:disabled) {
+  background: #dc1074;
+}
+
+.calendar-publishing-social-fields > summary { cursor:pointer;font-size:14px;font-weight:500;line-height:21px; }
+.calendar-publishing-social-fields > summary > span { margin-left:4px;color:var(--text-secondary);font-size:12px;font-weight:400; }
+.calendar-publishing-social-fields > div { display:grid;gap:16px;padding-top:16px; }
+
+.calendar-publishing-button:disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+.calendar-publishing-error {
+  margin: 16px 0;
+  padding: 12px;
+  border: 1px solid #b423182e;
+  border-radius: 8px;
+  background: #fff5f3;
+  color: #982a20;
+  font-size: 14px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.calendar-publishing-retry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.calendar-publishing-state {
+  color: var(--text-secondary, #606060);
+}
+
+.calendar-publishing-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.calendar-publishing-section-heading h2,
+.calendar-publishing-state h2 {
+  margin: 0;
+  color: #151515;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.calendar-publishing-section-heading > span {
+  color: var(--text-secondary, #606060);
+  font-size: 14px;
+}
+
+.calendar-publishing-posts {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calendar-publishing-post {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+}
+
+.calendar-publishing-post:last-child {
+  padding-bottom: 0;
+}
+
+.calendar-publishing-post h3,
+.calendar-publishing-empty h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  overflow-wrap: anywhere;
+}
+
+.calendar-publishing-post-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--text-secondary, #606060);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.calendar-publishing-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.calendar-publishing-badge-draft {
+  background: #f1f1f1;
+  color: #606060;
+}
+
+.calendar-publishing-badge-published {
+  background: #edf5ee;
+  color: #356a42;
+}
+
+.calendar-publishing-post-actions .calendar-publishing-text-link {
+  min-height: 38px;
+  margin-right: auto;
+}
+
+.calendar-publishing-empty {
+  padding: 28px 0 12px;
+  text-align: center;
+}
+
+.calendar-publishing-empty p {
+  margin: 0 0 16px;
+  color: var(--text-secondary, #606060);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.calendar-publishing-editor {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 650px) {
+  .calendar-publishing-shell > .page-container {
+    padding: 76px 16px 48px;
+  }
+
+  .calendar-publishing-heading-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .calendar-publishing-editor-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .calendar-publishing-actions > button {
+    flex: 1 1 auto;
+  }
+
+  .calendar-publishing-actions > .calendar-publishing-primary {
+    flex-basis: 100%;
+  }
+
+  .calendar-publishing-retry {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}

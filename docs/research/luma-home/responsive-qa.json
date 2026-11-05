@@ -1,0 +1,189 @@
+[
+  {
+    "name": "discover",
+    "width": 1440,
+    "overflow": false,
+    "headingSize": "28px",
+    "headingLine": "33.6px",
+    "body": "16px",
+    "container": {
+      "x": 302.3999938964844,
+      "y": 0,
+      "width": 820,
+      "height": 3249.199951171875,
+      "top": 0,
+      "right": 1122.3999938964844,
+      "bottom": 3249.199951171875,
+      "left": 302.3999938964844
+    },
+    "card": {
+      "font": "20px",
+      "cover": 120,
+      "corner": "superellipse(2)"
+    },
+    "images": []
+  },
+  {
+    "name": "event-page",
+    "width": 1440,
+    "overflow": false,
+    "headingSize": "48px",
+    "headingLine": "55.2px",
+    "body": "16px",
+    "container": {
+      "x": 232.40000915527344,
+      "y": 0,
+      "width": 960,
+      "height": 1565,
+      "top": 0,
+      "right": 1192.4000091552734,
+      "bottom": 1565,
+      "left": 232.40000915527344
+    },
+    "card": null,
+    "images": []
+  },
+  {
+    "name": "discover",
+    "width": 768,
+    "overflow": false,
+    "headingSize": "28px",
+    "headingLine": "33.6px",
+    "body": "16px",
+    "container": {
+      "x": 0,
+      "y": 0,
+      "width": 752.7999877929688,
+      "height": 3237.199951171875,
+      "top": 0,
+      "right": 752.7999877929688,
+      "bottom": 3237.199951171875,
+      "left": 0
+    },
+    "card": {
+      "font": "20px",
+      "cover": 120,
+      "corner": "superellipse(2)"
+    },
+    "images": []
+  },
+  {
+    "name": "event-page",
+    "width": 768,
+    "overflow": false,
+    "headingSize": "36px",
+    "headingLine": "41.4px",
+    "body": "16px",
+    "container": {
+      "x": 0,
+      "y": 0,
+      "width": 752.7999877929688,
+      "height": 1657.4000244140625,
+      "top": 0,
+      "right": 752.7999877929688,
+      "bottom": 1657.4000244140625,
+      "left": 0
+    },
+    "card": null,
+    "images": []
+  },
+  {
+    "name": "discover",
+    "width": 390,
+    "overflow": false,
+    "headingSize": "22px",
+    "headingLine": "26.4px",
+    "body": "16px",
+    "container": {
+      "x": 0,
+      "y": 0,
+      "width": 375.20001220703125,
+      "height": 3386.199951171875,
+      "top": 0,
+      "right": 375.20001220703125,
+      "bottom": 3386.199951171875,
+      "left": 0
+    },
+    "card": {
+      "font": "18px",
+      "cover": 90,
+      "corner": "superellipse(2)"
+    },
+    "images": []
+  },
+  {
+    "name": "event-page",
+    "width": 390,
+    "overflow": false,
+    "headingSize": "28px",
+    "headingLine": "33.6px",
+    "body": "16px",
+    "container": {
+      "x": 0,
+      "y": 0,
+      "width": 375.20001220703125,
+      "height": 2354.800048828125,
+      "top": 0,
+      "right": 375.20001220703125,
+      "bottom": 2354.800048828125,
+      "left": 0
+    },
+    "card": null,
+    "images": []
+  },
+  {
+    "name": "discover",
+    "width": 320,
+    "overflow": false,
+    "headingSize": "22px",
+    "headingLine": "26.4px",
+    "body": "16px",
+    "container": {
+      "x": 0,
+      "y": 0,
+      "width": 304.8000183105469,
+      "height": 3751.60009765625,
+      "top": 0,
+      "right": 304.8000183105469,
+      "bottom": 3751.60009765625,
+      "left": 0
+    },
+    "card": {
+      "font": "18px",
+      "cover": 90,
+      "corner": "superellipse(2)"
+    },
+    "images": []
+  },
+  {
+    "name": "event-page",
+    "width": 320,
+    "overflow": false,
+    "headingSize": "28px",
+    "headingLine": "33.6px",
+    "body": "16px",
+    "container": {
+      "x": 0,
+      "y": 0,
+      "width": 304.8000183105469,
+      "height": 2445.400146484375,
+      "top": 0,
+      "right": 304.8000183105469,
+      "bottom": 2445.400146484375,
+      "left": 0
+    },
+    "card": null,
+    "images": []
+  },
+  {
+    "name": "mobile-panel",
+    "width": 375.20001220703125,
+    "height": 844,
+    "left": 0,
+    "top": 0,
+    "viewport": 390,
+    "title": "24px",
+    "body": "16px",
+    "overflow": false
+  }
+]

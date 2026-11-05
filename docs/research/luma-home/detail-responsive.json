@@ -1,0 +1,1437 @@
+{
+  "page": {
+    "390": [
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "H1",
+        "cls": "jsx-385187311 title text-primary mb-0",
+        "box": {
+          "x": 16,
+          "y": 447.5,
+          "width": 343.20001220703125,
+          "height": 67.20000457763672,
+          "top": 447.5,
+          "right": 359.20001220703125,
+          "bottom": 514.7000045776367,
+          "left": 16
+        },
+        "css": {
+          "fontSize": "28px",
+          "lineHeight": "33.6px",
+          "fontWeight": "600",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card pb-1 event-about-card",
+        "box": {
+          "x": 16,
+          "y": 958.6000366210938,
+          "width": 343.20001220703125,
+          "height": 673.7999877929688,
+          "top": 958.6000366210938,
+          "right": 359.20001220703125,
+          "bottom": 1632.4000244140625,
+          "left": 16
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px 0px 4px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 16,
+          "y": 1652.4000244140625,
+          "width": 343.20001220703125,
+          "height": 343.8000183105469,
+          "top": 1652.4000244140625,
+          "right": 359.20001220703125,
+          "bottom": 1996.2000427246094,
+          "left": 16
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 16,
+          "y": 2016.2000732421875,
+          "width": 343.20001220703125,
+          "height": 73.80000305175781,
+          "top": 2016.2000732421875,
+          "right": 359.20001220703125,
+          "bottom": 2090.0000762939453,
+          "left": 16
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 16,
+          "y": 2110,
+          "width": 343.20001220703125,
+          "height": 98.80000305175781,
+          "top": 2110,
+          "right": 359.20001220703125,
+          "bottom": 2208.800003051758,
+          "left": 16
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      }
+    ],
+    "768": [
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 16,
+          "y": 368,
+          "width": 280,
+          "height": 73.80000305175781,
+          "top": 368,
+          "right": 296,
+          "bottom": 441.8000030517578,
+          "left": 16
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 16,
+          "y": 461.8000183105469,
+          "width": 280,
+          "height": 98.80000305175781,
+          "top": 461.8000183105469,
+          "right": 296,
+          "bottom": 560.6000213623047,
+          "left": 16
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "H1",
+        "cls": "jsx-385187311 title text-primary mb-0",
+        "box": {
+          "x": 320,
+          "y": 103.5,
+          "width": 416.8000183105469,
+          "height": 82.80000305175781,
+          "top": 103.5,
+          "right": 736.8000183105469,
+          "bottom": 186.3000030517578,
+          "left": 320
+        },
+        "css": {
+          "fontSize": "36px",
+          "lineHeight": "41.4px",
+          "fontWeight": "600",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card pb-1 event-about-card",
+        "box": {
+          "x": 320,
+          "y": 616.7000122070312,
+          "width": 416.8000183105469,
+          "height": 577.7999877929688,
+          "top": 616.7000122070312,
+          "right": 736.8000183105469,
+          "bottom": 1194.5,
+          "left": 320
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px 0px 4px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 320,
+          "y": 1214.5,
+          "width": 416.8000183105469,
+          "height": 343.8000183105469,
+          "top": 1214.5,
+          "right": 736.8000183105469,
+          "bottom": 1558.3000183105469,
+          "left": 320
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      }
+    ],
+    "1440": [
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 248.40000915527344,
+          "y": 422,
+          "width": 330,
+          "height": 73.80000305175781,
+          "top": 422,
+          "right": 578.4000091552734,
+          "bottom": 495.8000030517578,
+          "left": 248.40000915527344
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 248.40000915527344,
+          "y": 519.7999877929688,
+          "width": 330,
+          "height": 98.80000305175781,
+          "top": 519.7999877929688,
+          "right": 578.4000091552734,
+          "bottom": 618.5999908447266,
+          "left": 248.40000915527344
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "H1",
+        "cls": "jsx-385187311 title text-primary mb-0",
+        "box": {
+          "x": 610.4000244140625,
+          "y": 103.5,
+          "width": 566,
+          "height": 110.4000015258789,
+          "top": 103.5,
+          "right": 1176.4000244140625,
+          "bottom": 213.9000015258789,
+          "left": 610.4000244140625
+        },
+        "css": {
+          "fontSize": "48px",
+          "lineHeight": "55.2px",
+          "fontWeight": "600",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card pb-1 event-about-card",
+        "box": {
+          "x": 610.4000244140625,
+          "y": 628.2999877929688,
+          "width": 566,
+          "height": 553.7999877929688,
+          "top": 628.2999877929688,
+          "right": 1176.4000244140625,
+          "bottom": 1182.0999755859375,
+          "left": 610.4000244140625
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px 0px 4px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 610.4000244140625,
+          "y": 1206.0999755859375,
+          "width": 566,
+          "height": 322.8000183105469,
+          "top": 1206.0999755859375,
+          "right": 1176.4000244140625,
+          "bottom": 1528.8999938964844,
+          "left": 610.4000244140625
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "jsx-5981e6e33e2304d4 content-card",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "0px",
+          "cornerShape": "superellipse(1)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "maxWidth": "none"
+        }
+      }
+    ]
+  },
+  "dialog": {
+    "390": {
+      "nodes": [
+        {
+          "tag": "DIV",
+          "cls": "lux-modal panel",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 360,
+            "height": 812,
+            "top": 0,
+            "right": 360,
+            "bottom": 812,
+            "left": 0
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "360px",
+            "height": "812px",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(2)",
+            "background": "rgb(248, 248, 248) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "relative",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "rgba(21, 21, 21, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.03) 0px 3px 3px 0px, rgba(0, 0, 0, 0.04) 0px 8px 7px 0px, rgba(0, 0, 0, 0.05) 0px 17px 14px 0px, rgba(0, 0, 0, 0.06) 0px 35px 29px 0px, rgba(0, 0, 0, 0.04) 0px -4px 4px 0px inset",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "lux-overlay panel",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 375.20001220703125,
+            "height": 844,
+            "top": 0,
+            "right": 375.20001220703125,
+            "bottom": 844,
+            "left": 0
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "375.2px",
+            "height": "844px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "fixed",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "none",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "tag": "IMG",
+          "cls": "jsx-bf40f23d3e10e809 ",
+          "box": {
+            "x": 32.504005432128906,
+            "y": 92.2033920288086,
+            "width": 279.7919921875,
+            "height": 279.7919921875,
+            "top": 92.2033920288086,
+            "right": 312.2959976196289,
+            "bottom": 371.9953842163086,
+            "left": 32.504005432128906
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "278.4px",
+            "height": "278.4px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "absolute",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "none",
+            "overflow": "clip"
+          }
+        },
+        {
+          "tag": "IMG",
+          "cls": "jsx-bf40f23d3e10e809 ",
+          "box": {
+            "x": 32.504005432128906,
+            "y": 76.60400390625,
+            "width": 279.7919921875,
+            "height": 279.7919921875,
+            "top": 76.60400390625,
+            "right": 312.2959976196289,
+            "bottom": 356.39599609375,
+            "left": 32.504005432128906
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "278.4px",
+            "height": "278.4px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "absolute",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "none",
+            "overflow": "clip"
+          }
+        },
+        {
+          "tag": "H1",
+          "cls": "jsx-3552582100 title text-primary mb-0",
+          "box": {
+            "x": 16,
+            "y": 389,
+            "width": 312.8000183105469,
+            "height": 67.20000457763672,
+            "top": 389,
+            "right": 328.8000183105469,
+            "bottom": 456.2000045776367,
+            "left": 16
+          },
+          "css": {
+            "fontSize": "28px",
+            "lineHeight": "33.6px",
+            "fontWeight": "600",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "312.8px",
+            "height": "67.2px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card pb-1 event-about-card",
+          "box": {
+            "x": 16,
+            "y": 912.6000366210938,
+            "width": 312.8000183105469,
+            "height": 673.7999877929688,
+            "top": 912.6000366210938,
+            "right": 328.8000183105469,
+            "bottom": 1586.4000244140625,
+            "left": 16
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px 0px 4px",
+            "margin": "0px",
+            "width": "312.8px",
+            "height": "673.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card",
+          "box": {
+            "x": 16,
+            "y": 1610.4000244140625,
+            "width": 312.8000183105469,
+            "height": 343.8000183105469,
+            "top": 1610.4000244140625,
+            "right": 328.8000183105469,
+            "bottom": 1954.2000427246094,
+            "left": 16
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "312.8px",
+            "height": "343.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card",
+          "box": {
+            "x": 16,
+            "y": 1978.2000732421875,
+            "width": 312.8000183105469,
+            "height": 73.80000305175781,
+            "top": 1978.2000732421875,
+            "right": 328.8000183105469,
+            "bottom": 2052.0000762939453,
+            "left": 16
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "312.8px",
+            "height": "73.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card",
+          "box": {
+            "x": 16,
+            "y": 2076,
+            "width": 312.8000183105469,
+            "height": 98.80000305175781,
+            "top": 2076,
+            "right": 328.8000183105469,
+            "bottom": 2174.800003051758,
+            "left": 16
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "312.8px",
+            "height": "98.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        }
+      ],
+      "markup": "<div role=\"dialog\" aria-labelledby=\"_R_3malim_-title\" tabindex=\"-1\" class=\"lux-modal panel\" style=\"opacity: 1; transform: none; max-height: 844px;\"><div class=\"jsx-47bb4ac7418a95c3 sheet-header flex-center gap-25 spread\"><div class=\"jsx-3790d622801438a3 dragbar-wrapper flex-start overlay concealed decorative\"><div class=\"jsx-3790d622801438a3 dragbar\"></div></div><div class=\"jsx-47bb4ac7418a95c3 flex-center gap-2 flex-1 spread\"><div class=\"jsx-5182caa84de7c015 flex-center gap-1\"><button aria-label=\"Previous\" class=\"btn lux-button flex-center small light solid variant-color-light icon-only parent-handle-focus\" disabled=\"\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m18 15-6-6-6 6\"></path></svg></button><button aria-label=\"Next\" class=\"lux-menu-trigger-wrapper btn lux-button flex-center small light solid variant-color-light icon-only\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m6 9 6 6 6-6\"></path></svg></button></div><div class=\"flex-center full-width\"><button class=\"btn lux-button flex-center small light solid mr-2 variant-color-light icon-left\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><g stroke=\"currentColor\" stroke-width=\"1.56\" clip-path=\"url(#Copy16_svg__a)\"><path d=\"M14.5 10.748c0 1.08 0 1.62-.184 2.202a2.29 2.29 0 0 1-1.366 1.366c-.582.184-1.122.184-2.202.184H9.252c-1.08 0-1.62 0-2.202-.184a2.29 2.29 0 0 1-1.366-1.366c-.184-.582-.184-1.122-.184-2.202V9.252c0-1.08 0-1.62.184-2.202A2.29 2.29 0 0 1 7.05 5.684C7.632 5.5 8.172 5.5 9.252 5.5h1.496c1.08 0 1.62 0 2.202.184a2.29 2.29 0 0 1 1.366 1.366c.184.582.184 1.122.184 2.202z\"></path><path stroke-linecap=\"round\" d=\"M3.082 10.5a2.33 2.33 0 0 1-1.394-1.395C1.5 8.512 1.5 7.96 1.5 6.857V5.33c0-1.103 0-1.654.188-2.248a2.33 2.33 0 0 1 1.394-1.394C3.676 1.5 4.227 1.5 5.33 1.5h1.527c1.103 0 1.655 0 2.248.188A2.33 2.33 0 0 1 10.5 3.082\"></path></g><defs><clipPath id=\"Copy16_svg__a\"><path fill=\"currentColor\" d=\"M0 0h16v16H0z\"></path></clipPath></defs></svg><div class=\"label\">Copy Link</div></button><a target=\"_blank\" class=\"btn lux-button flex-center small light solid variant-color-light icon-right\" href=\"/ru9noaq1\"><div class=\"label\">Event Page</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M3.525 11.414a.75.75 0 0 0 1.061 1.061l6.109-6.109v5.579a.75.75 0 0 0 1.5 0v-7.39a.75.75 0 0 0-.75-.75h-7.39a.75.75 0 0 0 0 1.5h5.579Z\"></path></svg></a><div class=\"flex-1\"></div></div></div><button aria-label=\"Close\" class=\"lux-menu-trigger-wrapper btn lux-button flex-center small light solid close-btn variant-color-light round icon-only\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"m3.582 2.52 4.42 4.418L12.42 2.52a.75.75 0 0 1 1.06 1.06L9.064 8l4.419 4.42a.75.75 0 1 1-1.061 1.06L8 9.06l-4.419 4.42a.75.75 0 0 1-1.06-1.06L6.94 8 2.52 3.58a.75.75 0 0 1 1.061-1.06Z\"></path></svg></button><div class=\"jsx-47bb4ac7418a95c3 sheet-action flex-center\"></div></div><div class=\"jsx-2839895974 sheet-banner flex-shrink-0\"></div><div class=\"jsx-2839895974 lux-modal-body overflow-auto\"><div class=\"jsx-98d6ec8bc3cc6380 event-panel-wrapper\"><div class=\"jsx-3374021834 jsx-1988394536 tint-root\"><div class=\"jsx-3a3f9598c2c3e4f4 event-theme legacy in-panel\"><div class=\"jsx-3a3f9598c2c3e4f4 background\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-glow\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay2\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay3\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay4\"></div><div class=\"jsx-3a3f9598c2c3e4f4 page-container\"><div class=\"jsx-570d5041c1d097d8 event-panel flex-column gap-4 lux-panel\"><div class=\"jsx-102428b8379b7b14 cover-with-glow flex-center-center cover-wrapper\"><div class=\"jsx-bf40f23d3e10e809 img-aspect-ratio cover-image cover-image-under rectangle\" style=\"background-color: var(--opacity-light); padding-bottom: 100%;\"><img alt=\"Cover Image for Radius x Good Folks x Curious X\" fetchpriority=\"auto\" loading=\"eager\" sizes=\"(max-width: 820px) 280px, (max-width: 1000px) 300px, 400px\" class=\"jsx-bf40f23d3e10e809 \" srcset=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 280w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 560w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 300w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 600w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 400w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 800w\" src=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg\"></div><div class=\"jsx-102428b8379b7b14 cover-image-wrapper flex-center-center flex-column rounded-card\"><div class=\"jsx-bf40f23d3e10e809 img-aspect-ratio cover-image rectangle\" style=\"background-color: var(--opacity-light); padding-bottom: 100%;\"><img alt=\"Cover Image for Radius x Good Folks x Curious X\" fetchpriority=\"high\" loading=\"eager\" sizes=\"(max-width: 820px) 280px, (max-width: 1000px) 300px, 400px\" class=\"jsx-bf40f23d3e10e809 \" srcset=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 280w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 560w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 300w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 600w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 400w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 800w\" src=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg\"></div></div></div><div class=\"jsx-3552582100 top-wrapper flex-column gap-2\"><div class=\"jsx-3552582100 top-card-content\"><div class=\"jsx-3552582100 flex-start spread gap-2 title-wrapper\"><div class=\"jsx-3552582100 min-width-0\"><h1 class=\"jsx-3552582100 title text-primary mb-0\">Radius x Good Folks x Curious X</h1></div></div><div class=\"hosts\"><div class=\"flex-center gap-2 text-tinted\"><div class=\"jsx-3346871149 heads flex-center\" style=\"--size: 1rem; --cutout-avatar-percentage-visible: 0.5; --head-margin-percentage: 0.1;\"><div class=\"jsx-3346871149 head flex-start\"><div class=\"jsx-514553351 avatar-wrapper small\"><div class=\"jsx-514553351 avatar\" style=\"background-image: url(&quot;https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=16,height=16/uploads/ml/3413036a-eb92-4ace-af03-b77d0e68dd95.jpg&quot;);\"></div><div class=\"jsx-5191f4da6f3e0a15 online-indicator animated\" style=\"background-color: var(--yellow-content); transform: scale(0);\"></div></div><div class=\"lux-menu-trigger-wrapper jsx-3346871149 tooltip absolute-fill\"></div></div></div><div class=\"jsx-1306567905 text-ellipses\">Hosted by Radius Society</div></div></div><div class=\"jsx-3552582100 meta flex-column flex-start\"><div class=\"jsx-24a6e3efa1c3922 row-container rounded-squircle\"><div class=\"jsx-100837539 icon-row flex-center gap-3\"><div class=\"jsx-100837539 icon-container flex-center-center rounded overflow-hidden flex-shrink-0\"><div class=\"jsx-2328670344 calendar-card text-center full-height\"><div class=\"jsx-2328670344 month nowrap\">Nov</div><div class=\"jsx-2328670344 day fw-medium\">7</div></div></div><div class=\"jsx-100837539 flex-1\"><div class=\"jsx-100837539 title text-ellipses\">Saturday, November 7</div><div class=\"jsx-100837539 desc text-ellipses\"><div class=\"jsx-24a6e3efa1c3922 flex-center\"><div class=\"jsx-24a6e3efa1c3922 text-ellipses\">5:30 AM - 9:00 AM</div></div></div></div></div></div><a href=\"https://www.google.com/maps/search/?api=1&amp;query=-6.1887864%2C106.8362584&amp;query_place_id=ChIJe_2gFFX1aS4RGwGjrMdnoV0\" class=\"row-container\" target=\"_blank\" rel=\"nofollow noopener\"><div class=\"jsx-100837539 icon-row flex-center gap-3 location-row\"><div class=\"jsx-100837539 icon-container flex-center-center rounded overflow-hidden flex-shrink-0\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g fill=\"none\" fill-rule=\"evenodd\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><path d=\"M2 6.854C2 11.02 7.04 15 8 15s6-3.98 6-8.146C14 3.621 11.314 1 8 1S2 3.62 2 6.854\"></path><path d=\"M9.5"
+    },
+    "768": {
+      "nodes": [
+        {
+          "tag": "DIV",
+          "cls": "lux-modal panel",
+          "box": {
+            "x": 179.60000610351562,
+            "y": 8,
+            "width": 550,
+            "height": 984,
+            "top": 8,
+            "right": 729.6000061035156,
+            "bottom": 992,
+            "left": 179.60000610351562
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "8px 8px 0px 0px",
+            "width": "550px",
+            "height": "984px",
+            "maxWidth": "none",
+            "borderRadius": "16px",
+            "cornerShape": "superellipse(2)",
+            "background": "rgb(248, 248, 248) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "relative",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "rgba(21, 21, 21, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.03) 0px 3px 3px 0px, rgba(0, 0, 0, 0.04) 0px 8px 7px 0px, rgba(0, 0, 0, 0.05) 0px 17px 14px 0px, rgba(0, 0, 0, 0.06) 0px 35px 29px 0px, rgba(0, 0, 0, 0.04) 0px -4px 4px 0px inset",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "lux-overlay panel",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 752.7999877929688,
+            "height": 1000,
+            "top": 0,
+            "right": 752.7999877929688,
+            "bottom": 1000,
+            "left": 0
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "752.8px",
+            "height": "1000px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "fixed",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "none",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "tag": "IMG",
+          "cls": "jsx-bf40f23d3e10e809 ",
+          "box": {
+            "x": 307.10400390625,
+            "y": 100.1045150756836,
+            "width": 279.7919921875,
+            "height": 279.7919921875,
+            "top": 100.1045150756836,
+            "right": 586.89599609375,
+            "bottom": 379.8965072631836,
+            "left": 307.10400390625
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "278.4px",
+            "height": "278.4px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "absolute",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "none",
+            "overflow": "clip"
+          }
+        },
+        {
+          "tag": "IMG",
+          "cls": "jsx-bf40f23d3e10e809 ",
+          "box": {
+            "x": 307.10400390625,
+            "y": 84.60400390625,
+            "width": 279.7919921875,
+            "height": 279.7919921875,
+            "top": 84.60400390625,
+            "right": 586.89599609375,
+            "bottom": 364.39599609375,
+            "left": 307.10400390625
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "278.4px",
+            "height": "278.4px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "absolute",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "none",
+            "overflow": "clip"
+          }
+        },
+        {
+          "tag": "H1",
+          "cls": "jsx-3552582100 title text-primary mb-0",
+          "box": {
+            "x": 195.60000610351562,
+            "y": 397,
+            "width": 466.1000061035156,
+            "height": 38.400001525878906,
+            "top": 397,
+            "right": 661.7000122070312,
+            "bottom": 435.4000015258789,
+            "left": 195.60000610351562
+          },
+          "css": {
+            "fontSize": "32px",
+            "lineHeight": "38.4px",
+            "fontWeight": "600",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "466.1px",
+            "height": "38.4px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card pb-1 event-about-card",
+          "box": {
+            "x": 195.60000610351562,
+            "y": 879.7999877929688,
+            "width": 502.8000183105469,
+            "height": 577.7999877929688,
+            "top": 879.7999877929688,
+            "right": 698.4000244140625,
+            "bottom": 1457.5999755859375,
+            "left": 195.60000610351562
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px 0px 4px",
+            "margin": "0px",
+            "width": "502.8px",
+            "height": "577.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card",
+          "box": {
+            "x": 195.60000610351562,
+            "y": 1481.5999755859375,
+            "width": 502.8000183105469,
+            "height": 322.8000183105469,
+            "top": 1481.5999755859375,
+            "right": 698.4000244140625,
+            "bottom": 1804.3999938964844,
+            "left": 195.60000610351562
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "502.8px",
+            "height": "322.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card",
+          "box": {
+            "x": 195.60000610351562,
+            "y": 1828.4000244140625,
+            "width": 502.8000183105469,
+            "height": 73.80000305175781,
+            "top": 1828.4000244140625,
+            "right": 698.4000244140625,
+            "bottom": 1902.2000274658203,
+            "left": 195.60000610351562
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "502.8px",
+            "height": "73.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card",
+          "box": {
+            "x": 195.60000610351562,
+            "y": 1926.2000732421875,
+            "width": 502.8000183105469,
+            "height": 98.80000305175781,
+            "top": 1926.2000732421875,
+            "right": 698.4000244140625,
+            "bottom": 2025.0000762939453,
+            "left": 195.60000610351562
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "502.8px",
+            "height": "98.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        }
+      ],
+      "markup": "<div role=\"dialog\" aria-labelledby=\"_R_3malim_-title\" tabindex=\"-1\" class=\"lux-modal panel\" style=\"opacity: 1; transform: none;\"><div class=\"jsx-2839895974 panel-header flex-center gap-25 spread\"><button aria-label=\"Close\" class=\"lux-menu-trigger-wrapper btn lux-button flex-center small light naked close-btn variant-color-light icon-only\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m13 17 5-5-5-5M6 17l5-5-5-5\"></path></svg></button><div class=\"jsx-2839895974 flex-center gap-2 flex-1 spread\"><div class=\"flex-center full-width\"><button class=\"btn lux-button flex-center small light solid mr-2 variant-color-light icon-left\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><g stroke=\"currentColor\" stroke-width=\"1.56\" clip-path=\"url(#Copy16_svg__a)\"><path d=\"M14.5 10.748c0 1.08 0 1.62-.184 2.202a2.29 2.29 0 0 1-1.366 1.366c-.582.184-1.122.184-2.202.184H9.252c-1.08 0-1.62 0-2.202-.184a2.29 2.29 0 0 1-1.366-1.366c-.184-.582-.184-1.122-.184-2.202V9.252c0-1.08 0-1.62.184-2.202A2.29 2.29 0 0 1 7.05 5.684C7.632 5.5 8.172 5.5 9.252 5.5h1.496c1.08 0 1.62 0 2.202.184a2.29 2.29 0 0 1 1.366 1.366c.184.582.184 1.122.184 2.202z\"></path><path stroke-linecap=\"round\" d=\"M3.082 10.5a2.33 2.33 0 0 1-1.394-1.395C1.5 8.512 1.5 7.96 1.5 6.857V5.33c0-1.103 0-1.654.188-2.248a2.33 2.33 0 0 1 1.394-1.394C3.676 1.5 4.227 1.5 5.33 1.5h1.527c1.103 0 1.655 0 2.248.188A2.33 2.33 0 0 1 10.5 3.082\"></path></g><defs><clipPath id=\"Copy16_svg__a\"><path fill=\"currentColor\" d=\"M0 0h16v16H0z\"></path></clipPath></defs></svg><div class=\"label\">Copy Link</div></button><a target=\"_blank\" class=\"btn lux-button flex-center small light solid variant-color-light icon-right\" href=\"/ru9noaq1\"><div class=\"label\">Event Page</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M3.525 11.414a.75.75 0 0 0 1.061 1.061l6.109-6.109v5.579a.75.75 0 0 0 1.5 0v-7.39a.75.75 0 0 0-.75-.75h-7.39a.75.75 0 0 0 0 1.5h5.579Z\"></path></svg></a><div class=\"flex-1\"></div></div><div class=\"jsx-5182caa84de7c015 flex-center gap-1\"><button aria-label=\"Previous\" class=\"btn lux-button flex-center small light solid variant-color-light icon-only parent-handle-focus\" disabled=\"\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m18 15-6-6-6 6\"></path></svg></button><button aria-label=\"Next\" class=\"lux-menu-trigger-wrapper btn lux-button flex-center small light solid variant-color-light icon-only\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m6 9 6 6 6-6\"></path></svg></button></div></div></div><div class=\"jsx-2839895974 lux-modal-body overflow-auto\"><div class=\"jsx-98d6ec8bc3cc6380 event-panel-wrapper\"><div class=\"jsx-3374021834 jsx-1988394536 tint-root\"><div class=\"jsx-3a3f9598c2c3e4f4 event-theme legacy in-panel\"><div class=\"jsx-3a3f9598c2c3e4f4 background\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-glow\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay2\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay3\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay4\"></div><div class=\"jsx-3a3f9598c2c3e4f4 page-container\"><div class=\"jsx-570d5041c1d097d8 event-panel flex-column gap-4 lux-panel\"><div class=\"jsx-102428b8379b7b14 cover-with-glow flex-center-center cover-wrapper\"><div class=\"jsx-bf40f23d3e10e809 img-aspect-ratio cover-image cover-image-under rectangle\" style=\"background-color: var(--opacity-light); padding-bottom: 100%;\"><img alt=\"Cover Image for Radius x Good Folks x Curious X\" fetchpriority=\"auto\" loading=\"eager\" sizes=\"(max-width: 820px) 280px, (max-width: 1000px) 300px, 400px\" class=\"jsx-bf40f23d3e10e809 \" srcset=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 280w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 560w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 300w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 600w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 400w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 800w\" src=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg\"></div><div class=\"jsx-102428b8379b7b14 cover-image-wrapper flex-center-center flex-column rounded-card\"><div class=\"jsx-bf40f23d3e10e809 img-aspect-ratio cover-image rectangle\" style=\"background-color: var(--opacity-light); padding-bottom: 100%;\"><img alt=\"Cover Image for Radius x Good Folks x Curious X\" fetchpriority=\"high\" loading=\"eager\" sizes=\"(max-width: 820px) 280px, (max-width: 1000px) 300px, 400px\" class=\"jsx-bf40f23d3e10e809 \" srcset=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 280w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 560w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 300w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 600w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 400w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 800w\" src=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg\"></div></div></div><div class=\"jsx-3552582100 top-wrapper flex-column gap-2\"><div class=\"jsx-3552582100 top-card-content\"><div class=\"jsx-3552582100 flex-start spread gap-2 title-wrapper\"><div class=\"jsx-3552582100 min-width-0\"><h1 class=\"jsx-3552582100 title text-primary mb-0\">Radius x Good Folks x Curious X</h1></div></div><div class=\"hosts\"><div class=\"flex-center gap-2 text-tinted\"><div class=\"jsx-785100558 heads flex-center\" style=\"--size: 1.125rem; --cutout-avatar-percentage-visible: 0.5; --head-margin-percentage: 0.1;\"><div class=\"jsx-785100558 head flex-start\"><div class=\"jsx-1044599047 avatar-wrapper small\"><div class=\"jsx-1044599047 avatar\" style=\"background-image: url(&quot;https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=18,height=18/uploads/ml/3413036a-eb92-4ace-af03-b77d0e68dd95.jpg&quot;);\"></div><div class=\"jsx-5191f4da6f3e0a15 online-indicator animated\" style=\"background-color: var(--yellow-content); transform: scale(0);\"></div></div><div class=\"lux-menu-trigger-wrapper jsx-785100558 tooltip absolute-fill\"></div></div></div><div class=\"jsx-1306567905 text-ellipses\">Hosted by Radius Society</div></div></div><div class=\"jsx-3552582100 meta flex-column flex-start\"><div class=\"jsx-24a6e3efa1c3922 row-container rounded-squircle\"><div class=\"jsx-100837539 icon-row flex-center gap-3\"><div class=\"jsx-100837539 icon-container flex-center-center rounded overflow-hidden flex-shrink-0\"><div class=\"jsx-2328670344 calendar-card text-center full-height\"><div class=\"jsx-2328670344 month nowrap\">Nov</div><div class=\"jsx-2328670344 day fw-medium\">7</div></div></div><div class=\"jsx-100837539 flex-1\"><div class=\"jsx-100837539 title text-ellipses\">Saturday, November 7</div><div class=\"jsx-100837539 desc text-ellipses\"><div class=\"jsx-24a6e3efa1c3922 flex-center\"><div class=\"jsx-24a6e3efa1c3922 text-ellipses\">5:30 AM - 9:00 AM</div></div></div></div></div></div><a href=\"https://www.google.com/maps/search/?api=1&amp;query=-6.1887864%2C106.8362584&amp;query_place_id=ChIJe_2gFFX1aS4RGwGjrMdnoV0\" class=\"row-container\" target=\"_blank\" rel=\"nofollow noopener\"><div class=\"jsx-100837539 icon-row flex-center gap-3 location-row\"><div class=\"jsx-100837539 icon-container flex-center-center rounded overflow-hidden flex-shrink-0\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g fill=\"none\" fill-rule=\"evenodd\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><path d=\"M2 6.854C2 11.02 7.04 15 8 15s6-3.98 6-8.146C14 3.621 11.314 1 8 1S2 3.62 2 6.854\"></path><path d=\"M9.5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0\"></path></g></svg></div><div class=\"jsx-100837539 flex-1\"><div class=\"jsx-100837539 title text-ellipses\"><div class=\"jsx-716bec2817eb1288 flex-center gap-1\"><div class=\"jsx-716bec2817eb1288 text-ellipses\">GOOD FOLKS</div><div class=\"jsx-716bec2817eb1288 icon text-tinted animated\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentC"
+    },
+    "1440": {
+      "nodes": [
+        {
+          "tag": "DIV",
+          "cls": "lux-modal panel",
+          "box": {
+            "x": 851.6000366210938,
+            "y": 8,
+            "width": 550,
+            "height": 984,
+            "top": 8,
+            "right": 1401.6000366210938,
+            "bottom": 992,
+            "left": 851.6000366210938
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "8px 8px 0px 0px",
+            "width": "550px",
+            "height": "984px",
+            "maxWidth": "none",
+            "borderRadius": "16px",
+            "cornerShape": "superellipse(2)",
+            "background": "rgb(248, 248, 248) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "relative",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "rgba(21, 21, 21, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.03) 0px 3px 3px 0px, rgba(0, 0, 0, 0.04) 0px 8px 7px 0px, rgba(0, 0, 0, 0.05) 0px 17px 14px 0px, rgba(0, 0, 0, 0.06) 0px 35px 29px 0px, rgba(0, 0, 0, 0.04) 0px -4px 4px 0px inset",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "lux-overlay panel",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1424.800048828125,
+            "height": 1000,
+            "top": 0,
+            "right": 1424.800048828125,
+            "bottom": 1000,
+            "left": 0
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "1424.8px",
+            "height": "1000px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "fixed",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "none",
+            "overflow": "hidden"
+          }
+        },
+        {
+          "tag": "IMG",
+          "cls": "jsx-bf40f23d3e10e809 ",
+          "box": {
+            "x": 986.7040405273438,
+            "y": 100.14935302734375,
+            "width": 279.7919921875,
+            "height": 279.7919921875,
+            "top": 100.14935302734375,
+            "right": 1266.4960327148438,
+            "bottom": 379.94134521484375,
+            "left": 986.7040405273438
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "278.4px",
+            "height": "278.4px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "absolute",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "none",
+            "overflow": "clip"
+          }
+        },
+        {
+          "tag": "IMG",
+          "cls": "jsx-bf40f23d3e10e809 ",
+          "box": {
+            "x": 986.7040405273438,
+            "y": 84.60400390625,
+            "width": 279.7919921875,
+            "height": 279.7919921875,
+            "top": 84.60400390625,
+            "right": 1266.4960327148438,
+            "bottom": 364.39599609375,
+            "left": 986.7040405273438
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "278.4px",
+            "height": "278.4px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "absolute",
+            "top": "0px",
+            "right": "0px",
+            "boxShadow": "none",
+            "overflow": "clip"
+          }
+        },
+        {
+          "tag": "H1",
+          "cls": "jsx-3552582100 title text-primary mb-0",
+          "box": {
+            "x": 867.6000366210938,
+            "y": 397,
+            "width": 466.1000061035156,
+            "height": 38.400001525878906,
+            "top": 397,
+            "right": 1333.7000427246094,
+            "bottom": 435.4000015258789,
+            "left": 867.6000366210938
+          },
+          "css": {
+            "fontSize": "32px",
+            "lineHeight": "38.4px",
+            "fontWeight": "600",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "466.1px",
+            "height": "38.4px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card pb-1 event-about-card",
+          "box": {
+            "x": 867.6000366210938,
+            "y": 879.7999877929688,
+            "width": 518,
+            "height": 577.7999877929688,
+            "top": 879.7999877929688,
+            "right": 1385.6000366210938,
+            "bottom": 1457.5999755859375,
+            "left": 867.6000366210938
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px 0px 4px",
+            "margin": "0px",
+            "width": "518px",
+            "height": "577.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card",
+          "box": {
+            "x": 867.6000366210938,
+            "y": 1481.5999755859375,
+            "width": 518,
+            "height": 322.8000183105469,
+            "top": 1481.5999755859375,
+            "right": 1385.6000366210938,
+            "bottom": 1804.3999938964844,
+            "left": 867.6000366210938
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "518px",
+            "height": "322.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card",
+          "box": {
+            "x": 867.6000366210938,
+            "y": 1828.4000244140625,
+            "width": 518,
+            "height": 73.80000305175781,
+            "top": 1828.4000244140625,
+            "right": 1385.6000366210938,
+            "bottom": 1902.2000274658203,
+            "left": 867.6000366210938
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "518px",
+            "height": "73.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        },
+        {
+          "tag": "DIV",
+          "cls": "jsx-5981e6e33e2304d4 content-card",
+          "box": {
+            "x": 867.6000366210938,
+            "y": 1926.2000732421875,
+            "width": 518,
+            "height": 98.80000305175781,
+            "top": 1926.2000732421875,
+            "right": 1385.6000366210938,
+            "bottom": 2025.0000762939453,
+            "left": 867.6000366210938
+          },
+          "css": {
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "400",
+            "padding": "0px",
+            "margin": "0px",
+            "width": "518px",
+            "height": "98.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "cornerShape": "superellipse(1)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "position": "static",
+            "top": "auto",
+            "right": "auto",
+            "boxShadow": "none",
+            "overflow": "visible"
+          }
+        }
+      ],
+      "markup": "<div role=\"dialog\" aria-labelledby=\"_R_3malim_-title\" tabindex=\"-1\" class=\"lux-modal panel\" style=\"opacity: 1; transform: none;\"><div class=\"jsx-2839895974 panel-header flex-center gap-25 spread\"><button aria-label=\"Close\" class=\"lux-menu-trigger-wrapper btn lux-button flex-center small light naked close-btn variant-color-light icon-only\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m13 17 5-5-5-5M6 17l5-5-5-5\"></path></svg></button><div class=\"jsx-2839895974 flex-center gap-2 flex-1 spread\"><div class=\"flex-center full-width\"><button class=\"btn lux-button flex-center small light solid mr-2 variant-color-light icon-left\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><g stroke=\"currentColor\" stroke-width=\"1.56\" clip-path=\"url(#Copy16_svg__a)\"><path d=\"M14.5 10.748c0 1.08 0 1.62-.184 2.202a2.29 2.29 0 0 1-1.366 1.366c-.582.184-1.122.184-2.202.184H9.252c-1.08 0-1.62 0-2.202-.184a2.29 2.29 0 0 1-1.366-1.366c-.184-.582-.184-1.122-.184-2.202V9.252c0-1.08 0-1.62.184-2.202A2.29 2.29 0 0 1 7.05 5.684C7.632 5.5 8.172 5.5 9.252 5.5h1.496c1.08 0 1.62 0 2.202.184a2.29 2.29 0 0 1 1.366 1.366c.184.582.184 1.122.184 2.202z\"></path><path stroke-linecap=\"round\" d=\"M3.082 10.5a2.33 2.33 0 0 1-1.394-1.395C1.5 8.512 1.5 7.96 1.5 6.857V5.33c0-1.103 0-1.654.188-2.248a2.33 2.33 0 0 1 1.394-1.394C3.676 1.5 4.227 1.5 5.33 1.5h1.527c1.103 0 1.655 0 2.248.188A2.33 2.33 0 0 1 10.5 3.082\"></path></g><defs><clipPath id=\"Copy16_svg__a\"><path fill=\"currentColor\" d=\"M0 0h16v16H0z\"></path></clipPath></defs></svg><div class=\"label\">Copy Link</div></button><a target=\"_blank\" class=\"btn lux-button flex-center small light solid variant-color-light icon-right\" href=\"/ru9noaq1\"><div class=\"label\">Event Page</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M3.525 11.414a.75.75 0 0 0 1.061 1.061l6.109-6.109v5.579a.75.75 0 0 0 1.5 0v-7.39a.75.75 0 0 0-.75-.75h-7.39a.75.75 0 0 0 0 1.5h5.579Z\"></path></svg></a><div class=\"flex-1\"></div></div><div class=\"jsx-5182caa84de7c015 flex-center gap-1\"><button aria-label=\"Previous\" class=\"btn lux-button flex-center small light solid variant-color-light icon-only parent-handle-focus\" disabled=\"\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m18 15-6-6-6 6\"></path></svg></button><button aria-label=\"Next\" class=\"lux-menu-trigger-wrapper btn lux-button flex-center small light solid variant-color-light icon-only\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m6 9 6 6 6-6\"></path></svg></button></div></div></div><div class=\"jsx-2839895974 lux-modal-body overflow-auto\"><div class=\"jsx-98d6ec8bc3cc6380 event-panel-wrapper\"><div class=\"jsx-3374021834 jsx-1988394536 tint-root\"><div class=\"jsx-3a3f9598c2c3e4f4 event-theme legacy in-panel\"><div class=\"jsx-3a3f9598c2c3e4f4 background\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-glow\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay2\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay3\"></div><div class=\"jsx-3a3f9598c2c3e4f4 background-overlay4\"></div><div class=\"jsx-3a3f9598c2c3e4f4 page-container\"><div class=\"jsx-570d5041c1d097d8 event-panel flex-column gap-4 lux-panel\"><div class=\"jsx-102428b8379b7b14 cover-with-glow flex-center-center cover-wrapper\"><div class=\"jsx-bf40f23d3e10e809 img-aspect-ratio cover-image cover-image-under rectangle\" style=\"background-color: var(--opacity-light); padding-bottom: 100%;\"><img alt=\"Cover Image for Radius x Good Folks x Curious X\" fetchpriority=\"auto\" loading=\"eager\" sizes=\"(max-width: 820px) 280px, (max-width: 1000px) 300px, 400px\" class=\"jsx-bf40f23d3e10e809 \" srcset=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 280w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 560w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 300w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 600w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 400w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 800w\" src=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg\"></div><div class=\"jsx-102428b8379b7b14 cover-image-wrapper flex-center-center flex-column rounded-card\"><div class=\"jsx-bf40f23d3e10e809 img-aspect-ratio cover-image rectangle\" style=\"background-color: var(--opacity-light); padding-bottom: 100%;\"><img alt=\"Cover Image for Radius x Good Folks x Curious X\" fetchpriority=\"high\" loading=\"eager\" sizes=\"(max-width: 820px) 280px, (max-width: 1000px) 300px, 400px\" class=\"jsx-bf40f23d3e10e809 \" srcset=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 280w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=280,height=280/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 560w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 300w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=300,height=300/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 600w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 400w, https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg 800w\" src=\"https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/2x/2f563ebc-fd96-47ed-9e73-0ad215b6255e.jpg\"></div></div></div><div class=\"jsx-3552582100 top-wrapper flex-column gap-2\"><div class=\"jsx-3552582100 top-card-content\"><div class=\"jsx-3552582100 flex-start spread gap-2 title-wrapper\"><div class=\"jsx-3552582100 min-width-0\"><h1 class=\"jsx-3552582100 title text-primary mb-0\">Radius x Good Folks x Curious X</h1></div></div><div class=\"hosts\"><div class=\"flex-center gap-2 text-tinted\"><div class=\"jsx-785100558 heads flex-center\" style=\"--size: 1.125rem; --cutout-avatar-percentage-visible: 0.5; --head-margin-percentage: 0.1;\"><div class=\"jsx-785100558 head flex-start\"><div class=\"jsx-1044599047 avatar-wrapper small\"><div class=\"jsx-1044599047 avatar\" style=\"background-image: url(&quot;https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=18,height=18/uploads/ml/3413036a-eb92-4ace-af03-b77d0e68dd95.jpg&quot;);\"></div><div class=\"jsx-5191f4da6f3e0a15 online-indicator animated\" style=\"background-color: var(--yellow-content); transform: scale(0);\"></div></div><div class=\"lux-menu-trigger-wrapper jsx-785100558 tooltip absolute-fill\"></div></div></div><div class=\"jsx-1306567905 text-ellipses\">Hosted by Radius Society</div></div></div><div class=\"jsx-3552582100 meta flex-column flex-start\"><div class=\"jsx-24a6e3efa1c3922 row-container rounded-squircle\"><div class=\"jsx-100837539 icon-row flex-center gap-3\"><div class=\"jsx-100837539 icon-container flex-center-center rounded overflow-hidden flex-shrink-0\"><div class=\"jsx-2328670344 calendar-card text-center full-height\"><div class=\"jsx-2328670344 month nowrap\">Nov</div><div class=\"jsx-2328670344 day fw-medium\">7</div></div></div><div class=\"jsx-100837539 flex-1\"><div class=\"jsx-100837539 title text-ellipses\">Saturday, November 7</div><div class=\"jsx-100837539 desc text-ellipses\"><div class=\"jsx-24a6e3efa1c3922 flex-center\"><div class=\"jsx-24a6e3efa1c3922 text-ellipses\">5:30 AM - 9:00 AM</div></div></div></div></div></div><a href=\"https://www.google.com/maps/search/?api=1&amp;query=-6.1887864%2C106.8362584&amp;query_place_id=ChIJe_2gFFX1aS4RGwGjrMdnoV0\" class=\"row-container\" target=\"_blank\" rel=\"nofollow noopener\"><div class=\"jsx-100837539 icon-row flex-center gap-3 location-row\"><div class=\"jsx-100837539 icon-container flex-center-center rounded overflow-hidden flex-shrink-0\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g fill=\"none\" fill-rule=\"evenodd\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\"><path d=\"M2 6.854C2 11.02 7.04 15 8 15s6-3.98 6-8.146C14 3.621 11.314 1 8 1S2 3.62 2 6.854\"></path><path d=\"M9.5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0\"></path></g></svg></div><div class=\"jsx-100837539 flex-1\"><div class=\"jsx-100837539 title text-ellipses\"><div class=\"jsx-716bec2817eb1288 flex-center gap-1\"><div class=\"jsx-716bec2817eb1288 text-ellipses\">GOOD FOLKS</div><div class=\"jsx-716bec2817eb1288 icon text-tinted animated\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentC"
+    }
+  }
+}

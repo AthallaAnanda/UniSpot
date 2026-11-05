@@ -1,0 +1,20 @@
+/* Values measured on authenticated Luma Home, public Discover, feed and event panels. */
+:root {
+  --luma-font-size: 16px;
+  --luma-line-height: 1.5;
+  --luma-primary: rgb(21,21,21);
+  --luma-secondary: rgba(21,21,21,.64);
+  --luma-tertiary: rgba(21,21,21,.36);
+  --luma-divider: rgba(21,21,21,.08);
+  --luma-card: rgba(255,255,255,.8);
+  --luma-card-border: #fff;
+  --luma-card-hover-border: rgba(21,21,21,.16);
+  --luma-radius: 8px;
+  --luma-card-radius: 24px;
+  --luma-transition: .3s cubic-bezier(.4,0,.2,1);
+  --luma-shadow-modal: 0 0 0 1px rgba(21,21,21,.08), 0 3px 3px #00000008, 0 8px 7px #0000000a, 0 17px 14px #0000000d, 0 35px 29px #0000000f, inset 0 -4px 4px #0000000a;
+}
+.luma-icon { display:inline-flex; flex-shrink:0; align-items:center; justify-content:center; }
+.luma-icon > svg { display:block; width:100%; height:100%; }
+.luma-card { background:var(--luma-card); border:1px solid var(--luma-card-border); border-radius:var(--luma-card-radius); corner-shape:superellipse(2); transition:border-color var(--luma-transition),box-shadow var(--luma-transition); }
+@media (hover:hover) { .luma-card:hover { border-color:var(--luma-card-hover-border); } }

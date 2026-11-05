@@ -1,0 +1,32 @@
+{
+  "sharedUrl": "http://localhost:3000/discover?opportunity=devfest-cloud-jakarta-2026",
+  "deepLinkRestored": true,
+  "focusRestored": true,
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "cards": 6,
+      "columns": "317.325px 317.337px 317.325px",
+      "brokenImages": [],
+      "unwantedCopy": false
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "cards": 6,
+      "columns": "348.4px 348.4px",
+      "brokenImages": [],
+      "unwantedCopy": false
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "cards": 6,
+      "columns": "343.2px",
+      "brokenImages": [],
+      "unwantedCopy": false
+    }
+  ],
+  "emptySaved": true
+}

@@ -1,0 +1,131 @@
+{
+  "checkedOn": "2026-11-04",
+  "opportunities": [
+    {
+      "id": "devfest-cloud-jakarta-2026",
+      "title": "DevFest Cloud Jakarta 2026",
+      "url": "https://gdg.community.dev/events/details/google-gdg-cloud-jakarta-presents-devfest-cloud-jakarta-2026/",
+      "date": "2026-12-12"
+    },
+    {
+      "id": "lpdp-naist-2026",
+      "title": "LPDP–NAIST: take your STEM ambitions to Japan",
+      "url": "https://lpdp.kemenkeu.go.id/beasiswa/beasiswa-kemitraan-double-degree-joint-degree/lpdp-naist2026",
+      "deadline": "2026-12-01"
+    },
+    {
+      "id": "google-ai-essentials",
+      "title": "Google AI Essentials: turn curiosity into a new skill",
+      "url": "https://grow.google/intl/id_id/ai-essentials/"
+    },
+    {
+      "id": "icmns-2026",
+      "title": "The 9th International Conference on Mathematics and Natural Sciences",
+      "url": "https://itb.ac.id/agenda/info/the-9th-international-conference-on-mathematics-and-natural-sciences:448",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "indorelawan-opportunities",
+      "title": "Find a cause. Make a difference with Indorelawan.",
+      "url": "https://www.indorelawan.org"
+    },
+    {
+      "id": "erasmus-study-abroad",
+      "title": "Erasmus+: a different campus, a wider perspective",
+      "url": "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/studying-abroad"
+    },
+    {
+      "id": "lpdp-ucd-2026",
+      "title": "LPDP–UCD: your next chapter in Dublin",
+      "url": "https://lpdp.kemenkeu.go.id/beasiswa/beasiswa-kemitraan-double-degree-joint-degree/lpdp-ucd2026",
+      "deadline": "2026-12-01"
+    },
+    {
+      "id": "google-career-certificates",
+      "title": "Build your next career with Google Career Certificates",
+      "url": "https://grow.google/intl/id_id/certificates/"
+    },
+    {
+      "id": "kaggle-titanic",
+      "title": "Titanic: Machine Learning from Disaster",
+      "url": "https://www.kaggle.com/competitions/titanic"
+    },
+    {
+      "id": "gdg-on-campus",
+      "title": "Find your people with GDG on Campus",
+      "url": "https://developers.google.com/community/gdg"
+    },
+    {
+      "id": "devfest-depok-2026",
+      "title": "DevFest Depok 2026",
+      "url": "https://gdg.community.dev/events/details/google-gdg-depok-presents-devfest-depok-2026/",
+      "date": "2026-12-05"
+    },
+    {
+      "id": "devfest-bandung-2026",
+      "title": "Devfest Bandung 2026 : Tech Meets Human",
+      "url": "https://gdg.community.dev/events/details/google-gdg-bandung-presents-devfest-bandung-2026-tech-meets-human/",
+      "date": "2026-12-19"
+    },
+    {
+      "id": "devfest-bogor-2026",
+      "title": "DevFest Bogor 2026",
+      "url": "https://gdg.community.dev/events/details/google-gdg-bogor-presents-devfest-bogor-2026/",
+      "date": "2026-11-28"
+    },
+    {
+      "id": "devfest-cloud-bandung-2026",
+      "title": "Cloud DevFest Bandung 2026",
+      "url": "https://gdg.community.dev/events/details/google-gdg-cloud-bandung-presents-cloud-devfest-bandung-2026-1/",
+      "date": "2026-11-28"
+    },
+    {
+      "id": "devfest-cloud-surabaya-2026",
+      "title": "DevFest Cloud Surabaya '26: Building Safe, Secure & Scalable Solutions with AI and Cloud",
+      "url": "https://gdg.community.dev/events/details/google-gdg-cloud-surabaya-presents-devfest-cloud-surabaya-26-building-safe-secure-amp-scalable-solutions-with-ai-and-cloud/",
+      "date": "2026-11-21"
+    },
+    {
+      "id": "devfest-surabaya-2026",
+      "title": "DevFest 2026 Surabaya : Build Secure and Scalable Agent",
+      "url": "https://gdg.community.dev/events/details/google-gdg-surabaya-presents-devfest-2026-surabaya-build-secure-and-scalable-agent/",
+      "date": "2026-12-12"
+    },
+    {
+      "id": "devfest-jogjakarta-2026",
+      "title": "DevFest Jogjakarta 2026",
+      "url": "https://gdg.community.dev/events/details/google-gdg-jogjakarta-presents-devfest-jogjakarta-2026/",
+      "date": "2026-11-08"
+    }
+  ],
+  "organizations": [
+    {
+      "name": "Google Developer Groups",
+      "url": "https://developers.google.com/community/gdg"
+    },
+    {
+      "name": "LPDP",
+      "url": "https://lpdp.kemenkeu.go.id"
+    },
+    {
+      "name": "Institut Teknologi Bandung",
+      "url": "https://itb.ac.id/agenda"
+    },
+    {
+      "name": "Indorelawan",
+      "url": "https://www.indorelawan.org"
+    },
+    {
+      "name": "Grow with Google",
+      "url": "https://grow.google/intl/id_id/"
+    },
+    {
+      "name": "Erasmus+",
+      "url": "https://erasmus-plus.ec.europa.eu"
+    },
+    {
+      "name": "Kaggle",
+      "url": "https://www.kaggle.com/competitions"
+    }
+  ]
+}

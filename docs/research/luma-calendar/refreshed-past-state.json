@@ -1,0 +1,138 @@
+{
+  "url": "https://luma.com/readingrhythms-global?period=past",
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Reading Rhythms Global",
+      "class": "jsx-23e6c931e30f22d9 mb-0",
+      "styles": {
+        "fontSize": "36px",
+        "fontWeight": "600",
+        "lineHeight": "43.2px",
+        "color": "rgb(21, 21, 21)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(21, 21, 21)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "transition": "all",
+        "width": "928px",
+        "height": "43.2px"
+      }
+    },
+    {
+      "tag": "H2",
+      "text": "Events",
+      "class": "jsx-4236654218 mb-0",
+      "styles": {
+        "fontSize": "24px",
+        "fontWeight": "600",
+        "lineHeight": "28.8px",
+        "color": "rgb(21, 21, 21)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(21, 21, 21)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "transition": "all",
+        "width": "76.1375px",
+        "height": "28.8px"
+      }
+    }
+  ],
+  "tabs": [
+    {
+      "tag": "BUTTON",
+      "text": "Upcoming",
+      "class": "btn segment flex-center animated",
+      "styles": {
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "21px",
+        "color": "rgba(21, 21, 21, 0.36)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0.8px solid rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "5px 8px",
+        "transition": "0.3s cubic-bezier(0.4, 0, 0.2, 1), outline",
+        "width": "119.2px",
+        "height": "32.6px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Past",
+      "class": "btn segment flex-center animated selected nodivider",
+      "styles": {
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "21px",
+        "color": "rgb(21, 21, 21)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0.8px solid rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "5px 8px",
+        "transition": "0.3s cubic-bezier(0.4, 0, 0.2, 1), outline",
+        "width": "119.2px",
+        "height": "32.6px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "class": "btn segment flex-center animated selected nodivider",
+      "styles": {
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "21px",
+        "color": "rgb(21, 21, 21)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0.8px solid rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "5px 8px",
+        "transition": "0.3s cubic-bezier(0.4, 0, 0.2, 1), outline",
+        "width": "31.6px",
+        "height": "25.6px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "class": "btn segment flex-center animated nodivider",
+      "styles": {
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "21px",
+        "color": "rgba(21, 21, 21, 0.36)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0.8px solid rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "padding": "5px 8px",
+        "transition": "0.3s cubic-bezier(0.4, 0, 0.2, 1), outline",
+        "width": "31.6px",
+        "height": "25.6px"
+      }
+    }
+  ],
+  "month": {
+    "tag": "BUTTON",
+    "text": "",
+    "class": "jsx-8315f755e146483b icon animated right",
+    "styles": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "color": "rgba(21, 21, 21, 0.36)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(21, 21, 21, 0.36)",
+      "borderRadius": "4px",
+      "padding": "3px",
+      "transition": "0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+      "width": "22px",
+      "height": "22px"
+    }
+  },
+  "scrolling": {
+    "smoothLibrary": false,
+    "scrollSnap": "none"
+  },
+  "bodyPreview": " Reading Rhythms, Ritu Akanksha Mahindru & Karena Bibbins-McKeever\n​\nLos Angeles, United States\nOct 30\nFriday\n \n4:15 AM · Oct 29, 5:15 PM EDT\nReading Rhythms Washington DC: October 29th\n​\nBy Reading Rhythms, Ellen Le, Jasmine Foreman & Sandrine\n​\nWashington, United States\nOct 27\nTuesday\n \n6:00 AM · Oct 26, 7:00 PM EDT\nReading Rhythms Morristown: October 26th\n​\nBy Reading Rhythms, Adriana & Kerrin Whipple\n​\nMorris Plains, United States\nOct 23\nFriday\n \n8:30 AM · Oct 22, 6:30 PM PDT\nHaunted Library Reading Party\n​\nBy Reading Rhythms, Ace Antonio, Sonal Dutt & Kailene Armintia\n​\nSan Diego, United States\nOct 22\nThursday\n \n8:30 AM · Oct 21, 6:30 PM PDT\nReading Rhythms Los Angeles + Free Book: Sense and Sensibility (Movie Tie-In Special)\n​\nBy Reading Rhythms & Ritu Akanksha Mahindru\n​\nLos Angeles, United States\nOct 21\nWednesday\n \n6:30 AM · Oct 20, 6:30 PM CDT\nReading Rhythms Austin + Free Book: Sense and Sensibility (Movie Tie-In Special)\n​\nBy Reading Rhythms & Yi Zhang, Ed.D\n​\nAustin, United States\nOct 20\nTuesday\n \n8:30 AM · Oct 19, 6:30 PM PDT\nReading Rhythms Palo Alto: October 19th\n​\nBy Reading Rhythms\n​\nPalo Alto, United States\nOct 18\nSunday\n \n10:00 PM · 5:00 PM GMT+2\nReading Party Torino: domenica 18 ottobre\n​\nBy Libri Sottolineati\n​\nTorino, Italy\nOct 15\nThursday\n \n6:00 AM · Oct 14, 7:00 PM EDT\nReading Rhythms Toronto + Free Book: Sense and Sensibility (Movie Tie-In Special)\n​\nBy Reading Rhythms, Jackie DaSilva, Aashna Aggarwal & Katie DaSilva\n​\nToronto, Canada\nOct 14\nWednesday\n \n6:00 AM · Oct 13, 7:00 PM EDT\nReading Rhythms DC + Free Book: Sense and Sensibility (Movie Tie-In Special)\n​\nBy Reading Rhythms, Ellen Le, Jasmine Foreman & Sandrine\n​\nWashington, United States\nOct 11\nSunday\n \n10:00 PM · 5:00 PM GMT+2\nReading Party Firenze: domenica 11 ottobre\n​\nBy Libri Sottolineati, Chiara T, Eleonora & Michela\n​\nFirenze, Italy\n \n10:00 PM · 5:00 PM GMT+2\nFirework Event - Reading Party Milano: domenica 11 ottobre\n​\nBy Libri Sottolineati, BOM fm & Adriano Scaramella\n​\nMilano, Italy\n \n7:45 AM · Oct 10, 5:45 PM PDT\nReading Rhythms San Francisco + Free Book: Sense and Sensibility (Movie Tie-In Special)\n​\nBy Reading Rhythms & Caroline Santinelli\n​\nSan Francisco, United States"
+}

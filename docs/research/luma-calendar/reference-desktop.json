@@ -1,0 +1,1280 @@
+{
+  "url": "https://luma.com/readingrhythms-global",
+  "tree": {
+    "tag": "MAIN",
+    "class": "jsx-482368938 jsx-948537168 page-content",
+    "text": null,
+    "box": {
+      "x": 0,
+      "y": 52,
+      "width": 1424.800048828125,
+      "height": 3163.087646484375,
+      "top": 52,
+      "right": 1424.800048828125,
+      "bottom": 3215.087646484375,
+      "left": 0
+    },
+    "css": {
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": "400",
+      "color": "rgb(21, 21, 21)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px",
+      "margin": "0px",
+      "width": "1424.8px",
+      "height": "3163.09px",
+      "maxWidth": "none",
+      "display": "block",
+      "gap": "normal",
+      "gridTemplateColumns": "none",
+      "border": "0px none rgb(21, 21, 21)",
+      "borderRadius": "0px",
+      "position": "static",
+      "top": "auto"
+    },
+    "children": [
+      {
+        "tag": "DIV",
+        "class": "jsx-173663690 page-container flex-column",
+        "text": null,
+        "box": {
+          "x": 0,
+          "y": 52,
+          "width": 1424.800048828125,
+          "height": 3163.087646484375,
+          "top": 52,
+          "right": 1424.800048828125,
+          "bottom": 3215.087646484375,
+          "left": 0
+        },
+        "css": {
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400",
+          "color": "rgb(21, 21, 21)",
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "padding": "0px",
+          "margin": "0px",
+          "width": "1424.8px",
+          "height": "3163.09px",
+          "maxWidth": "none",
+          "display": "flex",
+          "gap": "normal",
+          "gridTemplateColumns": "none",
+          "border": "0px none rgb(21, 21, 21)",
+          "borderRadius": "0px",
+          "position": "static",
+          "top": "auto"
+        },
+        "children": [
+          {
+            "tag": "DIV",
+            "class": "jsx-173663690 flex-1",
+            "text": null,
+            "box": {
+              "x": 0,
+              "y": 52,
+              "width": 1424.800048828125,
+              "height": 3163.087646484375,
+              "top": 52,
+              "right": 1424.800048828125,
+              "bottom": 3215.087646484375,
+              "left": 0
+            },
+            "css": {
+              "fontSize": "16px",
+              "lineHeight": "24px",
+              "fontWeight": "400",
+              "color": "rgb(21, 21, 21)",
+              "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+              "padding": "0px",
+              "margin": "0px",
+              "width": "1424.8px",
+              "height": "3163.09px",
+              "maxWidth": "none",
+              "display": "block",
+              "gap": "normal",
+              "gridTemplateColumns": "none",
+              "border": "0px none rgb(21, 21, 21)",
+              "borderRadius": "0px",
+              "position": "static",
+              "top": "auto"
+            },
+            "children": [
+              {
+                "tag": "DIV",
+                "class": "jsx-173663690",
+                "text": null,
+                "box": {
+                  "x": 0,
+                  "y": 52,
+                  "width": 1424.800048828125,
+                  "height": 556.2875366210938,
+                  "top": 52,
+                  "right": 1424.800048828125,
+                  "bottom": 608.2875366210938,
+                  "left": 0
+                },
+                "css": {
+                  "fontSize": "16px",
+                  "lineHeight": "24px",
+                  "fontWeight": "400",
+                  "color": "rgb(21, 21, 21)",
+                  "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                  "padding": "0px",
+                  "margin": "0px",
+                  "width": "1424.8px",
+                  "height": "556.287px",
+                  "maxWidth": "none",
+                  "display": "block",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "border": "0px none rgb(21, 21, 21)",
+                  "borderRadius": "0px",
+                  "position": "static",
+                  "top": "auto"
+                },
+                "children": [
+                  {
+                    "tag": "DIV",
+                    "class": "jsx-3820449905",
+                    "text": null,
+                    "box": {
+                      "x": 0,
+                      "y": 52,
+                      "width": 1424.800048828125,
+                      "height": 556.2875366210938,
+                      "top": 52,
+                      "right": 1424.800048828125,
+                      "bottom": 608.2875366210938,
+                      "left": 0
+                    },
+                    "css": {
+                      "fontSize": "16px",
+                      "lineHeight": "24px",
+                      "fontWeight": "400",
+                      "color": "rgb(21, 21, 21)",
+                      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                      "padding": "0px",
+                      "margin": "0px",
+                      "width": "1424.8px",
+                      "height": "556.287px",
+                      "maxWidth": "none",
+                      "display": "block",
+                      "gap": "normal",
+                      "gridTemplateColumns": "none",
+                      "border": "0px none rgb(21, 21, 21)",
+                      "borderRadius": "0px",
+                      "position": "static",
+                      "top": "auto"
+                    },
+                    "children": [
+                      {
+                        "tag": "DIV",
+                        "class": "jsx-3820449905 relative",
+                        "text": null,
+                        "box": {
+                          "x": 0,
+                          "y": 52,
+                          "width": 1424.800048828125,
+                          "height": 556.2875366210938,
+                          "top": 52,
+                          "right": 1424.800048828125,
+                          "bottom": 608.2875366210938,
+                          "left": 0
+                        },
+                        "css": {
+                          "fontSize": "16px",
+                          "lineHeight": "24px",
+                          "fontWeight": "400",
+                          "color": "rgb(21, 21, 21)",
+                          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                          "padding": "0px",
+                          "margin": "0px",
+                          "width": "1424.8px",
+                          "height": "556.287px",
+                          "maxWidth": "none",
+                          "display": "block",
+                          "gap": "normal",
+                          "gridTemplateColumns": "none",
+                          "border": "0px none rgb(21, 21, 21)",
+                          "borderRadius": "0px",
+                          "position": "relative",
+                          "top": "0px"
+                        },
+                        "children": [
+                          {
+                            "tag": "DIV",
+                            "class": "jsx-3820449905 zm-container cover-wrapper",
+                            "text": null,
+                            "box": {
+                              "x": 232.40000915527344,
+                              "y": 52,
+                              "width": 960,
+                              "height": 296.2875061035156,
+                              "top": 52,
+                              "right": 1192.4000091552734,
+                              "bottom": 348.2875061035156,
+                              "left": 232.40000915527344
+                            },
+                            "css": {
+                              "fontSize": "16px",
+                              "lineHeight": "24px",
+                              "fontWeight": "400",
+                              "color": "rgb(21, 21, 21)",
+                              "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                              "padding": "8px 0px 0px",
+                              "margin": "0px",
+                              "width": "960px",
+                              "height": "296.288px",
+                              "maxWidth": "960px",
+                              "display": "block",
+                              "gap": "normal",
+                              "gridTemplateColumns": "none",
+                              "border": "0px none rgb(21, 21, 21)",
+                              "borderRadius": "0px",
+                              "position": "relative",
+                              "top": "0px"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "DIV",
+                            "class": "jsx-3820449905 logo-wrapper zm-container flex-end spread gap-2",
+                            "text": null,
+                            "box": {
+                              "x": 232.40000915527344,
+                              "y": 294.2875061035156,
+                              "width": 960,
+                              "height": 108,
+                              "top": 294.2875061035156,
+                              "right": 1192.4000091552734,
+                              "bottom": 402.2875061035156,
+                              "left": 232.40000915527344
+                            },
+                            "css": {
+                              "fontSize": "16px",
+                              "lineHeight": "24px",
+                              "fontWeight": "400",
+                              "color": "rgb(21, 21, 21)",
+                              "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                              "padding": "0px 16px",
+                              "margin": "-54px 232.4px 20px",
+                              "width": "960px",
+                              "height": "108px",
+                              "maxWidth": "960px",
+                              "display": "flex",
+                              "gap": "8px",
+                              "gridTemplateColumns": "none",
+                              "border": "0px none rgb(21, 21, 21)",
+                              "borderRadius": "0px",
+                              "position": "relative",
+                              "top": "0px"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "DIV",
+                            "class": "jsx-3820449905 zm-container",
+                            "text": null,
+                            "box": {
+                              "x": 232.40000915527344,
+                              "y": 422.2875061035156,
+                              "width": 960,
+                              "height": 161.1999969482422,
+                              "top": 422.2875061035156,
+                              "right": 1192.4000091552734,
+                              "bottom": 583.4875030517578,
+                              "left": 232.40000915527344
+                            },
+                            "css": {
+                              "fontSize": "16px",
+                              "lineHeight": "24px",
+                              "fontWeight": "400",
+                              "color": "rgb(21, 21, 21)",
+                              "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                              "padding": "0px 16px",
+                              "margin": "0px 232.4px",
+                              "width": "960px",
+                              "height": "161.2px",
+                              "maxWidth": "960px",
+                              "display": "block",
+                              "gap": "normal",
+                              "gridTemplateColumns": "none",
+                              "border": "0px none rgb(21, 21, 21)",
+                              "borderRadius": "0px",
+                              "position": "relative",
+                              "top": "0px"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "HR",
+                            "class": "jsx-3820449905",
+                            "text": "",
+                            "box": {
+                              "x": 0,
+                              "y": 603.4874877929688,
+                              "width": 1424.800048828125,
+                              "height": 4.800000190734863,
+                              "top": 603.4874877929688,
+                              "right": 1424.800048828125,
+                              "bottom": 608.2874879837036,
+                              "left": 0
+                            },
+                            "css": {
+                              "fontSize": "16px",
+                              "lineHeight": "24px",
+                              "fontWeight": "400",
+                              "color": "rgb(128, 128, 128)",
+                              "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                              "padding": "4px 0px 0px",
+                              "margin": "0px 0px 4px",
+                              "width": "1424.8px",
+                              "height": "4.8px",
+                              "maxWidth": "none",
+                              "display": "block",
+                              "gap": "normal",
+                              "gridTemplateColumns": "none",
+                              "border": "",
+                              "borderRadius": "0px",
+                              "position": "static",
+                              "top": "auto"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "DIV",
+                "class": "jsx-173663690 zm-container",
+                "text": null,
+                "box": {
+                  "x": 232.40000915527344,
+                  "y": 612.2875366210938,
+                  "width": 960,
+                  "height": 2602.800048828125,
+                  "top": 612.2875366210938,
+                  "right": 1192.4000091552734,
+                  "bottom": 3215.0875854492188,
+                  "left": 232.40000915527344
+                },
+                "css": {
+                  "fontSize": "16px",
+                  "lineHeight": "24px",
+                  "fontWeight": "400",
+                  "color": "rgb(21, 21, 21)",
+                  "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                  "padding": "0px",
+                  "margin": "0px 232.4px",
+                  "width": "960px",
+                  "height": "2602.8px",
+                  "maxWidth": "960px",
+                  "display": "block",
+                  "gap": "normal",
+                  "gridTemplateColumns": "none",
+                  "border": "0px none rgb(21, 21, 21)",
+                  "borderRadius": "0px",
+                  "position": "static",
+                  "top": "auto"
+                },
+                "children": [
+                  {
+                    "tag": "DIV",
+                    "class": "jsx-4236654218 content",
+                    "text": null,
+                    "box": {
+                      "x": 232.40000915527344,
+                      "y": 612.2875366210938,
+                      "width": 960,
+                      "height": 2602.800048828125,
+                      "top": 612.2875366210938,
+                      "right": 1192.4000091552734,
+                      "bottom": 3215.0875854492188,
+                      "left": 232.40000915527344
+                    },
+                    "css": {
+                      "fontSize": "16px",
+                      "lineHeight": "24px",
+                      "fontWeight": "400",
+                      "color": "rgb(21, 21, 21)",
+                      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                      "padding": "0px",
+                      "margin": "0px",
+                      "width": "960px",
+                      "height": "2602.8px",
+                      "maxWidth": "none",
+                      "display": "flex",
+                      "gap": "24px",
+                      "gridTemplateColumns": "none",
+                      "border": "0px none rgb(21, 21, 21)",
+                      "borderRadius": "0px",
+                      "position": "static",
+                      "top": "auto"
+                    },
+                    "children": [
+                      {
+                        "tag": "DIV",
+                        "class": "jsx-4236654218 sidebar desktop-only",
+                        "text": null,
+                        "box": {
+                          "x": 900.4000244140625,
+                          "y": 612.2875366210938,
+                          "width": 292,
+                          "height": 687.2125244140625,
+                          "top": 612.2875366210938,
+                          "right": 1192.4000244140625,
+                          "bottom": 1299.5000610351562,
+                          "left": 900.4000244140625
+                        },
+                        "css": {
+                          "fontSize": "16px",
+                          "lineHeight": "24px",
+                          "fontWeight": "400",
+                          "color": "rgb(21, 21, 21)",
+                          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                          "padding": "20px 16px 16px",
+                          "margin": "0px",
+                          "width": "292px",
+                          "height": "687.213px",
+                          "maxWidth": "none",
+                          "display": "flex",
+                          "gap": "normal",
+                          "gridTemplateColumns": "none",
+                          "border": "0px none rgb(21, 21, 21)",
+                          "borderRadius": "0px",
+                          "position": "sticky",
+                          "top": "0px"
+                        },
+                        "children": [
+                          {
+                            "tag": "DIV",
+                            "class": "jsx-3016217020 container",
+                            "text": null,
+                            "box": {
+                              "x": 916.4000244140625,
+                              "y": 632.2875366210938,
+                              "width": 260,
+                              "height": 651.2125244140625,
+                              "top": 632.2875366210938,
+                              "right": 1176.4000244140625,
+                              "bottom": 1283.5000610351562,
+                              "left": 916.4000244140625
+                            },
+                            "css": {
+                              "fontSize": "16px",
+                              "lineHeight": "24px",
+                              "fontWeight": "400",
+                              "color": "rgb(21, 21, 21)",
+                              "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                              "padding": "0px",
+                              "margin": "0px",
+                              "width": "260px",
+                              "height": "651.213px",
+                              "maxWidth": "none",
+                              "display": "block",
+                              "gap": "normal",
+                              "gridTemplateColumns": "none",
+                              "border": "0px none rgb(21, 21, 21)",
+                              "borderRadius": "0px",
+                              "position": "static",
+                              "top": "auto"
+                            },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "DIV",
+                        "class": "jsx-4236654218 schedule flex-1",
+                        "text": null,
+                        "box": {
+                          "x": 232.40000915527344,
+                          "y": 612.2875366210938,
+                          "width": 644,
+                          "height": 2602.800048828125,
+                          "top": 612.2875366210938,
+                          "right": 876.4000091552734,
+                          "bottom": 3215.0875854492188,
+                          "left": 232.40000915527344
+                        },
+                        "css": {
+                          "fontSize": "16px",
+                          "lineHeight": "24px",
+                          "fontWeight": "400",
+                          "color": "rgb(21, 21, 21)",
+                          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                          "padding": "20px 0px 20px 16px",
+                          "margin": "0px",
+                          "width": "644px",
+                          "height": "2602.8px",
+                          "maxWidth": "none",
+                          "display": "block",
+                          "gap": "normal",
+                          "gridTemplateColumns": "none",
+                          "border": "0px none rgb(21, 21, 21)",
+                          "borderRadius": "0px",
+                          "position": "static",
+                          "top": "auto"
+                        },
+                        "children": [
+                          {
+                            "tag": "DIV",
+                            "class": "jsx-4236654218 flex-center spread",
+                            "text": null,
+                            "box": {
+                              "x": 248.40000915527344,
+                              "y": 632.2875366210938,
+                              "width": 628,
+                              "height": 30,
+                              "top": 632.2875366210938,
+                              "right": 876.4000091552734,
+                              "bottom": 662.2875366210938,
+                              "left": 248.40000915527344
+                            },
+                            "css": {
+                              "fontSize": "16px",
+                              "lineHeight": "24px",
+                              "fontWeight": "400",
+                              "color": "rgb(21, 21, 21)",
+                              "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                              "padding": "0px",
+                              "margin": "0px",
+                              "width": "628px",
+                              "height": "30px",
+                              "maxWidth": "none",
+                              "display": "flex",
+                              "gap": "normal",
+                              "gridTemplateColumns": "none",
+                              "border": "0px none rgb(21, 21, 21)",
+                              "borderRadius": "0px",
+                              "position": "static",
+                              "top": "auto"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "DIV",
+                            "class": "lux-collapse",
+                            "text": null,
+                            "box": {
+                              "x": 248.40000915527344,
+                              "y": 662.2875366210938,
+                              "width": 628,
+                              "height": 0,
+                              "top": 662.2875366210938,
+                              "right": 876.4000091552734,
+                              "bottom": 662.2875366210938,
+                              "left": 248.40000915527344
+                            },
+                            "css": {
+                              "fontSize": "16px",
+                              "lineHeight": "24px",
+                              "fontWeight": "400",
+                              "color": "rgb(21, 21, 21)",
+                              "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                              "padding": "0px",
+                              "margin": "0px",
+                              "width": "628px",
+                              "height": "0px",
+                              "maxWidth": "none",
+                              "display": "block",
+                              "gap": "normal",
+                              "gridTemplateColumns": "none",
+                              "border": "0px none rgb(21, 21, 21)",
+                              "borderRadius": "0px",
+                              "position": "static",
+                              "top": "auto"
+                            },
+                            "children": []
+                          },
+                          {
+                            "tag": "DIV",
+                            "class": "jsx-531641071",
+                            "text": null,
+                            "box": {
+                              "x": 248.40000915527344,
+                              "y": 682.2875366210938,
+                              "width": 628,
+                              "height": 2512.800048828125,
+                              "top": 682.2875366210938,
+                              "right": 876.4000091552734,
+                              "bottom": 3195.0875854492188,
+                              "left": 248.40000915527344
+                            },
+                            "css": {
+                              "fontSize": "16px",
+                              "lineHeight": "24px",
+                              "fontWeight": "400",
+                              "color": "rgb(21, 21, 21)",
+                              "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                              "padding": "0px",
+                              "margin": "20px 0px 0px",
+                              "width": "628px",
+                              "height": "2512.8px",
+                              "maxWidth": "none",
+                              "display": "block",
+                              "gap": "normal",
+                              "gridTemplateColumns": "none",
+                              "border": "0px none rgb(21, 21, 21)",
+                              "borderRadius": "0px",
+                              "position": "static",
+                              "top": "auto"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "styles": [
+    ".lux-menu-wrapper.menu-fco0vifb7zc{}",
+    ".lux-menu.jsx-1125089565{--trigger-width:auto}",
+    "div.jsx-75a36a52353cb3a6{margin:-4px 0}.link.jsx-75a36a52353cb3a6 a{outline-offset:4px;color:var(--nav-link-color);border-radius:100px}.link.jsx-75a36a52353cb3a6 a:hover{color:var(--nav-link-hover-color)}.link.jsx-75a36a52353cb3a6 a:focus-visible{outline:2px solid var(--nav-link-color)}",
+    ".nav-wrapper.jsx-1502588700{background-color:var(--nav-bg-color);width:100%}.nav-wrapper.sticky.jsx-1502588700{border-bottom:1px solid var(--opacity-0);z-index:10;-webkit-backdrop-filter:var(--backdrop-blur);backdrop-filter:var(--backdrop-blur);position:fixed}.nav-wrapper.sticky.show-divider.jsx-1502588700{border-bottom:1px solid var(--divider-color)}.background.jsx-1502588700{pointer-events:none;z-index:1;opacity:0;width:100%;height:180px;position:fixed}.background.mounted.jsx-1502588700{opacity:1}.blur.jsx-1502588700{width:100%;height:3.5rem;-webkit-backdrop-filter:var(--backdrop-blur);backdrop-filter:var(--backdrop-blur);z-index:2;position:absolute;top:0;left:0;-webkit-mask:linear-gradient(#000 0%,#0000 100%);mask:linear-gradient(#000 0%,#0000 100%)}nav.jsx-1502588700{width:100%;padding:var(--nav-padding);z-index:200;position:relative}nav.jsx-1502588700 .logo-wrapper{border-radius:var(--border-radius);z-index:1;position:relative}.logo.jsx-1502588700{color:var(--nav-link-color);margin:0 -4px;padding:4px}@media (max-width:650px){.logo.jsx-1502588700{padding-right:6px}}@media (max-width:450px){.logo.jsx-1502588700{padding-right:4px}}.logo.jsx-1502588700:hover{color:var(--nav-link-hover-color)}.logo.jsx-1502588700 svg{width:20px;height:20px}.logo.wordmark.jsx-1502588700{padding:6px 4px}.logo.wordmark.jsx-1502588700 svg{width:auto;height:16px}.center-and-right.jsx-1502588700{--side-width:calc((100% - var(--max-width)) / 2);max-width:calc(var(--max-width) + var(--side-width));flex:1;justify-content:space-between;align-items:center;min-width:0;display:flex}.center-wrapper.jsx-1502588700 a{color:var(--nav-link-color);font-weight:var(--font-weight-medium)}.center-wrapper.jsx-1502588700 a:hover,.center-wrapper.jsx-1502588700 a.selected{color:var(--nav-link-hover-color)}.right-wrapper.jsx-1502588700{align-items:center;gap:1rem;display:flex}.right-wrapper.jsx-1502588700 .time{color:var(--nav-link-color)}@media (max-width:650px){.right-wrapper.jsx-1502588700{gap:.875rem}.right-wrapper.jsx-1502588700 .time{display:none}}",
+    ".img-aspect-ratio.jsx-bf40f23d3e10e809{background-color:var(--opacity-light);width:100%;position:relative;overflow:hidden}.img-aspect-ratio.jsx-bf40f23d3e10e809 img.jsx-bf40f23d3e10e809{object-fit:cover;width:100%;height:100%;position:absolute;top:0;left:0}",
+    ".signin-container{min-width:360px}.signin-container .onboarding-card{box-shadow:var(--shadow-modal);--card-bg-color:var(--modal-bg-color)!important}@media (max-width:450px){.signin-container{min-width:90vw}}",
+    ".mobile.jsx-1900561865{display:none}@media (max-width:820px){.desktop.jsx-1900561865{display:none}.mobile.jsx-1900561865{display:block}}",
+    ".lux-menu-wrapper.menu-4fsj8twj37{}",
+    ".social-link.jsx-c1476e59a1b29a96 a{color:var(--tertiary-color-alpha);padding:.375rem;display:block}.social-link.jsx-c1476e59a1b29a96 a:hover{color:var(--primary-color)}.social-link.large.jsx-c1476e59a1b29a96 a{padding:.5rem}.social-link.large.jsx-c1476e59a1b29a96 svg{width:1.125rem;height:1.125rem}",
+    ".lux-menu-wrapper.menu-ezeso2uztcm{}",
+    ".lux-menu-wrapper.menu-hj5rf6hkbeo{}",
+    ".lux-menu-wrapper.menu-zudg8vz3ilb{}",
+    ".social-links.jsx-9577fbf62c568ee1{margin-left:-.375rem;margin-right:-.375rem}.social-links.large.jsx-9577fbf62c568ee1{margin-left:-.5rem;margin-right:-.5rem}",
+    ".zm-container.jsx-3820449905{padding:0 var(--calendar-horizontal-padding);position:relative}.fade.jsx-3820449905{background:linear-gradient(180deg, var(--brand-pale-bg-color) 0, var(--depressed-secondary-bg-color) 100%);width:100%;height:8rem;position:absolute;top:0}@media (max-width:820px){.fade.jsx-3820449905{display:none}}.cover-wrapper.jsx-3820449905{padding:.5rem 0 0}.cover.jsx-3820449905{--aspect-ratio:3.5;border-radius:var(--large-border-radius);margin:0 -24px;overflow:hidden}hr.jsx-3820449905{margin:0 0 .25rem;padding-top:.25rem}.social{margin-top:-.125rem;margin-bottom:-.25rem}@media (max-width:450px){.desc.jsx-3820449905{font-size:var(--font-size-sm)}hr.jsx-3820449905{margin-bottom:0;padding-top:0}}@media (max-width:1008px){.cover-wrapper.jsx-3820449905{padding-top:0}.cover.jsx-3820449905{border-radius:0;margin:0 calc(480px - 50vw)}}@media (max-width:960px){.cover.jsx-3820449905{margin:0}}.logo-wrapper.jsx-3820449905{--size:6rem;--border-width:6px;margin-top:calc(-.5625 * var(--size));margin-bottom:var(--calendar-vertical-padding)}@media (max-width:820px){.logo-wrapper.jsx-3820449905{--size:5rem;--border-width:4px}}@media (max-width:650px){.logo-wrapper.jsx-3820449905{--size:4.5rem}}@media (max-width:450px){.logo-wrapper.jsx-3820449905{--size:4rem;--border-width:3px;margin-top:calc(-.4375 * var(--size))}}.logo.jsx-3820449905{z-index:1;background-color:var(--page-bg-color);border-radius:var(--large-border-radius);padding:var(--border-width);margin-left:calc(-1 * var(--border-width));overflow:hidden}.logo.jsx-3820449905 .logo{border-radius:calc(var(--large-border-radius) - var(--border-width))}@media (max-width:650px){.logo.jsx-3820449905{border-radius:var(--border-radius)}.logo.jsx-3820449905 .logo{border-radius:calc(var(--border-radius) - var(--border-width))}}.header.jsx-3820449905{--title-font-size:2.25rem;--long-title-font-size:2rem;gap:calc(var(--calendar-vertical-padding) - .75rem);margin-bottom:var(--calendar-vertical-padding)}@media (max-width:820px){.header.jsx-3820449905{--title-font-size:2rem;--long-title-font-size:1.75rem;gap:calc(var(--calendar-vertical-padding) - .5rem)}}@media (max-width:650px){.header.jsx-3820449905{--title-font-size:1.75rem;--long-title-font-size:1.5rem}}@media (max-width:450px){.header.jsx-3820449905{--title-font-size:1.5rem;--long-title-font-size:1.375rem}}",
+    "h1.jsx-23e6c931e30f22d9{font-size:var(--title-font-size);color:var(--primary-color);font-weight:var(--font-weight-bold)}h1.long.jsx-23e6c931e30f22d9{font-size:var(--long-title-font-size)}.cover-wrapper.jsx-23e6c931e30f22d9 .cover{padding-bottom:calc(100% / var(--aspect-ratio))}.cover-wrapper.jsx-23e6c931e30f22d9 .cover.empty{padding-bottom:calc(50% / var(--aspect-ratio))}.logo.jsx-23e6c931e30f22d9{width:var(--size);height:var(--size);background-position:50%;background-size:cover}.meta.jsx-23e6c931e30f22d9{flex-wrap:wrap;gap:.25rem 1.25rem}",
+    ".header.jsx-8315f755e146483b{margin-right:-.25rem}.icon.jsx-8315f755e146483b{line-height:inherit;color:var(--tertiary-color-alpha);cursor:pointer;-webkit-user-select:none;user-select:none;border-radius:var(--small-border-radius);border:0;margin:0;padding:.1875rem;display:block}@media (hover:hover){.icon.jsx-8315f755e146483b:hover{background-color:var(--hover-bg-color);color:var(--secondary-color-alpha)}}.dot.jsx-8315f755e146483b{text-align:center;cursor:pointer;width:1rem;height:1.25rem;position:relative}.dot.jsx-8315f755e146483b:after{transition:var(--transition);content:\"\";background-color:var(--tertiary-color-alpha);border-radius:50%;width:.5rem;height:.5rem;position:absolute;top:.375rem;left:.25rem}@media (hover:hover){.dot.jsx-8315f755e146483b:hover:after{background-color:var(--secondary-color-alpha)}}.icon.left.jsx-8315f755e146483b{transform:rotateY(180deg)}.icon.disabled.jsx-8315f755e146483b{color:var(--quaternary-color-alpha)}",
+    ".week.jsx-c7ffefd6f43642b9{grid-template-columns:repeat(7,1fr);display:grid}.day.jsx-c7ffefd6f43642b9{-webkit-user-select:none;user-select:none;padding:var(--day-padding);font-size:var(--day-font-size);aspect-ratio:1;justify-content:center;align-items:center;display:flex}",
+    ".month-weeks.jsx-1d6deb67f8cd96fa{width:calc(var(--cg-width) - 2 * var(--cg-horizontal-padding))}",
+    ".day.jsx-61103694e5aa511f{width:100%;color:inherit;padding:var(--day-padding);font-size:var(--day-font-size);font-weight:var(--font-weight-medium);aspect-ratio:1;border-radius:var(--border-radius);cursor:pointer;-webkit-user-select:none;user-select:none;justify-content:center;align-items:center;gap:var(--day-padding);border:0;flex-direction:column;margin:0;line-height:1;display:flex}.day.jsx-61103694e5aa511f:not(.in-active-month):not(.disabled){color:var(--tertiary-color-alpha)}.with-dot.jsx-61103694e5aa511f{border-radius:100%}.dot.jsx-61103694e5aa511f{--size:5px;border-radius:var(--size);width:var(--size);height:var(--size);background-color:#0000;transform:translateY(2px)}.dot-visible.jsx-61103694e5aa511f .dot.jsx-61103694e5aa511f{background-color:var(--tertiary-color-alpha)}.dot-visible.jsx-61103694e5aa511f:not(.in-active-month):not(.disabled):not(.selected){color:var(--tertiary-color-alpha)}.dot-visible.jsx-61103694e5aa511f:not(.in-active-month):not(.disabled):not(.selected) .dot.jsx-61103694e5aa511f{background-color:var(--opacity-16)}.disabled.jsx-61103694e5aa511f{opacity:.5;cursor:none;pointer-events:none}.disabled.jsx-61103694e5aa511f:not(.in-active-month){opacity:.2}.day.selected.jsx-61103694e5aa511f{background-color:var(--primary-color);color:var(--primary-bg-color)}.day.selected.dot-visible.jsx-61103694e5aa511f .dot.jsx-61103694e5aa511f{background-color:var(--primary-bg-color)}.day.selected.jsx-61103694e5aa511f:not(.in-active-month){background-color:var(--tertiary-color-alpha);color:var(--tertiary-bg-color)}.day.selected.jsx-61103694e5aa511f:not(.in-active-month).dot-visible .dot.jsx-61103694e5aa511f{background-color:var(--tertiary-bg-color)}.selected.jsx-61103694e5aa511f:hover{background-color:var(--opacity-80)}.today.jsx-61103694e5aa511f{font-weight:var(--font-weight-bold);color:var(--brand-color)}.today.disabled.jsx-61103694e5aa511f{color:var(--brand-color);opacity:.64}.today.selected.jsx-61103694e5aa511f:not(.disabled){background-color:var(--brand-bg-color);color:#fff!important}.today.selected.jsx-61103694e5aa511f:not(.disabled):hover{background-color:var(--brand-active-bg-color)}.today.selected.jsx-61103694e5aa511f:not(.disabled) .dot.jsx-61103694e5aa511f{background-color:#fff}",
+    ".week.jsx-9c640b9f430f0c8{grid-template-columns:repeat(7,1fr);display:grid}",
+    ".month-weeks.jsx-c7906744c5a689ee{align-content:start;align-items:center;gap:var(--calendar-gap);width:calc(var(--cg-width) - 2 * var(--cg-horizontal-padding));grid-template-columns:1fr;display:grid}.month-name-info.jsx-c7906744c5a689ee{pointer-events:none;color:var(--opacity-8);z-index:-1;place-items:center;font-size:1.5rem;display:grid}",
+    ".calendar-grid.jsx-2442263078{--cg-horizontal-padding:12px;--cg-vertical-padding:.5rem;--cg-width:250px;--day-padding:.125rem;--day-font-size:var(--font-size-sm);--calendar-gap:1px;padding:var(--cg-vertical-padding) var(--cg-horizontal-padding);width:var(--cg-width)}.months.jsx-2442263078{scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;flex-direction:row;width:100%;display:flex;overflow-x:auto}.months.jsx-2442263078::-webkit-scrollbar{display:none}.month.jsx-2442263078{scroll-snap-align:start;display:flex}",
+    ".mini-calendar.jsx-f33cd24e2745a8a{padding:0 4px}",
+    ".lux-collapse.shown{filter:none!important}",
+    ".button-switcher.jsx-11506686c0bc57f{padding-top:1px}",
+    ".container.jsx-3016217020{width:260px}@media (max-width:820px){.container.jsx-3016217020{display:none}}",
+    "hr.jsx-fe4f63e880d7d49b{margin:.75rem -.875rem .75rem 2.5625rem}",
+    ".pending-banner-wrapper.jsx-90502b0e589a0e2b{padding-top:.5rem}.pending-banner-wrapper.jsx-90502b0e589a0e2b .pending-banner.jsx-90502b0e589a0e2b{border-radius:var(--border-radius);color:var(--warning-color);background-color:var(--warning-faint-bg-color)}.pending-banner-wrapper.jsx-90502b0e589a0e2b .top-banner.jsx-90502b0e589a0e2b{cursor:pointer;padding:.75rem 1.25rem}.pending-banner-wrapper.jsx-90502b0e589a0e2b .top-banner.jsx-90502b0e589a0e2b:hover{color:var(--warning-active-color)}.pending-banner-wrapper.jsx-90502b0e589a0e2b .expand.jsx-90502b0e589a0e2b{transition:transform var(--transition-duration);margin-right:-.25rem}.pending-banner-wrapper.jsx-90502b0e589a0e2b .expand.show.jsx-90502b0e589a0e2b{transform:rotate(90deg)}.pending-banner-wrapper.jsx-90502b0e589a0e2b .expand.jsx-90502b0e589a0e2b svg{width:1.25rem;height:1.25rem}.pending-banner-wrapper.jsx-90502b0e589a0e2b .events.jsx-90502b0e589a0e2b{background-color:var(--primary-bg-color);border-bottom-left-radius:var(--border-radius);border-bottom-right-radius:var(--border-radius);border:1px solid var(--warning-pale-bg-color);padding:.75rem 1.25rem}.pending-banner-wrapper.jsx-90502b0e589a0e2b .events.jsx-90502b0e589a0e2b div.jsx-90502b0e589a0e2b+div.jsx-90502b0e589a0e2b{border-top:1px solid var(--warning-pale-bg-color);margin-top:.375rem;padding-top:.375rem}",
+    "div.jsx-531641071{--timeline-section-gap:1.5rem;--timeline-sticky-header-offset:1.5rem;--compact-event-list-header-offset:0;margin-top:1.25rem}@media (max-width:450px){div.jsx-531641071{--timeline-section-gap:1rem;margin-top:1rem}}h3.jsx-531641071{font-size:var(--font-size-xl);margin-bottom:1.25rem}@media (max-width:820px){h3.jsx-531641071{font-size:var(--font-size-lg)}}",
+    "h2.jsx-4236654218{font-size:var(--font-size-xxxl)}.content.jsx-4236654218{flex-direction:row-reverse;align-items:flex-start;gap:1.5rem;display:flex}.content.jsx-4236654218 .lux-empty-state .illustration{mix-blend-mode:luminosity}@media (max-width:1000px){.content.jsx-4236654218{gap:.5rem}}.sidebar.jsx-4236654218{padding:var(--calendar-vertical-padding) var(--calendar-horizontal-padding) 1rem 1rem;max-height:100vh;max-height:100dvh;position:sticky;top:0;overflow:hidden}.schedule.jsx-4236654218{padding:var(--calendar-vertical-padding) 0 var(--calendar-vertical-padding) var(--calendar-horizontal-padding)}.schedule.jsx-4236654218 .compact-switcher{height:var(--small-input-height)}.mobile-only.jsx-4236654218{display:none}.desktop-only.jsx-4236654218{display:inherit}@media (max-width:820px){h2.jsx-4236654218{font-size:var(--font-size-xl)}.mobile-only.jsx-4236654218{display:inherit}.desktop-only.jsx-4236654218{display:none}.content.jsx-4236654218{flex-direction:column;align-items:stretch;gap:1rem}.schedule.jsx-4236654218{padding:var(--calendar-vertical-padding) var(--calendar-horizontal-padding)}}",
+    ".page-wrapper.jsx-948537168{background-color:var(--depressed-secondary-bg-color);min-height:100vh;min-height:100dvh;padding-bottom:4rem}.page-wrapper.no-bottom-padding.jsx-948537168{padding-bottom:0}.skip-link.jsx-948537168{z-index:1000;border-radius:var(--border-radius);background-color:var(--primary-bg-color);color:var(--primary-color);box-shadow:var(--shadow-lg);padding:.5rem .75rem;position:fixed;top:.5rem;left:-9999px}.skip-link.jsx-948537168:focus{left:.5rem}.page-content.sticky-topnav.jsx-948537168{padding-top:calc(3.25rem + 1px)}",
+    "html.theme-root{background-color:var(--depressed-secondary-bg-color)}",
+    ".tinted-nav.jsx-173663690{--nav-bg-color:var(--brand-pale-bg-color)}@media (max-width:820px){.tinted-nav.jsx-173663690{--nav-bg-color:transparent}}.page-container.jsx-173663690{--calendar-horizontal-padding:1rem;--calendar-vertical-padding:1.25rem;min-height:100vh;min-height:100dvh;color:var(--primary-color)}@media (max-width:820px){.page-container.jsx-173663690{--calendar-horizontal-padding:1rem;--calendar-vertical-padding:1rem}}",
+    ".tint-root.light.jsx-1988394536,.theme-root:not(.dark) .tint-root.jsx-1988394536:not(.dark){ --meta-color: unset}.tint-root.dark.jsx-1988394536,.theme-root.dark .tint-root.jsx-1988394536:not(.light){ --meta-color: unset}",
+    ".search-modal{width:100%;max-width:580px;box-shadow:var(--shadow-modal);background-color:var(--modal-bg-color);-webkit-backdrop-filter:var(--modal-backdrop-filter);backdrop-filter:var(--modal-backdrop-filter);will-change:transform, opacity;overflow:hidden;transform:translateZ(0)}",
+    " @keyframes go2085173946{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go2637008744{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}@keyframes go3682797858{from{transform:scale(0) rotate(90deg);opacity:0;}to{transform:scale(1) rotate(90deg);opacity:1;}}@keyframes go3841015853{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@keyframes go4291331346{0%{height:0;width:0;opacity:0;}40%{height:0;width:6px;opacity:1;}100%{opacity:1;height:10px;}}@keyframes go1824168254{from{transform:scale(0.6);opacity:0.4;}to{transform:scale(1);opacity:1;}}.go318030988{z-index:9999;}.go318030988 > *{pointer-events:auto;}",
+    ".transform-component-module_wrapper__SPB86 {\n  position: relative;\n  width: -moz-fit-content;\n  width: fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  overflow: hidden;\n  -webkit-touch-callout: none; /* iOS Safari */\n  /* Text stays selectable (#467); the instance applies an inline lock\n     only while a pan gesture is active. */\n  margin: 0;\n  padding: 0;\n  transform: translate3d(0, 0, 0);\n}\n.transform-component-module_content__FBWxo {\n  display: flex;\n  flex-wrap: wrap;\n  width: -moz-fit-content;\n  width: fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  margin: 0;\n  padding: 0;\n  transform-origin: 0% 0%;\n}\n.transform-component-module_content__FBWxo img {\n  pointer-events: none;\n}\n.transform-component-module_infiniteGrid__Z-aP3 {\n  position: absolute;\n  inset: 0;\n  pointer-events: none;\n  background-image: radial-gradient(\n    circle,\n    rgba(0, 0, 0, 0.12) 1px,\n    transparent 1px\n  );\n  background-size: 20px 20px;\n  background-position: 0 0;\n}\n",
+    ".lux-menu-wrapper.menu-ha40ibg0xh{}",
+    "@media (max-width:450px){.meta-row.jsx-1338864358{font-size:var(--font-size-sm)}.meta-row.jsx-1338864358 .icon svg{width:var(--font-size-sm);height:var(--font-size-sm)}}",
+    ".lux-menu.jsx-187288048{--trigger-width:28px}",
+    ".lux-menu-wrapper.menu-ickvsfmq65k{}",
+    ".lux-menu-wrapper.menu-84dugr6ds4o{}",
+    ".lux-menu-wrapper.menu-s5z1ir2qdle{}",
+    ".event-search-container{z-index:1000;position:fixed;top:0;bottom:0;left:0;right:0}.close-button.jsx-477040745{z-index:1;position:absolute;top:1rem;right:1rem}.zm-container.jsx-477040745{height:100vh;height:100dvh;padding:4rem 4rem 0}@media (max-width:650px){.zm-container.jsx-477040745{padding:2.5rem}}@media (max-width:450px){.zm-container.jsx-477040745{padding:0}}.search-input-wrapper.jsx-477040745{width:100%;position:relative}.search-input-wrapper.jsx-477040745 .search-icon.jsx-477040745{color:var(--placeholder-color);position:absolute;top:.875rem;left:0}.search-input-wrapper.jsx-477040745 .search-icon.jsx-477040745 svg{width:1.25rem;height:1.25rem}@media (hover:hover){.search-input-wrapper.jsx-477040745:hover .search-icon.jsx-477040745{color:var(--tertiary-color-alpha)}}.search-input-wrapper.jsx-477040745:focus-within .search-icon.jsx-477040745{color:var(--primary-color)}.search-input-wrapper.jsx-477040745 input.jsx-477040745{box-shadow:none;border:none;border-bottom:1px solid var(--divider-color);height:3rem;font-size:var(--font-size-xxxl);background-color:#0000;border-radius:0;outline:none;padding-left:1.875rem}@media (hover:hover){.search-input-wrapper.jsx-477040745 input.jsx-477040745:hover{border-color:var(--tertiary-color-alpha)}}.search-input-wrapper.jsx-477040745 input.jsx-477040745:focus{border-color:var(--primary-color)}@media (max-width:450px){.search-input-wrapper.jsx-477040745 .search-icon.jsx-477040745{top:1.25rem;left:1rem}.search-input-wrapper.jsx-477040745 .search-icon.jsx-477040745 svg{width:1rem;height:1rem}.search-input-wrapper.jsx-477040745 input.jsx-477040745{font-size:var(--font-size-lg);background-color:var(--opacity-4);height:3.5rem;padding-left:2.625rem;padding-right:3.5rem}}.results.jsx-477040745{--event-row-padding:1rem}@media (min-width:451px){.results.jsx-477040745{--event-row-padding:1rem 0;margin:0 -2rem;padding:.75rem 2rem 1rem}}",
+    ".lux-menu.jsx-1606530649{--trigger-width:30px}",
+    ".lux-menu.jsx-1552972926{--trigger-width:26px}",
+    "html.theme-root,html.theme-root .page-wrapper{background-color:#f8f8f8}",
+    ".lux-menu.jsx-3458073914{--trigger-width:44px}",
+    "@media (max-width:99999px){.timeline-title.jsx-1080733793{margin-bottom:.875rem;margin-left:-1.5rem;transform:translateY(-.125rem)}.timeline-title.jsx-1080733793 .content.jsx-1080733793{margin:-.25rem -.75rem -.25rem calc(-1 * var(--timeline-single-column-line-left-padding) - var(--timeline-single-column-line-width) + 1rem);padding:.25rem .75rem .25rem calc(var(--timeline-single-column-line-left-padding) + var(--timeline-single-column-line-width) + .5rem);border:1px solid var(--opacity-0);background-color:var(--bg-opacity-0);border-radius:100px;align-items:baseline;gap:.375rem;display:inline-flex}.timeline-title.sticky.sticky-always.jsx-1080733793 .content.jsx-1080733793{border-color:var(--opacity-light);background-color:var(--bg-opacity-64);-webkit-backdrop-filter:var(--backdrop-blur);backdrop-filter:var(--backdrop-blur);box-shadow:var(--shadow-sm)}@media (max-width:450px){.timeline-title.jsx-1080733793{margin-bottom:.625rem}}}.date.jsx-1080733793{font-weight:var(--font-weight-medium)}",
+    "div.jsx-1389885580{width:120px}div.jsx-1389885580 .event-card-cover{border:.5px solid var(--opacity-4)}div.jsx-1389885580 .event-card-cover img{transform:scale(1.005)}@media (max-width:450px){div.jsx-1389885580{width:90px}}",
+    ".event-time.spread.jsx-2880832626{flex-direction:row-reverse}@media (max-width:450px){.event-time.jsx-2880832626{font-size:var(--font-size-sm)}}",
+    "div.jsx-131803272{--text-size:var(--font-size-xl);line-height:var(--reduced-line-height);text-wrap:pretty}@media (max-width:650px){div.jsx-131803272{--text-size:var(--font-size-lg)}}h3.jsx-131803272{font-size:var(--text-size);font-weight:var(--font-weight-medium);word-break:break-word;display:inline}h3.jsx-131803272:not(:last-child){margin-right:.375rem}.external.jsx-131803272 svg{width:calc(var(--text-size) * .875);height:calc(var(--text-size) * .875);display:inline;transform:translateY(-10%)}",
+    ".online-indicator.jsx-5191f4da6f3e0a15{border-radius:100%;width:25%;min-width:6px;height:25%;min-height:6px;position:absolute;bottom:1.5%;right:1.5%}",
+    ".avatar-wrapper.jsx-514553351{width:-moz-fit-content;width:fit-content;position:relative}.avatar-wrapper.jsx-514553351 .avatar.jsx-514553351{width:1rem;height:1rem;background-position:50%;background-size:cover;background-color:var(--opacity-light);box-shadow:inset 0 0 0 .5px var(--divider-color);border-radius:1000px}.avatar-wrapper.square.jsx-514553351 .avatar.jsx-514553351{border-radius:var(--border-radius)}.avatar-wrapper.small.square.jsx-514553351 .avatar.jsx-514553351{border-radius:var(--small-border-radius)}.avatar-wrapper.jsx-514553351 .missing-0.jsx-514553351{background:linear-gradient(120deg,#ff5f6d,#ffc371)}.avatar-wrapper.jsx-514553351 .missing-1.jsx-514553351{background:linear-gradient(120deg,#4ca1af,#c4e0e5)}.avatar-wrapper.jsx-514553351 .missing-2.jsx-514553351{background:linear-gradient(120deg,#4568dc,#b06ab3)}.avatar-wrapper.jsx-514553351 .missing-3.jsx-514553351{background:linear-gradient(120deg,#7b4397,#dc2430)}.avatar-wrapper.jsx-514553351 .missing-4.jsx-514553351{background:linear-gradient(120deg,#56ab2f,#a8e063)}.avatar-wrapper.jsx-514553351 .missing-5.jsx-514553351{background:linear-gradient(120deg,#ee9ca7,#ffdde1)}.avatar-wrapper.jsx-514553351 .missing-6.jsx-514553351{background:linear-gradient(120deg,#2193b0,#6dd5ed)}",
+    ".lux-menu-wrapper.menu-a9a12cv7up6{}",
+    ".lux-menu-wrapper.menu-wh2gvxg3oh{}",
+    ".lux-menu-wrapper.menu-352y4va8x2h{}",
+    ".heads.jsx-3346871149 .head.jsx-3346871149{position:relative}.heads.jsx-3346871149 .head.jsx-3346871149:not(:last-child) .tooltip.jsx-3346871149{right:calc(( 1 - var(--cutout-avatar-percentage-visible) - var(--head-margin-percentage) ) * var(--size))}.heads.jsx-3346871149 .head:not(:first-child){margin-left:calc(-1 * ( 1 - var(--cutout-avatar-percentage-visible) - var(--head-margin-percentage) ) * var(--size))}.heads.jsx-3346871149 .head.jsx-3346871149:not(:last-child) .avatar-wrapper{-webkit-mask:radial-gradient(circle at 1.1rem 0.5rem, transparent calc(0.6rem - 0.25px), black calc(0.6rem + 0.25px));mask:radial-gradient(circle at 1.1rem 0.5rem, transparent calc(0.6rem - 0.25px), black calc(0.6rem + 0.25px))}.heads.jsx-3346871149 .remaining-count.jsx-3346871149{border-radius:var(--size);height:var(--size);padding:0 calc(var(--size) / 6);min-width:var(--size);font-size:calc(var(--size) / 2);background-color:var(--opacity-light)}",
+    "div.jsx-e74804ac03b83871{font-size:var(--font-size)}div.jsx-e74804ac03b83871 svg{width:var(--font-size);height:var(--font-size)}",
+    ".attr.jsx-3515223999{--font-size:var(--font-size-md);gap:.375rem}.attr.small.jsx-3515223999{--font-size:var(--font-size-sm);gap:.3125rem}@media (max-width:650px){.attr.jsx-3515223999{--font-size:var(--font-size-sm);gap:.3125rem}}.attr.jsx-3515223999 .icon{height:calc(var(--font-size) * var(--default-line-height))}",
+    ".info-and-cover.jsx-114414067{flex-direction:row-reverse;gap:1rem}.info-and-cover.jsx-114414067 .info.jsx-114414067{gap:.5rem}@media (max-width:450px){.info-and-cover.jsx-114414067{gap:.75rem}.info-and-cover.jsx-114414067 .info.jsx-114414067{gap:.25rem}}.cover-image.jsx-114414067{pointer-events:none}",
+    ".pill.jsx-16ad4d648c7a0666{white-space:nowrap;border-radius:var(--border-radius);line-height:1;font-weight:var(--font-weight-medium);color:var(--variant-color,var(--opacity-48));background-color:var(--variant-color-pale,var(--opacity-8));border:none;align-items:center;display:inline-flex}.pill.jsx-16ad4d648c7a0666:focus-visible{outline:1px solid var(--variant-color,var(--opacity-48));outline-offset:1px}.pill.tiny.jsx-16ad4d648c7a0666,.pill.small.jsx-16ad4d648c7a0666{border-radius:var(--small-border-radius)}.pill.rounded.jsx-16ad4d648c7a0666{border-radius:100px}.pill.clickable.jsx-16ad4d648c7a0666{transition:var(--transition);cursor:pointer}.pill.outline.jsx-16ad4d648c7a0666{color:var(--variant-color,var(--opacity-48));border:1px solid var(--variant-color,var(--opacity-48));background-color:#0000}.pill.solid.jsx-16ad4d648c7a0666{color:#fff;background-color:var(--variant-color-bg,var(--gray-background))}.pill.clickable.jsx-16ad4d648c7a0666:hover:not(:has(.delete-btn:hover)){color:#fff;background-color:var(--variant-color-bg,var(--gray-background))}.pill.outline.clickable.jsx-16ad4d648c7a0666:hover:not(:has(.delete-btn:hover)){border-color:var(--variant-color-bg,var(--gray-background))}.pill.solid.clickable.jsx-16ad4d648c7a0666:hover:not(:has(.delete-btn:hover)){background-color:var(--variant-color-bg-active,var(--gray-background-active))}.pill.jsx-16ad4d648c7a0666 .pill-label.overflow.jsx-16ad4d648c7a0666{text-overflow:ellipsis;margin:-2px 0;padding:2px 0;overflow-x:hidden}.pill.jsx-16ad4d648c7a0666 .icon.jsx-16ad4d648c7a0666,.pill.jsx-16ad4d648c7a0666 .delete-btn.jsx-16ad4d648c7a0666{align-items:center;display:flex}.pill.jsx-16ad4d648c7a0666 .delete-btn.jsx-16ad4d648c7a0666{border-radius:var(--border-radius);color:inherit;opacity:.6;cursor:pointer;border:none}.pill.jsx-16ad4d648c7a0666 .delete-btn.jsx-16ad4d648c7a0666:hover{opacity:1}.pill.tiny.jsx-16ad4d648c7a0666{padding:var(--tiny-pill-padding);font-size:var(--tiny-pill-font-size)}.pill.tiny.outline.jsx-16ad4d648c7a0666{padding:var(--tiny-pill-padding-outline)}.pill.tiny.jsx-16ad4d648c7a0666 .icon.icon-left.jsx-16ad4d648c7a0666{margin-right:var(--tiny-pill-element-gap)}.pill.tiny.jsx-16ad4d648c7a0666 .icon.icon-right.jsx-16ad4d648c7a0666{margin-left:var(--tiny-pill-element-gap)}.pill.tiny.jsx-16ad4d648c7a0666 .delete-btn.jsx-16ad4d648c7a0666{padding:var(--tiny-pill-padding);margin:var(--tiny-pill-delete-margin)}.pill.tiny.jsx-16ad4d648c7a0666 .icon.jsx-16ad4d648c7a0666 svg,.pill.tiny.jsx-16ad4d648c7a0666 .delete-btn.jsx-16ad4d648c7a0666 svg{width:var(--tiny-pill-font-size);height:var(--tiny-pill-font-size)}.pill.small.jsx-16ad4d648c7a0666{padding:var(--small-pill-padding);font-size:var(--small-pill-font-size)}.pill.small.outline.jsx-16ad4d648c7a0666{padding:var(--small-pill-padding-outline)}.pill.small.jsx-16ad4d648c7a0666 .icon.icon-left.jsx-16ad4d648c7a0666{margin-right:var(--small-pill-element-gap)}.pill.small.jsx-16ad4d648c7a0666 .icon.icon-right.jsx-16ad4d648c7a0666{margin-left:var(--small-pill-element-gap)}.pill.small.jsx-16ad4d648c7a0666 .delete-btn.jsx-16ad4d648c7a0666{padding:var(--small-pill-padding);margin:var(--small-pill-delete-margin)}.pill.small.jsx-16ad4d648c7a0666 .icon.jsx-16ad4d648c7a0666 svg,.pill.small.jsx-16ad4d648c7a0666 .delete-btn.jsx-16ad4d648c7a0666 svg{width:var(--small-pill-font-size);height:var(--small-pill-font-size)}.pill.medium.jsx-16ad4d648c7a0666{padding:var(--medium-pill-padding);font-size:var(--medium-pill-font-size)}.pill.medium.outline.jsx-16ad4d648c7a0666{padding:var(--medium-pill-padding-outline)}.pill.medium.jsx-16ad4d648c7a0666 .icon.icon-left.jsx-16ad4d648c7a0666{margin-right:var(--medium-pill-element-gap)}.pill.medium.jsx-16ad4d648c7a0666 .icon.icon-right.jsx-16ad4d648c7a0666{margin-left:var(--medium-pill-element-gap)}.pill.medium.jsx-16ad4d648c7a0666 .delete-btn.jsx-16ad4d648c7a0666{padding:var(--medium-pill-padding);margin:var(--medium-pill-delete-margin)}.pill.medium.jsx-16ad4d648c7a0666 .icon.jsx-16ad4d648c7a0666 svg,.pill.medium.jsx-16ad4d648c7a0666 .delete-btn.jsx-16ad4d648c7a0666 svg{width:var(--medium-pill-font-size);height:var(--medium-pill-font-size)}",
+    ".status-or-price.jsx-80df8f47176a2233{display:flex}.status-or-price.jsx-80df8f47176a2233:empty,.status-or-price.jsx-80df8f47176a2233:not(:first-child){display:none}",
+    "a.content-card.jsx-3763758620{color:unset;display:block}a.content-card.jsx-3763758620:hover{color:unset}.content-card.jsx-3763758620{background-color:var(--card-bg-color);border:1px solid var(--card-border-color);-webkit-backdrop-filter:var(--card-backdrop-filter);backdrop-filter:var(--card-backdrop-filter);box-shadow:var(--card-shadow);position:relative;overflow:hidden}.content-card.hoverable.jsx-3763758620{cursor:pointer;transition-property:border-color,box-shadow;transition-duration:var(--transition-duration);transition-timing-function:var(--transition-fn)}@media (hover:hover){.content-card.hoverable.jsx-3763758620:hover{border-color:var(--card-hover-border-color);box-shadow:var(--card-hover-shadow)}}.content-card.actionable.jsx-3763758620:focus-visible{outline:2px solid var(--card-hover-border-color);outline-offset:2px}.content-card.jsx-3763758620+.content-card.jsx-3763758620{margin-top:0}",
+    "@media (hover:hover){.content-card.hoverable:hover:has(button:hover){border-color:var(--card-border-color)}.content-card.hoverable:hover:has(a:not(.content-link):hover){border-color:var(--card-border-color)}}",
+    ".card-wrapper.jsx-3585178804{--card-padding:.75rem .75rem .75rem 1rem}@media (max-width:450px){.card-wrapper.jsx-3585178804{--card-padding:.75rem}}.card-wrapper.jsx-3585178804:not(:last-child){margin-bottom:1rem}.card-wrapper.jsx-3585178804 .event-link{position:absolute;top:0;bottom:0;left:0;right:0}",
+    ".lux-menu-wrapper.menu-0k3rq3aba54{}",
+    ".timeline-section.jsx-2300346596{gap:var(--timeline-column-gap);width:100%;padding-bottom:var(--timeline-section-gap);display:flex;position:relative}.timeline-section.jsx-2300346596:last-child:not(.has-position),.timeline-section.is-last.jsx-2300346596{padding-bottom:0}.title.jsx-2300346596{z-index:5;width:var(--timeline-title-width);position:relative}.title.twocol.jsx-2300346596 .container.jsx-2300346596,.title.always.jsx-2300346596 .container.jsx-2300346596{top:var(--timeline-sticky-header-offset);position:sticky}.line.jsx-2300346596{top:1rem;bottom:0;left:calc(var(--timeline-title-width) + var(--timeline-column-gap) / 2);border-left:.125rem dashed var(--opacity-light);position:absolute}.timeline-section.jsx-2300346596:not(:first-child):not(.has-position) .line.jsx-2300346596,.timeline-section.not-first.jsx-2300346596 .line.jsx-2300346596{top:.125rem}.timeline-section.jsx-2300346596:last-child:not(.has-position) .line.jsx-2300346596,.timeline-section.is-last.jsx-2300346596 .line.jsx-2300346596{-webkit-mask-image:linear-gradient(#000 0% calc(100% - 120px),#0000 100%);mask-image:linear-gradient(#000 0% calc(100% - 120px),#0000 100%)}@media (max-width:99999px){.timeline-section.jsx-2300346596{display:block}.timeline-section.jsx-2300346596 .title.always.jsx-2300346596{top:var(--timeline-sticky-header-offset);position:sticky}.timeline-section.jsx-2300346596 .title.always.jsx-2300346596 .container.jsx-2300346596{position:relative;top:0}.timeline-section.jsx-2300346596:not(.hide-line){padding-left:var(--timeline-single-column-line-width)}.timeline-section.jsx-2300346596 .title.jsx-2300346596{width:100%}.timeline-section.jsx-2300346596 .line.jsx-2300346596{left:var(--timeline-single-column-line-left-padding)}.timeline-section.jsx-2300346596 .dot-outer-wrapper.jsx-2300346596{right:auto;left:calc(-1 * var(--timeline-single-column-line-width) + var(--timeline-single-column-line-left-padding) - .1875rem)}}.dot-outer-wrapper.jsx-2300346596{top:.4375rem;right:calc(-1 * var(--timeline-column-gap) / 2 - .3125rem);position:absolute}.dot.jsx-2300346596{background-color:var(--quaternary-color-alpha);width:.5rem;height:.5rem;-webkit-backdrop-filter:var(--backdrop-blur);backdrop-filter:var(--backdrop-blur);border-radius:100%}",
+    ".lux-menu-wrapper.menu-1j0sj0ti4bq{}",
+    ".lux-menu-wrapper.menu-d6g8x4ih13b{}",
+    ".lux-menu-wrapper.menu-f3scbui0bsh{}",
+    ".lux-menu-wrapper.menu-psn84bgu92{}",
+    ".lux-menu-wrapper.menu-g473j31orxn{}",
+    ".lux-menu-wrapper.menu-3g1wil7iaub{}",
+    ".lux-menu.jsx-524953115{--trigger-width:10px}",
+    ".lux-menu.jsx-2730737181{--trigger-width:16px}"
+  ],
+  "text": "Follow\nReading Rhythms Global\nTimes in GMT+7 — 12:46 AM\nNot a book club. A reading party.\nRead with friends to live music & curated playlists!\nSubmit Event\nNovember\nS\nM\nT\nW\nT\nF\nS\n27\n28\n29\n30\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n1\n2\n3\n4\n5\n6\n7\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n29\n30\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n1\n2\n3\n4\n5\n6\n7\n8\n9\nUpcoming\nPast\nEvents\nYou have 0 events pending approval by the calendar admin.\nThey will show up on the schedule once approved\nNov 11\nWednesday\n \n7:00 AM · Nov 10, 7:00 PM EST\nReading Rhythms Toronto: Nuts & Shells Bookshop Reading Party\n​\nBy Reading Rhythms, Jackie DaSilva & Julia\n​\nToronto, Canada\n​\nCA$20\n \n9:30 AM · Nov 10, 6:30 PM PST\nGrateful for Books | A Reading Rhythms Reading Party\n​\nBy Reading Rhythms\n​\nSan Francisco, United States\n​\n$25\nNov 12\nThursday\n \n9:30 AM · Nov 11, 6:30 PM PST\nWishful Thinking: A Reading Party\n​\nBy Reading Rhythms, Ace Antonio, Sonal Dutt & Kailene Armintia\n​\nSan Diego, United States\n​\n$25\nNov 13\nFriday\n \n5:15 AM · Nov 12, 5:15 PM EST\nReading Rhythms Washington DC: November 12th\n​\nBy Reading Rhythms, Ellen Le, Jasmine Foreman & Sandrine\n​\nWashington, United States\n​\nSold Out",
+  "buttons": [
+    {
+      "text": "Follow",
+      "aria": null
+    },
+    {
+      "text": "Follow",
+      "aria": null
+    },
+    {
+      "text": "Submit Event",
+      "aria": null
+    },
+    {
+      "text": "",
+      "aria": "Add iCal Subscription"
+    },
+    {
+      "text": "",
+      "aria": "Previous month"
+    },
+    {
+      "text": "",
+      "aria": "Next month"
+    },
+    {
+      "text": "27",
+      "aria": "Sunday, September 27, 2026"
+    },
+    {
+      "text": "28",
+      "aria": "Monday, September 28, 2026"
+    },
+    {
+      "text": "29",
+      "aria": "Tuesday, September 29, 2026"
+    },
+    {
+      "text": "30",
+      "aria": "Wednesday, September 30, 2026"
+    },
+    {
+      "text": "1",
+      "aria": "Thursday, October 1, 2026"
+    },
+    {
+      "text": "2",
+      "aria": "Friday, October 2, 2026"
+    },
+    {
+      "text": "3",
+      "aria": "Saturday, October 3, 2026"
+    },
+    {
+      "text": "4",
+      "aria": "Sunday, October 4, 2026"
+    },
+    {
+      "text": "5",
+      "aria": "Monday, October 5, 2026"
+    },
+    {
+      "text": "6",
+      "aria": "Tuesday, October 6, 2026"
+    },
+    {
+      "text": "7",
+      "aria": "Wednesday, October 7, 2026"
+    },
+    {
+      "text": "8",
+      "aria": "Thursday, October 8, 2026"
+    },
+    {
+      "text": "9",
+      "aria": "Friday, October 9, 2026"
+    },
+    {
+      "text": "10",
+      "aria": "Saturday, October 10, 2026"
+    },
+    {
+      "text": "11",
+      "aria": "Sunday, October 11, 2026"
+    },
+    {
+      "text": "12",
+      "aria": "Monday, October 12, 2026"
+    },
+    {
+      "text": "13",
+      "aria": "Tuesday, October 13, 2026"
+    },
+    {
+      "text": "14",
+      "aria": "Wednesday, October 14, 2026"
+    },
+    {
+      "text": "15",
+      "aria": "Thursday, October 15, 2026"
+    },
+    {
+      "text": "16",
+      "aria": "Friday, October 16, 2026"
+    },
+    {
+      "text": "17",
+      "aria": "Saturday, October 17, 2026"
+    },
+    {
+      "text": "18",
+      "aria": "Sunday, October 18, 2026"
+    },
+    {
+      "text": "19",
+      "aria": "Monday, October 19, 2026"
+    },
+    {
+      "text": "20",
+      "aria": "Tuesday, October 20, 2026"
+    },
+    {
+      "text": "21",
+      "aria": "Wednesday, October 21, 2026"
+    },
+    {
+      "text": "22",
+      "aria": "Thursday, October 22, 2026"
+    },
+    {
+      "text": "23",
+      "aria": "Friday, October 23, 2026"
+    },
+    {
+      "text": "24",
+      "aria": "Saturday, October 24, 2026"
+    },
+    {
+      "text": "25",
+      "aria": "Sunday, October 25, 2026"
+    },
+    {
+      "text": "26",
+      "aria": "Monday, October 26, 2026"
+    },
+    {
+      "text": "27",
+      "aria": "Tuesday, October 27, 2026"
+    },
+    {
+      "text": "28",
+      "aria": "Wednesday, October 28, 2026"
+    },
+    {
+      "text": "29",
+      "aria": "Thursday, October 29, 2026"
+    },
+    {
+      "text": "30",
+      "aria": "Friday, October 30, 2026"
+    },
+    {
+      "text": "31",
+      "aria": "Saturday, October 31, 2026"
+    },
+    {
+      "text": "1",
+      "aria": "Sunday, November 1, 2026"
+    },
+    {
+      "text": "2",
+      "aria": "Monday, November 2, 2026"
+    },
+    {
+      "text": "3",
+      "aria": "Tuesday, November 3, 2026"
+    },
+    {
+      "text": "4",
+      "aria": "Wednesday, November 4, 2026"
+    },
+    {
+      "text": "5",
+      "aria": "Thursday, November 5, 2026"
+    },
+    {
+      "text": "6",
+      "aria": "Friday, November 6, 2026"
+    },
+    {
+      "text": "7",
+      "aria": "Saturday, November 7, 2026"
+    },
+    {
+      "text": "1",
+      "aria": "Sunday, November 1, 2026"
+    },
+    {
+      "text": "2",
+      "aria": "Monday, November 2, 2026"
+    },
+    {
+      "text": "3",
+      "aria": "Tuesday, November 3, 2026"
+    },
+    {
+      "text": "4",
+      "aria": "Wednesday, November 4, 2026"
+    },
+    {
+      "text": "5",
+      "aria": "Thursday, November 5, 2026"
+    },
+    {
+      "text": "6",
+      "aria": "Friday, November 6, 2026"
+    },
+    {
+      "text": "7",
+      "aria": "Saturday, November 7, 2026"
+    },
+    {
+      "text": "8",
+      "aria": "Sunday, November 8, 2026"
+    },
+    {
+      "text": "9",
+      "aria": "Monday, November 9, 2026"
+    },
+    {
+      "text": "10",
+      "aria": "Tuesday, November 10, 2026"
+    },
+    {
+      "text": "11",
+      "aria": "Wednesday, November 11, 2026"
+    },
+    {
+      "text": "12",
+      "aria": "Thursday, November 12, 2026"
+    },
+    {
+      "text": "13",
+      "aria": "Friday, November 13, 2026"
+    },
+    {
+      "text": "14",
+      "aria": "Saturday, November 14, 2026"
+    },
+    {
+      "text": "15",
+      "aria": "Sunday, November 15, 2026"
+    },
+    {
+      "text": "16",
+      "aria": "Monday, November 16, 2026"
+    },
+    {
+      "text": "17",
+      "aria": "Tuesday, November 17, 2026"
+    },
+    {
+      "text": "18",
+      "aria": "Wednesday, November 18, 2026"
+    },
+    {
+      "text": "19",
+      "aria": "Thursday, November 19, 2026"
+    },
+    {
+      "text": "20",
+      "aria": "Friday, November 20, 2026"
+    },
+    {
+      "text": "21",
+      "aria": "Saturday, November 21, 2026"
+    },
+    {
+      "text": "22",
+      "aria": "Sunday, November 22, 2026"
+    },
+    {
+      "text": "23",
+      "aria": "Monday, November 23, 2026"
+    },
+    {
+      "text": "24",
+      "aria": "Tuesday, November 24, 2026"
+    },
+    {
+      "text": "25",
+      "aria": "Wednesday, November 25, 2026"
+    },
+    {
+      "text": "26",
+      "aria": "Thursday, November 26, 2026"
+    },
+    {
+      "text": "27",
+      "aria": "Friday, November 27, 2026"
+    },
+    {
+      "text": "28",
+      "aria": "Saturday, November 28, 2026"
+    },
+    {
+      "text": "29",
+      "aria": "Sunday, November 29, 2026"
+    },
+    {
+      "text": "30",
+      "aria": "Monday, November 30, 2026"
+    },
+    {
+      "text": "1",
+      "aria": "Tuesday, December 1, 2026"
+    },
+    {
+      "text": "2",
+      "aria": "Wednesday, December 2, 2026"
+    },
+    {
+      "text": "3",
+      "aria": "Thursday, December 3, 2026"
+    },
+    {
+      "text": "4",
+      "aria": "Friday, December 4, 2026"
+    },
+    {
+      "text": "5",
+      "aria": "Saturday, December 5, 2026"
+    },
+    {
+      "text": "6",
+      "aria": "Sunday, December 6, 2026"
+    },
+    {
+      "text": "7",
+      "aria": "Monday, December 7, 2026"
+    },
+    {
+      "text": "8",
+      "aria": "Tuesday, December 8, 2026"
+    },
+    {
+      "text": "9",
+      "aria": "Wednesday, December 9, 2026"
+    },
+    {
+      "text": "10",
+      "aria": "Thursday, December 10, 2026"
+    },
+    {
+      "text": "11",
+      "aria": "Friday, December 11, 2026"
+    },
+    {
+      "text": "12",
+      "aria": "Saturday, December 12, 2026"
+    },
+    {
+      "text": "29",
+      "aria": "Sunday, November 29, 2026"
+    },
+    {
+      "text": "30",
+      "aria": "Monday, November 30, 2026"
+    },
+    {
+      "text": "1",
+      "aria": "Tuesday, December 1, 2026"
+    },
+    {
+      "text": "2",
+      "aria": "Wednesday, December 2, 2026"
+    },
+    {
+      "text": "3",
+      "aria": "Thursday, December 3, 2026"
+    },
+    {
+      "text": "4",
+      "aria": "Friday, December 4, 2026"
+    },
+    {
+      "text": "5",
+      "aria": "Saturday, December 5, 2026"
+    },
+    {
+      "text": "6",
+      "aria": "Sunday, December 6, 2026"
+    },
+    {
+      "text": "7",
+      "aria": "Monday, December 7, 2026"
+    },
+    {
+      "text": "8",
+      "aria": "Tuesday, December 8, 2026"
+    },
+    {
+      "text": "9",
+      "aria": "Wednesday, December 9, 2026"
+    },
+    {
+      "text": "10",
+      "aria": "Thursday, December 10, 2026"
+    },
+    {
+      "text": "11",
+      "aria": "Friday, December 11, 2026"
+    },
+    {
+      "text": "12",
+      "aria": "Saturday, December 12, 2026"
+    },
+    {
+      "text": "13",
+      "aria": "Sunday, December 13, 2026"
+    },
+    {
+      "text": "14",
+      "aria": "Monday, December 14, 2026"
+    },
+    {
+      "text": "15",
+      "aria": "Tuesday, December 15, 2026"
+    },
+    {
+      "text": "16",
+      "aria": "Wednesday, December 16, 2026"
+    },
+    {
+      "text": "17",
+      "aria": "Thursday, December 17, 2026"
+    },
+    {
+      "text": "18",
+      "aria": "Friday, December 18, 2026"
+    },
+    {
+      "text": "19",
+      "aria": "Saturday, December 19, 2026"
+    },
+    {
+      "text": "20",
+      "aria": "Sunday, December 20, 2026"
+    },
+    {
+      "text": "21",
+      "aria": "Monday, December 21, 2026"
+    },
+    {
+      "text": "22",
+      "aria": "Tuesday, December 22, 2026"
+    },
+    {
+      "text": "23",
+      "aria": "Wednesday, December 23, 2026"
+    },
+    {
+      "text": "24",
+      "aria": "Thursday, December 24, 2026"
+    },
+    {
+      "text": "25",
+      "aria": "Friday, December 25, 2026"
+    },
+    {
+      "text": "26",
+      "aria": "Saturday, December 26, 2026"
+    },
+    {
+      "text": "27",
+      "aria": "Sunday, December 27, 2026"
+    },
+    {
+      "text": "28",
+      "aria": "Monday, December 28, 2026"
+    },
+    {
+      "text": "29",
+      "aria": "Tuesday, December 29, 2026"
+    },
+    {
+      "text": "30",
+      "aria": "Wednesday, December 30, 2026"
+    },
+    {
+      "text": "31",
+      "aria": "Thursday, December 31, 2026"
+    },
+    {
+      "text": "1",
+      "aria": "Friday, January 1, 2027"
+    },
+    {
+      "text": "2",
+      "aria": "Saturday, January 2, 2027"
+    },
+    {
+      "text": "3",
+      "aria": "Sunday, January 3, 2027"
+    },
+    {
+      "text": "4",
+      "aria": "Monday, January 4, 2027"
+    },
+    {
+      "text": "5",
+      "aria": "Tuesday, January 5, 2027"
+    },
+    {
+      "text": "6",
+      "aria": "Wednesday, January 6, 2027"
+    },
+    {
+      "text": "7",
+      "aria": "Thursday, January 7, 2027"
+    },
+    {
+      "text": "8",
+      "aria": "Friday, January 8, 2027"
+    },
+    {
+      "text": "9",
+      "aria": "Saturday, January 9, 2027"
+    },
+    {
+      "text": "Upcoming",
+      "aria": null
+    },
+    {
+      "text": "Past",
+      "aria": null
+    },
+    {
+      "text": "",
+      "aria": "Close"
+    },
+    {
+      "text": "Submit Event",
+      "aria": null
+    },
+    {
+      "text": "",
+      "aria": "Card view"
+    },
+    {
+      "text": "",
+      "aria": "List view"
+    },
+    {
+      "text": "",
+      "aria": "Search"
+    }
+  ]
+}

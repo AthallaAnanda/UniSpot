@@ -1,0 +1,51 @@
+{
+  "icons": [
+    {
+      "name": "Events",
+      "file": "public/assets/luma-components/events.svg",
+      "bytes": 1205,
+      "source": "Authenticated Luma Home navigation"
+    },
+    {
+      "name": "Calendar",
+      "file": "public/assets/luma-components/calendar.svg",
+      "bytes": 805,
+      "source": "Authenticated Luma Home navigation"
+    },
+    {
+      "name": "Compass",
+      "file": "public/assets/luma-components/compass.svg",
+      "bytes": 479,
+      "source": "Authenticated Luma Home navigation"
+    },
+    {
+      "name": "Close",
+      "file": "public/assets/luma-components/close.svg",
+      "bytes": 209,
+      "source": "Luma Jakarta event card / event panel DOM"
+    },
+    {
+      "name": "Copy",
+      "file": "public/assets/luma-components/copy.svg",
+      "bytes": 900,
+      "source": "Luma Jakarta event card / event panel DOM"
+    },
+    {
+      "name": "External",
+      "file": "public/assets/luma-components/external.svg",
+      "bytes": 238,
+      "source": "Luma Jakarta event card / event panel DOM"
+    },
+    {
+      "name": "MapPin",
+      "file": "public/assets/luma-components/mappin.svg",
+      "bytes": 354,
+      "source": "Luma Jakarta event card / event panel DOM"
+    }
+  ],
+  "font": {
+    "file": "public/fonts/inter-variable.woff2",
+    "source": "Exact Inter variable Latin WOFF2 already downloaded from Luma Google Fonts stylesheet"
+  },
+  "contentImages": "Existing 21 locally downloaded UniSpot official-source images retained; no source event attendees or avatars copied into product."
+}

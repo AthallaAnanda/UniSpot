@@ -1,0 +1,27 @@
+{
+  "environment": "Warmed Chromium, production, 1440px, 4x CPU throttling, three detail open/close and Grid/List cycles",
+  "method": "scripts/benchmark-motion.mjs loaded with Playwright browser_run_code_unsafe filename",
+  "baseline": {
+    "frames": 485,
+    "p95FrameGapMs": 16.8,
+    "framesOver50ms": 12,
+    "p95ClickToFrameMs": 221.3,
+    "longTasksMs": [243, 131, 140, 156, 193, 116, 105, 151, 201, 118, 165, 146],
+    "unexpectedLayoutShift": 0,
+    "taskMs": 4681.705,
+    "layoutMs": 144.785,
+    "styleMs": 763.604
+  },
+  "final": {
+    "frames": 466,
+    "p95FrameGapMs": 33.3,
+    "framesOver50ms": 15,
+    "p95ClickToFrameMs": 148.1,
+    "longTasksMs": [152, 111, 98, 136, 143, 205, 129, 97, 125, 123, 166, 119, 68, 144, 133],
+    "unexpectedLayoutShift": 0,
+    "taskMs": 5109.73,
+    "layoutMs": 169.262,
+    "styleMs": 1070.252
+  },
+  "limitations": "Single before/after local samples under CPU throttling, not field INP or an FPS guarantee. Added exit motion extends active rendering; frame and style costs are not unchanged. Interim development and incorrect production duration-unit samples were excluded."
+}

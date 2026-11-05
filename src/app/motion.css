@@ -1,0 +1,56 @@
+:root {
+  --motion-press: 120ms;
+  --motion-feedback: 180ms;
+  --motion-hover: 260ms;
+  --motion-view: 240ms;
+  --motion-toggle: 340ms;
+  --motion-panel-enter: 420ms;
+  --motion-panel-exit: 260ms;
+  --motion-backdrop: 240ms;
+  --motion-page: 300ms;
+  --motion-ease-soft: cubic-bezier(.22,1,.36,1);
+  --motion-ease-exit: cubic-bezier(.4,0,1,1);
+}
+
+/* Entrances run only after a client route change, never on the initial document. */
+.page-container[data-motion-enter="true"] { animation:motion-page-enter var(--motion-page) var(--motion-ease-soft); }
+@keyframes motion-page-enter { from { opacity:.85;translate:0 6px; } to { opacity:1;translate:0 0; } }
+
+/* Whitelisted controls only: focus rings and native text inputs remain immediate. */
+body :is(.primary-button,.secondary-button,.header-create,.calendar-follow-small,.partner-calendar-follow,.event-registration-action,.calendar-publishing-button,.icon-button,.luma-event-card-save,.opportunity-tile-save,.event-panel-button):not(:disabled) {
+  transition:background-color var(--motion-feedback) ease,color var(--motion-feedback) ease,border-color var(--motion-feedback) ease,scale var(--motion-press) var(--motion-ease-soft);
+}
+body :is(.primary-button,.secondary-button,.header-create,.calendar-follow-small,.partner-calendar-follow,.event-registration-action,.calendar-publishing-button,.icon-button,.luma-event-card-save,.opportunity-tile-save,.event-panel-button):not(:disabled):active { scale:.98; }
+:is(.luma-event-card-save,.opportunity-tile-save,.calendar-follow-small,.partner-calendar-follow)[aria-pressed="true"] > svg { animation:motion-confirm var(--motion-feedback) var(--motion-ease-soft); }
+@keyframes motion-confirm { from { scale:.82; } to { scale:1; } }
+
+@media (hover:hover) and (pointer:fine) {
+  body :is(.opportunity-card.luma-event-card,.opportunity-card.opportunity-tile,.organization-card.calendar-card,.calendar-list-card,.category-tile) {
+    transition:border-color var(--motion-hover) ease,translate var(--motion-hover) var(--motion-ease-soft);
+  }
+  body :is(.opportunity-card.luma-event-card,.opportunity-card.opportunity-tile,.organization-card.calendar-card,.calendar-list-card,.category-tile):hover { translate:0 -2px; }
+}
+
+.catalog-mobile-filter-overlay[data-state="open"],.about-overlay[data-state="open"] { animation:motion-backdrop-in var(--motion-backdrop) ease; }
+.catalog-mobile-filter-overlay[data-state="closed"],.about-overlay[data-state="closed"] { animation:motion-backdrop-out var(--motion-panel-exit) ease;pointer-events:none; }
+.catalog-mobile-filter-drawer[data-state="open"] { animation:motion-drawer-in var(--motion-panel-enter) var(--motion-ease-soft); }
+.catalog-mobile-filter-drawer[data-state="closed"] { animation:motion-drawer-out var(--motion-panel-exit) var(--motion-ease-exit);pointer-events:none; }
+.about-panel[data-state="open"] { animation:motion-about-in var(--motion-page) var(--motion-ease-soft); }
+.about-panel[data-state="closed"] { animation:motion-about-out var(--motion-panel-exit) var(--motion-ease-exit);pointer-events:none; }
+@keyframes motion-backdrop-in { from { opacity:0; } to { opacity:1; } }
+@keyframes motion-backdrop-out { from { opacity:1; } to { opacity:0; } }
+@keyframes motion-drawer-in { from { translate:-100% 0; } to { translate:0 0; } }
+@keyframes motion-drawer-out { from { translate:0 0; } to { translate:-100% 0; } }
+@keyframes motion-about-in { from { opacity:.75;translate:0 8px;scale:.98; } to { opacity:1;translate:0 0;scale:1; } }
+@keyframes motion-about-out { from { opacity:1;translate:0 0;scale:1; } to { opacity:0;translate:0 6px;scale:.99; } }
+
+.app-toast[data-state="open"] { animation:motion-toast-in 280ms var(--motion-ease-soft); }
+.app-toast[data-state="closed"] { animation:motion-toast-out 240ms var(--motion-ease-exit);pointer-events:none; }
+@keyframes motion-toast-in { from { opacity:0;translate:0 8px; } to { opacity:1;translate:0 0; } }
+@keyframes motion-toast-out { from { opacity:1;translate:0 0; } to { opacity:0;translate:0 8px; } }
+
+@media (prefers-reduced-motion:reduce) {
+  .page-container[data-motion-enter="true"] { animation:none; }
+  body :is(.opportunity-card.luma-event-card,.opportunity-card.opportunity-tile,.organization-card.calendar-card,.calendar-list-card,.category-tile):hover { translate:none; }
+  body :is(.primary-button,.secondary-button,.header-create,.calendar-follow-small,.partner-calendar-follow,.event-registration-action,.calendar-publishing-button,.icon-button,.luma-event-card-save,.opportunity-tile-save,.event-panel-button):active { scale:1; }
+}

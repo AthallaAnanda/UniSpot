@@ -1,0 +1,437 @@
+{
+  "html": "<div role=\"dialog\" tabindex=\"-1\" aria-labelledby=\"_r_0_-title\" class=\"lux-glass-overlay-dialog\" style=\"outline: none;\"><div class=\"lux-glass-overlay-close-button\" style=\"opacity: 1; transform: none;\"><button aria-label=\"Close\" class=\"lux-menu-trigger-wrapper btn lux-button flex-center small secondary solid variant-color-secondary round icon-only-compact\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"m3.582 2.52 4.42 4.418L12.42 2.52a.75.75 0 0 1 1.06 1.06L9.064 8l4.419 4.42a.75.75 0 1 1-1.061 1.06L8 9.06l-4.419 4.42a.75.75 0 0 1-1.06-1.06L6.94 8 2.52 3.58a.75.75 0 0 1 1.061-1.06Z\"></path></svg></button></div><div class=\"lux-glass-overlay-content-container\" style=\"opacity: 1; transform: none;\"><div style=\"height: auto; opacity: 1; transform: none;\"><div class=\"jsx-3374021834 jsx-430635946 tint-root\"><div tabindex=\"-1\" data-dialog-scroll=\"true\" class=\"jsx-3048739045 lux-glass-overlay flex-center\"><div class=\"jsx-2266087091 registration-overlay\"><form action=\"#\" class=\"registration-form-container flex-column\"><div class=\"jsx-2266087091 panels flex-row-reverse flex-1 gap-5\"><div class=\"jsx-2266087091 left flex-1\"><div class=\"jsx-3084779230 flex-column pb-5\"><div class=\"jsx-3084779230 mb-2 pb-4\"><h3 class=\"jsx-3084779230 section-title\">Your Info</h3><div class=\"jsx-3084779230 flex-column gap-4\"><div class=\"lux-input-wrapper medium outline\"><div class=\"inner-wrapper\"><label class=\"lux-input-label medium clickable\" for=\"_r_c_\"><div>Name *</div></label><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><div class=\"input-inner-wrapper flex-1 medium\"><input id=\"_r_c_\" placeholder=\"Your Name\" required=\"\" autocomplete=\"name\" maxlength=\"60\" class=\"lux-input\" autocapitalize=\"words\" autocorrect=\"off\" spellcheck=\"false\" type=\"text\" value=\"\" name=\"name\"><div class=\"indicator invisible\"></div></div></div></div></div><div id=\"_r_c_-error\" class=\"error-text\"></div></div><div class=\"lux-input-wrapper medium outline\"><div class=\"inner-wrapper\"><label class=\"lux-input-label medium clickable\" for=\"_r_d_\"><div>Email *</div></label><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><div class=\"input-inner-wrapper flex-1 medium\"><input id=\"_r_d_\" placeholder=\"you@email.com\" required=\"\" autocomplete=\"email\" class=\"lux-input\" type=\"email\" value=\"\" name=\"email\"><div class=\"indicator invisible\"></div></div></div></div></div><div id=\"_r_d_-error\" class=\"error-text\"></div></div><div class=\"lux-input-wrapper medium outline lux-phone-input\"><div class=\"inner-wrapper\"><label id=\"_r_e_\" class=\"lux-input-label medium\"><div>Phone Number&nbsp;*</div></label><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><input aria-labelledby=\"_r_e_\" required=\"\" class=\"lux-input\" autocomplete=\"tel\" placeholder=\"+62 812 345 678\" data-1p-ignore=\"true\" data-lpignore=\"true\" data-bwignore=\"true\" data-form-type=\"other\" type=\"tel\" value=\"\" name=\"phone_number\"></div></div></div><div class=\"error-text\"></div></div><div class=\"lux-input-wrapper medium outline\"><div class=\"inner-wrapper\"><label class=\"lux-input-label medium clickable\" for=\"_r_f_\"><div>What is your Instagram profile?&nbsp;*</div></label><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><div class=\"input-inner-wrapper flex-1 medium\"><input id=\"_r_f_\" required=\"\" maxlength=\"20000\" class=\"lux-input\" type=\"text\" value=\"\" name=\"registration_answers.0.value\"><div class=\"indicator invisible\"></div></div></div></div></div><div id=\"_r_f_-error\" class=\"error-text\"></div></div><div tabindex=\"-1\" class=\"lux-menu-trigger-wrapper cursor-pointer jsx-64a1c426651d327e \"><div class=\"jsx-64a1c426651d327e select-input-wrapper full-width\"><div class=\"lux-input-wrapper medium outline full-width\"><div class=\"inner-wrapper\"><label class=\"lux-input-label medium clickable\" for=\"_r_g_\"><div>Age&nbsp;*</div></label><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><div class=\"input-inner-wrapper flex-1 medium\"><input id=\"_r_g_\" placeholder=\"Select an option\" autocomplete=\"off\" role=\"combobox\" aria-haspopup=\"listbox\" aria-expanded=\"false\" aria-controls=\"_r_g_-listbox\" aria-autocomplete=\"list\" aria-required=\"true\" class=\"lux-input has-indicator\" data-1p-ignore=\"true\" data-lpignore=\"true\" data-bwignore=\"true\" data-form-type=\"other\" type=\"text\" value=\"\"><div class=\"indicator custom\"><div class=\"jsx-64a1c426651d327e chevron animated\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m6 9 6 6 6-6\"></path></svg></div></div></div></div></div></div><div id=\"_r_g_-error\" class=\"error-text\"></div></div></div></div><div tabindex=\"-1\" class=\"lux-menu-trigger-wrapper cursor-pointer jsx-64a1c426651d327e \"><div class=\"jsx-64a1c426651d327e select-input-wrapper full-width\"><div class=\"lux-input-wrapper medium outline full-width\"><div class=\"inner-wrapper\"><label class=\"lux-input-label medium clickable\" for=\"_r_m_\"><div>Gender&nbsp;*</div></label><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><div class=\"input-inner-wrapper flex-1 medium\"><input id=\"_r_m_\" placeholder=\"Select an option\" autocomplete=\"off\" role=\"combobox\" aria-haspopup=\"listbox\" aria-expanded=\"false\" aria-controls=\"_r_m_-listbox\" aria-autocomplete=\"list\" aria-required=\"true\" class=\"lux-input has-indicator\" data-1p-ignore=\"true\" data-lpignore=\"true\" data-bwignore=\"true\" data-form-type=\"other\" type=\"text\" value=\"\"><div class=\"indicator custom\"><div class=\"jsx-64a1c426651d327e chevron animated\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m6 9 6 6 6-6\"></path></svg></div></div></div></div></div></div><div id=\"_r_m_-error\" class=\"error-text\"></div></div></div></div><div tabindex=\"-1\" class=\"lux-menu-trigger-wrapper cursor-pointer jsx-64a1c426651d327e \"><div class=\"jsx-64a1c426651d327e select-input-wrapper full-width\"><div class=\"lux-input-wrapper medium outline full-width\"><div class=\"inner-wrapper\"><label class=\"lux-input-label medium clickable\" for=\"_r_s_\"><div>Domicile&nbsp;*</div></label><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><div class=\"input-inner-wrapper flex-1 medium\"><input id=\"_r_s_\" placeholder=\"Select an option\" autocomplete=\"off\" role=\"combobox\" aria-haspopup=\"listbox\" aria-expanded=\"false\" aria-controls=\"_r_s_-listbox\" aria-autocomplete=\"list\" aria-required=\"true\" class=\"lux-input has-indicator\" data-1p-ignore=\"true\" data-lpignore=\"true\" data-bwignore=\"true\" data-form-type=\"other\" type=\"text\" value=\"\"><div class=\"indicator custom\"><div class=\"jsx-64a1c426651d327e chevron animated\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m6 9 6 6 6-6\"></path></svg></div></div></div></div></div></div><div id=\"_r_s_-error\" class=\"error-text\"></div></div></div></div><div tabindex=\"-1\" class=\"lux-menu-trigger-wrapper cursor-pointer jsx-64a1c426651d327e \"><div class=\"jsx-64a1c426651d327e select-input-wrapper full-width\"><div class=\"lux-input-wrapper medium outline full-width\"><div class=\"inner-wrapper\"><label class=\"lux-input-label medium clickable\" for=\"_r_12_\"><div>What’s your usual running pace?&nbsp;*</div></label><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><div class=\"input-inner-wrapper flex-1 medium\"><input id=\"_r_12_\" placeholder=\"Select an option\" autocomplete=\"off\" role=\"combobox\" aria-haspopup=\"listbox\" aria-expanded=\"false\" aria-controls=\"_r_12_-listbox\" aria-autocomplete=\"list\" aria-required=\"true\" class=\"lux-input has-indicator\" data-1p-ignore=\"true\" data-lpignore=\"true\" data-bwignore=\"true\" data-form-type=\"other\" type=\"text\" value=\"\"><div class=\"indicator custom\"><div class=\"jsx-64a1c426651d327e chevron animated\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m6 9 6 6 6-6\"></path></svg></div></div></div></div></div></div><div id=\"_r_12_-error\" class=\"error-text\"></div></div></div></div><div tabindex=\"-1\" class=\"lux-menu-trigger-wrapper cursor-pointer jsx-64a1c426651d327e \"><div class=\"jsx-64a1c426651d327e select-input-wrapper full-width\"><div class=\"lux-input-wrapper medium outline full-width\"><div class=\"inner-wrapper\"><label class=\"lux-input-label medium clickable\" for=\"_r_18_\"><div>How did you find out about Radius Society?&nbsp;*</div></label><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><div class=\"input-inner-wrapper flex-1 medium\"><input id=\"_r_18_\" placeholder=\"Select an option\" autocomplete=\"off\" role=\"combobox\" aria-haspopup=\"listbox\" aria-expanded=\"false\" aria-controls=\"_r_18_-listbox\" aria-autocomplete=\"list\" aria-required=\"true\" class=\"lux-input has-indicator\" data-1p-ignore=\"true\" data-lpignore=\"true\" data-bwignore=\"true\" data-form-type=\"other\" type=\"text\" value=\"\"><div class=\"indicator custom\"><div class=\"jsx-64a1c426651d327e chevron animated\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m6 9 6 6 6-6\"></path></svg></div></div></div></div></div></div><div id=\"_r_18_-error\" class=\"error-text\"></div></div></div></div><div tabindex=\"-1\" class=\"lux-menu-trigger-wrapper cursor-pointer jsx-64a1c426651d327e \"><div class=\"jsx-64a1c426651d327e select-input-wrapper full-width\"><div class=\"lux-input-wrapper medium outline full-width\"><div class=\"inner-wrapper\"><label class=\"lux-input-label medium clickable\" for=\"_r_1e_\"><div>Have you ever joined a Radius event before?&nbsp;*</div></label><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><div class=\"input-inner-wrapper flex-1 medium\"><input id=\"_r_1e_\" placeholder=\"Select an option\" autocomplete=\"off\" role=\"combobox\" aria-haspopup=\"listbox\" aria-expanded=\"false\" aria-controls=\"_r_1e_-listbox\" aria-autocomplete=\"list\" aria-required=\"true\" class=\"lux-input has-indicator\" data-1p-ignore=\"true\" data-lpignore=\"true\" data-bwignore=\"true\" data-form-type=\"other\" type=\"text\" value=\"\"><div class=\"indicator custom\"><div class=\"jsx-64a1c426651d327e chevron animated\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"m6 9 6 6 6-6\"></path></svg></div></div></div></div></div></div><div id=\"_r_1e_-error\" class=\"error-text\"></div></div></div></div></div></div><div class=\"lux-collapse shown\" style=\"filter: opacity(1); height: auto;\"><button class=\"btn lux-button flex-center medium brand solid variant-color-brand full-width no-icon\" type=\"submit\"><div class=\"label\">Join Waitlist</div></button></div></div></div></div></form></div></div></div></div></div></div>",
+  "nodes": [
+    {
+      "tag": "DIV",
+      "cls": "lux-glass-overlay-dialog",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "width": "1409.6px",
+        "height": "1000px",
+        "border": "0px none rgb(21, 21, 21)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "lux-menu-trigger-wrapper btn lux-button flex-center small secondary solid variant-color-secondary round icon-only-compact",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "5px",
+        "margin": "0px",
+        "width": "25.6px",
+        "height": "25.6px",
+        "border": "0.8px solid rgb(149, 149, 149)",
+        "borderRadius": "15px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgb(149, 149, 149)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "H3",
+      "cls": "jsx-3084779230 section-title",
+      "css": {
+        "fontSize": "22px",
+        "lineHeight": "26.4px",
+        "fontWeight": "600",
+        "padding": "0px",
+        "margin": "0px 0px 16px",
+        "width": "380px",
+        "height": "26.4px",
+        "border": "0px none rgb(21, 21, 21)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "lux-input-label medium clickable",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px 0px 6px",
+        "width": "380px",
+        "height": "21px",
+        "border": "0px none rgb(21, 21, 21)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "cls": "lux-input",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "16px",
+        "fontWeight": "400",
+        "padding": "10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgb(21, 21, 21)",
+        "borderRadius": "8px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(255, 255, 255, 0.64)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "lux-input-label medium clickable",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px 0px 6px",
+        "width": "380px",
+        "height": "21px",
+        "border": "0px none rgba(21, 21, 21, 0.64)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "cls": "lux-input",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "16px",
+        "fontWeight": "400",
+        "padding": "10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgba(21, 21, 21, 0)",
+        "borderRadius": "8px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(21, 21, 21, 0.08)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "lux-input-label medium",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px 0px 6px",
+        "width": "380px",
+        "height": "21px",
+        "border": "0px none rgba(21, 21, 21, 0.64)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "cls": "lux-input",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "16px",
+        "fontWeight": "400",
+        "padding": "10px 42px 10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgba(21, 21, 21, 0)",
+        "borderRadius": "8px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(21, 21, 21, 0.08)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "lux-input-label medium clickable",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px 0px 6px",
+        "width": "380px",
+        "height": "21px",
+        "border": "0px none rgba(21, 21, 21, 0.64)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "cls": "lux-input",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "16px",
+        "fontWeight": "400",
+        "padding": "10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgba(21, 21, 21, 0)",
+        "borderRadius": "8px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(21, 21, 21, 0.08)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "lux-input-label medium clickable",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px 0px 6px",
+        "width": "380px",
+        "height": "21px",
+        "border": "0px none rgba(21, 21, 21, 0.64)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "cls": "lux-input has-indicator",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "16px",
+        "fontWeight": "400",
+        "padding": "10px 36px 10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgba(21, 21, 21, 0)",
+        "borderRadius": "8px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(21, 21, 21, 0.08)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "lux-input-label medium clickable",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px 0px 6px",
+        "width": "380px",
+        "height": "21px",
+        "border": "0px none rgba(21, 21, 21, 0.64)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "cls": "lux-input has-indicator",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "16px",
+        "fontWeight": "400",
+        "padding": "10px 36px 10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgba(21, 21, 21, 0)",
+        "borderRadius": "8px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(21, 21, 21, 0.08)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "lux-input-label medium clickable",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px 0px 6px",
+        "width": "380px",
+        "height": "21px",
+        "border": "0px none rgba(21, 21, 21, 0.64)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "cls": "lux-input has-indicator",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "16px",
+        "fontWeight": "400",
+        "padding": "10px 36px 10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgba(21, 21, 21, 0)",
+        "borderRadius": "8px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(21, 21, 21, 0.08)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "lux-input-label medium clickable",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px 0px 6px",
+        "width": "380px",
+        "height": "21px",
+        "border": "0px none rgba(21, 21, 21, 0.64)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "cls": "lux-input has-indicator",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "16px",
+        "fontWeight": "400",
+        "padding": "10px 36px 10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgba(21, 21, 21, 0)",
+        "borderRadius": "8px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(21, 21, 21, 0.08)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "lux-input-label medium clickable",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px 0px 6px",
+        "width": "380px",
+        "height": "21px",
+        "border": "0px none rgba(21, 21, 21, 0.64)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "cls": "lux-input has-indicator",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "16px",
+        "fontWeight": "400",
+        "padding": "10px 36px 10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgba(21, 21, 21, 0)",
+        "borderRadius": "8px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(21, 21, 21, 0.08)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "lux-input-label medium clickable",
+      "css": {
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px 0px 6px",
+        "width": "380px",
+        "height": "21px",
+        "border": "0px none rgba(21, 21, 21, 0.64)",
+        "borderRadius": "0px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "cls": "lux-input has-indicator",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "16px",
+        "fontWeight": "400",
+        "padding": "10px 36px 10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgba(21, 21, 21, 0)",
+        "borderRadius": "8px",
+        "cornerShape": "superellipse(1)",
+        "backgroundColor": "rgba(21, 21, 21, 0.08)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "btn lux-button flex-center medium brand solid variant-color-brand full-width no-icon",
+      "css": {
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "fontWeight": "500",
+        "padding": "10px 14px",
+        "margin": "0px",
+        "width": "380px",
+        "height": "38px",
+        "border": "0.8px solid rgb(164, 105, 0)",
+        "borderRadius": "16px",
+        "cornerShape": "superellipse(2)",
+        "backgroundColor": "rgb(164, 105, 0)",
+        "boxShadow": "none"
+      }
+    }
+  ]
+}

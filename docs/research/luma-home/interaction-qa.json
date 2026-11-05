@@ -1,0 +1,28 @@
+{
+  "scholarships": 2,
+  "empty": true,
+  "resetCount": 6,
+  "first": "The 9th International Conference on Mathematics and Natural Sciences",
+  "expanded": 12,
+  "all": 17,
+  "locationCount": 3,
+  "savedTitle": "The 9th International Conference on Mathematics and Natural Sciences",
+  "savedCount": 1,
+  "persisted": 1,
+  "panel": {
+    "width": 550,
+    "right": 1416.7999877929688,
+    "height": 984,
+    "titleSize": "26px",
+    "body": "16px"
+  },
+  "firstPanelTitle": "The 9th International Conference on Mathematics and Natural Sciences",
+  "nextPanelTitle": "DevFest Jogjakarta 2026",
+  "previousRestored": true,
+  "copiedLink": "http://localhost:3000/discover?opportunity=icmns-2026",
+  "eventPageHref": "/opportunities/icmns-2026",
+  "calendar": "icmns-2026.ics",
+  "focusRestored": true,
+  "overlayResults": 8,
+  "searchSelectionOpensPanel": true
+}

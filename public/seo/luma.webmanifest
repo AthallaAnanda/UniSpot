@@ -1,0 +1,26 @@
+{
+  "short_name": "Luma",
+  "name": "Luma",
+  "icons": [
+    {
+      "src": "https://luma.com/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://luma.com/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://luma.com/home",
+  "scope": "/",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.luma.mobile",
+      "url": "https://play.google.com/store/apps/details?id=com.luma.mobile"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+.opportunity-card.luma-event-card {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 14px 16px;
+  overflow: hidden;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  corner-shape: superellipse(2);
+  background: rgba(255, 255, 255, .8);
+  color: #151515;
+  box-shadow: none;
+  transition: border-color .3s cubic-bezier(.4, 0, .2, 1), box-shadow .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.opportunity-card.luma-event-card:hover {
+  border-color: rgba(21, 21, 21, .16);
+  box-shadow: none;
+}
+
+.opportunity-card.luma-event-card:has(.luma-event-card-save:hover) {
+  border-color: #fff;
+}
+
+.luma-event-card .luma-event-card-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  min-width: 0;
+}
+
+.luma-event-card .luma-event-card-text {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.luma-event-card .luma-event-card-schedule,
+.luma-event-card .luma-event-card-meta {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.luma-event-card .luma-event-card-schedule {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
+.luma-event-card .luma-event-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+.luma-event-card .luma-event-card-title {
+  min-width: 0;
+  margin: 0;
+  color: #151515;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+
+.luma-event-card .luma-event-card-title button {
+  display: -webkit-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-align: left;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.luma-event-card .luma-event-card-title button::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border-radius: inherit;
+  content: "";
+}
+
+.luma-event-card .luma-event-card-title button:focus-visible {
+  outline: none;
+}
+
+.luma-event-card .luma-event-card-title button:focus-visible::after {
+  outline: 2px solid #c42d89;
+  outline-offset: -3px;
+}
+
+.luma-event-card .luma-event-card-organizer,
+.luma-event-card .luma-event-card-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.luma-event-card .luma-event-card-organizer { max-width:45%; }
+.luma-event-card .luma-event-card-location { flex:1; }
+
+.luma-event-card .luma-event-card-organizer img {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.luma-event-card .luma-event-card-organizer > span,
+.luma-event-card .luma-event-card-location > span:last-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.luma-event-card .luma-event-card-location .luma-icon {
+  display: inline-flex;
+  flex: 0 0 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.luma-event-card .luma-event-card-location .luma-icon > svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.luma-event-card .luma-event-card-cover {
+  position: relative;
+  box-sizing: border-box;
+  flex: 0 0 108px;
+  width: 108px;
+  height: 108px;
+  overflow: hidden;
+  border: .5px solid rgba(0, 0, 0, .04);
+  border-radius: 12px;
+  corner-shape: superellipse(2);
+}
+
+.luma-event-card .luma-event-card-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: none;
+}
+
+.luma-event-card .luma-event-card-cover img.is-contained {
+  object-fit: contain;
+}
+
+.luma-event-card .luma-event-card-bottom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  margin-top: 2px;
+}
+
+.luma-event-card .luma-event-card-badges {
+  display: flex;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.luma-event-card .luma-event-card-pill,
+.luma-event-card .luma-event-card-fee {
+  max-width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  overflow-wrap: anywhere;
+}
+
+.luma-event-card .luma-event-card-pill {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(196, 45, 137, .08);
+  color: #c42d89;
+}
+
+.luma-event-card .luma-event-card-pill.is-status {
+  background:var(--muted);
+  color:var(--text-secondary);
+}
+
+.luma-event-card .luma-event-card-pill.is-ended { color:var(--text-tertiary); }
+
+.luma-event-card .luma-event-card-fee {
+  color: rgba(21, 21, 21, .36);
+}
+
+.luma-event-card .luma-event-card-save {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  z-index: 2;
+  display: flex;
+  flex: 0 0 28px;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .94);
+  color: rgba(21, 21, 21, .64);
+  cursor: pointer;
+}
+
+.luma-event-card .luma-event-card-save:hover,
+.luma-event-card .luma-event-card-save.is-saved {
+  color: #c42d89;
+}
+
+.luma-event-card .luma-event-card-save:focus-visible {
+  outline: 2px solid #c42d89;
+  outline-offset: 2px;
+}
+
+@media (max-width: 650px) {
+  .luma-event-card .luma-event-card-title {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .luma-event-card .luma-event-card-meta { display:grid;gap:2px; }
+  .luma-event-card .luma-event-card-organizer { max-width:100%; }
+}
+
+@media (max-width: 450px) {
+  .opportunity-card.luma-event-card {
+    padding: 12px;
+  }
+
+  .luma-event-card .luma-event-card-row {
+    gap: 12px;
+  }
+
+  .luma-event-card .luma-event-card-cover {
+    flex-basis: 80px;
+    width: 80px;
+    height: 80px;
+  }
+}

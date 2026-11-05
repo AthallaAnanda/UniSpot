@@ -1,0 +1,24 @@
+{
+  "searchReturnFocus": true,
+  "about": true,
+  "routes": [
+    {
+      "id": "icmns-2026",
+      "status": 200
+    },
+    {
+      "id": "lpdp-naist-2026",
+      "status": 200
+    },
+    {
+      "id": "devfest-cloud-jakarta-2026",
+      "status": 200
+    },
+    {
+      "id": "does-not-exist",
+      "status": 404
+    }
+  ],
+  "noDevelopmentCopy": true,
+  "cardReturnFocus": true
+}

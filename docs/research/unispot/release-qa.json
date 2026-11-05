@@ -1,0 +1,46 @@
+{
+  "allImages": {
+    "total": 42,
+    "broken": []
+  },
+  "totalCards": 17,
+  "firstSoonest": "The 9th International Conference on Mathematics and Natural Sciences",
+  "internationalInitiallyVisible": 0,
+  "onlineCount": 3,
+  "viewports": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "heading": "Find your next opportunity.",
+      "unwantedCopy": false
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "heading": "Find your next opportunity.",
+      "unwantedCopy": false
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "heading": "Find your next opportunity.",
+      "unwantedCopy": false
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "heading": "Find your next opportunity.",
+      "unwantedCopy": false
+    }
+  ],
+  "mobileDialog": {
+    "width": 351.68603515625,
+    "withinViewport": true
+  },
+  "localRoutes": {
+    "root": 200,
+    "discover": 200,
+    "logo": 200,
+    "favicon": 200
+  }
+}

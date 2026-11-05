@@ -1,0 +1,39 @@
+{
+  "styles": [
+    {
+      "id": "",
+      "text": ".calendar-row.jsx-cc9249456458bd8a{scroll-snap-align:start;width:300px;height:100%;padding:.5rem .5rem .5rem 1rem}.hover-bg.jsx-cc9249456458bd8a{border-radius:var(--border-radius);position:absolute;top:0;bottom:0;left:.25rem;right:0}@media (hover:hover){.calendar-row.jsx-cc9249456458bd8a:hover .hover-bg.jsx-cc9249456458bd8a{background-color:var(--hover-bg-color)}}.calendar-desc{margin-top:.125rem}"
+    }
+  ],
+  "css": [
+    "https://luma.com/_next/static/chunks/2v5rj5l2rylv6.css",
+    "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+  ],
+  "fonts": true,
+  "canvasFonts": [
+    [
+      "-apple-system",
+      105.3046875
+    ],
+    [
+      "BlinkMacSystemFont",
+      105.3046875
+    ],
+    [
+      "Inter",
+      120.296875
+    ],
+    [
+      "Arial",
+      115.59375
+    ],
+    [
+      "Roboto",
+      105.3046875
+    ],
+    [
+      "sans-serif",
+      115.59375
+    ]
+  ]
+}

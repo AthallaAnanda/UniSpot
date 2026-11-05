@@ -1,0 +1,38 @@
+{
+  "url": "http://localhost:3001/galeri",
+  "accordion": [
+    {
+      "title": "Daerah asal",
+      "open": true,
+      "rows": "307.6px",
+      "transition": "grid-template-rows 0.6s ease-in-out",
+      "chevronTransition": "transform 0.4s",
+      "chevronTransform": "matrix(0, -1, 1, 0, 0, 0)"
+    },
+    {
+      "title": "Teknik",
+      "open": false,
+      "rows": "0px",
+      "transition": "grid-template-rows 0.6s ease-in-out",
+      "chevronTransition": "transform 0.4s",
+      "chevronTransform": "none"
+    },
+    {
+      "title": "Cari tenun",
+      "open": false,
+      "rows": "0px",
+      "transition": "grid-template-rows 0.6s ease-in-out",
+      "chevronTransition": "transform 0.4s",
+      "chevronTransform": "none"
+    }
+  ],
+  "mobilePanel": {
+    "width": "320px",
+    "maxWidth": "351.36px",
+    "position": "fixed",
+    "padding": "28px 24px",
+    "transition": "all",
+    "animation": "none",
+    "shadow": "rgba(29, 25, 20, 0.5) 0px 0px 0px 390.4px"
+  }
+}

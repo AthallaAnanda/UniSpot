@@ -1,0 +1,39 @@
+{
+  "Asia & Pacific": {
+    "count": 21,
+    "selected": null
+  },
+  "Africa": {
+    "count": 3,
+    "selected": null
+  },
+  "Europe": {
+    "count": 26,
+    "selected": null
+  },
+  "North America": {
+    "count": 32,
+    "selected": null
+  },
+  "South America": {
+    "count": 5,
+    "selected": null
+  },
+  "modalInputFocused": true,
+  "phoneToggle": "+62 812 345 678",
+  "demoStatus": "This is a local demo. No sign-in request has been sent.",
+  "escapeDismissed": true,
+  "focusReturned": true,
+  "outsideDismissed": true,
+  "mobile": {
+    "categoryScrollable": true,
+    "categoryScroll": 240,
+    "calendarScrollable": true,
+    "calendarSnap": "x mandatory",
+    "overflow": false,
+    "calendarScroll": 300
+  },
+  "imageFailures": [],
+  "rootStatus": 200,
+  "discoverStatus": 200
+}

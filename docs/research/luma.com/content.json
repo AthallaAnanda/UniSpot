@@ -1,0 +1,777 @@
+{
+  "regions": {
+    "Asia & Pacific": [
+      {
+        "href": "/auckland?k=p",
+        "name": "Auckland",
+        "count": "3 Events",
+        "image": "https://images.lumacdn.com/discovery/auckland-icon.png",
+        "color": "rgb(175, 116, 196)"
+      },
+      {
+        "href": "/bangkok?k=p",
+        "name": "Bangkok",
+        "count": "18 Events",
+        "image": "https://images.lumacdn.com/discovery/bangkok-icon.png",
+        "color": "rgb(227, 153, 54)"
+      },
+      {
+        "href": "/bengaluru?k=p",
+        "name": "Bengaluru",
+        "count": "13 Events",
+        "image": "https://images.lumacdn.com/discovery/bangalore-icon.png",
+        "color": "rgb(168, 153, 37)"
+      },
+      {
+        "href": "/brisbane?k=p",
+        "name": "Brisbane",
+        "count": "3 Events",
+        "image": "https://images.lumacdn.com/discovery/brisbane-icon.png",
+        "color": "rgb(45, 130, 227)"
+      },
+      {
+        "href": "/dubai?k=p",
+        "name": "Dubai",
+        "count": "10 Events",
+        "image": "https://images.lumacdn.com/discovery/dubai-icon.png",
+        "color": "rgb(171, 82, 171)"
+      },
+      {
+        "href": "/ho-chi-minh-city?k=p",
+        "name": "Ho Chi Minh City",
+        "count": "9 Events",
+        "image": "https://images.lumacdn.com/discovery/hcm-icon.png",
+        "color": "rgb(222, 103, 78)"
+      },
+      {
+        "href": "/hongkong?k=p",
+        "name": "Hong Kong",
+        "count": "10 Events",
+        "image": "https://images.lumacdn.com/discovery/hk-icon.png",
+        "color": "rgb(78, 170, 186)"
+      },
+      {
+        "href": "/honolulu?k=p",
+        "name": "Honolulu",
+        "count": "6 Events",
+        "image": "https://images.lumacdn.com/discovery/hnl-icon.png",
+        "color": "rgb(50, 124, 219)"
+      },
+      {
+        "href": "/jakarta?k=p",
+        "name": "Jakarta",
+        "count": "6 Events",
+        "image": "https://images.lumacdn.com/discovery/jakarta-icon.png",
+        "color": "rgb(199, 163, 105)"
+      },
+      {
+        "href": "/kuala-lumpur?k=p",
+        "name": "Kuala Lumpur",
+        "count": "10 Events",
+        "image": "https://images.lumacdn.com/discovery/kl-icon.png",
+        "color": "rgb(153, 54, 163)"
+      },
+      {
+        "href": "/manila?k=p",
+        "name": "Manila",
+        "count": "5 Events",
+        "image": "https://images.lumacdn.com/discovery/manila-icon.png",
+        "color": "rgb(125, 172, 164)"
+      },
+      {
+        "href": "/melbourne?k=p",
+        "name": "Melbourne",
+        "count": "12 Events",
+        "image": "https://images.lumacdn.com/discovery/mel-icon.png",
+        "color": "rgb(175, 194, 99)"
+      },
+      {
+        "href": "/mumbai?k=p",
+        "name": "Mumbai",
+        "count": "14 Events",
+        "image": "https://images.lumacdn.com/discovery/mumbai-icon.png",
+        "color": "rgb(220, 110, 24)"
+      },
+      {
+        "href": "/new-delhi?k=p",
+        "name": "New Delhi",
+        "count": "6 Events",
+        "image": "https://images.lumacdn.com/discovery/newdelhi-icon.png",
+        "color": "rgb(214, 130, 107)"
+      },
+      {
+        "href": "/osaka?k=p",
+        "name": "Osaka",
+        "count": "4 Events",
+        "image": "https://images.lumacdn.com/discovery/osaka-icon.png",
+        "color": "rgb(208, 114, 212)"
+      },
+      {
+        "href": "/seoul?k=p",
+        "name": "Seoul",
+        "count": "9 Events",
+        "image": "https://images.lumacdn.com/discovery/seoul-icon.png",
+        "color": "rgb(127, 171, 235)"
+      },
+      {
+        "href": "/singapore?k=p",
+        "name": "Singapore",
+        "count": "31 Events",
+        "image": "https://images.lumacdn.com/discovery/sg-icon.png",
+        "color": "rgb(111, 128, 43)"
+      },
+      {
+        "href": "/sydney?k=p",
+        "name": "Sydney",
+        "count": "17 Events",
+        "image": "https://images.lumacdn.com/discovery/sydney-icon.png",
+        "color": "rgb(218, 150, 52)"
+      },
+      {
+        "href": "/taipei?k=p",
+        "name": "Taipei",
+        "count": "10 Events",
+        "image": "https://images.lumacdn.com/discovery/taipei-icon.png",
+        "color": "rgb(113, 115, 209)"
+      },
+      {
+        "href": "/tel-aviv?k=p",
+        "name": "Tel Aviv-Yafo",
+        "count": "21 Events",
+        "image": "https://images.lumacdn.com/discovery/telaviv-icon.png",
+        "color": "rgb(243, 144, 80)"
+      },
+      {
+        "href": "/tokyo?k=p",
+        "name": "Tokyo",
+        "count": "38 Events",
+        "image": "https://images.lumacdn.com/discovery/tokyo-icon.png",
+        "color": "rgb(230, 159, 147)"
+      }
+    ],
+    "Africa": [
+      {
+        "href": "/capetown?k=p",
+        "name": "Cape Town",
+        "count": "4 Events",
+        "image": "https://images.lumacdn.com/discovery/capetown-icon.png",
+        "color": "rgb(87, 201, 201)"
+      },
+      {
+        "href": "/lagos?k=p",
+        "name": "Lagos",
+        "count": "7 Events",
+        "image": "https://images.lumacdn.com/discovery/lagos-icon.png",
+        "color": "rgb(117, 115, 102)"
+      },
+      {
+        "href": "/nairobi?k=p",
+        "name": "Nairobi",
+        "count": "4 Events",
+        "image": "https://images.lumacdn.com/discovery/nairobi-icon.png",
+        "color": "rgb(84, 109, 6)"
+      }
+    ],
+    "Europe": [
+      {
+        "href": "/amsterdam?k=p",
+        "name": "Amsterdam",
+        "count": "44 Events",
+        "image": "https://images.lumacdn.com/discovery/ams-icon.png",
+        "color": "rgb(222, 71, 94)"
+      },
+      {
+        "href": "/barcelona?k=p",
+        "name": "Barcelona",
+        "count": "30 Events",
+        "image": "https://images.lumacdn.com/discovery/bcn-icon.png",
+        "color": "rgb(30, 114, 190)"
+      },
+      {
+        "href": "/berlin?k=p",
+        "name": "Berlin",
+        "count": "50 Events",
+        "image": "https://images.lumacdn.com/discovery/berlin-icon.png",
+        "color": "rgb(71, 180, 214)"
+      },
+      {
+        "href": "/brussels?k=p",
+        "name": "Brussels",
+        "count": "9 Events",
+        "image": "https://images.lumacdn.com/discovery/brussels-icon.png",
+        "color": "rgb(44, 122, 192)"
+      },
+      {
+        "href": "/budapest?k=p",
+        "name": "Budapest",
+        "count": "7 Events",
+        "image": "https://images.lumacdn.com/discovery/budapest-icon.png",
+        "color": "rgb(228, 158, 87)"
+      },
+      {
+        "href": "/copenhagen?k=p",
+        "name": "Copenhagen",
+        "count": "17 Events",
+        "image": "https://images.lumacdn.com/discovery/cph-icon.png",
+        "color": "rgb(213, 148, 105)"
+      },
+      {
+        "href": "/dublin?k=p",
+        "name": "Dublin",
+        "count": "10 Events",
+        "image": "https://images.lumacdn.com/discovery/dublin-icon.png",
+        "color": "rgb(245, 165, 93)"
+      },
+      {
+        "href": "/frankfurt?k=p",
+        "name": "Frankfurt",
+        "count": "8 Events",
+        "image": "https://images.lumacdn.com/discovery/frankfurt-icon.png",
+        "color": "rgb(201, 71, 38)"
+      },
+      {
+        "href": "/geneva?k=p",
+        "name": "Geneva",
+        "count": "8 Events",
+        "image": "https://images.lumacdn.com/discovery/geneva-icon.png",
+        "color": "rgb(20, 124, 184)"
+      },
+      {
+        "href": "/hamburg?k=p",
+        "name": "Hamburg",
+        "count": "18 Events",
+        "image": "https://images.lumacdn.com/discovery/hamburg-icon.png",
+        "color": "rgb(60, 120, 203)"
+      },
+      {
+        "href": "/helsinki?k=p",
+        "name": "Helsinki",
+        "count": "35 Events",
+        "image": "https://images.lumacdn.com/discovery/helsinki-icon.png",
+        "color": "rgb(7, 163, 149)"
+      },
+      {
+        "href": "/istanbul?k=p",
+        "name": "Istanbul",
+        "count": "9 Events",
+        "image": "https://images.lumacdn.com/discovery/istanbul-icon.png",
+        "color": "rgb(252, 103, 7)"
+      },
+      {
+        "href": "/lausanne?k=p",
+        "name": "Lausanne",
+        "count": "5 Events",
+        "image": "https://images.lumacdn.com/discovery/lausanne-icon.png",
+        "color": "rgb(143, 176, 23)"
+      },
+      {
+        "href": "/lisbon?k=p",
+        "name": "Lisbon",
+        "count": "43 Events",
+        "image": "https://images.lumacdn.com/discovery/lisbon-icon.png",
+        "color": "rgb(223, 116, 64)"
+      },
+      {
+        "href": "/london?k=p",
+        "name": "London",
+        "count": "58 Events",
+        "image": "https://images.lumacdn.com/discovery/london-icon.png",
+        "color": "rgb(232, 152, 0)"
+      },
+      {
+        "href": "/madrid?k=p",
+        "name": "Madrid",
+        "count": "24 Events",
+        "image": "https://images.lumacdn.com/discovery/madrid-icon.png",
+        "color": "rgb(194, 188, 79)"
+      },
+      {
+        "href": "/milan?k=p",
+        "name": "Milan",
+        "count": "18 Events",
+        "image": "https://images.lumacdn.com/discovery/milan-icon.png",
+        "color": "rgb(145, 106, 74)"
+      },
+      {
+        "href": "/munich?k=p",
+        "name": "Munich",
+        "count": "14 Events",
+        "image": "https://images.lumacdn.com/discovery/munich-icon.png",
+        "color": "rgb(234, 173, 59)"
+      },
+      {
+        "href": "/oslo?k=p",
+        "name": "Oslo",
+        "count": "13 Events",
+        "image": "https://images.lumacdn.com/discovery/oslo-icon.png",
+        "color": "rgb(230, 168, 101)"
+      },
+      {
+        "href": "/paris?k=p",
+        "name": "Paris",
+        "count": "34 Events",
+        "image": "https://images.lumacdn.com/discovery/paris-icon.png",
+        "color": "rgb(206, 143, 92)"
+      },
+      {
+        "href": "/prague?k=p",
+        "name": "Prague",
+        "count": "14 Events",
+        "image": "https://images.lumacdn.com/discovery/prague-icon.png",
+        "color": "rgb(122, 81, 245)"
+      },
+      {
+        "href": "/rome?k=p",
+        "name": "Rome",
+        "count": "5 Events",
+        "image": "https://images.lumacdn.com/discovery/rome-icon.png",
+        "color": "rgb(227, 122, 63)"
+      },
+      {
+        "href": "/stockholm?k=p",
+        "name": "Stockholm",
+        "count": "29 Events",
+        "image": "https://images.lumacdn.com/discovery/stockholm-icon.png",
+        "color": "rgb(62, 107, 240)"
+      },
+      {
+        "href": "/vienna?k=p",
+        "name": "Vienna",
+        "count": "10 Events",
+        "image": "https://images.lumacdn.com/discovery/vienna-icon.png",
+        "color": "rgb(165, 75, 189)"
+      },
+      {
+        "href": "/warsaw?k=p",
+        "name": "Warsaw",
+        "count": "14 Events",
+        "image": "https://images.lumacdn.com/discovery/warsaw-icon.png",
+        "color": "rgb(105, 169, 219)"
+      },
+      {
+        "href": "/zurich?k=p",
+        "name": "Zurich",
+        "count": "20 Events",
+        "image": "https://images.lumacdn.com/discovery/zurich-icon.png",
+        "color": "rgb(64, 201, 145)"
+      }
+    ],
+    "North America": [
+      {
+        "href": "/atlanta?k=p",
+        "name": "Atlanta",
+        "count": "17 Events",
+        "image": "https://images.lumacdn.com/discovery/atlanta-icon.png",
+        "color": "rgb(47, 124, 169)"
+      },
+      {
+        "href": "/austin?k=p",
+        "name": "Austin",
+        "count": "18 Events",
+        "image": "https://images.lumacdn.com/discovery/austin-icon.png",
+        "color": "rgb(245, 185, 56)"
+      },
+      {
+        "href": "/boston?k=p",
+        "name": "Boston",
+        "count": "22 Events",
+        "image": "https://images.lumacdn.com/discovery/boston-icon.png",
+        "color": "rgb(215, 127, 48)"
+      },
+      {
+        "href": "/calgary?k=p",
+        "name": "Calgary",
+        "count": "6 Events",
+        "image": "https://images.lumacdn.com/discovery/calgary-icon.png",
+        "color": "rgb(24, 162, 181)"
+      },
+      {
+        "href": "/chicago?k=p",
+        "name": "Chicago",
+        "count": "21 Events",
+        "image": "https://images.lumacdn.com/discovery/chicago-icon.png",
+        "color": "rgb(230, 108, 159)"
+      },
+      {
+        "href": "/cincinnati?k=p",
+        "name": "Cincinnati",
+        "count": "6 Events",
+        "image": "https://images.lumacdn.com/discovery/cincinnati-icon.png",
+        "color": "rgb(219, 70, 93)"
+      },
+      {
+        "href": "/dallas?k=p",
+        "name": "Dallas",
+        "count": "7 Events",
+        "image": "https://images.lumacdn.com/discovery/dallas-icon.png",
+        "color": "rgb(219, 181, 140)"
+      },
+      {
+        "href": "/denver?k=p",
+        "name": "Denver",
+        "count": "8 Events",
+        "image": "https://images.lumacdn.com/discovery/denver-icon.png",
+        "color": "rgb(233, 132, 6)"
+      },
+      {
+        "href": "/detroit?k=p",
+        "name": "Detroit",
+        "count": "4 Events",
+        "image": "https://images.lumacdn.com/discovery/detroit-icon.png",
+        "color": "rgb(207, 41, 196)"
+      },
+      {
+        "href": "/edmonton?k=p",
+        "name": "Edmonton",
+        "count": "6 Events",
+        "image": "https://images.lumacdn.com/discovery/edmonton-icon.png",
+        "color": "rgb(55, 177, 184)"
+      },
+      {
+        "href": "/houston?k=p",
+        "name": "Houston",
+        "count": "11 Events",
+        "image": "https://images.lumacdn.com/discovery/houston-icon.png",
+        "color": "rgb(188, 105, 59)"
+      },
+      {
+        "href": "/las-vegas?k=p",
+        "name": "Las Vegas",
+        "count": "16 Events",
+        "image": "https://images.lumacdn.com/discovery/vegas-icon.png",
+        "color": "rgb(229, 186, 71)"
+      },
+      {
+        "href": "/la?k=p",
+        "name": "Los Angeles",
+        "count": "41 Events",
+        "image": "https://images.lumacdn.com/discovery/la-icon.png",
+        "color": "rgb(83, 143, 33)"
+      },
+      {
+        "href": "/mexico-city?k=p",
+        "name": "Mexico City",
+        "count": "15 Events",
+        "image": "https://images.lumacdn.com/discovery/cdmx-icon.png",
+        "color": "rgb(224, 159, 94)"
+      },
+      {
+        "href": "/miami?k=p",
+        "name": "Miami",
+        "count": "12 Events",
+        "image": "https://images.lumacdn.com/discovery/miami-icon.png",
+        "color": "rgb(64, 141, 174)"
+      },
+      {
+        "href": "/minneapolis?k=p",
+        "name": "Minneapolis",
+        "count": "11 Events",
+        "image": "https://images.lumacdn.com/discovery/minneapolis-icon.png",
+        "color": "rgb(186, 54, 92)"
+      },
+      {
+        "href": "/montreal?k=p",
+        "name": "Montréal",
+        "count": "25 Events",
+        "image": "https://images.lumacdn.com/discovery/montreal-icon.png",
+        "color": "rgb(56, 126, 177)"
+      },
+      {
+        "href": "/nyc?k=p",
+        "name": "New York",
+        "count": "90 Events",
+        "image": "https://images.lumacdn.com/discovery/nyc-icon.png",
+        "color": "rgb(224, 141, 85)"
+      },
+      {
+        "href": "/philadelphia?k=p",
+        "name": "Philadelphia",
+        "count": "20 Events",
+        "image": "https://images.lumacdn.com/discovery/philly-icon.png",
+        "color": "rgb(231, 150, 63)"
+      },
+      {
+        "href": "/phoenix?k=p",
+        "name": "Phoenix",
+        "count": "9 Events",
+        "image": "https://images.lumacdn.com/discovery/phx-icon.png",
+        "color": "rgb(214, 92, 32)"
+      },
+      {
+        "href": "/pittsburgh?k=p",
+        "name": "Pittsburgh",
+        "count": "7 Events",
+        "image": "https://images.lumacdn.com/discovery/pittsburgh-icon.png",
+        "color": "rgb(110, 102, 237)"
+      },
+      {
+        "href": "/portland?k=p",
+        "name": "Portland",
+        "count": "9 Events",
+        "image": "https://images.lumacdn.com/discovery/portland-icon.png",
+        "color": "rgb(215, 150, 138)"
+      },
+      {
+        "href": "/raleigh?k=p",
+        "name": "Raleigh",
+        "count": "10 Events",
+        "image": "https://images.lumacdn.com/discovery/raleigh-icon.png",
+        "color": "rgb(112, 191, 42)"
+      },
+      {
+        "href": "/sacramento?k=p",
+        "name": "Sacramento",
+        "count": "9 Events",
+        "image": "https://images.lumacdn.com/discovery/sacramento-icon.png",
+        "color": "rgb(52, 209, 167)"
+      },
+      {
+        "href": "/salt-lake-city?k=p",
+        "name": "Salt Lake City",
+        "count": "10 Events",
+        "image": "https://images.lumacdn.com/discovery/slc-icon.png",
+        "color": "rgb(80, 175, 217)"
+      },
+      {
+        "href": "/sd?k=p",
+        "name": "San Diego",
+        "count": "17 Events",
+        "image": "https://images.lumacdn.com/discovery/sd-icon.png",
+        "color": "rgb(59, 164, 235)"
+      },
+      {
+        "href": "/sf?k=p",
+        "name": "San Francisco",
+        "count": "80 Events",
+        "image": "https://images.lumacdn.com/discovery/sf-icon.png",
+        "color": "rgb(255, 101, 25)"
+      },
+      {
+        "href": "/seattle?k=p",
+        "name": "Seattle",
+        "count": "15 Events",
+        "image": "https://images.lumacdn.com/discovery/seattle-icon.png",
+        "color": "rgb(145, 152, 230)"
+      },
+      {
+        "href": "/toronto?k=p",
+        "name": "Toronto",
+        "count": "34 Events",
+        "image": "https://images.lumacdn.com/discovery/toronto-icon.png",
+        "color": "rgb(48, 110, 209)"
+      },
+      {
+        "href": "/vancouver?k=p",
+        "name": "Vancouver",
+        "count": "19 Events",
+        "image": "https://images.lumacdn.com/discovery/vancouver-icon.png",
+        "color": "rgb(245, 189, 83)"
+      },
+      {
+        "href": "/dc?k=p",
+        "name": "Washington, DC",
+        "count": "22 Events",
+        "image": "https://images.lumacdn.com/discovery/dc-icon.png",
+        "color": "rgb(187, 176, 166)"
+      },
+      {
+        "href": "/waterloo_ca?k=p",
+        "name": "Waterloo",
+        "count": "7 Events",
+        "image": "https://images.lumacdn.com/discovery/waterloo-icon.png",
+        "color": "rgb(149, 154, 101)"
+      }
+    ],
+    "South America": [
+      {
+        "href": "/bogota?k=p",
+        "name": "Bogotá",
+        "count": "11 Events",
+        "image": "https://images.lumacdn.com/discovery/bogota-icon.png",
+        "color": "rgb(210, 138, 79)"
+      },
+      {
+        "href": "/buenos-aires?k=p",
+        "name": "Buenos Aires",
+        "count": "13 Events",
+        "image": "https://images.lumacdn.com/discovery/ba-icon.png",
+        "color": "rgb(229, 125, 110)"
+      },
+      {
+        "href": "/medellin?k=p",
+        "name": "Medellín",
+        "count": "5 Events",
+        "image": "https://images.lumacdn.com/discovery/medellin-icon.png",
+        "color": "rgb(78, 152, 207)"
+      },
+      {
+        "href": "/rio?k=p",
+        "name": "Rio de Janeiro",
+        "count": "5 Events",
+        "image": "https://images.lumacdn.com/discovery/rio-icon.png",
+        "color": "rgb(90, 143, 196)"
+      },
+      {
+        "href": "/saopaulo?k=p",
+        "name": "São Paulo",
+        "count": "16 Events",
+        "image": "https://images.lumacdn.com/discovery/sp-icon.png",
+        "color": "rgb(127, 116, 122)"
+      }
+    ]
+  },
+  "categories": [
+    {
+      "name": "Family",
+      "count": "657 Events",
+      "href": "/family?k=t",
+      "image": "https://images.lumacdn.com/uploads/aq/f5fbdde4-46a9-4d9e-b730-7144b3c0e335.png"
+    },
+    {
+      "name": "Books",
+      "count": "734 Events",
+      "href": "/books?k=t",
+      "image": "https://images.lumacdn.com/uploads/3g/f33c0b3c-9090-40bb-b99c-875b534bcee4.png"
+    },
+    {
+      "name": "Games",
+      "count": "504 Events",
+      "href": "/games?k=t",
+      "image": "https://images.lumacdn.com/uploads/mp/c65f64de-a537-4867-b7e6-7eedd3470c82.png"
+    },
+    {
+      "name": "Tech",
+      "count": "4K Events",
+      "href": "/tech?k=t",
+      "image": "https://images.lumacdn.com/uploads/v7/3f6baafa-d90d-4013-9853-0fa10331f796.png"
+    },
+    {
+      "name": "Food & Drink",
+      "count": "600 Events",
+      "href": "/food?k=t",
+      "image": "https://images.lumacdn.com/uploads/36/a77db635-cb3b-4720-9758-2bc9dae948e4.png"
+    },
+    {
+      "name": "AI",
+      "count": "4K Events",
+      "href": "/ai?k=t",
+      "image": "https://images.lumacdn.com/uploads/0z/c1143c0e-a2ab-4434-b82b-80b0ba3ec2f0.png"
+    },
+    {
+      "name": "Running",
+      "count": "585 Events",
+      "href": "/running?k=t",
+      "image": "https://images.lumacdn.com/uploads/9f/9a31599b-38be-49c8-9c46-dfa19becb9ad.png"
+    },
+    {
+      "name": "Arts & Culture",
+      "count": "3K Events",
+      "href": "/arts?k=t",
+      "image": "https://images.lumacdn.com/uploads/u8/5eeba5a4-d305-4bc1-9017-329937813f30.png"
+    },
+    {
+      "name": "Climate",
+      "count": "741 Events",
+      "href": "/climate?k=t",
+      "image": "https://images.lumacdn.com/uploads/on/19946552-9254-41de-b105-d086a2e4ac68.png"
+    },
+    {
+      "name": "Fitness",
+      "count": "2K Events",
+      "href": "/fitness?k=t",
+      "image": "https://images.lumacdn.com/uploads/7b/f3930d36-b2f2-4df3-8db6-798df9b0897f.png"
+    },
+    {
+      "name": "Wellness",
+      "count": "999 Events",
+      "href": "/wellness?k=t",
+      "image": "https://images.lumacdn.com/uploads/y5/4f225f49-0c10-4bba-b1cb-77ae216268ac.png"
+    },
+    {
+      "name": "Crypto",
+      "count": "573 Events",
+      "href": "/crypto?k=t",
+      "image": "https://images.lumacdn.com/uploads/yl/096bc517-f9fc-49fe-befd-401e29cc4662.png"
+    }
+  ],
+  "calendars": [
+    {
+      "name": "Reading Rhythms Global",
+      "description": "Not a book club. A reading party.\nRead with friends to live music & curated playlists!",
+      "href": "/readingrhythms-global?k=c",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=48,height=48/calendars/ni/4f930fb4-2ff5-4e98-8f46-7107a8c6b7cb"
+    },
+    {
+      "name": "Build Club",
+      "description": "The most collaborative AI community in the world (50+ Cities, 30K+ community)",
+      "href": "/buildercommunityanz?k=c",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=48,height=48/calendars/xv/cd043d3e-0ce7-490f-9970-f27a79399858"
+    },
+    {
+      "name": "South Park Commons",
+      "description": "South Park Commons helps you get from -1 to 0. To learn more or apply, visit southparkcommons.com.",
+      "href": "/southparkcommons-events?k=c",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=48,height=48/calendars/zd/801eab25-f945-44b2-8d32-29a455bd485d"
+    },
+    {
+      "name": "Design Buddies",
+      "description": "Events for all creatives across SF/LA, online, and the world! Hosted by Design Buddies, the world's largest design community (https://designbuddies.community). Founded by Grace Ling",
+      "href": "/design?k=c",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=48,height=48/calendars/pt/e584cc5b-7a57-4f13-ab7a-2abcb3a4c1a9"
+    },
+    {
+      "name": "SpaceXSI Community",
+      "description": "SpaceXSI community events in 250+ cities",
+      "href": "/spacexsi-community?k=c",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=48,height=48/uploads/at/90b5bc7e-a384-4db6-bdd2-0fd2130ffca3.png"
+    },
+    {
+      "name": "Creative Coffee Club",
+      "description": "Unique experiences for creatives and builders in...\n\n📍 NYC · Philly · Seattle · Toronto · Chicago · LA · Austin · Boston · SF · Nashville · Houston · Phoenix · Miami",
+      "href": "/coffeeclubworldwide?k=c",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=48,height=48/calendars/i2/63802dd5-e4ec-41e5-8559-35f64795e652.png"
+    },
+    {
+      "name": "Google DeepMind",
+      "description": "Connect with the Google DeepMind Developer Experience Team",
+      "href": "/deepmind?k=c",
+      "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=48,height=48/calendars/ph/5ee73ff7-6554-47d8-8505-4306f1091baa.jpg"
+    }
+  ],
+  "header": "<header class=\"jsx-1502588700 nav-wrapper animated sticky show-divider\"><div class=\"jsx-1502588700 background animated mounted\" style=\"background: linear-gradient(rgba(51, 65, 198, 0.2) 0%, rgba(61, 143, 245, 0.1) 50%, rgba(126, 215, 224, 0) 100%);\"></div><nav class=\"jsx-1502588700 flex-center spread gap-2\"><a aria-label=\"Luma Home\" href=\"/\" target=\"_self\" class=\"lux-menu-trigger-wrapper cursor-pointer logo-wrapper\"><div class=\"jsx-1502588700 logo flex-center animated wordmark\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 724 264\"><path fill=\"currentColor\" d=\"M38.53 260.65H.43V27.86h38.1zm86.46 2.77c-42.25 0-66.48-22.96-66.48-63V89.33h38.1v108.28c0 23.61 8.7 32.39 32.12 32.39 30.35 0 42.73-14.54 42.73-50.17v-90.5h38.1v171.33h-36.54v-29.91c-4.99 22.98-27.12 32.67-48.03 32.67m347.2-2.77H434.4V149.87c0-22.5-7.01-30.87-25.88-30.87-24.28 0-37.11 14.45-37.11 41.79v99.86h-37.79V149.87c0-21.93-7.23-30.87-24.94-30.87-31.59 0-38.05 32.96-38.05 41.79v99.86h-38.1V89.33h36.54v29.96c6.49-21.02 27.02-33.71 47.72-33.71 20.69 0 38.09 7.9 45.64 33.71 10.13-26.76 28.35-33.71 50.15-33.71 37.88 0 59.61 18.88 59.61 51.81zm76.65 2.77c-52.62 0-61.55-33.45-61.55-50.52 0-20.1 8.83-38.21 27.93-45.55 8.41-3.11 16.52-5.43 24.84-7.1 7.33-1.47 18.64-3.03 26.91-4.17l2.73-.38c14.38-2 29.67-9.21 29.67-18.62 0-16-20.51-18.39-32.74-18.39-13.87 0-23.64 3.57-27.53 10.05-3.49 6.46-3.73 7.97-4.62 13.6l-.62 4.43h-38.1l.68-5.61c1.35-11.14 3.41-19.03 6.48-24.83 10.54-20.39 31.77-30.75 63.08-30.75 26.11 0 44.63 8.23 53.26 15.94 5.31 4.6 9.1 9.84 11.89 16.46 5.84 12.36 6.32 20.63 6.32 29.4v86.43c0 8.07.78 14.97 2.31 20.5l1.76 6.35h-38.91l-.7-4.19c-.5-2.96-.67-19.75-.88-26.23-8.99 23.61-28.27 33.18-52.21 33.18m50.53-93.72c-7.97 6.11-20.47 9.6-38.62 13.23-31.27 5.78-36.54 13.06-36.54 27.22 0 12.5 10.63 20.26 27.75 20.26 33.23 0 47.41-15.48 47.41-51.77zm124.2-105.51C688.46 64.19 660 35.73 660 .62c0 35.11-28.46 63.57-63.57 63.57 35.11 0 63.57 28.46 63.57 63.57 0-35.11 28.46-63.57 63.57-63.57\"></path></svg></div></a><div class=\"jsx-1502588700 center-and-right\"><div class=\"jsx-1502588700\"></div><div class=\"jsx-1502588700 right-wrapper min-width-0\"><div class=\"time fs-sm mono-number relative\">10:52 PM GMT+7</div><div class=\"jsx-75a36a52353cb3a6 link fs-sm fw-medium min-width-0\"><a class=\"min-width-0 text-ellipses\" href=\"/discover\">Discover Events</a></div><div class=\"jsx-75a36a52353cb3a6\"><a href=\"/signin?next=%2Fdiscover\" target=\"_self\" class=\"btn lux-button flex-center small light solid variant-color-light round no-icon\"><div class=\"label\">Sign In</div></a></div></div></div></nav></header>",
+  "footer": "<div class=\"jsx-855263735 flex-start global-footer-content\"><div class=\"jsx-855263735 left-wrapper flex-center flex-1\"><a class=\"logo flex-center\" aria-label=\"Luma Home\" href=\"/\"><div class=\"jsx-855263735 flex-center-center nonphone-only\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 133 134\"><path fill=\"currentColor\" d=\"M133 67C96.282 67 66.5 36.994 66.5 0c0 36.994-29.782 67-66.5 67 36.718 0 66.5 30.006 66.5 67 0-36.994 29.782-67 66.5-67\"></path></svg></div><div class=\"jsx-855263735 flex-center-center phone-only\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 724 264\"><path fill=\"currentColor\" d=\"M38.53 260.65H.43V27.86h38.1zm86.46 2.77c-42.25 0-66.48-22.96-66.48-63V89.33h38.1v108.28c0 23.61 8.7 32.39 32.12 32.39 30.35 0 42.73-14.54 42.73-50.17v-90.5h38.1v171.33h-36.54v-29.91c-4.99 22.98-27.12 32.67-48.03 32.67m347.2-2.77H434.4V149.87c0-22.5-7.01-30.87-25.88-30.87-24.28 0-37.11 14.45-37.11 41.79v99.86h-37.79V149.87c0-21.93-7.23-30.87-24.94-30.87-31.59 0-38.05 32.96-38.05 41.79v99.86h-38.1V89.33h36.54v29.96c6.49-21.02 27.02-33.71 47.72-33.71 20.69 0 38.09 7.9 45.64 33.71 10.13-26.76 28.35-33.71 50.15-33.71 37.88 0 59.61 18.88 59.61 51.81zm76.65 2.77c-52.62 0-61.55-33.45-61.55-50.52 0-20.1 8.83-38.21 27.93-45.55 8.41-3.11 16.52-5.43 24.84-7.1 7.33-1.47 18.64-3.03 26.91-4.17l2.73-.38c14.38-2 29.67-9.21 29.67-18.62 0-16-20.51-18.39-32.74-18.39-13.87 0-23.64 3.57-27.53 10.05-3.49 6.46-3.73 7.97-4.62 13.6l-.62 4.43h-38.1l.68-5.61c1.35-11.14 3.41-19.03 6.48-24.83 10.54-20.39 31.77-30.75 63.08-30.75 26.11 0 44.63 8.23 53.26 15.94 5.31 4.6 9.1 9.84 11.89 16.46 5.84 12.36 6.32 20.63 6.32 29.4v86.43c0 8.07.78 14.97 2.31 20.5l1.76 6.35h-38.91l-.7-4.19c-.5-2.96-.67-19.75-.88-26.23-8.99 23.61-28.27 33.18-52.21 33.18m50.53-93.72c-7.97 6.11-20.47 9.6-38.62 13.23-31.27 5.78-36.54 13.06-36.54 27.22 0 12.5 10.63 20.26 27.75 20.26 33.23 0 47.41-15.48 47.41-51.77zm124.2-105.51C688.46 64.19 660 35.73 660 .62c0 35.11-28.46 63.57-63.57 63.57 35.11 0 63.57 28.46 63.57 63.57 0-35.11 28.46-63.57 63.57-63.57\"></path></svg></div></a><div class=\"jsx-a9b4caed680dc115 links\"><a href=\"/discover\">Discover</a><a href=\"/pricing\">Pricing</a><a target=\"_blank\" href=\"https://help.luma.com\" class=\"jsx-a9b4caed680dc115\">Help</a></div></div><div class=\"jsx-6a027b1db0d004e0 icons flex-center\"><a aria-label=\"Luma on Instagram\" href=\"https://www.instagram.com/luma_hq/\" class=\"flex-center\" target=\"_blank\" rel=\"nofollow noopener\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g fill=\"currentColor\" fill-rule=\"evenodd\"><path d=\"M12.9 4.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0M8 11.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m0-1.4a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2\"></path><path d=\"M.5 7.7c0-2.52 0-3.78.49-4.744A4.5 4.5 0 0 1 2.957.991C3.92.5 5.178.5 7.7.5h.6c2.52 0 3.78 0 4.744.49a4.5 4.5 0 0 1 1.966 1.967c.49.963.49 2.221.49 4.743v.6c0 2.52 0 3.78-.49 4.744a4.5 4.5 0 0 1-1.967 1.966c-.963.49-2.221.49-4.743.49h-.6c-2.52 0-3.78 0-4.744-.49A4.5 4.5 0 0 1 .99 13.043C.5 12.08.5 10.822.5 8.3zM7.7 2h.6c1.284 0 2.158 0 2.833.056.658.054.994.151 1.228.271a3 3 0 0 1 1.313 1.31c.119.235.215.573.27 1.229.055.675.056 1.549.056 2.834v.6c0 1.284 0 2.158-.056 2.833-.054.658-.151.994-.271 1.228a3 3 0 0 1-1.31 1.313c-.235.119-.573.215-1.229.27-.675.055-1.549.056-2.834.056h-.6c-1.284 0-2.158 0-2.833-.056-.658-.054-.994-.151-1.228-.271a3 3 0 0 1-1.313-1.31c-.119-.235-.215-.573-.27-1.229C2.001 10.46 2 9.585 2 8.3v-.6c0-1.284 0-2.158.056-2.833.054-.658.151-.994.271-1.228a3 3 0 0 1 1.31-1.313c.235-.119.573-.215 1.229-.27C5.54 2.001 6.415 2 7.7 2\"></path></g></svg></a><a aria-label=\"Luma on X\" href=\"https://x.com/LumaHQ\" class=\"flex-center\" target=\"_blank\" rel=\"nofollow noopener\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><path fill=\"currentColor\" d=\"m108.783 107.652-38.24-55.748.066.053L105.087 12H93.565L65.478 44.522 43.174 12H12.957l35.7 52.048-.005-.005L11 107.653h11.522L53.748 71.47l24.817 36.182zM38.609 20.696l53.652 78.26h-9.13l-53.696-78.26z\"></path></svg></a><a aria-label=\"Contact Us\" href=\"mailto:support@luma.com\" class=\"flex-center\" target=\"_blank\" rel=\"nofollow noopener\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M7 2.5h2c1.436 0 2.4.002 3.134.077.71.072 1.038.2 1.255.344a2.5 2.5 0 0 1 .69.69c.145.217.272.545.344 1.255.075.734.077 1.698.077 3.134s-.002 2.4-.077 3.134c-.072.71-.2 1.038-.344 1.255a2.5 2.5 0 0 1-.69.69c-.217.145-.545.272-1.255.344-.735.075-1.698.077-3.134.077H7c-1.436 0-2.4-.002-3.134-.077-.71-.072-1.038-.2-1.255-.344a2.5 2.5 0 0 1-.69-.69c-.145-.217-.272-.545-.344-1.255C1.502 10.4 1.5 9.436 1.5 8s.002-2.4.077-3.134c.072-.71.2-1.038.344-1.255a2.5 2.5 0 0 1 .69-.69c.217-.145.545-.272 1.255-.344C4.6 2.502 5.564 2.5 7 2.5M0 8c0-2.809 0-4.213.674-5.222a4 4 0 0 1 1.104-1.104C2.787 1 4.19 1 7 1h2c2.809 0 4.213 0 5.222.674a4 4 0 0 1 1.104 1.104C16 3.787 16 5.19 16 8s0 4.213-.674 5.222a4 4 0 0 1-1.104 1.104C13.213 15 11.81 15 9 15H7c-2.809 0-4.213 0-5.222-.674a4 4 0 0 1-1.104-1.104C0 12.213 0 10.81 0 8m5.458-2.594a.75.75 0 0 0-.916 1.188l2.282 1.757.004.004a1.96 1.96 0 0 0 2.363 0l.007-.006 2.262-1.757a.75.75 0 1 0-.92-1.184L8.282 7.16a.46.46 0 0 1-.546 0z\"></path></svg></a><a href=\"/app\" target=\"_blank\" class=\"app-button fs-xs\">Get the App</a></div></div>",
+  "modal": "<div role=\"dialog\" tabindex=\"-1\" aria-labelledby=\"_r_0_-title\" class=\"signin-container flex-center-center\" style=\"outline: none; opacity: 1; transform: none;\"><div class=\"onboarding-card overflow-hidden\" style=\"opacity: 1;\"><div class=\"relative\" style=\"height: 386.797px;\"><div class=\"animated-container\" style=\"position: absolute; top: 0px; width: 100%;\"><div class=\"pb-3\" style=\"opacity: 1; top: 0px; transform: none;\"><div aria-hidden=\"true\" class=\"jsx-521676a079322f34 icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" fill=\"none\" viewBox=\"0 0 36 36\" class=\"jsx-521676a079322f34\"><defs class=\"jsx-521676a079322f34\"><path id=\"welcome-door-frame\" d=\"M11.5 13.5C11.5 9.73 11.5 7.84 12.67 6.67C13.84 5.5 15.73 5.5 19.5 5.5C23.27 5.5 25.16 5.5 26.33 6.67C27.5 7.84 27.5 9.73 27.5 13.5C27.5 17.27 27.5 18.94 27.5 22.71C27.5 26.48 27.5 28.37 26.33 29.54C25.16 30.71 23.27 30.71 19.5 30.71C15.73 30.71 13.84 30.71 12.67 29.54C11.5 28.37 11.5 26.48 11.5 22.71C11.5 18.94 11.5 17.27 11.5 13.5Z\" class=\"jsx-521676a079322f34\"></path><path id=\"welcome-arrow\" d=\"M2 18H7.5L3.21 13L7.5 18L3.21 23\" class=\"jsx-521676a079322f34\"><animate attributeName=\"d\" begin=\"0ms\" dur=\"600ms\" fill=\"freeze\" keyTimes=\"0;1\" calcMode=\"spline\" keySplines=\"0.22 0.61 0.36 1\" values=\"M2 18H7.5L3.21 13L7.5 18L3.21 23;M2 18H13.5L9.21 13L13.5 18L9.21 23\" class=\"jsx-521676a079322f34\"></animate></path><path id=\"welcome-door-open-animation\" d=\"M17.5 13.90C17.5 12.28 17.40 10.62 18.56 9.37C19.12 8.77 19.91 8.41 21.51 7.70C23.70 6.71 24.80 6.21 25.68 6.46C27.5 6.97 27.5 9.80 27.5 11.57C27.5 22.5 27.5 13 27.5 24.68C27.5 26.45 27.68 28.44 26.52 29.90C25.84 30.75 24.78 31.23 22.65 32.18C21.41 32.74 19.40 34.04 18.14 32.87C17.5 32.28 17.5 31.14 17.5 28.85C17.5 16 17.5 27.5 17.5 13.90Z\" class=\"jsx-521676a079322f34\"><animate attributeName=\"d\" begin=\"0ms\" dur=\"600ms\" fill=\"freeze\" keyTimes=\"0;1\" calcMode=\"spline\" keySplines=\"0.22 0.61 0.36 1\" values=\"M11.5 13.5C11.5 9.73 11.5 7.84 12.67 6.67C13.84 5.5 15.73 5.5 19.5 5.5C23.27 5.5 25.16 5.5 26.33 6.67C27.5 7.84 27.5 9.73 27.5 13.5C27.5 17.27 27.5 18.94 27.5 22.71C27.5 26.48 27.5 28.37 26.33 29.54C25.16 30.71 23.27 30.71 19.5 30.71C15.73 30.71 13.84 30.71 12.67 29.54C11.5 28.37 11.5 26.48 11.5 22.71C11.5 18.94 11.5 17.27 11.5 13.5Z;\n M17.5 13.90C17.5 12.28 17.40 10.62 18.56 9.37C19.12 8.77 19.91 8.41 21.51 7.70C23.70 6.71 24.80 6.21 25.68 6.46C27.5 6.97 27.5 9.80 27.5 11.57C27.5 22.5 27.5 13 27.5 24.68C27.5 26.45 27.68 28.44 26.52 29.90C25.84 30.75 24.78 31.23 22.65 32.18C21.41 32.74 19.40 34.04 18.14 32.87C17.5 32.28 17.5 31.14 17.5 28.85C17.5 16 17.5 27.5 17.5 13.90Z\" class=\"jsx-521676a079322f34\"></animate></path><mask id=\"welcome-door-mask\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"36\" height=\"36\" class=\"jsx-521676a079322f34\"><use xlink:href=\"#welcome-door-frame\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" class=\"jsx-521676a079322f34\"></use><use xlink:href=\"#welcome-arrow\" fill=\"none\" stroke=\"#000\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"jsx-521676a079322f34 mask-arrow\"></use><use xlink:href=\"#welcome-door-open-animation\" fill=\"#000\" class=\"jsx-521676a079322f34 mask-door\"></use></mask></defs><use xlink:href=\"#welcome-door-open-animation\" fill=\"currentColor\" fill-opacity=\".133\" class=\"jsx-521676a079322f34 background\"></use><use xlink:href=\"#welcome-door-frame\" mask=\"url(#welcome-door-mask)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" class=\"jsx-521676a079322f34 door\"></use><use xlink:href=\"#welcome-door-open-animation\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" class=\"jsx-521676a079322f34 curve\"></use><use xlink:href=\"#welcome-arrow\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"jsx-521676a079322f34 arrow\"></use></svg></div></div><div style=\"opacity: 1; top: 0px; transform: none;\"><div class=\"jsx-1620022762 mb-3\"><h3 id=\"_r_0_-title\" class=\"jsx-1620022762 title\">Welcome to Luma</h3><div class=\"jsx-1620022762 text-secondary-alpha fs-sm\">Please sign in or sign up below.</div></div><div class=\"jsx-5a04c2fe3e987902\"><form action=\"#\" class=\"highlight-label\"><div class=\"flex-center spread\"><label class=\"lux-input-label medium pt-1 pb-2 mb-0 clickable\" for=\"_r_h_\"><div>Email</div></label><div class=\"pt-2 pb-2\"><button class=\"btn lux-button flex-center small secondary link variant-color-secondary icon-left\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" style=\"overflow: visible;\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M7.62 1.5h.76c.92 0 1.521.001 1.98.039.44.036.616.098.712.146.32.163.58.423.743.743.048.096.11.272.146.712C12 3.6 12 4.2 12 5.12v5.76c0 .92-.001 1.521-.039 1.98-.036.44-.098.616-.146.712a1.7 1.7 0 0 1-.743.743c-.096.048-.271.11-.712.146-.459.038-1.06.039-1.98.039h-.76c-.92 0-1.521-.001-1.98-.039-.44-.036-.616-.098-.712-.146a1.7 1.7 0 0 1-.743-.743c-.048-.096-.11-.271-.146-.712C4 12.4 4 11.8 4 10.88V5.12c0-.92.001-1.521.039-1.98.036-.44.098-.616.146-.712a1.7 1.7 0 0 1 .743-.743c.096-.048.272-.11.712-.146C6.1 1.5 6.7 1.5 7.62 1.5M2.5 5.12c0-1.792 0-2.688.349-3.373A3.2 3.2 0 0 1 4.247.35C4.932 0 5.827 0 7.62 0h.76c1.792 0 2.688 0 3.373.349a3.2 3.2 0 0 1 1.398 1.398c.349.685.349 1.58.349 3.373v5.76c0 1.792 0 2.688-.349 3.373a3.2 3.2 0 0 1-1.398 1.398C11.068 16 10.173 16 8.38 16h-.76c-1.792 0-2.688 0-3.373-.349a3.2 3.2 0 0 1-1.398-1.398c-.349-.685-.349-1.58-.349-3.373zM7 2.75a.75.75 0 0 0 0 1.5h2a.75.75 0 0 0 0-1.5z\"></path></svg><div class=\"label\">Use Phone Number</div></button></div></div><div class=\"lux-input-wrapper medium outline\"><div class=\"inner-wrapper\"><div class=\"input-wrapper flex-baseline\"><div class=\"flex-center flex-1\"><div class=\"zero-width-filler\" aria-hidden=\"true\">​</div><div class=\"input-inner-wrapper flex-1 medium\"><input id=\"_r_h_\" placeholder=\"you@email.com\" autocomplete=\"webauthn\" class=\"lux-input\" data-1p-ignore=\"true\" data-lpignore=\"true\" data-bwignore=\"true\" data-form-type=\"other\" type=\"email\" value=\"\"><div class=\"indicator invisible\"></div></div></div></div></div><div id=\"_r_h_-error\" class=\"error-text\"></div></div><button class=\"btn lux-button flex-center medium primary solid mt-3 variant-color-primary full-width no-icon\" type=\"submit\"><div class=\"label\">Continue with Email</div></button></form><div class=\"jsx-5a04c2fe3e987902 bottom\"><div class=\"jsx-5a04c2fe3e987902 divider\"></div><div class=\"jsx-5a04c2fe3e987902 flex-column gap-2\"><button class=\"btn lux-button flex-center medium light solid variant-color-light full-width icon-left\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M14.887 8.164c0 3.994-2.735 6.836-6.774 6.836-3.873 0-7-3.127-7-7s3.127-7 7-7c1.885 0 3.472.692 4.694 1.832l-1.905 1.832C8.409 2.259 3.775 4.065 3.775 8c0 2.442 1.95 4.42 4.338 4.42 2.772 0 3.81-1.987 3.974-3.017H8.113V6.995h6.664c.065.359.11.703.11 1.169\"></path></svg><div class=\"label\">Sign in with Google</div></button><button class=\"btn lux-button flex-center medium light solid variant-color-light full-width icon-left\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M6.617 7.064a2.5 2.5 0 0 1-1.388-.406 3 3 0 0 1-1.014-1.102 3.2 3.2 0 0 1-.381-1.553 3.03 3.03 0 0 1 1.403-2.604A2.54 2.54 0 0 1 6.617 1q.747 0 1.377.392t1.015 1.07q.384.676.384 1.526 0 .864-.38 1.564a3 3 0 0 1-1.015 1.106 2.5 2.5 0 0 1-1.38.406Zm-4.636 6.424q-.57 0-.894-.253a.83.83 0 0 1-.322-.692q0-.675.407-1.41t1.168-1.38 1.842-1.052q1.08-.405 2.428-.406.937 0 1.747.209a6.8 6.8 0 0 1 1.468.553q.037.768.403 1.424t.996 1.073v1.934zm11.06-6.826q.614 0 1.124.3t.81.806q.3.504.3 1.12 0 .718-.425 1.286-.426.567-1.216.89l.893.893a.22.22 0 0 1 .074.158q0 .084-.059.142l-.916.901.652.652a.2.2 0 0 1 .066.147.2.2 0 0 1-.066.146l-1.098 1.099a.2.2 0 0 1-.143.062.2.2 0 0 1-.136-.062l-.586-.586a.35.35 0 0 1-.11-.242v-3.391a2.26 2.26 0 0 1-1.021-.824 2.2 2.2 0 0 1-.385-1.27q0-.617.3-1.121.3-.506.81-.806.509-.3 1.132-.3m-.008 1.025a.66.66 0 0 0-.487.201.66.66 0 0 0-.201.487q0 .285.205.488a.67.67 0 0 0 .483.201.67.67 0 0 0 .484-.201.66.66 0 0 0 .205-.488.66.66 0 0 0-.205-.487.67.67 0 0 0-.484-.201\"></path></svg><div class=\"label\">Sign in with Passkey</div></button></div></div></div></div></div></div></div></div>",
+  "styles": [
+    ".lux-menu-wrapper.menu-ubbf9595haf{}",
+    "div.jsx-75a36a52353cb3a6{margin:-4px 0}.link.jsx-75a36a52353cb3a6 a{outline-offset:4px;color:var(--nav-link-color);border-radius:100px}.link.jsx-75a36a52353cb3a6 a:hover{color:var(--nav-link-hover-color)}.link.jsx-75a36a52353cb3a6 a:focus-visible{outline:2px solid var(--nav-link-color)}",
+    ".nav-wrapper.jsx-1502588700{background-color:var(--nav-bg-color);width:100%}.nav-wrapper.sticky.jsx-1502588700{border-bottom:1px solid var(--opacity-0);z-index:10;-webkit-backdrop-filter:var(--backdrop-blur);backdrop-filter:var(--backdrop-blur);position:fixed}.nav-wrapper.sticky.show-divider.jsx-1502588700{border-bottom:1px solid var(--divider-color)}.background.jsx-1502588700{pointer-events:none;z-index:1;opacity:0;width:100%;height:180px;position:fixed}.background.mounted.jsx-1502588700{opacity:1}.blur.jsx-1502588700{width:100%;height:3.5rem;-webkit-backdrop-filter:var(--backdrop-blur);backdrop-filter:var(--backdrop-blur);z-index:2;position:absolute;top:0;left:0;-webkit-mask:linear-gradient(#000 0%,#0000 100%);mask:linear-gradient(#000 0%,#0000 100%)}nav.jsx-1502588700{width:100%;padding:var(--nav-padding);z-index:200;position:relative}nav.jsx-1502588700 .logo-wrapper{border-radius:var(--border-radius);z-index:1;position:relative}.logo.jsx-1502588700{color:var(--nav-link-color);margin:0 -4px;padding:4px}@media (max-width:650px){.logo.jsx-1502588700{padding-right:6px}}@media (max-width:450px){.logo.jsx-1502588700{padding-right:4px}}.logo.jsx-1502588700:hover{color:var(--nav-link-hover-color)}.logo.jsx-1502588700 svg{width:20px;height:20px}.logo.wordmark.jsx-1502588700{padding:6px 4px}.logo.wordmark.jsx-1502588700 svg{width:auto;height:16px}.center-and-right.jsx-1502588700{--side-width:calc((100% - var(--max-width)) / 2);max-width:calc(var(--max-width) + var(--side-width));flex:1;justify-content:space-between;align-items:center;min-width:0;display:flex}.center-wrapper.jsx-1502588700 a{color:var(--nav-link-color);font-weight:var(--font-weight-medium)}.center-wrapper.jsx-1502588700 a:hover,.center-wrapper.jsx-1502588700 a.selected{color:var(--nav-link-hover-color)}.right-wrapper.jsx-1502588700{align-items:center;gap:1rem;display:flex}.right-wrapper.jsx-1502588700 .time{color:var(--nav-link-color)}@media (max-width:650px){.right-wrapper.jsx-1502588700{gap:.875rem}.right-wrapper.jsx-1502588700 .time{display:none}}",
+    ".page-header.jsx-3922877081{padding-top:2.75rem}.page-header.has-breadcrumb.jsx-3922877081{padding-top:1.1875rem}@media (max-width:650px){.page-header.jsx-3922877081{padding-top:2rem}.page-header.has-breadcrumb.jsx-3922877081{padding-top:.4375rem}}@media (max-width:450px){.page-header.jsx-3922877081{padding-top:1.5625rem}.page-header.has-breadcrumb.jsx-3922877081{padding-top:0}}.page-header.jsx-3922877081 .sticky.jsx-3922877081{opacity:0}h1.tab-title.jsx-3922877081{--font-size:1.75rem;font-size:var(--font-size);font-weight:var(--font-weight-bold);color:var(--primary-color);margin-bottom:0}h1.tab-title.long.jsx-3922877081{--font-size:1.625rem}@media (max-width:650px){h1.tab-title.jsx-3922877081{--font-size:1.5rem}h1.tab-title.long.jsx-3922877081{--font-size:1.375rem}}@media (max-width:450px){h1.tab-title.jsx-3922877081{--font-size:1.375rem}h1.tab-title.long.jsx-3922877081{--font-size:1.25rem}}.tab-title-divider.jsx-3922877081{border-bottom:1px solid var(--divider-color);margin-bottom:1.75rem}@media (max-width:650px){.tab-title-divider.jsx-3922877081{margin-bottom:1.5rem}}.tab-wrapper.jsx-3922877081{margin:auto}.tab-wrapper.sticky.jsx-3922877081{z-index:11;position:sticky;top:calc(2.25rem + 1px)}.tab-wrapper.hide.jsx-3922877081{opacity:0;pointer-events:none}",
+    "@at-root :global(.theme-root.dark) img{filter: brightness(1.25);}.flex-center.jsx-96134204 img.jsx-96134204{width:3rem;height:3rem}.flex-center.jsx-96134204 .count{font-size:var(--font-size-sm)}@media (max-width:650px){.flex-center.jsx-96134204 img.jsx-96134204{width:2.25rem;height:2.25rem}.flex-center.jsx-96134204 .count{font-size:var(--font-size-xs)}}",
+    "a.content-card.jsx-3763758620{color:unset;display:block}a.content-card.jsx-3763758620:hover{color:unset}.content-card.jsx-3763758620{background-color:var(--card-bg-color);border:1px solid var(--card-border-color);-webkit-backdrop-filter:var(--card-backdrop-filter);backdrop-filter:var(--card-backdrop-filter);box-shadow:var(--card-shadow);position:relative;overflow:hidden}.content-card.hoverable.jsx-3763758620{cursor:pointer;transition-property:border-color,box-shadow;transition-duration:var(--transition-duration);transition-timing-function:var(--transition-fn)}@media (hover:hover){.content-card.hoverable.jsx-3763758620:hover{border-color:var(--card-hover-border-color);box-shadow:var(--card-hover-shadow)}}.content-card.actionable.jsx-3763758620:focus-visible{outline:2px solid var(--card-hover-border-color);outline-offset:2px}.content-card.jsx-3763758620+.content-card.jsx-3763758620{margin-top:0}",
+    "@media (hover:hover){.content-card.hoverable:hover:has(button:hover){border-color:var(--card-border-color)}.content-card.hoverable:hover:has(a:not(.content-link):hover){border-color:var(--card-border-color)}}",
+    ".category-grid.jsx-2169399144{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;display:grid}.category-rows.jsx-2169399144{display:none}@media (max-width:1000px){.category-grid.jsx-2169399144{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}}@media (max-width:820px){.category-grid.jsx-2169399144{gap:.75rem}}@media (max-width:650px){.category-grid-wrapper.jsx-2169399144{padding:1rem var(--horizontal-padding);margin:-1rem calc(var(--horizontal-padding) * -1);-webkit-overflow-scrolling:touch;overflow:auto hidden}.category-grid.jsx-2169399144{display:none}.category-rows.jsx-2169399144{--category-row-height:3.75rem;grid-template-rows:repeat(2, var(--category-row-height));row-gap:.5rem;width:max-content;display:grid}.category-row.jsx-2169399144{height:var(--category-row-height);flex-wrap:nowrap;align-items:stretch;gap:.5rem;width:max-content;display:flex}.category-row.jsx-2169399144 .discover-category{width:-moz-fit-content;width:fit-content;height:var(--category-row-height);flex:none}}",
+    ".calendar-grid.jsx-3508014293{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;display:grid}@media (max-width:1000px){.calendar-grid.jsx-3508014293{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}}@media (max-width:820px){.calendar-grid.jsx-3508014293{gap:.75rem}}@media (max-width:650px){.calendar-grid-wrapper.jsx-3508014293{scroll-snap-type:x mandatory;scroll-behavior:smooth;margin:-1rem;padding:.5rem 0;display:flex;overflow-x:auto}.calendar-grid-wrapper.jsx-3508014293::-webkit-scrollbar{display:none}.calendar-grid.jsx-3508014293{grid-template-rows:repeat(3,5.25rem);grid-template-columns:repeat(auto-fill,300px);grid-auto-flow:column;gap:0}}",
+    ".tabs.jsx-3368012781{margin-top:-.25rem;margin-bottom:.25rem;padding-bottom:1rem}.tab.jsx-3368012781{border-radius:var(--border-radius);color:var(--tertiary-color-alpha);padding:.25rem .625rem}.tab.selected.jsx-3368012781{background-color:var(--opacity-light);color:var(--secondary-color-alpha)}.tab.jsx-3368012781:focus-visible{border:1px solid var(--secondary-color-alpha);color:var(--secondary-color-alpha);outline:none}.tab.jsx-3368012781:focus-visible.selected{color:var(--primary-color)}@media (hover:hover){.tab.jsx-3368012781:hover{color:var(--secondary-color-alpha)}}.city-grid.jsx-3368012781{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;display:grid}@media (max-width:450px){.city-grid.jsx-3368012781{grid-template-columns:repeat(auto-fill,minmax(135px,1fr));column-gap:.75rem}}@media (max-width:650px){.tabs.jsx-3368012781{margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;overflow-x:auto}.city-grid-wrapper.jsx-3368012781{margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:.375rem}}",
+    ".links.jsx-a9b4caed680dc115 a{display:inline-block}",
+    ".icons.jsx-6a027b1db0d004e0{white-space:nowrap;padding-top:1px}.icons.jsx-6a027b1db0d004e0 a.flex-center{padding:.5625rem}.icons.jsx-6a027b1db0d004e0 .app-button{border:1px solid;border-radius:100px;margin-top:-1px;margin-left:.5rem;padding:.125rem .5625rem}.icons.jsx-6a027b1db0d004e0 .neg-spacer.jsx-6a027b1db0d004e0{margin-left:-.5625rem}",
+    ".zm-container.jsx-855263735{font-size:var(--font-size-sm);color:var(--tertiary-color-alpha);padding-top:4rem}.zm-container.jsx-855263735 svg{width:1rem}@media (max-width:820px){.zm-container.jsx-855263735{padding-bottom:1rem}}.global-footer-content.jsx-855263735{border-top:1px solid var(--divider-color);justify-content:space-between;margin:1rem 1rem 0;padding-top:1rem}.global-footer-content.jsx-855263735 .left-wrapper.jsx-855263735{flex-wrap:wrap}.global-footer-content.jsx-855263735 a{color:inherit;transition:var(--transition);padding:.5rem}@media (hover:hover){.global-footer-content.jsx-855263735 a:hover{color:var(--secondary-color-alpha);text-decoration:none}}.global-footer-content.jsx-855263735 a.logo{margin-top:-.5rem;margin-left:-.5rem;padding-top:1rem;padding-right:.75rem}@media (max-width:650px){.global-footer-content.jsx-855263735 a.logo{padding-right:.5rem}.global-footer-content.jsx-855263735 .links a{padding:.5rem .375rem}}@media (max-width:450px){.global-footer-content.jsx-855263735 .left-wrapper.jsx-855263735{display:block}.global-footer-content.jsx-855263735 .links{margin-left:-.375rem}.global-footer-content.jsx-855263735 .icons{position:absolute;right:1rem}.global-footer-content.jsx-855263735 .phone-only.jsx-855263735{display:inherit;margin-left:1px}.global-footer-content.jsx-855263735 .phone-only.jsx-855263735 svg{width:auto}}",
+    ".content.jsx-907177194{padding:1rem}@media (max-width:650px){.content.jsx-907177194{padding-top:0}}",
+    ".page-wrapper.jsx-3614264787{background-color:var(--page-bg-color);min-height:100vh;min-height:100dvh;padding-bottom:4rem}.page-wrapper.no-bottom-padding.jsx-3614264787{padding-bottom:0}.skip-link.jsx-3614264787{z-index:1000;border-radius:var(--border-radius);background-color:var(--primary-bg-color);color:var(--primary-color);box-shadow:var(--shadow-lg);padding:.5rem .75rem;position:fixed;top:.5rem;left:-9999px}.skip-link.jsx-3614264787:focus{left:.5rem}.page-content.sticky-topnav.jsx-3614264787{padding-top:calc(3.25rem + 1px)}",
+    "html.theme-root{background-color:var(--page-bg-color)}",
+    ".search-modal{width:100%;max-width:580px;box-shadow:var(--shadow-modal);background-color:var(--modal-bg-color);-webkit-backdrop-filter:var(--modal-backdrop-filter);backdrop-filter:var(--modal-backdrop-filter);will-change:transform, opacity;overflow:hidden;transform:translateZ(0)}"
+  ],
+  "globalStylesheet": "https://luma.com/_next/static/chunks/2v5rj5l2rylv6.css",
+  "icons": [
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 724 264\"><path fill=\"currentColor\" d=\"M38.53 260.65H.43V27.86h38.1zm86.46 2.77c-42.25 0-66.48-22.96-66.48-63V89.33h38.1v108.28c0 23.61 8.7 32.39 32.12 32.39 30.35 0 42.73-14.54 42.73-50.17v-90.5h38.1v171.33h-36.54v-29.91c-4.99 22.98-27.12 32.67-48.03 32.67m347.2-2.77H434.4V149.87c0-22.5-7.01-30.87-25.88-30.87-24.28 0-37.11 14.45-37.11 41.79v99.86h-37.79V149.87c0-21.93-7.23-30.87-24.94-30.87-31.59 0-38.05 32.96-38.05 41.79v99.86h-38.1V89.33h36.54v29.96c6.49-21.02 27.02-33.71 47.72-33.71 20.69 0 38.09 7.9 45.64 33.71 10.13-26.76 28.35-33.71 50.15-33.71 37.88 0 59.61 18.88 59.61 51.81zm76.65 2.77c-52.62 0-61.55-33.45-61.55-50.52 0-20.1 8.83-38.21 27.93-45.55 8.41-3.11 16.52-5.43 24.84-7.1 7.33-1.47 18.64-3.03 26.91-4.17l2.73-.38c14.38-2 29.67-9.21 29.67-18.62 0-16-20.51-18.39-32.74-18.39-13.87 0-23.64 3.57-27.53 10.05-3.49 6.46-3.73 7.97-4.62 13.6l-.62 4.43h-38.1l.68-5.61c1.35-11.14 3.41-19.03 6.48-24.83 10.54-20.39 31.77-30.75 63.08-30.75 26.11 0 44.63 8.23 53.26 15.94 5.31 4.6 9.1 9.84 11.89 16.46 5.84 12.36 6.32 20.63 6.32 29.4v86.43c0 8.07.78 14.97 2.31 20.5l1.76 6.35h-38.91l-.7-4.19c-.5-2.96-.67-19.75-.88-26.23-8.99 23.61-28.27 33.18-52.21 33.18m50.53-93.72c-7.97 6.11-20.47 9.6-38.62 13.23-31.27 5.78-36.54 13.06-36.54 27.22 0 12.5 10.63 20.26 27.75 20.26 33.23 0 47.41-15.48 47.41-51.77zm124.2-105.51C688.46 64.19 660 35.73 660 .62c0 35.11-28.46 63.57-63.57 63.57 35.11 0 63.57 28.46 63.57 63.57 0-35.11 28.46-63.57 63.57-63.57\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 133 134\"><path fill=\"currentColor\" d=\"M133 67C96.282 67 66.5 36.994 66.5 0c0 36.994-29.782 67-66.5 67 36.718 0 66.5 30.006 66.5 67 0-36.994 29.782-67 66.5-67\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 724 264\"><path fill=\"currentColor\" d=\"M38.53 260.65H.43V27.86h38.1zm86.46 2.77c-42.25 0-66.48-22.96-66.48-63V89.33h38.1v108.28c0 23.61 8.7 32.39 32.12 32.39 30.35 0 42.73-14.54 42.73-50.17v-90.5h38.1v171.33h-36.54v-29.91c-4.99 22.98-27.12 32.67-48.03 32.67m347.2-2.77H434.4V149.87c0-22.5-7.01-30.87-25.88-30.87-24.28 0-37.11 14.45-37.11 41.79v99.86h-37.79V149.87c0-21.93-7.23-30.87-24.94-30.87-31.59 0-38.05 32.96-38.05 41.79v99.86h-38.1V89.33h36.54v29.96c6.49-21.02 27.02-33.71 47.72-33.71 20.69 0 38.09 7.9 45.64 33.71 10.13-26.76 28.35-33.71 50.15-33.71 37.88 0 59.61 18.88 59.61 51.81zm76.65 2.77c-52.62 0-61.55-33.45-61.55-50.52 0-20.1 8.83-38.21 27.93-45.55 8.41-3.11 16.52-5.43 24.84-7.1 7.33-1.47 18.64-3.03 26.91-4.17l2.73-.38c14.38-2 29.67-9.21 29.67-18.62 0-16-20.51-18.39-32.74-18.39-13.87 0-23.64 3.57-27.53 10.05-3.49 6.46-3.73 7.97-4.62 13.6l-.62 4.43h-38.1l.68-5.61c1.35-11.14 3.41-19.03 6.48-24.83 10.54-20.39 31.77-30.75 63.08-30.75 26.11 0 44.63 8.23 53.26 15.94 5.31 4.6 9.1 9.84 11.89 16.46 5.84 12.36 6.32 20.63 6.32 29.4v86.43c0 8.07.78 14.97 2.31 20.5l1.76 6.35h-38.91l-.7-4.19c-.5-2.96-.67-19.75-.88-26.23-8.99 23.61-28.27 33.18-52.21 33.18m50.53-93.72c-7.97 6.11-20.47 9.6-38.62 13.23-31.27 5.78-36.54 13.06-36.54 27.22 0 12.5 10.63 20.26 27.75 20.26 33.23 0 47.41-15.48 47.41-51.77zm124.2-105.51C688.46 64.19 660 35.73 660 .62c0 35.11-28.46 63.57-63.57 63.57 35.11 0 63.57 28.46 63.57 63.57 0-35.11 28.46-63.57 63.57-63.57\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g fill=\"currentColor\" fill-rule=\"evenodd\"><path d=\"M12.9 4.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0M8 11.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m0-1.4a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2\"></path><path d=\"M.5 7.7c0-2.52 0-3.78.49-4.744A4.5 4.5 0 0 1 2.957.991C3.92.5 5.178.5 7.7.5h.6c2.52 0 3.78 0 4.744.49a4.5 4.5 0 0 1 1.966 1.967c.49.963.49 2.221.49 4.743v.6c0 2.52 0 3.78-.49 4.744a4.5 4.5 0 0 1-1.967 1.966c-.963.49-2.221.49-4.743.49h-.6c-2.52 0-3.78 0-4.744-.49A4.5 4.5 0 0 1 .99 13.043C.5 12.08.5 10.822.5 8.3zM7.7 2h.6c1.284 0 2.158 0 2.833.056.658.054.994.151 1.228.271a3 3 0 0 1 1.313 1.31c.119.235.215.573.27 1.229.055.675.056 1.549.056 2.834v.6c0 1.284 0 2.158-.056 2.833-.054.658-.151.994-.271 1.228a3 3 0 0 1-1.31 1.313c-.235.119-.573.215-1.229.27-.675.055-1.549.056-2.834.056h-.6c-1.284 0-2.158 0-2.833-.056-.658-.054-.994-.151-1.228-.271a3 3 0 0 1-1.313-1.31c-.119-.235-.215-.573-.27-1.229C2.001 10.46 2 9.585 2 8.3v-.6c0-1.284 0-2.158.056-2.833.054-.658.151-.994.271-1.228a3 3 0 0 1 1.31-1.313c.235-.119.573-.215 1.229-.27C5.54 2.001 6.415 2 7.7 2\"></path></g></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><path fill=\"currentColor\" d=\"m108.783 107.652-38.24-55.748.066.053L105.087 12H93.565L65.478 44.522 43.174 12H12.957l35.7 52.048-.005-.005L11 107.653h11.522L53.748 71.47l24.817 36.182zM38.609 20.696l53.652 78.26h-9.13l-53.696-78.26z\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M7 2.5h2c1.436 0 2.4.002 3.134.077.71.072 1.038.2 1.255.344a2.5 2.5 0 0 1 .69.69c.145.217.272.545.344 1.255.075.734.077 1.698.077 3.134s-.002 2.4-.077 3.134c-.072.71-.2 1.038-.344 1.255a2.5 2.5 0 0 1-.69.69c-.217.145-.545.272-1.255.344-.735.075-1.698.077-3.134.077H7c-1.436 0-2.4-.002-3.134-.077-.71-.072-1.038-.2-1.255-.344a2.5 2.5 0 0 1-.69-.69c-.145-.217-.272-.545-.344-1.255C1.502 10.4 1.5 9.436 1.5 8s.002-2.4.077-3.134c.072-.71.2-1.038.344-1.255a2.5 2.5 0 0 1 .69-.69c.217-.145.545-.272 1.255-.344C4.6 2.502 5.564 2.5 7 2.5M0 8c0-2.809 0-4.213.674-5.222a4 4 0 0 1 1.104-1.104C2.787 1 4.19 1 7 1h2c2.809 0 4.213 0 5.222.674a4 4 0 0 1 1.104 1.104C16 3.787 16 5.19 16 8s0 4.213-.674 5.222a4 4 0 0 1-1.104 1.104C13.213 15 11.81 15 9 15H7c-2.809 0-4.213 0-5.222-.674a4 4 0 0 1-1.104-1.104C0 12.213 0 10.81 0 8m5.458-2.594a.75.75 0 0 0-.916 1.188l2.282 1.757.004.004a1.96 1.96 0 0 0 2.363 0l.007-.006 2.262-1.757a.75.75 0 1 0-.92-1.184L8.282 7.16a.46.46 0 0 1-.546 0z\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" fill=\"none\" viewBox=\"0 0 36 36\" class=\"jsx-521676a079322f34\"><defs class=\"jsx-521676a079322f34\"><path id=\"welcome-door-frame\" d=\"M11.5 13.5C11.5 9.73 11.5 7.84 12.67 6.67C13.84 5.5 15.73 5.5 19.5 5.5C23.27 5.5 25.16 5.5 26.33 6.67C27.5 7.84 27.5 9.73 27.5 13.5C27.5 17.27 27.5 18.94 27.5 22.71C27.5 26.48 27.5 28.37 26.33 29.54C25.16 30.71 23.27 30.71 19.5 30.71C15.73 30.71 13.84 30.71 12.67 29.54C11.5 28.37 11.5 26.48 11.5 22.71C11.5 18.94 11.5 17.27 11.5 13.5Z\" class=\"jsx-521676a079322f34\"></path><path id=\"welcome-arrow\" d=\"M2 18H7.5L3.21 13L7.5 18L3.21 23\" class=\"jsx-521676a079322f34\"><animate attributeName=\"d\" begin=\"0ms\" dur=\"600ms\" fill=\"freeze\" keyTimes=\"0;1\" calcMode=\"spline\" keySplines=\"0.22 0.61 0.36 1\" values=\"M2 18H7.5L3.21 13L7.5 18L3.21 23;M2 18H13.5L9.21 13L13.5 18L9.21 23\" class=\"jsx-521676a079322f34\"></animate></path><path id=\"welcome-door-open-animation\" d=\"M17.5 13.90C17.5 12.28 17.40 10.62 18.56 9.37C19.12 8.77 19.91 8.41 21.51 7.70C23.70 6.71 24.80 6.21 25.68 6.46C27.5 6.97 27.5 9.80 27.5 11.57C27.5 22.5 27.5 13 27.5 24.68C27.5 26.45 27.68 28.44 26.52 29.90C25.84 30.75 24.78 31.23 22.65 32.18C21.41 32.74 19.40 34.04 18.14 32.87C17.5 32.28 17.5 31.14 17.5 28.85C17.5 16 17.5 27.5 17.5 13.90Z\" class=\"jsx-521676a079322f34\"><animate attributeName=\"d\" begin=\"0ms\" dur=\"600ms\" fill=\"freeze\" keyTimes=\"0;1\" calcMode=\"spline\" keySplines=\"0.22 0.61 0.36 1\" values=\"M11.5 13.5C11.5 9.73 11.5 7.84 12.67 6.67C13.84 5.5 15.73 5.5 19.5 5.5C23.27 5.5 25.16 5.5 26.33 6.67C27.5 7.84 27.5 9.73 27.5 13.5C27.5 17.27 27.5 18.94 27.5 22.71C27.5 26.48 27.5 28.37 26.33 29.54C25.16 30.71 23.27 30.71 19.5 30.71C15.73 30.71 13.84 30.71 12.67 29.54C11.5 28.37 11.5 26.48 11.5 22.71C11.5 18.94 11.5 17.27 11.5 13.5Z;\n M17.5 13.90C17.5 12.28 17.40 10.62 18.56 9.37C19.12 8.77 19.91 8.41 21.51 7.70C23.70 6.71 24.80 6.21 25.68 6.46C27.5 6.97 27.5 9.80 27.5 11.57C27.5 22.5 27.5 13 27.5 24.68C27.5 26.45 27.68 28.44 26.52 29.90C25.84 30.75 24.78 31.23 22.65 32.18C21.41 32.74 19.40 34.04 18.14 32.87C17.5 32.28 17.5 31.14 17.5 28.85C17.5 16 17.5 27.5 17.5 13.90Z\" class=\"jsx-521676a079322f34\"></animate></path><mask id=\"welcome-door-mask\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"36\" height=\"36\" class=\"jsx-521676a079322f34\"><use xlink:href=\"#welcome-door-frame\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" class=\"jsx-521676a079322f34\"></use><use xlink:href=\"#welcome-arrow\" fill=\"none\" stroke=\"#000\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"jsx-521676a079322f34 mask-arrow\"></use><use xlink:href=\"#welcome-door-open-animation\" fill=\"#000\" class=\"jsx-521676a079322f34 mask-door\"></use></mask></defs><use xlink:href=\"#welcome-door-open-animation\" fill=\"currentColor\" fill-opacity=\".133\" class=\"jsx-521676a079322f34 background\"></use><use xlink:href=\"#welcome-door-frame\" mask=\"url(#welcome-door-mask)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" class=\"jsx-521676a079322f34 door\"></use><use xlink:href=\"#welcome-door-open-animation\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" class=\"jsx-521676a079322f34 curve\"></use><use xlink:href=\"#welcome-arrow\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"jsx-521676a079322f34 arrow\"></use></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" style=\"overflow: visible;\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M7.62 1.5h.76c.92 0 1.521.001 1.98.039.44.036.616.098.712.146.32.163.58.423.743.743.048.096.11.272.146.712C12 3.6 12 4.2 12 5.12v5.76c0 .92-.001 1.521-.039 1.98-.036.44-.098.616-.146.712a1.7 1.7 0 0 1-.743.743c-.096.048-.271.11-.712.146-.459.038-1.06.039-1.98.039h-.76c-.92 0-1.521-.001-1.98-.039-.44-.036-.616-.098-.712-.146a1.7 1.7 0 0 1-.743-.743c-.048-.096-.11-.271-.146-.712C4 12.4 4 11.8 4 10.88V5.12c0-.92.001-1.521.039-1.98.036-.44.098-.616.146-.712a1.7 1.7 0 0 1 .743-.743c.096-.048.272-.11.712-.146C6.1 1.5 6.7 1.5 7.62 1.5M2.5 5.12c0-1.792 0-2.688.349-3.373A3.2 3.2 0 0 1 4.247.35C4.932 0 5.827 0 7.62 0h.76c1.792 0 2.688 0 3.373.349a3.2 3.2 0 0 1 1.398 1.398c.349.685.349 1.58.349 3.373v5.76c0 1.792 0 2.688-.349 3.373a3.2 3.2 0 0 1-1.398 1.398C11.068 16 10.173 16 8.38 16h-.76c-1.792 0-2.688 0-3.373-.349a3.2 3.2 0 0 1-1.398-1.398c-.349-.685-.349-1.58-.349-3.373zM7 2.75a.75.75 0 0 0 0 1.5h2a.75.75 0 0 0 0-1.5z\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M14.887 8.164c0 3.994-2.735 6.836-6.774 6.836-3.873 0-7-3.127-7-7s3.127-7 7-7c1.885 0 3.472.692 4.694 1.832l-1.905 1.832C8.409 2.259 3.775 4.065 3.775 8c0 2.442 1.95 4.42 4.338 4.42 2.772 0 3.81-1.987 3.974-3.017H8.113V6.995h6.664c.065.359.11.703.11 1.169\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M6.617 7.064a2.5 2.5 0 0 1-1.388-.406 3 3 0 0 1-1.014-1.102 3.2 3.2 0 0 1-.381-1.553 3.03 3.03 0 0 1 1.403-2.604A2.54 2.54 0 0 1 6.617 1q.747 0 1.377.392t1.015 1.07q.384.676.384 1.526 0 .864-.38 1.564a3 3 0 0 1-1.015 1.106 2.5 2.5 0 0 1-1.38.406Zm-4.636 6.424q-.57 0-.894-.253a.83.83 0 0 1-.322-.692q0-.675.407-1.41t1.168-1.38 1.842-1.052q1.08-.405 2.428-.406.937 0 1.747.209a6.8 6.8 0 0 1 1.468.553q.037.768.403 1.424t.996 1.073v1.934zm11.06-6.826q.614 0 1.124.3t.81.806q.3.504.3 1.12 0 .718-.425 1.286-.426.567-1.216.89l.893.893a.22.22 0 0 1 .074.158q0 .084-.059.142l-.916.901.652.652a.2.2 0 0 1 .066.147.2.2 0 0 1-.066.146l-1.098 1.099a.2.2 0 0 1-.143.062.2.2 0 0 1-.136-.062l-.586-.586a.35.35 0 0 1-.11-.242v-3.391a2.26 2.26 0 0 1-1.021-.824 2.2 2.2 0 0 1-.385-1.27q0-.617.3-1.121.3-.506.81-.806.509-.3 1.132-.3m-.008 1.025a.66.66 0 0 0-.487.201.66.66 0 0 0-.201.487q0 .285.205.488a.67.67 0 0 0 .483.201.67.67 0 0 0 .484-.201.66.66 0 0 0 .205-.488.66.66 0 0 0-.205-.487.67.67 0 0 0-.484-.201\"></path></svg>"
+  ],
+  "fontStyles": []
+}

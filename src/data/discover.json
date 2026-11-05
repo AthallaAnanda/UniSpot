@@ -1,0 +1,741 @@
+{
+  "categories": [
+    {
+      "name": "Family",
+      "count": "657 Events",
+      "href": "/family?k=t",
+      "image": "/assets/luma/categories/family.png"
+    },
+    {
+      "name": "Books",
+      "count": "734 Events",
+      "href": "/books?k=t",
+      "image": "/assets/luma/categories/books.png"
+    },
+    {
+      "name": "Games",
+      "count": "504 Events",
+      "href": "/games?k=t",
+      "image": "/assets/luma/categories/games.png"
+    },
+    {
+      "name": "Tech",
+      "count": "4K Events",
+      "href": "/tech?k=t",
+      "image": "/assets/luma/categories/tech.png"
+    },
+    {
+      "name": "Food & Drink",
+      "count": "600 Events",
+      "href": "/food?k=t",
+      "image": "/assets/luma/categories/food-drink.png"
+    },
+    {
+      "name": "AI",
+      "count": "4K Events",
+      "href": "/ai?k=t",
+      "image": "/assets/luma/categories/ai.png"
+    },
+    {
+      "name": "Running",
+      "count": "585 Events",
+      "href": "/running?k=t",
+      "image": "/assets/luma/categories/running.png"
+    },
+    {
+      "name": "Arts & Culture",
+      "count": "3K Events",
+      "href": "/arts?k=t",
+      "image": "/assets/luma/categories/arts-culture.png"
+    },
+    {
+      "name": "Climate",
+      "count": "741 Events",
+      "href": "/climate?k=t",
+      "image": "/assets/luma/categories/climate.png"
+    },
+    {
+      "name": "Fitness",
+      "count": "2K Events",
+      "href": "/fitness?k=t",
+      "image": "/assets/luma/categories/fitness.png"
+    },
+    {
+      "name": "Wellness",
+      "count": "999 Events",
+      "href": "/wellness?k=t",
+      "image": "/assets/luma/categories/wellness.png"
+    },
+    {
+      "name": "Crypto",
+      "count": "573 Events",
+      "href": "/crypto?k=t",
+      "image": "/assets/luma/categories/crypto.png"
+    }
+  ],
+  "calendars": [
+    {
+      "name": "Reading Rhythms Global",
+      "description": "Not a book club. A reading party.\nRead with friends to live music & curated playlists!",
+      "href": "/readingrhythms-global?k=c",
+      "image": "/assets/luma/calendars/reading-rhythms-global.png"
+    },
+    {
+      "name": "Build Club",
+      "description": "The most collaborative AI community in the world (50+ Cities, 30K+ community)",
+      "href": "/buildercommunityanz?k=c",
+      "image": "/assets/luma/calendars/build-club.png"
+    },
+    {
+      "name": "South Park Commons",
+      "description": "South Park Commons helps you get from -1 to 0. To learn more or apply, visit southparkcommons.com.",
+      "href": "/southparkcommons-events?k=c",
+      "image": "/assets/luma/calendars/south-park-commons.png"
+    },
+    {
+      "name": "Design Buddies",
+      "description": "Events for all creatives across SF/LA, online, and the world! Hosted by Design Buddies, the world's largest design community (https://designbuddies.community). Founded by Grace Ling",
+      "href": "/design?k=c",
+      "image": "/assets/luma/calendars/design-buddies.png"
+    },
+    {
+      "name": "SpaceXSI Community",
+      "description": "SpaceXSI community events in 250+ cities",
+      "href": "/spacexsi-community?k=c",
+      "image": "/assets/luma/calendars/spacexsi-community.png"
+    },
+    {
+      "name": "Creative Coffee Club",
+      "description": "Unique experiences for creatives and builders in...\n\n📍 NYC · Philly · Seattle · Toronto · Chicago · LA · Austin · Boston · SF · Nashville · Houston · Phoenix · Miami",
+      "href": "/coffeeclubworldwide?k=c",
+      "image": "/assets/luma/calendars/creative-coffee-club.png"
+    },
+    {
+      "name": "Google DeepMind",
+      "description": "Connect with the Google DeepMind Developer Experience Team",
+      "href": "/deepmind?k=c",
+      "image": "/assets/luma/calendars/google-deepmind.png"
+    }
+  ],
+  "regions": {
+    "Asia & Pacific": [
+      {
+        "href": "/auckland?k=p",
+        "name": "Auckland",
+        "count": "3 Events",
+        "image": "/assets/luma/cities/auckland.png",
+        "color": "rgb(175, 116, 196)"
+      },
+      {
+        "href": "/bangkok?k=p",
+        "name": "Bangkok",
+        "count": "18 Events",
+        "image": "/assets/luma/cities/bangkok.png",
+        "color": "rgb(227, 153, 54)"
+      },
+      {
+        "href": "/bengaluru?k=p",
+        "name": "Bengaluru",
+        "count": "13 Events",
+        "image": "/assets/luma/cities/bengaluru.png",
+        "color": "rgb(168, 153, 37)"
+      },
+      {
+        "href": "/brisbane?k=p",
+        "name": "Brisbane",
+        "count": "3 Events",
+        "image": "/assets/luma/cities/brisbane.png",
+        "color": "rgb(45, 130, 227)"
+      },
+      {
+        "href": "/dubai?k=p",
+        "name": "Dubai",
+        "count": "10 Events",
+        "image": "/assets/luma/cities/dubai.png",
+        "color": "rgb(171, 82, 171)"
+      },
+      {
+        "href": "/ho-chi-minh-city?k=p",
+        "name": "Ho Chi Minh City",
+        "count": "9 Events",
+        "image": "/assets/luma/cities/ho-chi-minh-city.png",
+        "color": "rgb(222, 103, 78)"
+      },
+      {
+        "href": "/hongkong?k=p",
+        "name": "Hong Kong",
+        "count": "10 Events",
+        "image": "/assets/luma/cities/hong-kong.png",
+        "color": "rgb(78, 170, 186)"
+      },
+      {
+        "href": "/honolulu?k=p",
+        "name": "Honolulu",
+        "count": "6 Events",
+        "image": "/assets/luma/cities/honolulu.png",
+        "color": "rgb(50, 124, 219)"
+      },
+      {
+        "href": "/jakarta?k=p",
+        "name": "Jakarta",
+        "count": "6 Events",
+        "image": "/assets/luma/cities/jakarta.png",
+        "color": "rgb(199, 163, 105)"
+      },
+      {
+        "href": "/kuala-lumpur?k=p",
+        "name": "Kuala Lumpur",
+        "count": "10 Events",
+        "image": "/assets/luma/cities/kuala-lumpur.png",
+        "color": "rgb(153, 54, 163)"
+      },
+      {
+        "href": "/manila?k=p",
+        "name": "Manila",
+        "count": "5 Events",
+        "image": "/assets/luma/cities/manila.png",
+        "color": "rgb(125, 172, 164)"
+      },
+      {
+        "href": "/melbourne?k=p",
+        "name": "Melbourne",
+        "count": "12 Events",
+        "image": "/assets/luma/cities/melbourne.png",
+        "color": "rgb(175, 194, 99)"
+      },
+      {
+        "href": "/mumbai?k=p",
+        "name": "Mumbai",
+        "count": "14 Events",
+        "image": "/assets/luma/cities/mumbai.png",
+        "color": "rgb(220, 110, 24)"
+      },
+      {
+        "href": "/new-delhi?k=p",
+        "name": "New Delhi",
+        "count": "6 Events",
+        "image": "/assets/luma/cities/new-delhi.png",
+        "color": "rgb(214, 130, 107)"
+      },
+      {
+        "href": "/osaka?k=p",
+        "name": "Osaka",
+        "count": "4 Events",
+        "image": "/assets/luma/cities/osaka.png",
+        "color": "rgb(208, 114, 212)"
+      },
+      {
+        "href": "/seoul?k=p",
+        "name": "Seoul",
+        "count": "9 Events",
+        "image": "/assets/luma/cities/seoul.png",
+        "color": "rgb(127, 171, 235)"
+      },
+      {
+        "href": "/singapore?k=p",
+        "name": "Singapore",
+        "count": "31 Events",
+        "image": "/assets/luma/cities/singapore.png",
+        "color": "rgb(111, 128, 43)"
+      },
+      {
+        "href": "/sydney?k=p",
+        "name": "Sydney",
+        "count": "17 Events",
+        "image": "/assets/luma/cities/sydney.png",
+        "color": "rgb(218, 150, 52)"
+      },
+      {
+        "href": "/taipei?k=p",
+        "name": "Taipei",
+        "count": "10 Events",
+        "image": "/assets/luma/cities/taipei.png",
+        "color": "rgb(113, 115, 209)"
+      },
+      {
+        "href": "/tel-aviv?k=p",
+        "name": "Tel Aviv-Yafo",
+        "count": "21 Events",
+        "image": "/assets/luma/cities/tel-aviv-yafo.png",
+        "color": "rgb(243, 144, 80)"
+      },
+      {
+        "href": "/tokyo?k=p",
+        "name": "Tokyo",
+        "count": "38 Events",
+        "image": "/assets/luma/cities/tokyo.png",
+        "color": "rgb(230, 159, 147)"
+      }
+    ],
+    "Africa": [
+      {
+        "href": "/capetown?k=p",
+        "name": "Cape Town",
+        "count": "4 Events",
+        "image": "/assets/luma/cities/cape-town.png",
+        "color": "rgb(87, 201, 201)"
+      },
+      {
+        "href": "/lagos?k=p",
+        "name": "Lagos",
+        "count": "7 Events",
+        "image": "/assets/luma/cities/lagos.png",
+        "color": "rgb(117, 115, 102)"
+      },
+      {
+        "href": "/nairobi?k=p",
+        "name": "Nairobi",
+        "count": "4 Events",
+        "image": "/assets/luma/cities/nairobi.png",
+        "color": "rgb(84, 109, 6)"
+      }
+    ],
+    "Europe": [
+      {
+        "href": "/amsterdam?k=p",
+        "name": "Amsterdam",
+        "count": "44 Events",
+        "image": "/assets/luma/cities/amsterdam.png",
+        "color": "rgb(222, 71, 94)"
+      },
+      {
+        "href": "/barcelona?k=p",
+        "name": "Barcelona",
+        "count": "30 Events",
+        "image": "/assets/luma/cities/barcelona.png",
+        "color": "rgb(30, 114, 190)"
+      },
+      {
+        "href": "/berlin?k=p",
+        "name": "Berlin",
+        "count": "50 Events",
+        "image": "/assets/luma/cities/berlin.png",
+        "color": "rgb(71, 180, 214)"
+      },
+      {
+        "href": "/brussels?k=p",
+        "name": "Brussels",
+        "count": "9 Events",
+        "image": "/assets/luma/cities/brussels.png",
+        "color": "rgb(44, 122, 192)"
+      },
+      {
+        "href": "/budapest?k=p",
+        "name": "Budapest",
+        "count": "7 Events",
+        "image": "/assets/luma/cities/budapest.png",
+        "color": "rgb(228, 158, 87)"
+      },
+      {
+        "href": "/copenhagen?k=p",
+        "name": "Copenhagen",
+        "count": "17 Events",
+        "image": "/assets/luma/cities/copenhagen.png",
+        "color": "rgb(213, 148, 105)"
+      },
+      {
+        "href": "/dublin?k=p",
+        "name": "Dublin",
+        "count": "10 Events",
+        "image": "/assets/luma/cities/dublin.png",
+        "color": "rgb(245, 165, 93)"
+      },
+      {
+        "href": "/frankfurt?k=p",
+        "name": "Frankfurt",
+        "count": "8 Events",
+        "image": "/assets/luma/cities/frankfurt.png",
+        "color": "rgb(201, 71, 38)"
+      },
+      {
+        "href": "/geneva?k=p",
+        "name": "Geneva",
+        "count": "8 Events",
+        "image": "/assets/luma/cities/geneva.png",
+        "color": "rgb(20, 124, 184)"
+      },
+      {
+        "href": "/hamburg?k=p",
+        "name": "Hamburg",
+        "count": "18 Events",
+        "image": "/assets/luma/cities/hamburg.png",
+        "color": "rgb(60, 120, 203)"
+      },
+      {
+        "href": "/helsinki?k=p",
+        "name": "Helsinki",
+        "count": "35 Events",
+        "image": "/assets/luma/cities/helsinki.png",
+        "color": "rgb(7, 163, 149)"
+      },
+      {
+        "href": "/istanbul?k=p",
+        "name": "Istanbul",
+        "count": "9 Events",
+        "image": "/assets/luma/cities/istanbul.png",
+        "color": "rgb(252, 103, 7)"
+      },
+      {
+        "href": "/lausanne?k=p",
+        "name": "Lausanne",
+        "count": "5 Events",
+        "image": "/assets/luma/cities/lausanne.png",
+        "color": "rgb(143, 176, 23)"
+      },
+      {
+        "href": "/lisbon?k=p",
+        "name": "Lisbon",
+        "count": "43 Events",
+        "image": "/assets/luma/cities/lisbon.png",
+        "color": "rgb(223, 116, 64)"
+      },
+      {
+        "href": "/london?k=p",
+        "name": "London",
+        "count": "58 Events",
+        "image": "/assets/luma/cities/london.png",
+        "color": "rgb(232, 152, 0)"
+      },
+      {
+        "href": "/madrid?k=p",
+        "name": "Madrid",
+        "count": "24 Events",
+        "image": "/assets/luma/cities/madrid.png",
+        "color": "rgb(194, 188, 79)"
+      },
+      {
+        "href": "/milan?k=p",
+        "name": "Milan",
+        "count": "18 Events",
+        "image": "/assets/luma/cities/milan.png",
+        "color": "rgb(145, 106, 74)"
+      },
+      {
+        "href": "/munich?k=p",
+        "name": "Munich",
+        "count": "14 Events",
+        "image": "/assets/luma/cities/munich.png",
+        "color": "rgb(234, 173, 59)"
+      },
+      {
+        "href": "/oslo?k=p",
+        "name": "Oslo",
+        "count": "13 Events",
+        "image": "/assets/luma/cities/oslo.png",
+        "color": "rgb(230, 168, 101)"
+      },
+      {
+        "href": "/paris?k=p",
+        "name": "Paris",
+        "count": "34 Events",
+        "image": "/assets/luma/cities/paris.png",
+        "color": "rgb(206, 143, 92)"
+      },
+      {
+        "href": "/prague?k=p",
+        "name": "Prague",
+        "count": "14 Events",
+        "image": "/assets/luma/cities/prague.png",
+        "color": "rgb(122, 81, 245)"
+      },
+      {
+        "href": "/rome?k=p",
+        "name": "Rome",
+        "count": "5 Events",
+        "image": "/assets/luma/cities/rome.png",
+        "color": "rgb(227, 122, 63)"
+      },
+      {
+        "href": "/stockholm?k=p",
+        "name": "Stockholm",
+        "count": "29 Events",
+        "image": "/assets/luma/cities/stockholm.png",
+        "color": "rgb(62, 107, 240)"
+      },
+      {
+        "href": "/vienna?k=p",
+        "name": "Vienna",
+        "count": "10 Events",
+        "image": "/assets/luma/cities/vienna.png",
+        "color": "rgb(165, 75, 189)"
+      },
+      {
+        "href": "/warsaw?k=p",
+        "name": "Warsaw",
+        "count": "14 Events",
+        "image": "/assets/luma/cities/warsaw.png",
+        "color": "rgb(105, 169, 219)"
+      },
+      {
+        "href": "/zurich?k=p",
+        "name": "Zurich",
+        "count": "20 Events",
+        "image": "/assets/luma/cities/zurich.png",
+        "color": "rgb(64, 201, 145)"
+      }
+    ],
+    "North America": [
+      {
+        "href": "/atlanta?k=p",
+        "name": "Atlanta",
+        "count": "17 Events",
+        "image": "/assets/luma/cities/atlanta.png",
+        "color": "rgb(47, 124, 169)"
+      },
+      {
+        "href": "/austin?k=p",
+        "name": "Austin",
+        "count": "18 Events",
+        "image": "/assets/luma/cities/austin.png",
+        "color": "rgb(245, 185, 56)"
+      },
+      {
+        "href": "/boston?k=p",
+        "name": "Boston",
+        "count": "22 Events",
+        "image": "/assets/luma/cities/boston.png",
+        "color": "rgb(215, 127, 48)"
+      },
+      {
+        "href": "/calgary?k=p",
+        "name": "Calgary",
+        "count": "6 Events",
+        "image": "/assets/luma/cities/calgary.png",
+        "color": "rgb(24, 162, 181)"
+      },
+      {
+        "href": "/chicago?k=p",
+        "name": "Chicago",
+        "count": "21 Events",
+        "image": "/assets/luma/cities/chicago.png",
+        "color": "rgb(230, 108, 159)"
+      },
+      {
+        "href": "/cincinnati?k=p",
+        "name": "Cincinnati",
+        "count": "6 Events",
+        "image": "/assets/luma/cities/cincinnati.png",
+        "color": "rgb(219, 70, 93)"
+      },
+      {
+        "href": "/dallas?k=p",
+        "name": "Dallas",
+        "count": "7 Events",
+        "image": "/assets/luma/cities/dallas.png",
+        "color": "rgb(219, 181, 140)"
+      },
+      {
+        "href": "/denver?k=p",
+        "name": "Denver",
+        "count": "8 Events",
+        "image": "/assets/luma/cities/denver.png",
+        "color": "rgb(233, 132, 6)"
+      },
+      {
+        "href": "/detroit?k=p",
+        "name": "Detroit",
+        "count": "4 Events",
+        "image": "/assets/luma/cities/detroit.png",
+        "color": "rgb(207, 41, 196)"
+      },
+      {
+        "href": "/edmonton?k=p",
+        "name": "Edmonton",
+        "count": "6 Events",
+        "image": "/assets/luma/cities/edmonton.png",
+        "color": "rgb(55, 177, 184)"
+      },
+      {
+        "href": "/houston?k=p",
+        "name": "Houston",
+        "count": "11 Events",
+        "image": "/assets/luma/cities/houston.png",
+        "color": "rgb(188, 105, 59)"
+      },
+      {
+        "href": "/las-vegas?k=p",
+        "name": "Las Vegas",
+        "count": "16 Events",
+        "image": "/assets/luma/cities/las-vegas.png",
+        "color": "rgb(229, 186, 71)"
+      },
+      {
+        "href": "/la?k=p",
+        "name": "Los Angeles",
+        "count": "41 Events",
+        "image": "/assets/luma/cities/los-angeles.png",
+        "color": "rgb(83, 143, 33)"
+      },
+      {
+        "href": "/mexico-city?k=p",
+        "name": "Mexico City",
+        "count": "15 Events",
+        "image": "/assets/luma/cities/mexico-city.png",
+        "color": "rgb(224, 159, 94)"
+      },
+      {
+        "href": "/miami?k=p",
+        "name": "Miami",
+        "count": "12 Events",
+        "image": "/assets/luma/cities/miami.png",
+        "color": "rgb(64, 141, 174)"
+      },
+      {
+        "href": "/minneapolis?k=p",
+        "name": "Minneapolis",
+        "count": "11 Events",
+        "image": "/assets/luma/cities/minneapolis.png",
+        "color": "rgb(186, 54, 92)"
+      },
+      {
+        "href": "/montreal?k=p",
+        "name": "Montréal",
+        "count": "25 Events",
+        "image": "/assets/luma/cities/montreal.png",
+        "color": "rgb(56, 126, 177)"
+      },
+      {
+        "href": "/nyc?k=p",
+        "name": "New York",
+        "count": "90 Events",
+        "image": "/assets/luma/cities/new-york.png",
+        "color": "rgb(224, 141, 85)"
+      },
+      {
+        "href": "/philadelphia?k=p",
+        "name": "Philadelphia",
+        "count": "20 Events",
+        "image": "/assets/luma/cities/philadelphia.png",
+        "color": "rgb(231, 150, 63)"
+      },
+      {
+        "href": "/phoenix?k=p",
+        "name": "Phoenix",
+        "count": "9 Events",
+        "image": "/assets/luma/cities/phoenix.png",
+        "color": "rgb(214, 92, 32)"
+      },
+      {
+        "href": "/pittsburgh?k=p",
+        "name": "Pittsburgh",
+        "count": "7 Events",
+        "image": "/assets/luma/cities/pittsburgh.png",
+        "color": "rgb(110, 102, 237)"
+      },
+      {
+        "href": "/portland?k=p",
+        "name": "Portland",
+        "count": "9 Events",
+        "image": "/assets/luma/cities/portland.png",
+        "color": "rgb(215, 150, 138)"
+      },
+      {
+        "href": "/raleigh?k=p",
+        "name": "Raleigh",
+        "count": "10 Events",
+        "image": "/assets/luma/cities/raleigh.png",
+        "color": "rgb(112, 191, 42)"
+      },
+      {
+        "href": "/sacramento?k=p",
+        "name": "Sacramento",
+        "count": "9 Events",
+        "image": "/assets/luma/cities/sacramento.png",
+        "color": "rgb(52, 209, 167)"
+      },
+      {
+        "href": "/salt-lake-city?k=p",
+        "name": "Salt Lake City",
+        "count": "10 Events",
+        "image": "/assets/luma/cities/salt-lake-city.png",
+        "color": "rgb(80, 175, 217)"
+      },
+      {
+        "href": "/sd?k=p",
+        "name": "San Diego",
+        "count": "17 Events",
+        "image": "/assets/luma/cities/san-diego.png",
+        "color": "rgb(59, 164, 235)"
+      },
+      {
+        "href": "/sf?k=p",
+        "name": "San Francisco",
+        "count": "80 Events",
+        "image": "/assets/luma/cities/san-francisco.png",
+        "color": "rgb(255, 101, 25)"
+      },
+      {
+        "href": "/seattle?k=p",
+        "name": "Seattle",
+        "count": "15 Events",
+        "image": "/assets/luma/cities/seattle.png",
+        "color": "rgb(145, 152, 230)"
+      },
+      {
+        "href": "/toronto?k=p",
+        "name": "Toronto",
+        "count": "34 Events",
+        "image": "/assets/luma/cities/toronto.png",
+        "color": "rgb(48, 110, 209)"
+      },
+      {
+        "href": "/vancouver?k=p",
+        "name": "Vancouver",
+        "count": "19 Events",
+        "image": "/assets/luma/cities/vancouver.png",
+        "color": "rgb(245, 189, 83)"
+      },
+      {
+        "href": "/dc?k=p",
+        "name": "Washington, DC",
+        "count": "22 Events",
+        "image": "/assets/luma/cities/washington-dc.png",
+        "color": "rgb(187, 176, 166)"
+      },
+      {
+        "href": "/waterloo_ca?k=p",
+        "name": "Waterloo",
+        "count": "7 Events",
+        "image": "/assets/luma/cities/waterloo.png",
+        "color": "rgb(149, 154, 101)"
+      }
+    ],
+    "South America": [
+      {
+        "href": "/bogota?k=p",
+        "name": "Bogotá",
+        "count": "11 Events",
+        "image": "/assets/luma/cities/bogota.png",
+        "color": "rgb(210, 138, 79)"
+      },
+      {
+        "href": "/buenos-aires?k=p",
+        "name": "Buenos Aires",
+        "count": "13 Events",
+        "image": "/assets/luma/cities/buenos-aires.png",
+        "color": "rgb(229, 125, 110)"
+      },
+      {
+        "href": "/medellin?k=p",
+        "name": "Medellín",
+        "count": "5 Events",
+        "image": "/assets/luma/cities/medellin.png",
+        "color": "rgb(78, 152, 207)"
+      },
+      {
+        "href": "/rio?k=p",
+        "name": "Rio de Janeiro",
+        "count": "5 Events",
+        "image": "/assets/luma/cities/rio-de-janeiro.png",
+        "color": "rgb(90, 143, 196)"
+      },
+      {
+        "href": "/saopaulo?k=p",
+        "name": "São Paulo",
+        "count": "16 Events",
+        "image": "/assets/luma/cities/sao-paulo.png",
+        "color": "rgb(127, 116, 122)"
+      }
+    ]
+  }
+}
