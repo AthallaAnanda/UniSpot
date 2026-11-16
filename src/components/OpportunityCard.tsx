@@ -3,6 +3,7 @@ import { memo, type CSSProperties } from "react";
 import type { CatalogView } from "@/hooks/useCatalogView";
 import { categoryFor, opportunityStatus } from "@/lib/unispot";
 import { opportunityDateLabel } from "@/lib/opportunity-date";
+import { playConfirmation } from "@/lib/motion";
 import type { Opportunity, Organization } from "@/types/unispot";
 import LumaIcon from "./LumaIcon";
 import CatalogImage from "./CatalogImage";
@@ -22,7 +23,7 @@ export default memo(function OpportunityCard({ opportunity, organization, saved,
   if (view === "grid") return <article className="opportunity-card opportunity-tile" data-opportunity={opportunity.id} style={{ "--tile-color": opportunity.color } as CSSProperties}>
     <div className="opportunity-tile-cover">
       <CatalogImage src={opportunity.image} alt="" width={384} height={288} sizes="(max-width:600px) 360px, 300px" style={imageStyle} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : undefined} />
-      <button type="button" className={`opportunity-tile-save${saved ? " is-saved" : ""}`} aria-label={`${saved ? "Unsave" : "Save"} ${opportunity.title}`} aria-pressed={saved} onClick={event => { event.stopPropagation(); onSave(opportunity); }}><Bookmark size={16} strokeWidth={1.8} fill={saved ? "currentColor" : "none"} aria-hidden="true" /></button>
+      <button type="button" className={`opportunity-tile-save${saved ? " is-saved" : ""}`} aria-label={`${saved ? "Unsave" : "Save"} ${opportunity.title}`} aria-pressed={saved} onClick={event => { event.stopPropagation(); if (!saved) playConfirmation(event.currentTarget); onSave(opportunity); }}><Bookmark size={16} strokeWidth={1.8} fill={saved ? "currentColor" : "none"} aria-hidden="true" /></button>
     </div>
     <div className="opportunity-tile-copy">
       <span className="opportunity-tile-category">{category.name}</span>
@@ -48,7 +49,7 @@ export default memo(function OpportunityCard({ opportunity, organization, saved,
       </div>
       <div className="luma-event-card-cover" style={{ backgroundColor: opportunity.color }}>
         <CatalogImage className={opportunity.imageFit === "contain" ? "is-contained" : undefined} src={opportunity.image} alt="" width={128} height={128} sizes="(max-width:450px) 80px, 108px" style={imageStyle} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : undefined} />
-        <button type="button" className={`luma-event-card-save${saved ? " is-saved" : ""}`} aria-label={`${saved ? "Unsave" : "Save"} ${opportunity.title}`} aria-pressed={saved} onClick={(event) => { event.stopPropagation(); onSave(opportunity); }}><Bookmark size={16} strokeWidth={1.8} fill={saved ? "currentColor" : "none"} aria-hidden="true" /></button>
+        <button type="button" className={`luma-event-card-save${saved ? " is-saved" : ""}`} aria-label={`${saved ? "Unsave" : "Save"} ${opportunity.title}`} aria-pressed={saved} onClick={(event) => { event.stopPropagation(); if (!saved) playConfirmation(event.currentTarget); onSave(opportunity); }}><Bookmark size={16} strokeWidth={1.8} fill={saved ? "currentColor" : "none"} aria-hidden="true" /></button>
       </div>
     </div>
   </article>;

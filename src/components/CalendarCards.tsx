@@ -5,14 +5,15 @@ import { ArrowUpRight, Check } from "lucide-react";
 import type { PartnerCalendar } from "@/types/unispot";
 import { useCatalog } from "./CatalogProvider";
 import type { CatalogView } from "@/hooks/useCatalogView";
+import { playConfirmation } from "@/lib/motion";
 import CatalogImage from "./CatalogImage";
 import "./CatalogView.css";
 
 const CalendarCard = memo(function CalendarCard({ calendar, view, count, following, onFollow }: { calendar: PartnerCalendar; view: CatalogView; count: number; following: boolean; onFollow: (id: string) => void }) {
-  const followButton = <button type="button" className={`calendar-follow-small${following ? " following" : ""}`} aria-label={`${following ? "Unfollow" : "Follow"} ${calendar.name}`} aria-pressed={following} onClick={() => onFollow(calendar.id)}>{following && <Check size={12} />}{following ? "Following" : "Follow"}</button>;
+  const followButton = <button type="button" className={`calendar-follow-small${following ? " following" : ""}`} aria-label={`${following ? "Unfollow" : "Follow"} ${calendar.name}`} aria-pressed={following} onClick={event => { if (!following) playConfirmation(event.currentTarget); onFollow(calendar.id); }}><span className="follow-confirmation" aria-hidden="true"><Check size={12} /></span>{following ? "Following" : "Follow"}</button>;
   const countLabel = <span className="calendar-card-count">{count} {count === 1 ? "opportunity" : "opportunities"}<ArrowUpRight size={12} /></span>;
-  if (view === "list") return <article className="calendar-list-card"><span className="calendar-list-logo"><CatalogImage src={calendar.logo} alt="" width={64} height={64} loading="lazy" /></span><div className="calendar-list-copy"><h3><Link href={`/calendars/${calendar.slug}`}>{calendar.name}</Link></h3><p>{calendar.description}</p>{countLabel}</div>{followButton}</article>;
-  return <article className="organization-card calendar-card"><div className="organization-card-top"><span className="organization-logo"><CatalogImage src={calendar.logo} alt="" width={48} height={48} loading="lazy" /></span>{followButton}</div><h3><Link href={`/calendars/${calendar.slug}`}>{calendar.name}</Link></h3><p>{calendar.description}</p>{countLabel}</article>;
+  if (view === "list") return <article className="calendar-list-card"><span className="calendar-list-logo"><CatalogImage src={calendar.logo} alt="" width={64} height={64} loading="lazy" /></span><div className="calendar-list-copy"><h3><Link href={`/hubs/${calendar.slug}`}>{calendar.name}</Link></h3><p>{calendar.description}</p>{countLabel}</div>{followButton}</article>;
+  return <article className="organization-card calendar-card"><div className="organization-card-top"><span className="organization-logo"><CatalogImage src={calendar.logo} alt="" width={48} height={48} loading="lazy" /></span>{followButton}</div><h3><Link href={`/hubs/${calendar.slug}`}>{calendar.name}</Link></h3><p>{calendar.description}</p>{countLabel}</article>;
 });
 
 export default memo(function CalendarCards({ calendars, view = "grid" }: { calendars: PartnerCalendar[]; view?: CatalogView }) {

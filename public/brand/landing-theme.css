@@ -1,0 +1,96 @@
+/* UniSpot's warm, optimistic palette, drawn from the logo gradient. */
+body, body * {
+  --token-bd061839-6c87-4869-876e-307a0614b247: #fff9f5;
+  --token-4807beda-a115-4a21-b867-5517dd1248ae: #ffe8df;
+  --token-4b9a4e10-2919-4ab1-aebd-8e6de570a6c8: rgba(188, 54, 105, .2);
+  --token-3a798b70-4a59-444e-81b5-47c1ba3a76da: rgba(188, 54, 105, .18);
+  --token-d43a2f18-167c-4e33-b7f8-2f003ea3b9e4: #ffb0cd;
+  --token-8edbf8c6-9bca-4404-8ad2-4da181bb4dd8: #ffb6df;
+  --token-89274f3d-80b6-40d0-b877-f73b822c1e53: #ffb79e;
+  --token-45102cbd-43cd-4a52-b5c6-6cc020a8abbb: #ffd36a;
+  --token-68785ed4-ffa8-4296-99c8-682fbd48b379: #ff936d;
+  --token-3ce198b0-b02a-4bd7-b884-13730599ccd4: #d52ba9;
+}
+
+/* A soft wash ties the first impression to the logo without competing with the imagery. */
+body [data-framer-name="Hero"] {
+  background: radial-gradient(ellipse at 15% 18%, #ffe4f1 0, transparent 34%),
+    radial-gradient(ellipse at 85% 25%, #fff0cd 0, transparent 35%),
+    linear-gradient(180deg, #fff8f5, #fffaf7);
+}
+
+body .unispot-hero-headline {
+  background: linear-gradient(110deg, #a51391 5%, #df236f 44%, #c84e13 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Primary actions use a deeper berry so their white labels remain legible. */
+body a.framer-twJSN[data-framer-name="Default"],
+body a.framer-twJSN[data-framer-name="Default - Phone"],
+body a.framer-xfgtC[data-framer-name="Default"] {
+  background: #a51269 !important;
+}
+body a.framer-twJSN[data-framer-name="Default"]:hover,
+body a.framer-twJSN[data-framer-name="Default - Phone"]:hover,
+body a.framer-xfgtC[data-framer-name="Default"]:hover {
+  background: #801052 !important;
+}
+body a.framer-twJSN[data-framer-name="Gray"] {
+  background: #ffe3ec !important;
+}
+
+body [data-framer-name="Pinpoints"],
+body [data-framer-name="Steps"] {
+  background: #fff5f4;
+}
+body [data-framer-name="Mission"],
+body [data-framer-name="Testimonial"] {
+  background: #fffbf5;
+}
+
+/* Give the featured Hub logos their own distinct, evenly spaced badges. */
+body [data-framer-name="Testimonial"] .framer-1jcq6p9 {
+  gap: 8px;
+  padding-right: 0;
+}
+body [data-framer-name="Testimonial"] .framer-1jcq6p9 .framer-pPiY5 {
+  width: 60px !important;
+  height: 60px !important;
+}
+body [data-framer-name="Testimonial"] .framer-1jcq6p9 .framer-y0cxvt {
+  width: 60px !important;
+  height: 60px !important;
+  background: #fff;
+  box-shadow: 0 0 0 1px #ead6dc, 0 3px 10px rgba(90, 38, 57, .14);
+}
+body [data-framer-name="Testimonial"] .framer-1jcq6p9 img {
+  box-sizing: border-box;
+  padding: 9px;
+  object-fit: contain !important;
+}
+@media (max-width: 809px) {
+  body [data-framer-name="Testimonial"] .framer-1jcq6p9 { gap: 6px; }
+  body [data-framer-name="Testimonial"] .framer-1jcq6p9 .framer-pPiY5,
+  body [data-framer-name="Testimonial"] .framer-1jcq6p9 .framer-y0cxvt {
+    width: 44px !important;
+    height: 44px !important;
+  }
+  body [data-framer-name="Testimonial"] .framer-1jcq6p9 img { padding: 6px; }
+}
+body [data-framer-name="CTA"] > [data-framer-name="Container"] > [data-framer-name="Content"] {
+  background: linear-gradient(120deg, #ffd6e8, #ffe3cf 55%, #ffedb9) !important;
+}
+body footer {
+  background-color: #321627 !important;
+}
+body footer img[src="/brand/unispot.svg"],
+body footer img[alt="Brand Logo"],
+body footer img[alt="UniSpot"] {
+  content: url("/brand/unispot-light.svg");
+}
+body a:focus-visible, body [role="button"]:focus-visible, body button:focus-visible {
+  outline: 3px solid #c21a84;
+  outline-offset: 4px;
+}

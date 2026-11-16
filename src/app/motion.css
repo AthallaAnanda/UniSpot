@@ -2,7 +2,7 @@
   --motion-press: 120ms;
   --motion-feedback: 180ms;
   --motion-hover: 260ms;
-  --motion-view: 240ms;
+  --motion-view: 300ms;
   --motion-toggle: 340ms;
   --motion-panel-enter: 420ms;
   --motion-panel-exit: 260ms;
@@ -12,8 +12,9 @@
   --motion-ease-exit: cubic-bezier(.4,0,1,1);
 }
 
-/* Entrances run only after a client route change, never on the initial document. */
+/* Default route entrance; Discover reveals individual items on load and scroll. */
 .page-container[data-motion-enter="true"] { animation:motion-page-enter var(--motion-page) var(--motion-ease-soft); }
+.page-container[data-motion-reveal="true"] { animation:none; }
 @keyframes motion-page-enter { from { opacity:.85;translate:0 6px; } to { opacity:1;translate:0 0; } }
 
 /* Whitelisted controls only: focus rings and native text inputs remain immediate. */
@@ -21,14 +22,32 @@ body :is(.primary-button,.secondary-button,.header-create,.calendar-follow-small
   transition:background-color var(--motion-feedback) ease,color var(--motion-feedback) ease,border-color var(--motion-feedback) ease,scale var(--motion-press) var(--motion-ease-soft);
 }
 body :is(.primary-button,.secondary-button,.header-create,.calendar-follow-small,.partner-calendar-follow,.event-registration-action,.calendar-publishing-button,.icon-button,.luma-event-card-save,.opportunity-tile-save,.event-panel-button):not(:disabled):active { scale:.98; }
-:is(.luma-event-card-save,.opportunity-tile-save,.calendar-follow-small,.partner-calendar-follow)[aria-pressed="true"] > svg { animation:motion-confirm var(--motion-feedback) var(--motion-ease-soft); }
 @keyframes motion-confirm { from { scale:.82; } to { scale:1; } }
+
+/* Confirmation is triggered by the action itself, so restoring saved items or
+   remounting a followed Hub never replays the bookmark/check bounce. */
+:is(.luma-event-card-save,.opportunity-tile-save,.partner-calendar-follow,.event-tool-button,.follow-confirmation) > svg { transform-box:fill-box;transform-origin:center; }
+.unispot-app .calendar-follow-small { gap:0; }
+.follow-confirmation { display:inline-flex;align-items:center;width:0;margin-inline-end:0;opacity:0;transition:width var(--motion-feedback) var(--motion-ease-soft),margin-inline-end var(--motion-feedback) var(--motion-ease-soft),opacity var(--motion-feedback) ease; }
+[aria-pressed="true"] > .follow-confirmation { width:12px;margin-inline-end:4px;opacity:1; }
+.site-header .header-saved small { display:inline-block;font-variant-numeric:tabular-nums;animation:motion-count-in 320ms var(--motion-ease-soft); }
+@keyframes motion-count-in { 0% { opacity:.3;transform:translateY(4px) scale(.75); } 55% { opacity:1;transform:translateY(-1px) scale(1.12); } 100% { transform:translateY(0) scale(1); } }
+.unispot-app .empty-state { animation:motion-page-enter var(--motion-page) var(--motion-ease-soft); }
+body :is(.category-tile,.location-item,.event-tool-button):not(:disabled) { transition:background-color var(--motion-feedback) ease,color var(--motion-feedback) ease,border-color var(--motion-hover) ease,translate var(--motion-hover) var(--motion-ease-soft),scale var(--motion-press) var(--motion-ease-soft); }
+body :is(.category-tile,.location-item,.event-tool-button):not(:disabled):active { scale:.98; }
 
 @media (hover:hover) and (pointer:fine) {
   body :is(.opportunity-card.luma-event-card,.opportunity-card.opportunity-tile,.organization-card.calendar-card,.calendar-list-card,.category-tile) {
-    transition:border-color var(--motion-hover) ease,translate var(--motion-hover) var(--motion-ease-soft);
+    transition:border-color var(--motion-hover) ease,translate var(--motion-hover) var(--motion-ease-soft),scale var(--motion-press) var(--motion-ease-soft);
   }
-  body :is(.opportunity-card.luma-event-card,.opportunity-card.opportunity-tile,.organization-card.calendar-card,.calendar-list-card,.category-tile):hover { translate:0 -2px; }
+  body :is(.opportunity-card.luma-event-card,.opportunity-card.opportunity-tile,.organization-card.calendar-card,.calendar-list-card,.category-tile):is(:hover,:focus-within) { translate:0 -3px; }
+  .unispot-app :is(.luma-event-card-cover,.opportunity-tile-cover) > img { transition:scale var(--motion-hover) var(--motion-ease-soft); }
+  .unispot-app .opportunity-card:is(:hover,:focus-within) :is(.luma-event-card-cover,.opportunity-tile-cover) > img { scale:1.035; }
+  .unispot-app :is(.category-icon > svg,.city-symbol > svg,.section-link > svg,.calendar-card-count > svg) { transition:transform var(--motion-hover) var(--motion-ease-soft); }
+  .unispot-app .category-tile:is(:hover,:focus-visible) .category-icon > svg { transform:translateY(-2px) rotate(-7deg) scale(1.06); }
+  .unispot-app .location-item:is(:hover,:focus-visible) .city-symbol > svg { transform:translateY(-2px); }
+  .unispot-app .section-link:is(:hover,:focus-visible) > svg { transform:translateX(3px); }
+  .unispot-app :is(.calendar-card,.calendar-list-card):is(:hover,:focus-within) .calendar-card-count > svg { transform:translate(2px,-2px); }
 }
 
 .catalog-mobile-filter-overlay[data-state="open"],.about-overlay[data-state="open"] { animation:motion-backdrop-in var(--motion-backdrop) ease; }
@@ -82,7 +101,15 @@ body :is(.publishing-primary,.publishing-secondary,.publishing-image-button,.pub
 
 @media (prefers-reduced-motion:reduce) {
   .page-container[data-motion-enter="true"] { animation:none; }
-  body :is(.opportunity-card.luma-event-card,.opportunity-card.opportunity-tile,.organization-card.calendar-card,.calendar-list-card,.category-tile):hover { translate:none; }
+  body :is(.opportunity-card.luma-event-card,.opportunity-card.opportunity-tile,.organization-card.calendar-card,.calendar-list-card,.category-tile):is(:hover,:focus-within) { translate:none; }
+  .unispot-app .opportunity-card:is(:hover,:focus-within) :is(.luma-event-card-cover,.opportunity-tile-cover) > img { scale:1; }
+  .unispot-app .category-tile:is(:hover,:focus-visible) .category-icon > svg,
+  .unispot-app .location-item:is(:hover,:focus-visible) .city-symbol > svg,
+  .unispot-app :is(.calendar-card,.calendar-list-card):is(:hover,:focus-within) .calendar-card-count > svg,
+  .unispot-app .section-link:is(:hover,:focus-visible) > svg { transform:none; }
+  .site-header .header-saved small,.unispot-app .empty-state { animation:none; }
+  .follow-confirmation { transition:none; }
+  body :is(.category-tile,.location-item,.event-tool-button):not(:disabled):active { scale:1; }
   body :is(.primary-button,.secondary-button,.header-create,.calendar-follow-small,.partner-calendar-follow,.event-registration-action,.calendar-publishing-button,.icon-button,.luma-event-card-save,.opportunity-tile-save,.event-panel-button):active { scale:1; }
   :is(.profile-shell,.publishing-shell) > .page-container[data-motion-enter="true"] *,
   :is(.publishing-dialog-overlay,.profile-dialog-overlay,.publishing-dialog,.profile-dialog,.header-account-menu,.publishing-disclosure-content,.opportunity-more-details > .publishing-field,.publishing-error,.profile-form-error,.calendar-color-swatch > svg) { animation:none!important; }

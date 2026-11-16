@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState, type FormEvent } from "react";
 import { Dialog } from "radix-ui";
-import { ArrowRight, Bookmark, CalendarDays, FileText, Pencil, Plus, X } from "lucide-react";
+import { ArrowRight, Bookmark, CalendarDays, FileText, Pencil, Plus, UsersRound, X } from "lucide-react";
 import { useProfile, type Profile } from "@/hooks/useProfile";
 import { useDialogFocusReturn } from "@/hooks/useDialogFocusReturn";
 import { useCatalog } from "./CatalogProvider";
@@ -17,6 +17,7 @@ export default function AccountPage() {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState<Profile>(profile);
   const [error, setError] = useState("");
+  const [pending, setPending] = useState(false);
   const focusReturn = useDialogFocusReturn();
   const managed = useMemo(() => calendars.filter(calendar => calendar.canManage), [calendars]);
   const publishedCount = useMemo(() => {
@@ -31,13 +32,16 @@ export default function AccountPage() {
     setEditing(true);
   }
 
-  function save(event: FormEvent<HTMLFormElement>) {
+  async function save(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (pending) return;
+    setPending(true);
     try {
-      saveProfile(draft);
+      await saveProfile(draft);
       setEditing(false);
       notify("Profile updated.");
     } catch { setError("Couldn’t save your profile. Please try again."); }
+    finally { setPending(false); }
   }
 
   return <SiteShell className="profile-shell">
@@ -48,7 +52,7 @@ export default function AccountPage() {
           <div className="profile-identity-copy">
             <h1 id="profile-name-heading">{profile.name || "Your name"}</h1>
             <p className="profile-joined"><CalendarDays size={19} strokeWidth={1.6} /><span>{joined ? `Joined ${joined}` : "Joined UniSpot"}</span></p>
-            <div className="profile-activity" aria-label="Your UniSpot activity"><Link href="/calendars"><strong>{followed.length}</strong> Following</Link></div>
+             <div className="profile-activity" aria-label="Your UniSpot activity"><Link href="/hubs"><strong>{followed.length}</strong> Following</Link></div>
             {profile.bio && <p className="profile-biography">{profile.bio}</p>}
           </div>
         </div>
@@ -56,13 +60,13 @@ export default function AccountPage() {
 
       <nav className="profile-collections" aria-label="Your collection">
         <Link href="/saved"><Bookmark size={17} /><span>Saved<span className="profile-collection-detail"> opportunities</span></span><strong>{saved.length}</strong></Link>
-        <a href="#your-calendars" aria-label={`${publishedCount} published opportunities`}><FileText size={17} /><span>Published</span><strong>{publishedCount}</strong></a>
-        <a href="#your-calendars"><CalendarDays size={17} /><span>Calendars</span><strong>{managed.length}</strong></a>
+         <a href="#your-hubs" aria-label={`${publishedCount} published opportunities`}><FileText size={17} /><span>Published</span><strong>{publishedCount}</strong></a>
+         <a href="#your-hubs"><CalendarDays size={17} /><span>Hubs</span><strong>{managed.length}</strong></a>
       </nav>
 
-      <section className="profile-calendars" id="your-calendars" aria-labelledby="profile-calendars-heading">
-        <div className="profile-section-heading"><div><h2 id="profile-calendars-heading">Your calendars</h2><p>Manage what you share with your community.</p></div><Link href="/calendars/new" className="profile-new-calendar"><Plus size={15} /><span>New calendar</span></Link></div>
-        {loading ? <div className="profile-calendar-loading" role="status">Loading your calendars…</div> : managed.length ? <div className="profile-calendar-rows">{managed.map(calendar => <Link href={`/calendars/${encodeURIComponent(calendar.slug)}/manage`} key={calendar.id}><img src={calendar.logo} alt="" width={42} height={42} loading="lazy" decoding="async" /><span><strong>{calendar.name}</strong><small>Manage calendar and opportunities</small></span><ArrowRight size={16} /></Link>)}</div> : <div className="profile-calendar-empty"><div className="profile-empty-symbol"><CalendarDays size={25} strokeWidth={1.4} /></div><h3>A home for your community</h3><p>Bring your events and opportunities together<br className="profile-empty-break" /> in a calendar of your own.</p><Link href="/calendars/new">Create your first calendar<ArrowRight size={14} /></Link></div>}
+       <section className="profile-calendars" id="your-hubs" aria-labelledby="profile-calendars-heading">
+         <div className="profile-section-heading"><div><h2 id="profile-calendars-heading">Your Hubs</h2><p>Manage what you share with your community.</p></div><Link href="/hubs/new" className="profile-new-calendar"><Plus size={15} /><span>New Hub</span></Link></div>
+         {loading ? <div className="profile-calendar-loading" role="status">Loading your Hubs…</div> : managed.length ? <div className="profile-calendar-rows">{managed.map(calendar => <Link href={`/hubs/${encodeURIComponent(calendar.slug)}/manage`} key={calendar.id}><img src={calendar.logo} alt="" width={42} height={42} loading="lazy" decoding="async" /><span><strong>{calendar.name}</strong><small>Manage Hub and opportunities</small></span><ArrowRight size={16} /></Link>)}</div> : <div className="profile-calendar-empty"><div className="profile-empty-symbol"><UsersRound size={25} strokeWidth={1.4} /></div><h3>A home for your community</h3><p>Bring your events and opportunities together<br className="profile-empty-break" /> in your own Hub.</p><Link href="/hubs/new">Create your first Hub<ArrowRight size={14} /></Link></div>}
       </section>
 
     </div>
@@ -79,8 +83,8 @@ export default function AccountPage() {
           <div className="profile-form-field"><label htmlFor="profile-campus">Campus or organization <span>Optional</span></label><input id="profile-campus" maxLength={100} value={draft.campus} onChange={e => setDraft({ ...draft, campus: e.target.value })} placeholder="Where you belong" /></div>
           <div className="profile-form-field"><label htmlFor="profile-bio">Bio <span>Optional</span></label><textarea id="profile-bio" rows={3} maxLength={200} value={draft.bio} onChange={e => setDraft({ ...draft, bio: e.target.value })} placeholder="A little about you" /></div>
           {error && <p className="profile-form-error" role="alert">{error}</p>}
-          <p className="profile-form-note">Your profile is saved in this browser.</p>
-          <div className="profile-form-actions"><Dialog.Close type="button">Cancel</Dialog.Close><button type="submit">Save changes</button></div>
+          <p className="profile-form-note">Your profile is synced to your UniSpot account.</p>
+          <div className="profile-form-actions"><Dialog.Close type="button">Cancel</Dialog.Close><button type="submit" disabled={pending}>{pending ? "Saving…" : "Save changes"}</button></div>
         </form>
       </Dialog.Content>
     </Dialog.Portal></Dialog.Root>

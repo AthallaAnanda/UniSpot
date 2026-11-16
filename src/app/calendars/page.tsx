@@ -1,4 +1,3 @@
-import CalendarDirectory from "@/components/CalendarDirectory";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Calendars · UniSpot" };
-export default function Page() { return <CalendarDirectory />; }
+export default function Page() { redirect("/hubs"); }

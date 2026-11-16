@@ -1,0 +1,86 @@
+/* Preserve the existing frames, but show each photograph and video in full. */
+main video,
+main img[alt="Service Image"],
+main [data-framer-name="Services"] img[src^="/assets/unispot/landing/category-"],
+main img[alt="Step Image"],
+main img[alt="Counter Image"],
+main img[alt="Students discovering a community opportunity on UniSpot"],
+main img[src="/assets/unispot/landing/mission-campus-student.webp"],
+main img[alt="Featured UniSpot opportunity"],
+main img[alt="Explore opportunities on UniSpot"] {
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Fill the saved-opportunity card with its landscape image. */
+main [data-framer-name="Steps"] img[src="/assets/unispot/landing/career-competitions.webp"] {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* The at-a-glance photograph fills its near-square frame on every breakpoint. */
+main [data-framer-name="Counter"] img[src="/assets/unispot/landing/students-library-8199558.webp"] {
+  object-fit: cover !important;
+  object-position: center 35% !important;
+}
+
+/* The CTA's square photo tiles should not show letterboxing. */
+main [data-framer-name="CTA"] img[src^="/assets/unispot/landing/"] {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Student stories fill the screen inside the phone, including its rounded edges. */
+main [data-framer-name="Mobile Reels"] [data-framer-name="Videos"],
+main [data-framer-name="Mobile Reels"] [data-framer-name^="Video 0"] {
+  overflow: hidden;
+  border-radius: inherit;
+}
+main [data-framer-name="Mobile Reels"] video {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+main [data-framer-name="Mobile Reels"] .framer-l8hd00 {
+  background: #fff;
+}
+main [data-framer-name="Mobile Reels"] .framer-l8hd00 img {
+  box-sizing: border-box;
+  padding: 5px;
+  object-fit: contain !important;
+}
+main [data-framer-name="Mobile Reels"] .framer-dypgiy {
+  display: none !important;
+}
+main [data-framer-name="Mobile Reels"] [data-framer-name="Text"] {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .8);
+}
+
+/* The four category-photo frames follow the photos' original proportions. */
+main [data-framer-name="Services"] .framer-1nvhwa:has(img[src^="/assets/unispot/landing/category-"]) {
+  aspect-ratio: 1600 / 1066 !important;
+}
+/* Round the actual photo, not just the wider box around its contained image. */
+main [data-framer-name="Mission"] img[src="/assets/unispot/landing/mission-campus-student.webp"] {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px !important;
+}
+
+/* The featured frame follows each original image's aspect ratio. */
+main [data-framer-name="Case Study"] .framer-1w25xkn:has(img[alt="Featured UniSpot opportunity"]) {
+  height: auto !important;
+  aspect-ratio: var(--featured-ratio, 4 / 3);
+  margin-block: auto;
+}
+main [data-framer-name="Case Study"] .framer-1w25xkn:has(img[src$="lpdp.webp"]) { --featured-ratio: 7 / 5; }
+main [data-framer-name="Case Study"] .framer-1w25xkn:has(img[src$="google-ai.webp"]) { --featured-ratio: 542 / 407; }
+main [data-framer-name="Case Study"] .framer-1w25xkn:has(img[alt="Featured UniSpot opportunity"]) > .framer-1jgvi5a {
+  height: 100% !important;
+  aspect-ratio: auto !important;
+}

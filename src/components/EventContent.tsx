@@ -4,6 +4,7 @@ import { Bookmark, Globe, Ticket } from "lucide-react";
 import Link from "next/link";
 import { memo } from "react";
 import { categoryFor, downloadCalendar, opportunityStatus } from "@/lib/unispot";
+import { playConfirmation } from "@/lib/motion";
 import type { Opportunity, Organization } from "@/types/unispot";
 import LumaIcon from "./LumaIcon";
 import CatalogImage from "./CatalogImage";
@@ -37,7 +38,7 @@ export default memo(function EventContent({ opportunity, organization, saved, on
   const Heading = mode === "page" ? "h1" : "h2";
   const SectionHeading = mode === "page" ? "h2" : "h3";
   const hostName = organization?.name ?? opportunity.sourceName;
-  const hostUrl = organization?.calendarSlug ? `/calendars/${organization.calendarSlug}` : organization?.url ?? opportunity.source;
+  const hostUrl = organization?.calendarSlug ? `/hubs/${organization.calendarSlug}` : organization?.url ?? opportunity.source;
 
   return (
     <div className={`event-content-layout mode-${mode}`}>
@@ -144,7 +145,7 @@ export default memo(function EventContent({ opportunity, organization, saved, on
         )}
         <span className="event-category-tag"># {category.name}</span>
         <div className="event-tools">
-          <button className="event-tool-button" type="button" aria-pressed={saved} onClick={onSave}>
+          <button className="event-tool-button" type="button" aria-pressed={saved} onClick={event => { if (!saved) playConfirmation(event.currentTarget); onSave(); }}>
             <Bookmark size={15} fill={saved ? "currentColor" : "none"} aria-hidden="true" />
             {saved ? "Saved" : "Save for later"}
           </button>

@@ -1,32 +1,26 @@
 import "server-only";
-import { DatabaseSync } from "node:sqlite";
-import { createHash, randomBytes, randomUUID } from "node:crypto";
-import { mkdirSync } from "node:fs";
-import path from "node:path";
-import { seedCatalog, calendarOrganization } from "@/lib/catalog-seed";
+import { randomUUID } from "node:crypto";
+import { calendarOrganization } from "@/lib/catalog-seed";
+import { createClient } from "@/lib/supabase/server";
+import { currentUser } from "./auth";
 import { categories } from "@/lib/unispot";
 import { defaultTimeZone, formatOpportunitySchedule } from "@/lib/opportunity-time";
 import type { CatalogData, CategoryId, ManagedOpportunity, Opportunity, PartnerCalendar } from "@/types/unispot";
 
-let database: DatabaseSync | undefined;
-function db() {
-  if (database) return database;
-  const filename = process.env.UNISPOT_DB_PATH ?? path.join(process.cwd(), "data", "unispot.sqlite");
-  mkdirSync(path.dirname(filename), { recursive: true });
-  database = new DatabaseSync(filename);
-  database.exec(`PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON;
-    CREATE TABLE IF NOT EXISTS calendars (id TEXT PRIMARY KEY, slug TEXT UNIQUE NOT NULL, owner_hash TEXT NOT NULL, data TEXT NOT NULL);
-    CREATE TABLE IF NOT EXISTS opportunities (id TEXT PRIMARY KEY, calendar_id TEXT NOT NULL REFERENCES calendars(id) ON DELETE CASCADE, status TEXT NOT NULL CHECK(status IN ('draft','published')), updated_at TEXT NOT NULL, data TEXT NOT NULL);
-    CREATE INDEX IF NOT EXISTS opportunities_calendar ON opportunities(calendar_id);
-    CREATE INDEX IF NOT EXISTS opportunities_status ON opportunities(status);`);
-  return database;
-}
 export class CatalogError extends Error { constructor(message: string, public status = 400) { super(message); } }
-type Row = { id: string; slug: string; owner_hash: string; data: string };
-type OpportunityRow = { id: string; calendar_id: string; status: "draft" | "published"; updated_at: string; data: string };
-const digest = (token: string) => createHash("sha256").update(token).digest("hex");
-export const ownerCookie = "unispot-calendar-owner";
-export const newOwnerToken = () => randomBytes(32).toString("hex");
+type Row = { id: string; slug: string; owner_id: string | null; data: PartnerCalendar };
+function databaseError(error: { code?: string; message: string } | null) {
+  if (!error) return;
+  if (error.code === "23505") throw new CatalogError("This Hub URL is already taken. Try another one.", 409);
+  if (error.code === "42501") throw new CatalogError("You don’t have permission to make this change.", 403);
+  console.error("Supabase catalog request failed", error.code, error.message);
+  throw new CatalogError("Couldn’t load or save the catalog. Please try again.", 503);
+}
+export async function requireApiUser() {
+  const user = await currentUser();
+  if (!user) throw new CatalogError("Please sign in to continue.", 401);
+  return user;
+}
 const object = (value: unknown): Record<string, unknown> => { if (!value || typeof value !== "object" || Array.isArray(value)) throw new CatalogError("Please provide valid form data."); return value as Record<string, unknown>; };
 function text(input: Record<string, unknown>, key: string, max: number, required = false) {
   const value = input[key];
@@ -47,59 +41,68 @@ function dateValue(input: Record<string, unknown>, key: string) {
   if (value && (!/^\d{4}-\d{2}-\d{2}$/.test(value) || Number.isNaN(Date.parse(`${value}T12:00:00Z`)) || new Date(`${value}T12:00:00Z`).toISOString().slice(0, 10) !== value)) throw new CatalogError(`Please enter a valid ${key}.`);
   return value || undefined;
 }
-function calendarFromRow(row: Row, token?: string): PartnerCalendar {
-  return { ...JSON.parse(row.data), canManage: !!token && row.owner_hash === digest(token) };
+function calendarFromRow(row: Row, userId?: string): PartnerCalendar {
+  return { ...row.data, id: row.id, slug: row.slug, canManage: !!userId && row.owner_id === userId };
 }
-export function getCatalog(token?: string): CatalogData {
-  const calendars = (db().prepare("SELECT * FROM calendars ORDER BY rowid DESC").all() as Row[]).map(row => calendarFromRow(row, token));
-  const opportunities = (db().prepare("SELECT * FROM opportunities WHERE status='published' ORDER BY updated_at DESC").all() as OpportunityRow[]).map(row => JSON.parse(row.data) as Opportunity);
-  return { calendars: [...seedCatalog.calendars, ...calendars], organizations: [...seedCatalog.organizations, ...calendars.map(calendarOrganization)], opportunities: [...seedCatalog.opportunities, ...opportunities] };
+export async function getCatalog(userId?: string): Promise<CatalogData> {
+  const supabase = await createClient();
+  const [hubs, posts, organizations] = await Promise.all([
+    supabase.from("hubs").select("id,slug,owner_id,data").order("created_at", { ascending: false }),
+    supabase.from("opportunities").select("data").eq("status", "published").order("updated_at", { ascending: false }),
+    supabase.from("organizations").select("data"),
+  ]);
+  [hubs, posts, organizations].forEach(result => databaseError(result.error));
+  return { calendars: (hubs.data as Row[]).map(row => calendarFromRow(row, userId)), organizations: organizations.data!.map(row => row.data), opportunities: posts.data!.map(row => row.data) };
 }
-export function getCalendar(slug: string, token?: string): PartnerCalendar | undefined {
-  const seeded = seedCatalog.calendars.find(calendar => calendar.slug === slug);
-  if (seeded) return { ...seeded, canManage: false };
-  const row = db().prepare("SELECT * FROM calendars WHERE slug=?").get(slug) as Row | undefined;
-  return row ? calendarFromRow(row, token) : undefined;
+export async function getCalendar(slug: string, userId?: string): Promise<PartnerCalendar | undefined> {
+  const supabase = await createClient();
+  const { data, error } = await supabase.from("hubs").select("id,slug,owner_id,data").eq("slug", slug).maybeSingle();
+  databaseError(error);
+  return data ? calendarFromRow(data as Row, userId) : undefined;
 }
-export function getOpportunity(id: string): Opportunity | undefined {
-  const seeded = seedCatalog.opportunities.find(opportunity => opportunity.id === id);
-  if (seeded) return seeded;
-  const row = db().prepare("SELECT data FROM opportunities WHERE id=? AND status='published'").get(id) as { data: string } | undefined;
-  return row ? JSON.parse(row.data) : undefined;
+export async function getOpportunity(id: string): Promise<Opportunity | undefined> {
+  const supabase = await createClient();
+  const { data, error } = await supabase.from("opportunities").select("data").eq("id", id).eq("status", "published").maybeSingle();
+  databaseError(error);
+  return data?.data;
 }
-export function getOpportunityOrganization(opportunity: Opportunity) {
-  const seeded = seedCatalog.organizations.find(organization => organization.id === opportunity.organizationId);
-  if (seeded) return seeded;
-  // Community organization IDs are the calendar primary key. Detail pages need
-  // one indexed lookup, not every calendar and every published opportunity.
-  const row = db().prepare("SELECT data FROM calendars WHERE id=?").get(opportunity.organizationId) as { data: string } | undefined;
-  return row ? calendarOrganization(JSON.parse(row.data) as PartnerCalendar) : undefined;
+export async function getOpportunityOrganization(opportunity: Opportunity) {
+  const supabase = await createClient();
+  const { data, error } = await supabase.from("organizations").select("data").eq("id", opportunity.organizationId).maybeSingle();
+  databaseError(error);
+  return data?.data;
 }
-export function requireOwner(slug: string, token?: string) {
-  const calendar = getCalendar(slug, token);
-  if (!calendar) throw new CatalogError("Calendar not found.", 404);
-  if (!calendar.canManage) throw new CatalogError("This calendar can only be managed by its owner.", 403);
+export async function requireOwner(slug: string) {
+  const user = await requireApiUser();
+  const calendar = await getCalendar(slug, user.id);
+  if (!calendar) throw new CatalogError("Hub not found.", 404);
+  if (!calendar.canManage) throw new CatalogError("This Hub can only be managed by its owner.", 403);
   return calendar;
 }
-export function createCalendar(value: unknown, token: string) {
+export async function createCalendar(value: unknown) {
+  await requireApiUser();
   const input = object(value);
   const name = text(input, "name", 100, true);
   const slug = text(input, "slug", 80, true).toLowerCase();
-  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || slug.length < 3 || ["new", "manage", "api"].includes(slug)) throw new CatalogError("Use at least 3 lowercase letters, numbers, or hyphens for your calendar URL.");
-  if (getCalendar(slug)) throw new CatalogError("This calendar URL is already taken. Try another one.", 409);
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || slug.length < 3 || ["new", "manage", "api"].includes(slug)) throw new CatalogError("Use at least 3 lowercase letters, numbers, or hyphens for your Hub URL.");
+  if (await getCalendar(slug)) throw new CatalogError("This Hub URL is already taken. Try another one.", 409);
   const color = text(input, "color", 7) || "#bb267e";
-  if (!/^#[0-9a-fA-F]{6}$/.test(color)) throw new CatalogError("Please choose a valid calendar color.");
+  if (!/^#[0-9a-fA-F]{6}$/.test(color)) throw new CatalogError("Please choose a valid Hub color.");
   const id = `cal-${randomUUID()}`;
   const socialInput = input.socialLinks === undefined ? {} : object(input.socialLinks);
   const socialLinks = Object.fromEntries(["instagram", "tiktok", "linkedin"].map(platform => [platform, webUrl(text(socialInput, platform, 2000), platform)]).filter(([, url]) => url));
   const calendar: PartnerCalendar = { id, slug, name, description: text(input, "description", 1500, true), website: webUrl(text(input, "website", 2000), "website"), socialLinks, logo: imageUrl(text(input, "logo", 2000)) || "/brand/unispot-icon.svg", cover: imageUrl(text(input, "cover", 2000)) || undefined, color, organizationId: id, curated: false, createdAt: new Date().toISOString() };
-  try { db().prepare("INSERT INTO calendars (id,slug,owner_hash,data) VALUES (?,?,?,?)").run(id, slug, digest(token), JSON.stringify(calendar)); }
-  catch (error) { if (String(error).includes("UNIQUE")) throw new CatalogError("This calendar URL is already taken.", 409); throw error; }
+  const supabase = await createClient();
+  const { error } = await supabase.rpc("create_unispot_hub", { p_id: id, p_slug: slug, p_organization: calendarOrganization(calendar), p_data: calendar });
+  databaseError(error);
   return { ...calendar, canManage: true };
 }
-export function managedOpportunities(slug: string, token?: string) {
-  const calendar = requireOwner(slug, token);
-  const opportunities = (db().prepare("SELECT * FROM opportunities WHERE calendar_id=? ORDER BY updated_at DESC").all(calendar.id) as OpportunityRow[]).map(row => ({ ...JSON.parse(row.data), status: row.status, updatedAt: row.updated_at }) as ManagedOpportunity);
+export async function managedOpportunities(slug: string) {
+  const calendar = await requireOwner(slug);
+  const supabase = await createClient();
+  const { data, error } = await supabase.from("opportunities").select("data,status,updated_at").eq("hub_id", calendar.id).order("updated_at", { ascending: false });
+  databaseError(error);
+  const opportunities = data!.map(row => ({ ...row.data, status: row.status, updatedAt: row.updated_at }) as ManagedOpportunity);
   return { calendar, opportunities };
 }
 function opportunityInput(value: unknown, calendar: PartnerCalendar, status: "draft" | "published", existing?: Opportunity): Opportunity {
@@ -126,19 +129,22 @@ function opportunityInput(value: unknown, calendar: PartnerCalendar, status: "dr
   if (benefits !== undefined && (!Array.isArray(benefits) || benefits.length > 20 || benefits.some(item => typeof item !== "string" || item.length > 300))) throw new CatalogError("Add up to 20 benefits, with no more than 300 characters each.");
   return { id: existing?.id ?? `opp-${randomUUID()}`, title: text(input, "title", 180, true), category: category as CategoryId, calendarId: calendar.id, organizationId: calendar.organizationId, description: text(input, "description", 12000, published), city: text(input, "city", 100, published) || (format === "Online" ? "Online" : "Across Indonesia"), location: text(input, "location", 250, published), format: format as Opportunity["format"], schedule: text(input, "schedule", 180) || formatOpportunitySchedule({ date, endDate, startTime, endTime, timeZone }) || (date ? new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }) : deadline ? `Applications close ${deadline}` : "Explore the program"), date, endDate, startTime, endTime, timeZone, deadline, fee: text(input, "fee", 180, published) || "See organizer", eligibility: text(input, "eligibility", 4000, published), benefits: (benefits as string[] | undefined)?.map(item => item.trim()).filter(Boolean) ?? [], source: webUrl(text(input, "source", 2000), "registration or information link", published), sourceName: calendar.name, actionLabel: text(input, "actionLabel", 80) || "View details & register", image: imageUrl(text(input, "image", 2000)) || calendar.logo, imageFit: text(input, "image", 2000) ? "cover" : "contain", color: calendar.color, publishedAt: published ? existing?.publishedAt ?? new Date().toISOString() : existing?.publishedAt };
 }
-export function saveOpportunity(slug: string, value: unknown, token?: string, id?: string) {
-  const calendar = requireOwner(slug, token);
+export async function saveOpportunity(slug: string, value: unknown, id?: string) {
+  const calendar = await requireOwner(slug);
+  const supabase = await createClient();
   const input = object(value);
   if (!["draft", "published"].includes(String(input.status))) throw new CatalogError("Choose draft or published status.");
   const status = input.status as "draft" | "published";
   let existing: Opportunity | undefined;
   if (id) {
-    const row = db().prepare("SELECT * FROM opportunities WHERE id=? AND calendar_id=?").get(id, calendar.id) as OpportunityRow | undefined;
-    if (!row) throw new CatalogError("Opportunity not found.", 404);
-    existing = JSON.parse(row.data);
+    const { data, error } = await supabase.from("opportunities").select("data").eq("id", id).eq("hub_id", calendar.id).maybeSingle();
+    databaseError(error);
+    if (!data) throw new CatalogError("Opportunity not found.", 404);
+    existing = data.data;
   }
   const opportunity = opportunityInput({ ...existing, ...input }, calendar, status, existing);
   const updatedAt = new Date().toISOString();
-  db().prepare("INSERT INTO opportunities (id,calendar_id,status,updated_at,data) VALUES (?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET status=excluded.status,updated_at=excluded.updated_at,data=excluded.data").run(opportunity.id, calendar.id, status, updatedAt, JSON.stringify(opportunity));
+  const { error } = await supabase.from("opportunities").upsert({ id: opportunity.id, hub_id: calendar.id, organization_id: calendar.organizationId, status, updated_at: updatedAt, data: opportunity });
+  databaseError(error);
   return { ...opportunity, status, updatedAt };
 }

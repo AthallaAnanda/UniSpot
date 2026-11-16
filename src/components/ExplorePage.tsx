@@ -17,9 +17,9 @@ import FilterSidebar, { FilterChoices, FilterGroup } from "./FilterSidebar";
 import CatalogViewToggle from "./CatalogViewToggle";
 import MotionResults from "./MotionResults";
 
-const initial = { q: "", category: "all", location: "all", calendar: "all", format: "all", sort: "soonest", from: "", to: "" };
+const initial = { q: "", category: "all", location: "all", hub: "all", format: "all", sort: "soonest", from: "", to: "" };
 type Filters = typeof initial;
-type ChoiceFilter = "category" | "location" | "calendar" | "format";
+type ChoiceFilter = "category" | "location" | "hub" | "format";
 const selectedValues = (value: string) => value === "all" ? [] : value.split("|").filter(Boolean);
 
 export default function ExplorePage({ savedOnly = false }: { savedOnly?: boolean }) {
@@ -38,7 +38,10 @@ export default function ExplorePage({ savedOnly = false }: { savedOnly?: boolean
     const restore = () => {
       const params = new URLSearchParams(window.location.search);
       const next = { ...initial };
+      if (!params.has("hub") && params.has("calendar")) params.set("hub", params.get("calendar") ?? "all");
+      params.delete("calendar");
       for (const key of Object.keys(initial) as (keyof Filters)[]) next[key] = params.get(key) ?? initial[key];
+      if (window.location.search.includes("calendar=")) window.history.replaceState(window.history.state, "", `${window.location.pathname}${params.toString() ? `?${params}` : ""}${window.location.hash}`);
       setFilters(next);
       setLimit(12);
     };
@@ -73,26 +76,26 @@ export default function ExplorePage({ savedOnly = false }: { savedOnly?: boolean
     const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
     const categoryIds = new Set(selectedValues(filters.category));
     const locations = new Set(selectedValues(filters.location));
-    const calendars = new Set(selectedValues(filters.calendar));
+    const hubs = new Set(selectedValues(filters.hub));
     const formats = new Set(selectedValues(filters.format));
     return searchIndex.filter(({ opportunity, calendarSlug, text }) => {
       const date = opportunity.date ?? opportunity.deadline;
       return (!savedOnly || savedFilterIds.has(opportunity.id)) && terms.every(term => text.includes(term)) &&
         (!categoryIds.size || categoryIds.has(opportunity.category)) && (!locations.size || locations.has(opportunity.city)) &&
-        (!calendars.size || calendars.has(calendarSlug)) && (!formats.size || formats.has(opportunity.format)) &&
+        (!hubs.size || hubs.has(calendarSlug)) && (!formats.size || formats.has(opportunity.format)) &&
         (!filters.from || (!!date && (opportunity.endDate ?? date) >= filters.from)) && (!filters.to || (!!date && date <= filters.to));
     }).map(entry => entry.opportunity).sort((a, b) => filters.sort === "title" ? a.title.localeCompare(b.title) : filters.sort === "newest" ?
       (b.publishedAt ?? "2026-11-04").localeCompare(a.publishedAt ?? "2026-11-04") :
       (a.date ?? a.deadline ?? "9999").localeCompare(b.date ?? b.deadline ?? "9999"));
-  }, [searchIndex, savedFilterIds, savedOnly, query, filters.category, filters.location, filters.calendar, filters.format, filters.from, filters.to, filters.sort]);
+  }, [searchIndex, savedFilterIds, savedOnly, query, filters.category, filters.location, filters.hub, filters.format, filters.from, filters.to, filters.sort]);
 
   const organizationMap = useMemo(() => Object.fromEntries(catalog.organizations.map(organization => [organization.id, organization])), [catalog.organizations]);
   const selectedIndex = selection.selected ? filtered.findIndex(opportunity => opportunity.id === selection.selected!.id) : -1;
   const locations = useMemo(() => [...new Set(catalog.opportunities.map(opportunity => opportunity.city))].sort(), [catalog.opportunities]);
   const visible = useMemo(() => filtered.slice(0, limit), [filtered, limit]);
   const hasFilters = Object.entries(filters).some(([key, value]) => key !== "sort" && value !== initial[key as keyof Filters]);
-  const activeCount = (["category", "location", "calendar", "format"] as ChoiceFilter[]).reduce((count, key) => count + selectedValues(filters[key]).length, 0) + Number(!!filters.q) + Number(!!filters.from || !!filters.to);
-  const resultTransition = JSON.stringify([view, filters.category, filters.location, filters.calendar, filters.format, filters.sort, filters.from, filters.to]);
+  const activeCount = (["category", "location", "hub", "format"] as ChoiceFilter[]).reduce((count, key) => count + selectedValues(filters[key]).length, 0) + Number(!!filters.q) + Number(!!filters.from || !!filters.to);
+  const resultTransition = JSON.stringify([view, filters.category, filters.location, filters.hub, filters.format, filters.sort, filters.from, filters.to]);
   // Opening/closing a detail panel should not reconcile every card beneath it.
   const resultCards = useMemo(() => view === "list" && filters.sort === "soonest" ?
     <EventFeed opportunities={visible} organizations={organizationMap} saved={catalog.saved} onSave={catalog.toggleSave} onOpen={selection.open} /> :
@@ -102,7 +105,7 @@ export default function ExplorePage({ savedOnly = false }: { savedOnly?: boolean
   return <SiteShell wide className="catalog-sidebar-shell">
     <section className="intro-section">
       <h1 className="page-heading">{savedOnly ? "Saved Opportunities" : "Explore Opportunities"}</h1>
-      <p className="intro-description">{savedOnly ? "Your collection of possibilities, all in one place." : "Search every event, scholarship, and program. Find an opportunity, wherever its community calls home."}</p>
+      <p className="intro-description">{savedOnly ? "Your collection of possibilities, all in one place." : "Search every event, scholarship, and program. Find an opportunity from a Hub that feels right."}</p>
     </section>
     <CatalogErrorNotice />
     <div className="catalog-search-layout">
@@ -117,8 +120,8 @@ export default function ExplorePage({ savedOnly = false }: { savedOnly?: boolean
         <FilterGroup title="Location" defaultOpen={filters.location !== "all"} selected={selectedValues(filters.location).length}>
           <FilterChoices label="Filter by location" options={locations.map(location => ({ value: location, label: location }))} selected={selectedValues(filters.location)} onToggle={value => toggle("location", value)} />
         </FilterGroup>
-        <FilterGroup title="Calendar" defaultOpen={filters.calendar !== "all"} selected={selectedValues(filters.calendar).length}>
-          <FilterChoices label="Filter by calendar" options={catalog.calendars.map(calendar => ({ value: calendar.slug, label: calendar.name }))} selected={selectedValues(filters.calendar)} onToggle={value => toggle("calendar", value)} />
+        <FilterGroup title="Hub" defaultOpen={filters.hub !== "all"} selected={selectedValues(filters.hub).length}>
+          <FilterChoices label="Filter by Hub" options={catalog.calendars.map(calendar => ({ value: calendar.slug, label: calendar.name }))} selected={selectedValues(filters.hub)} onToggle={value => toggle("hub", value)} />
         </FilterGroup>
         <FilterGroup title="Format" defaultOpen={filters.format !== "all"} selected={selectedValues(filters.format).length}>
           <FilterChoices label="Filter by format" options={["In person", "Online", "Hybrid", "International"].map(format => ({ value: format, label: format }))} selected={selectedValues(filters.format)} onToggle={value => toggle("format", value)} />
@@ -130,7 +133,7 @@ export default function ExplorePage({ savedOnly = false }: { savedOnly?: boolean
       <section className="section-block explore-results catalog-search-results" aria-labelledby="explore-results-title" aria-busy={catalog.loading || filters.q !== query}>
         <div className="section-heading"><h2 id="explore-results-title"><span aria-live="polite">{filtered.length}</span> {filtered.length === 1 ? "opportunity" : "opportunities"}</h2><CatalogViewToggle view={view} onChange={setView} /></div>
         {filtered.length ? <>
-          <MotionResults transitionKey={resultTransition} view={view}>{resultCards}</MotionResults>
+          <MotionResults transitionKey={resultTransition} appendKey={limit} view={view}>{resultCards}</MotionResults>
           {filtered.length > limit && <div className="load-more"><button type="button" className="secondary-button" onClick={() => setLimit(value => value + 12)}>More opportunities<ArrowDown size={15} /></button></div>}
         </> : <div className="empty-state">
           {savedOnly ? <Bookmark size={48} strokeWidth={1} /> : <Search size={48} strokeWidth={1} />}

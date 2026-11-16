@@ -2,9 +2,10 @@
 
 import { memo, useMemo, useState, type CSSProperties } from "react";
 import Link from "next/link";
-import { CalendarDays, CalendarPlus, Check, ChevronDown, ChevronLeft, ChevronRight, Plus, Search, Settings, X } from "lucide-react";
+import { CalendarDays, CalendarPlus, Check, ChevronDown, ChevronLeft, ChevronRight, Plus, Search, Settings, UsersRound, X } from "lucide-react";
 import { useOpportunitySelection } from "@/hooks/useOpportunitySelection";
 import { isPast } from "@/lib/unispot";
+import { playConfirmation } from "@/lib/motion";
 import type { Opportunity, PartnerCalendar } from "@/types/unispot";
 import { useCatalog } from "./CatalogProvider";
 import EventFeed from "./EventFeed";
@@ -92,8 +93,8 @@ export default function PartnerCalendarPage({ initialCalendar }: { initialCalend
   const [today] = useState(() => dateKey(new Date()));
   const [month, setMonth] = useState(() => new Date(`${today.slice(0, 7)}-01T00:00:00Z`));
   const following = catalog.followed.includes(calendar.id);
-  const canManage = calendar.canManage && !calendar.curated;
-  const calendarPath = `/calendars/${encodeURIComponent(calendar.slug)}`;
+  const canManage = calendar.canManage;
+  const calendarPath = `/hubs/${encodeURIComponent(calendar.slug)}`;
   const opportunities = useMemo(() => catalog.opportunities.filter(opportunity =>
     opportunity.calendarId === calendar.id && (!("status" in opportunity) || opportunity.status === "published")
   ), [catalog.opportunities, calendar.id]);
@@ -124,17 +125,18 @@ export default function PartnerCalendarPage({ initialCalendar }: { initialCalend
       </div>
       <div className="partner-calendar-profile-body">
         <div className="partner-calendar-profile-top">
-          <div className="partner-calendar-avatar">{calendar.logo ? <CatalogImage src={calendar.logo} alt={`${calendar.name} logo`} width={96} height={96} /> : <CalendarDays size={32} aria-hidden="true" />}</div>
-          <button type="button" className={`partner-calendar-follow${following ? " is-following" : ""}`} aria-pressed={following} onClick={() => catalog.toggleFollow(calendar.id)}>
+          <div className="partner-calendar-avatar">{calendar.logo ? <CatalogImage src={calendar.logo} alt={`${calendar.name} logo`} width={96} height={96} /> : <UsersRound size={32} aria-hidden="true" />}</div>
+          <button type="button" className={`partner-calendar-follow${following ? " is-following" : ""}`} aria-pressed={following} onClick={event => { if (!following) playConfirmation(event.currentTarget); catalog.toggleFollow(calendar.id); }}>
             {following ? <Check size={16} aria-hidden="true" /> : <Plus size={16} aria-hidden="true" />}{following ? "Following" : "Follow"}
           </button>
         </div>
         <h1 id="partner-calendar-name">{calendar.name}</h1>
         <p className="partner-calendar-description">{calendar.description}</p>
+        {calendar.curated && <p className="partner-calendar-curation-note">Curated by UniSpot from official sources.</p>}
         <CalendarSocialLinks calendar={calendar} />
         {canManage && <div className="partner-calendar-management">
-          <Link className="partner-calendar-action" href={`${calendarPath}/manage`}><Settings size={15} aria-hidden="true" />Manage calendar</Link>
-          <Link className="partner-calendar-action" href={`/create?calendar=${encodeURIComponent(calendar.slug)}`}><Plus size={15} aria-hidden="true" />Add opportunity</Link>
+          <Link className="partner-calendar-action" href={`${calendarPath}/manage`}><Settings size={15} aria-hidden="true" />Manage Hub</Link>
+          <Link className="partner-calendar-action" href={`/create?hub=${encodeURIComponent(calendar.slug)}`}><Plus size={15} aria-hidden="true" />Add opportunity</Link>
         </div>}
       </div>
     </section>
@@ -146,7 +148,7 @@ export default function PartnerCalendarPage({ initialCalendar }: { initialCalend
           <div className="partner-calendar-periods" role="group" aria-label="Opportunity time period">{periods.map(value => <button key={value} type="button" aria-pressed={period === value} onClick={() => setPeriod(value)}>{value}</button>)}</div>
         </div>
         <div className="partner-calendar-feed-tools">
-          <Link href={`/explore?calendar=${encodeURIComponent(calendar.slug)}`} className="partner-calendar-search"><Search size={14} aria-hidden="true" />Search in this calendar</Link>
+          <Link href={`/explore?hub=${encodeURIComponent(calendar.slug)}`} className="partner-calendar-search"><Search size={14} aria-hidden="true" />Search in this Hub</Link>
           {selectedDate && <div className="partner-calendar-date-filter"><span>{shortDateFormatter.format(new Date(`${selectedDate}T12:00:00Z`))}</span><button type="button" onClick={() => setSelectedDate(null)}><X size={12} aria-hidden="true" />Clear date</button></div>}
         </div>
         {catalog.error && <div className="partner-calendar-error" role="status"><span>{catalog.error}</span><button type="button" onClick={() => void catalog.refresh()} disabled={catalog.loading}>{catalog.loading ? "Retrying…" : "Try again"}</button></div>}
@@ -154,7 +156,7 @@ export default function PartnerCalendarPage({ initialCalendar }: { initialCalend
           {filtered.length > 0 ? <EventFeed opportunities={filtered} organizations={organizationMap} saved={catalog.saved} onSave={catalog.toggleSave} onOpen={selection.open} /> : <div className="partner-calendar-empty" role="status">
             <CalendarDays size={36} strokeWidth={1.25} aria-hidden="true" />
             <h3>{catalog.loading ? "Loading opportunities…" : selectedDate ? "No opportunities on this date" : period === "Past" ? "No past opportunities" : period === "Upcoming" ? "No upcoming opportunities" : "No opportunities yet"}</h3>
-            <p>{selectedDate ? "Choose another date or view everything in this calendar." : period === "Upcoming" && opportunities.length ? "Take a look at past opportunities from this calendar." : "New opportunities will appear here when they’re published."}</p>
+            <p>{selectedDate ? "Choose another date or view everything in this Hub." : period === "Upcoming" && opportunities.length ? "Take a look at past opportunities from this Hub." : "New opportunities will appear here when they’re published."}</p>
             <div className="partner-calendar-empty-actions">
               {selectedDate && <button className="partner-calendar-action" type="button" onClick={() => setSelectedDate(null)}>Clear date</button>}
               {(selectedDate || period !== "All") ? <button className="partner-calendar-action" type="button" onClick={viewAll}>View all opportunities</button> : <Link className="partner-calendar-action" href="/explore">Explore opportunities</Link>}
@@ -163,7 +165,7 @@ export default function PartnerCalendarPage({ initialCalendar }: { initialCalend
         </div>
       </section>
 
-      <aside className="partner-calendar-aside" aria-label="Calendar tools">
+      <aside className="partner-calendar-aside" aria-label="Hub tools">
         <div className="partner-calendar-aside-actions">
           <button type="button" className="partner-calendar-choose-date partner-calendar-action" aria-expanded={datePickerOpen} aria-controls="partner-calendar-date-picker" onClick={() => setDatePickerOpen(open => !open)}><CalendarDays size={15} aria-hidden="true" />Choose date<ChevronDown size={14} aria-hidden="true" /></button>
           <a className="partner-calendar-action partner-calendar-subscribe" href={`/api/calendars/${encodeURIComponent(calendar.slug)}/feed`} download={`${calendar.slug}.ics`}><CalendarPlus size={15} aria-hidden="true" />Add to calendar</a>

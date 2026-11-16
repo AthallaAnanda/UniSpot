@@ -2,18 +2,27 @@
   "name": "unispot",
   "version": "0.1.0",
   "private": true,
-  "engines": { "node": ">=22.13.0" },
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0",
     "build": "next build",
     "start": "next start --hostname 0.0.0.0",
     "typecheck": "tsc --noEmit",
+    "qa:auth": "playwright test",
+    "export:catalog": "tsx scripts/export-catalog.ts",
+    "verify:catalog": "node --env-file=.env.local scripts/verify-catalog.mjs",
+    "qa:landing": "node --test scripts/check-landing.mjs",
     "assets": "node scripts/prepare-unispot.mjs",
+    "assets:landing": "node scripts/prepare-landing-media.mjs",
     "assets:reference": "node scripts/download-assets.mjs",
     "assets:components": "node scripts/archive-luma-components.mjs",
     "qa:reference": "python scripts/visual-diff.py"
   },
   "dependencies": {
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.119.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
@@ -24,11 +33,13 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "1.65.1",
     "@tailwindcss/postcss": "^4.1.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "tailwindcss": "^4.1.0",
+    "tsx": "4.23.15",
     "typescript": "^5.9.0"
   }
 }

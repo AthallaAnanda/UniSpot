@@ -1,0 +1,6 @@
+-- Hosted migration history: a short-lived transfer function accepted only the
+-- exact SHA-256-pinned client export below, inserting missing public records.
+-- It was removed immediately in 20261116073320. It is deliberately not recreated
+-- when bootstrapping a new environment; use scripts/import-catalog.mjs instead.
+-- Export SHA-256: c42ebcf8d4e1c62e2c7a590900ff216d9066188422f84b4b9ce2d8c74b78e6e4
+-- Imported organizations: 16; Hubs: 8; opportunities: 31. No account data.

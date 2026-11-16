@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 537 484" fill="none">
+  <title>Find your Hub on UniSpot</title>
+  <desc>Explore existing student and community Hubs, or create a Hub of your own.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="537" y2="484" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2F7"/>
+      <stop offset="1" stop-color="#FFE7F0"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="190" y1="160" x2="340" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D62BA7"/>
+      <stop offset="1" stop-color="#AF176C"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="537" height="484" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".10"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="537" height="484" rx="28" fill="url(#background)"/>
+  <circle cx="268.5" cy="242" r="164" stroke="#ECA9C9" stroke-width="2" stroke-dasharray="5 8"/>
+  <circle cx="268.5" cy="242" r="118" stroke="#F4C7DA" stroke-width="1.5" stroke-dasharray="4 8"/>
+
+  <g filter="url(#shadow)" font-family="Arial, sans-serif" text-anchor="middle">
+    <g>
+      <rect x="198" y="24" width="141" height="62" rx="31" fill="white"/>
+      <circle cx="230" cy="55" r="20" fill="#EEF4FF"/>
+      <image href="hub-logo:gdg" x="215" y="40" width="30" height="30"/>
+      <text x="287" y="61" fill="#342332" font-size="20" font-weight="700">GDG</text>
+    </g>
+    <g>
+      <rect x="359" y="112" width="147" height="62" rx="31" fill="white"/>
+      <circle cx="391" cy="143" r="20" fill="#EEF2FA"/>
+      <image href="hub-logo:lpdp" x="376" y="128" width="30" height="30" preserveAspectRatio="xMidYMid meet"/>
+      <text x="448" y="150" fill="#342332" font-size="19" font-weight="700">LPDP</text>
+    </g>
+    <g>
+      <rect x="370" y="280" width="137" height="62" rx="31" fill="white"/>
+      <circle cx="402" cy="311" r="20" fill="#E9F3FC"/>
+      <image href="hub-logo:itb" x="387" y="296" width="30" height="30" preserveAspectRatio="xMidYMid meet"/>
+      <text x="459" y="318" fill="#342332" font-size="20" font-weight="700">ITB</text>
+    </g>
+    <g>
+      <rect x="176" y="397" width="185" height="62" rx="31" fill="white"/>
+      <circle cx="208" cy="428" r="20" fill="#FFF0F1"/>
+      <image href="hub-logo:indorelawan" x="193" y="413" width="30" height="30" preserveAspectRatio="xMidYMid meet"/>
+      <text x="283" y="434" fill="#342332" font-size="17" font-weight="700">Indorelawan</text>
+    </g>
+    <g>
+      <rect x="30" y="280" width="137" height="62" rx="31" fill="white"/>
+      <circle cx="62" cy="311" r="20" fill="#EAF8FC"/>
+      <image href="hub-logo:kaggle" x="47" y="296" width="30" height="30" preserveAspectRatio="xMidYMid meet"/>
+      <text x="119" y="318" fill="#342332" font-size="18" font-weight="700">Kaggle</text>
+    </g>
+    <g>
+      <rect x="31" y="112" width="147" height="62" rx="31" fill="white"/>
+      <circle cx="63" cy="143" r="20" fill="#F6EAF3"/>
+      <path d="M63 134v18m-9-9h18" stroke="#B71978" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="121" y="149" fill="#87275E" font-size="18" font-weight="700">Your Hub</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="168" y="171" width="201" height="142" rx="27" fill="white"/>
+    <circle cx="268.5" cy="211" r="25" fill="url(#accent)"/>
+    <circle cx="268.5" cy="207" r="5" fill="white"/>
+    <circle cx="257" cy="219" r="3.5" fill="white"/>
+    <circle cx="280" cy="219" r="3.5" fill="white"/>
+    <path d="m263 211-4 5m15-5 4 5" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="268.5" y="258" fill="#352331" font-family="Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">Find your</text>
+    <text x="268.5" y="284" fill="#B71978" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">community</text>
+  </g>
+</svg>

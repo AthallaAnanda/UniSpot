@@ -208,3 +208,4 @@
 
 @media(max-width:650px) { .site-header .header-navigation { justify-self:center;gap:16px; }.site-header .header-inner { padding-inline:12px;gap:10px; } }
 @media(max-width:359px) { .site-header .header-navigation { gap:9px; }.site-header .nav-item { font-size:11px;gap:3px; }.site-header .header-inner { padding-inline:10px;gap:6px; } }
+.header-auth-links{display:flex;align-items:center;gap:12px;font-size:13px}.header-login{color:#555}.header-signup{padding:7px 12px;border-radius:8px;background:#bb267e;color:#fff}.header-signup:hover{background:#a4206d}.header-auth-loading{width:70px;height:28px;background:#15151505;border-radius:8px}.header-account-identity>div{min-width:0}.header-account-identity span{max-width:190px;overflow:hidden;text-overflow:ellipsis}.header-account-menu-item{cursor:pointer}@media(max-width:600px){.header-auth-links{gap:8px;font-size:12px}.header-signup{padding:7px 9px}}

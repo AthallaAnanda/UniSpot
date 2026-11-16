@@ -1,6 +1,9 @@
 "use client";
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
-import { calendarOrganization, seedCatalog } from "@/lib/catalog-seed";
+import { calendarOrganization } from "@/lib/catalog-seed";
+import { useRouter } from "next/navigation";
+import { loginUrl } from "@/lib/auth";
+import { useAuth } from "./AuthProvider";
 import type { CatalogData, ManagedOpportunity, Opportunity, PartnerCalendar } from "@/types/unispot";
 import MotionToast from "./MotionToast";
 
@@ -17,10 +20,8 @@ interface CatalogContextValue extends CatalogData {
   notify: (message: string) => void;
 }
 const CatalogContext = createContext<CatalogContextValue | null>(null);
-const keys = { saved: "unispot-saved-opportunities", followed: "unispot-followed-calendars" };
 const catalogUpdateKey = "unispot-catalog-updated";
 const focusFreshnessMs = 30_000;
-const sameIds = (left: string[], right: string[]) => left.length === right.length && left.every((id, index) => id === right[index]);
 function reuseRecords<T extends { id: string }>(previous: T[], next: T[]): T[] {
   const byId = new Map(previous.map(record => [record.id, record]));
   const records = next.map(record => {
@@ -29,17 +30,14 @@ function reuseRecords<T extends { id: string }>(previous: T[], next: T[]): T[] {
   });
   return records.length === previous.length && records.every((record, index) => record === previous[index]) ? previous : records;
 }
-function readCollection(key: string) {
-  try { const value: unknown = JSON.parse(localStorage.getItem(key) ?? "[]"); return Array.isArray(value) ? [...new Set(value.filter((id): id is string => typeof id === "string"))] : []; } catch { return []; }
-}
 export function CatalogProvider({ children }: { children: React.ReactNode }) {
-  const [catalog, setCatalog] = useState<CatalogData>(seedCatalog);
+  const auth = useAuth();
+  const { user, saved, followed, setCollection } = auth;
+  const router = useRouter();
+  const [catalog, setCatalog] = useState<CatalogData>({ organizations: [], calendars: [], opportunities: [] });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [saved, setSaved] = useState<string[]>([]);
-  const [followed, setFollowed] = useState<string[]>([]);
-  const savedRef = useRef<string[]>([]);
-  const followedRef = useRef<string[]>([]);
+  const pendingCollections = useRef(new Set<string>());
   const [toast, setToast] = useState("");
   const requestId = useRef(0);
   const inFlight = useRef<{ controller: AbortController; promise: Promise<void> } | null>(null);
@@ -104,43 +102,33 @@ export function CatalogProvider({ children }: { children: React.ReactNode }) {
     announceMutation();
   }, [announceMutation]);
   useEffect(() => {
-    savedRef.current = readCollection(keys.saved);
-    followedRef.current = readCollection(keys.followed);
-    setSaved(savedRef.current);
-    setFollowed(followedRef.current);
     void refresh();
-    const collections = () => {
-      const nextSaved = readCollection(keys.saved), nextFollowed = readCollection(keys.followed);
-      savedRef.current = nextSaved;
-      followedRef.current = nextFollowed;
-      setSaved(previous => sameIds(previous, nextSaved) ? previous : nextSaved);
-      setFollowed(previous => sameIds(previous, nextFollowed) ? previous : nextFollowed);
-    };
-    const storage = (event: StorageEvent) => { collections(); if (event.key === catalogUpdateKey || event.key === null) void refresh(); };
-    const focus = () => { collections(); if (Date.now() - lastSuccess.current >= focusFreshnessMs) void refresh(); };
+    const storage = (event: StorageEvent) => { if (event.key === catalogUpdateKey || event.key === null) void refresh(); };
+    const focus = () => { if (Date.now() - lastSuccess.current >= focusFreshnessMs) void refresh(); };
     window.addEventListener("storage", storage);
     window.addEventListener("focus", focus);
     return () => { invalidateRequest(); window.removeEventListener("storage", storage); window.removeEventListener("focus", focus); };
   }, [refresh, invalidateRequest]);
+  useEffect(() => {
+    invalidateRequest();
+    lastPayload.current = null;
+    setCatalog(previous => ({ ...previous, calendars: previous.calendars.map(calendar => ({ ...calendar, canManage: false })) }));
+    void refresh();
+  }, [user?.id, refresh, invalidateRequest]);
   useEffect(() => { if (!toast) return; const timer = setTimeout(() => setToast(""), 3500); return () => clearTimeout(timer); }, [toast]);
-  const toggleSave = useCallback((opportunity: Opportunity) => {
-    const current = savedRef.current;
-    const exists = current.includes(opportunity.id);
-    const next = exists ? current.filter(id => id !== opportunity.id) : [...current, opportunity.id];
-    savedRef.current = next;
-    setSaved(next);
-    try { localStorage.setItem(keys.saved, JSON.stringify(next)); setToast(exists ? "Removed from saved opportunities." : "Opportunity saved."); }
-    catch { setToast(exists ? "Removed from saved opportunities." : "Saved for this visit."); }
-  }, []);
-  const toggleFollow = useCallback((id: string) => {
-    const current = followedRef.current;
-    const exists = current.includes(id);
-    const next = exists ? current.filter(item => item !== id) : [...current, id];
-    followedRef.current = next;
-    setFollowed(next);
-    try { localStorage.setItem(keys.followed, JSON.stringify(next)); setToast(exists ? "Calendar unfollowed." : "Calendar added to Following."); }
-    catch { setToast(exists ? "Calendar unfollowed." : "Following for this visit."); }
-  }, []);
+  const toggleCollection = useCallback((kind: "saved" | "followed", id: string) => {
+    if (!user) { router.push(loginUrl(window.location.pathname + window.location.search)); return; }
+    if (auth.loading || auth.error) { setToast("Your account is still loading. Please try again."); return; }
+    const key = `${user.id}:${kind}:${id}`;
+    if (pendingCollections.current.has(key)) return;
+    pendingCollections.current.add(key);
+    const exists = (kind === "saved" ? saved : followed).includes(id);
+    void setCollection(kind, id, !exists).then(() => {
+      setToast(kind === "saved" ? exists ? "Removed from saved opportunities." : "Opportunity saved." : exists ? "Hub unfollowed." : "Hub added to Following.");
+    }).catch(problem => setToast(problem instanceof Error ? problem.message : "Couldn’t update your collection.")).finally(() => pendingCollections.current.delete(key));
+  }, [user, auth.loading, auth.error, router, saved, followed, setCollection]);
+  const toggleSave = useCallback((opportunity: Opportunity) => toggleCollection("saved", opportunity.id), [toggleCollection]);
+  const toggleFollow = useCallback((id: string) => toggleCollection("followed", id), [toggleCollection]);
   // Toast-only changes should not rerender the entire catalog underneath an animation.
   const value = useMemo(() => ({ ...catalog, loading, error, refresh, commitCalendar, commitOpportunity, saved, followed, toggleSave, toggleFollow, notify: setToast }), [catalog, loading, error, refresh, commitCalendar, commitOpportunity, saved, followed, toggleSave, toggleFollow]);
   return <CatalogContext.Provider value={value}>{children}<MotionToast message={toast} onDismiss={() => setToast("")} /></CatalogContext.Provider>;

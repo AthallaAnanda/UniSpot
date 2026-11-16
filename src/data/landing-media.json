@@ -1,0 +1,134 @@
+{
+  "license": "https://www.pexels.com/license/",
+  "reviewedAt": "2026-11-15",
+  "stories": [
+    {
+      "label": "Discover",
+      "description": "Students exploring campus together with books and backpacks",
+      "src": "/assets/unispot/landing/discover-hd.mp4",
+      "poster": "/assets/unispot/landing/discover-hd-poster.webp",
+      "source": "https://www.pexels.com/video/group-of-students-walking-outdoors-7683346/",
+      "download": "https://videos.pexels.com/video-files/7683346/7683346-hd_1080_1920_30fps.mp4",
+      "creator": "RDNE Stock project",
+      "start": 0,
+      "duration": 8,
+      "cropX": 0.5
+    },
+    {
+      "label": "Join",
+      "description": "College students sharing books and a conversation outside a campus building",
+      "src": "/assets/unispot/landing/join-hd.mp4",
+      "poster": "/assets/unispot/landing/join-hd-poster.webp",
+      "source": "https://www.pexels.com/video/college-students-having-fun-discussing-7683858/",
+      "download": "https://videos.pexels.com/video-files/7683858/7683858-hd_1920_1080_30fps.mp4",
+      "creator": "RDNE Stock project",
+      "start": 0,
+      "duration": 8,
+      "cropX": 0.6
+    },
+    {
+      "label": "Grow",
+      "description": "Students collaborating on their studies with a laptop outdoors",
+      "src": "/assets/unispot/landing/grow-hd.mp4",
+      "poster": "/assets/unispot/landing/grow-hd-poster.webp",
+      "source": "https://www.pexels.com/video/a-group-of-students-using-a-laptop-on-their-studies-6146484/",
+      "download": "https://videos.pexels.com/video-files/6146484/6146484-uhd_1440_2560_24fps.mp4",
+      "creator": "Keira Burton",
+      "start": 1,
+      "duration": 8,
+      "cropX": 0.5
+    },
+    {
+      "label": "Belong",
+      "description": "Two college friends celebrating with a high-five on campus",
+      "src": "/assets/unispot/landing/belong-hd.mp4",
+      "poster": "/assets/unispot/landing/belong-hd-poster.webp",
+      "source": "https://www.pexels.com/video/two-women-doing-high-five-5535726/",
+      "download": "https://videos.pexels.com/video-files/5535726/5535726-uhd_2560_1440_25fps.mp4",
+      "creator": "Zen Chung",
+      "start": 0,
+      "duration": 4,
+      "cropX": 0.5
+    },
+    {
+      "label": "MissionLibrary",
+      "description": "Students reading in a sunlit library",
+      "src": "/assets/unispot/landing/mission-library-hd.mp4",
+      "poster": "/assets/unispot/landing/mission-library-hd-poster.webp",
+      "source": "https://www.pexels.com/video/students-in-the-library-8567035/",
+      "download": "https://videos.pexels.com/video-files/8567035/8567035-uhd_1440_2732_25fps.mp4",
+      "creator": "cottonbro studio", "start": 0, "duration": 8, "cropX": 0.5
+    },
+    {
+      "label": "Community",
+      "description": "Students discussing books in a library",
+      "src": "/assets/unispot/landing/community-hd.mp4",
+      "poster": "/assets/unispot/landing/community-hd-poster.webp",
+      "source": "https://www.pexels.com/video/students-talking-in-library-8199379/",
+      "download": "https://videos.pexels.com/video-files/8199379/8199379-hd_1920_1080_25fps.mp4",
+      "creator": "Yan Krukau", "start": 0, "duration": 8, "cropX": 0.5
+    },
+    {
+      "label": "Learning",
+      "description": "Students collaborating on assignments outdoors",
+      "src": "/assets/unispot/landing/learning-hd.mp4",
+      "poster": "/assets/unispot/landing/learning-hd-poster.webp",
+      "source": "https://www.pexels.com/video/students-reviewing-on-the-table-5962956/",
+      "download": "https://videos.pexels.com/video-files/5962956/5962956-uhd_1440_2560_24fps.mp4",
+      "creator": "Charlotte May", "start": 0, "duration": 8, "cropX": 0.5
+    },
+    {
+      "label": "Collaboration",
+      "description": "Young people studying with a laptop on campus steps",
+      "src": "/assets/unispot/landing/collaboration-hd.mp4",
+      "poster": "/assets/unispot/landing/collaboration-hd-poster.webp",
+      "source": "https://www.pexels.com/video/young-people-using-laptop-outdoors-6145955/",
+      "download": "https://videos.pexels.com/video-files/6145955/6145955-uhd_1440_2560_24fps.mp4",
+      "creator": "Keira Burton", "start": 0, "duration": 8, "cropX": 0.5
+    }
+  ],
+  "images": {
+    "mission": {
+      "src": "/assets/unispot/landing/mission-campus-student.webp",
+      "alt": "A student holding a tablet outdoors on campus in West Java",
+      "interimSource": "https://www.pexels.com/photo/young-adult-holding-tablet-in-campus-setting-outdoors-40551009/",
+      "download": "https://images.pexels.com/photos/40551009/pexels-photo-40551009.jpeg?cs=srgb&dl=pexels-irma-sjachlan-2157444897-40551009.jpg&fm=jpg",
+      "creator": "Irma Sjachlan",
+      "generate": "Indonesian university students discussing around a laptop in a welcoming campus courtyard. Candid interaction, shared curiosity, natural daylight."
+    },
+    "events": {
+      "src": "/assets/unispot/landing/category-events-forum-1708936.webp",
+      "alt": "A speaker presenting to a large audience in an auditorium",
+      "interimSource": "https://www.pexels.com/photo/man-standing-in-front-of-people-sitting-on-red-chairs-1708936/",
+      "download": "https://images.pexels.com/photos/1708936/pexels-photo-1708936.jpeg?cs=srgb&dl=pexels-icsa-833425-1708936.jpg&fm=jpg",
+      "creator": "ICSA",
+      "generate": "A busy technology forum in a large venue, a speaker on stage presenting to an engaged audience."
+    },
+    "scholarships": {
+      "src": "/assets/unispot/landing/category-scholarships-9158776.webp",
+      "alt": "Students writing and studying together in a library",
+      "interimSource": "https://www.pexels.com/photo/man-and-woman-in-the-library-9158776/",
+      "download": "https://images.pexels.com/photos/9158776/pexels-photo-9158776.jpeg?cs=srgb&dl=pexels-mikhail-nilov-9158776.jpg&fm=jpg",
+      "creator": "Mikhail Nilov",
+      "generate": "An Indonesian university student preparing a scholarship application in a bright library, with a laptop, notebook and application documents. Thoughtful and optimistic."
+    },
+    "career": {
+      "src": "/assets/unispot/landing/category-career-collaboration-34774358.webp",
+      "alt": "Participants working together on laptops at a technology workshop",
+      "interimSource": "https://www.pexels.com/photo/focused-team-collaborating-on-laptops-in-office-setting-34774358/",
+      "download": "https://images.pexels.com/photos/34774358/pexels-photo-34774358.jpeg?cs=srgb&dl=pexels-bertellifotografia-34774358.jpg&fm=jpg",
+      "creator": "Matheus Bertelli",
+      "license": "https://www.pexels.com/license/",
+      "changes": "Resized and converted to WebP",
+      "generate": "A busy hackathon with many teams of university students collaborating on software projects at tables with laptops."
+    },
+    "volunteering": {
+      "src": "/assets/unispot/landing/category-volunteering-39038090.webp",
+      "alt": "Two volunteers collecting litter together in a park",
+      "interimSource": "https://www.pexels.com/photo/volunteers-clean-up-park-environmental-awareness-39038090/",
+      "download": "https://images.pexels.com/photos/39038090/pexels-photo-39038090.jpeg?cs=srgb&dl=pexels-capturedbynadim-39038090.jpg&fm=jpg",
+      "creator": "Captured by Nadim",
+      "generate": "Indonesian university volunteers working together on a community environmental project, planting seedlings or collecting litter. Active participation rather than a posed group portrait."
+    }
+  }
+}

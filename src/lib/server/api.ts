@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { CatalogError, ownerCookie } from "./catalog-store";
+import { CatalogError } from "./catalog-store";
 
 export function apiError(error: unknown) {
   if (error instanceof CatalogError) return NextResponse.json({ error: error.message }, { status: error.status });
@@ -7,7 +7,6 @@ export function apiError(error: unknown) {
   console.error("UniSpot API error", error);
   return NextResponse.json({ error: "We couldn’t save your changes. Please try again." }, { status: 500 });
 }
-export function ownerToken(request: NextRequest) { return request.cookies.get(ownerCookie)?.value; }
 export function checkOrigin(request: NextRequest) {
   const origin = request.headers.get("origin");
   if (origin && new URL(origin).host !== request.headers.get("host")) throw new CatalogError("This action must be made from UniSpot.", 403);

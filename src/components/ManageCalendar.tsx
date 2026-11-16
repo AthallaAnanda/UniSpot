@@ -71,8 +71,8 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
   const openedFromLink = useRef(false);
   const apiBase = `/api/calendars/${encodeURIComponent(initialCalendar.slug)}`;
   const calendar = manager?.calendar ?? initialCalendar;
-  const publicUrl = `/calendars/${encodeURIComponent(calendar.slug)}`;
-  const createUrl = `/create?calendar=${encodeURIComponent(initialCalendar.slug)}`;
+  const publicUrl = `/hubs/${encodeURIComponent(calendar.slug)}`;
+  const createUrl = `/create?hub=${encodeURIComponent(initialCalendar.slug)}`;
 
   const loadManager = useCallback(async (background = false) => {
     loadingRequest.current?.abort();
@@ -83,7 +83,7 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
     try {
       const response = await fetch(`${apiBase}/manage`, { cache: "no-store", signal: controller.signal });
       const data = await readResponse<ManagerData>(response);
-      if (!data.calendar || !Array.isArray(data.opportunities)) throw new Error("Couldn’t load calendar management. Please try again.");
+      if (!data.calendar || !Array.isArray(data.opportunities)) throw new Error("Couldn’t load Hub management. Please try again.");
       if (controller.signal.aborted) return;
       setManager(data);
       setForbidden(false);
@@ -94,7 +94,7 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
         setManager(null);
         setEditorOpen(false);
       }
-      setLoadError(problem instanceof Error ? problem.message : "Couldn’t load this calendar. Please try again.");
+      setLoadError(problem instanceof Error ? problem.message : "Couldn’t load this Hub. Please try again.");
     } finally {
       if (!controller.signal.aborted) setLoading(false);
     }
@@ -214,17 +214,17 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
 
   return <SiteShell className="calendar-publishing-shell">
     <section className="calendar-publishing-page">
-      <Link href={publicUrl} className="calendar-publishing-back"><ArrowLeft size={16} aria-hidden="true" />View calendar</Link>
+      <Link href={publicUrl} className="calendar-publishing-back"><ArrowLeft size={16} aria-hidden="true" />View Hub</Link>
       <header className="calendar-publishing-heading calendar-publishing-heading-row">
-        <div><p className="calendar-publishing-eyebrow">Manage calendar</p><h1>{calendar.name}</h1></div>
+        <div><p className="calendar-publishing-eyebrow">Manage Hub</p><h1>{calendar.name}</h1></div>
         {manager && !forbidden && <button type="button" className="calendar-publishing-button calendar-publishing-primary" disabled={!!pending || loading} onClick={() => router.push(createUrl)}><Plus size={16} aria-hidden="true" />New opportunity</button>}
       </header>
 
-      {loading && <div className="calendar-publishing-card calendar-publishing-state" role="status">Loading calendar management…</div>}
+      {loading && <div className="calendar-publishing-card calendar-publishing-state" role="status">Loading Hub management…</div>}
       {forbidden ? <div className="calendar-publishing-card calendar-publishing-state">
-        <h2>Cannot manage this calendar</h2>
-        <p className="calendar-publishing-error" role="alert">{actionError || loadError || "This calendar can only be managed by its owner."}</p>
-        <Link href={publicUrl} className="calendar-publishing-button">View calendar<ArrowUpRight size={16} aria-hidden="true" /></Link>
+        <h2>Cannot manage this Hub</h2>
+         <p className="calendar-publishing-error" role="alert">{actionError || loadError || "This Hub can only be managed by its owner."}</p>
+        <Link href={publicUrl} className="calendar-publishing-button">View Hub<ArrowUpRight size={16} aria-hidden="true" /></Link>
       </div> : <>
         {loadError && <div className="calendar-publishing-error calendar-publishing-retry" role="alert"><span>{loadError}</span><button type="button" className="calendar-publishing-button" disabled={loading || !!pending} onClick={() => void loadManager()}>Retry</button></div>}
         {actionError && !editorOpen && <p className="calendar-publishing-error" role="alert">{actionError}</p>}
@@ -313,7 +313,7 @@ export default function ManageCalendar({ initialCalendar }: { initialCalendar: P
               <div className="calendar-publishing-field calendar-publishing-full">
                 <label htmlFor="opportunity-image">Image URL <span className="calendar-publishing-optional">Optional</span></label>
                 <input id="opportunity-image" name="image" type="url" pattern="https?://.*" value={fields.image} maxLength={2000} aria-describedby="opportunity-image-hint" onChange={event => update("image", event.target.value)} />
-                <p id="opportunity-image-hint" className="calendar-publishing-hint">Leave blank to use your calendar’s logo.</p>
+                <p id="opportunity-image-hint" className="calendar-publishing-hint">Leave blank to use your Hub’s logo.</p>
               </div>
             </fieldset>
             {actionError && <p className="calendar-publishing-error" role="alert">{actionError}</p>}

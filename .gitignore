@@ -1,5 +1,14 @@
 node_modules/
 .next/
 .env*
+!.env.example
 *.tsbuildinfo
 data/*.sqlite*
+.playwright-mcp/
+test-results/
+playwright-report/
+.vercel/
+supabase/.temp/
+.agents/
+skills-lock.json
+.local/

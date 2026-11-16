@@ -1,3 +1,4 @@
 import AccountPage from "@/components/AccountPage";
+import { requirePageUser } from "@/lib/server/auth";
 
-export default function Page() { return <AccountPage />; }
+export default async function Page() { await requirePageUser("/account"); return <AccountPage />; }

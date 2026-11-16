@@ -34,7 +34,7 @@ export default function CreateOpportunity() {
   const hasLocation = !!fields.city.trim() && !!fields.location.trim();
   const isEvent = fields.category === "events";
 
-  useEffect(() => { setCalendarSlug(new URLSearchParams(window.location.search).get("calendar") || ""); }, []);
+  useEffect(() => { const params = new URLSearchParams(window.location.search); setCalendarSlug(params.get("hub") || params.get("calendar") || ""); }, []);
 
   const update = useCallback((key: keyof typeof fields, value: string) => { setFields(previous => ({ ...previous, [key]: value })); }, []);
   const changeTimeZone = useCallback((zone: string) => update("timeZone", zone), [update]);
@@ -51,7 +51,7 @@ export default function CreateOpportunity() {
 
   async function save(status: "draft" | "published") {
     if (submitting.current) return;
-    if (!selected) { setError("Choose a calendar to save your opportunity."); return; }
+    if (!selected) { setError("Choose a Hub to save your opportunity."); return; }
     if (!fields.title.trim()) { titleInput.current?.focus(); setError("Give your opportunity a name first."); return; }
     if (status === "published" && !hasLocation) { setError("Add a city and location before publishing."); openLocation(); return; }
     if (status === "published" && !fields.description.trim()) { setError("Add a description before publishing."); openDescription(); return; }
@@ -71,7 +71,7 @@ export default function CreateOpportunity() {
       });
       const data = await response.json().catch(() => null) as { opportunity?: ManagedOpportunity; error?: string } | null;
       if (!response.ok) throw new Error(data?.error || "Couldn’t save your opportunity. Please try again.");
-      if (!data?.opportunity?.id) throw new Error("The server returned an incomplete response. Check your calendar before trying again.");
+      if (!data?.opportunity?.id) throw new Error("The server returned an incomplete response. Check your Hub before trying again.");
       opportunity = data.opportunity;
     } catch (problem) {
       setError(problem instanceof Error ? problem.message : "Couldn’t save your opportunity.");
@@ -82,7 +82,7 @@ export default function CreateOpportunity() {
     // Apply the server-confirmed result immediately; refresh continues in the background.
     commitOpportunity(opportunity);
     notify(status === "draft" ? "Draft saved." : "Opportunity published.");
-    router.push(status === "published" ? `/opportunities/${encodeURIComponent(opportunity.id)}` : `/calendars/${encodeURIComponent(selected.slug)}/manage`);
+    router.push(status === "published" ? `/opportunities/${encodeURIComponent(opportunity.id)}` : `/hubs/${encodeURIComponent(selected.slug)}/manage`);
   }
 
   function publish(event: FormEvent<HTMLFormElement>) { event.preventDefault(); void save("published"); }
@@ -102,8 +102,8 @@ export default function CreateOpportunity() {
           </aside>
 
           <div className="opportunity-builder-main">
-            <div className="opportunity-builder-topline"><label className="opportunity-calendar-picker"><CalendarDays size={15} /><span className="sr-only">Choose calendar</span><select value={selected?.slug || ""} onChange={event => setCalendarSlug(event.target.value)} disabled={!managed.length}><option value="" disabled>{loading ? "Loading…" : "Choose calendar"}</option>{managed.map((calendar: PartnerCalendar) => <option value={calendar.slug} key={calendar.id}>{calendar.name}</option>)}</select><ChevronDown size={13} /></label><span className="opportunity-visibility" title="Drafts are private. Only published opportunities are public."><Globe2 size={14} />Public</span></div>
-            {!loading && !managed.length && <div className="opportunity-calendar-notice">{catalogError ? <><span>Couldn’t load your calendars.</span><button type="button" onClick={() => void refresh()}>Try again</button></> : <><span>Create a calendar to start sharing.</span><Link href="/calendars/new"><Plus size={13} />Create calendar</Link></>}</div>}
+            <div className="opportunity-builder-topline"><label className="opportunity-calendar-picker"><UsersRound size={15} /><span className="sr-only">Choose Hub</span><select value={selected?.slug || ""} onChange={event => setCalendarSlug(event.target.value)} disabled={!managed.length}><option value="" disabled>{loading ? "Loading…" : "Choose a Hub"}</option>{managed.map((calendar: PartnerCalendar) => <option value={calendar.slug} key={calendar.id}>{calendar.name}</option>)}</select><ChevronDown size={13} /></label><span className="opportunity-visibility" title="Drafts are private. Only published opportunities are public."><Globe2 size={14} />Public</span></div>
+            {!loading && !managed.length && <div className="opportunity-calendar-notice">{catalogError ? <><span>Couldn’t load your Hubs.</span><button type="button" onClick={() => void refresh()}>Try again</button></> : <><span>Create a Hub to start sharing.</span><Link href="/hubs/new"><Plus size={13} />Create a Hub</Link></>}</div>}
             <label className="sr-only" htmlFor="create-title">Opportunity name</label><input ref={titleInput} id="create-title" className="opportunity-builder-title" placeholder="Opportunity name" maxLength={180} value={fields.title} onChange={event => update("title", event.target.value)} required />
 
             <div className="publishing-option-group opportunity-category"><div className="publishing-option-row"><Sparkles size={17} /><label htmlFor="create-category">Category</label><select id="create-category" value={fields.category} onChange={event => update("category", event.target.value)}>{categories.map(category => <option key={category.id} value={category.id}>{category.name}</option>)}</select></div></div>

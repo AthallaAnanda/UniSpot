@@ -1,0 +1,10 @@
+project_id = "unispot"
+
+[auth]
+site_url = "https://unispot-ten.vercel.app"
+additional_redirect_urls = ["http://localhost:3000/auth/callback", "http://localhost:3000/auth/callback?next=*", "https://unispot-ten.vercel.app/auth/callback", "https://unispot-ten.vercel.app/auth/callback?next=*"]
+minimum_password_length = 8
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true

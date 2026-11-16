@@ -17,5 +17,5 @@ export const seedCatalog: CatalogData = {
 };
 
 export function calendarOrganization(calendar: PartnerCalendar) {
-  return { id: calendar.organizationId, name: calendar.name, description: calendar.description, topic: "Community calendar", url: calendar.website || `/calendars/${calendar.slug}`, logo: calendar.logo, logoSource: calendar.logo, calendarSlug: calendar.slug };
+  return { id: calendar.organizationId, name: calendar.name, description: calendar.description, topic: "Community Hub", url: calendar.website || `/hubs/${calendar.slug}`, logo: calendar.logo, logoSource: calendar.logo, calendarSlug: calendar.slug };
 }

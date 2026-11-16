@@ -130,6 +130,17 @@
   overflow-wrap: anywhere;
 }
 
+.partner-calendar-curation-note {
+  display: inline-flex;
+  width: fit-content;
+  margin: 0 0 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f9ebf2;
+  color: #873266;
+  line-height: 20px;
+}
+
 .partner-calendar-management {
   display: flex;
   flex-wrap: wrap;

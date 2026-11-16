@@ -6,14 +6,16 @@ An English-language discovery platform for students across Indonesia: events, sc
 
 ## Run
 
-Use **Node.js 22.13 or newer**. Calendar publishing uses Node’s built-in SQLite database.
+Use **Node.js 22.x**. Authentication and durable application storage use Supabase.
 
 ```bash
 npm install
+cp .env.example .env.local
+# Fill the Supabase URL and publishable key in .env.local.
 npm run dev
 ```
 
-Open **http://localhost:3000** or **http://localhost:3000/discover**.
+Open **http://localhost:3000** for the UniSpot landing page, or **http://localhost:3000/discover** for the featured opportunity overview.
 
 ```bash
 npm run build
@@ -24,61 +26,70 @@ npm start
 ## Product experience
 
 - Original UniSpot vector logo, matching favicon, and magenta/coral/orange brand palette.
+- The landing page preserves the Ugency template's original Framer layout, typography, colors, responsive wrappers, and interactions, with UniSpot branding/content and locally hosted replacement photos/videos.
 - Locally hosted Inter variable font and measured Luma-style typography:16px body,20px feed-card titles, normal letter spacing, and exact squircle geometry.
 - Seventeen sourced opportunities in eight categories, with real organizer links and local imagery.
 - **Discover** is a featured overview with category and location navigation.
-- **Explore** is the searchable catalog: a left sidebar for keywords, category, location, calendar, format, date range, and sorting, with progressive results on the right. Checkbox groups support multiple selections.
-- Saved opportunities and followed calendars persisted in browser local storage.
+- **Explore** is the searchable catalog: a left sidebar for keywords, category, location, Hub, format, date range, and sorting, with progressive results on the right. Checkbox groups support multiple selections.
+- Email/password login and signup, confirmation/resend, password recovery, and provider-ready Google, Apple and X / Twitter sign-in.
+- Profiles, saved opportunities and followed Hubs are persisted per account in Supabase.
 - Shareable filter and opportunity URLs.
 - Right-side550px event panels with Copy Link, Event Page, previous/next navigation, eligibility, benefits, cost, schedule, and official sources.
 - Dynamic standalone two-column opportunity pages at `/opportunities/[id]`, including newly published posts.
-- Calendar directory with All calendars, Following, and My calendars collections.
-- Tenara-inspired240px search/filter sidebars on Explore and Calendars, with600ms accordions,400ms chevrons, and a modal left-side filter panel on mobile.
-- Default grid catalogs with3 desktop columns,2 tablet columns, and1 small-mobile column. Explore/Saved also offer the existing horizontal list/timeline; Calendars offers a compact logo-and-description list.
-- Animated Grid/List toggle beside the result heading:340ms sliding selection indicator and240ms soft result fade. View preferences are remembered separately for Explore, Saved and Calendars; `?view=grid` or `?view=list` overrides the stored choice. Arrow keys, Home and End operate the focused toggle.
+- Hub directory with All Hubs, Following, and My Hubs collections.
+- Tenara-inspired240px search/filter sidebars on Explore and Hubs, with600ms accordions,400ms chevrons, and a modal left-side filter panel on mobile.
+- Default grid catalogs with3 desktop columns,2 tablet columns, and1 small-mobile column. Explore/Saved also offer the existing horizontal list/timeline; Hubs offers a compact logo-and-description list.
+- Animated Grid/List toggle beside the result heading:340ms sliding selection indicator and240ms soft result fade. View preferences are remembered separately for Explore, Saved and Hubs; `?view=grid` or `?view=list` overrides the stored choice. Arrow keys, Home and End operate the focused toggle.
 - Shared soft-motion system:420ms panel entrances,260ms exits,300ms client-page entrances, desktop-only2px card lifts, subtle press/save/follow feedback, and animated toasts. Initial page content stays visible immediately; typing and pagination do not replay result motion. Reduced-motion preferences are respected.
 - Compact opportunity cards with2-line titles, date-only schedule labels, and a uniform Ongoing label for undated programs. Date/organizer/location rows are grouped tightly; full schedule details remain on the detail page.
-- Public calendar profiles with cover, logo, month/date picker, Upcoming/Past/All feeds, and scoped Explore links.
-- Compact Instagram, TikTok, LinkedIn and Website links on calendar profiles. Verified official social URLs are included where available; missing links appear as noninteractive muted icons. New calendars can supply optional social URLs during creation.
-- Pink Create calendar actions and charcoal Follow/Following buttons, matching the registration action style.
-- Calendar creation and owner-only opportunity editing: save draft, publish, update, and unpublish.
-- Calendar downloads for individual dated opportunities and complete public calendar feeds.
+- Public Hub pages with cover, logo, month/date picker, Upcoming/Past/All feeds, and scoped Explore links.
+- Compact Instagram, TikTok, LinkedIn and Website links on Hub pages. Verified official social URLs are included where available; missing links appear as noninteractive muted icons. New Hubs can supply optional social URLs during creation.
+- Pink Create a Hub actions and charcoal Follow/Following buttons, matching the registration action style.
+- Hub creation and owner-only opportunity editing: save draft, publish, update, and unpublish.
+- Calendar downloads for individual dated opportunities and complete public Hub feeds.
 - Location exploration and an About panel.
 
 ## Routes and publishing
 
 | Route | Purpose |
 | --- | --- |
+| `/` | UniSpot landing page and student/organizer paths |
 | `/discover` | Featured overview |
 | `/explore` | Search individual published opportunities |
-| `/saved` | This browser’s saved opportunities |
-| `/calendars` | Calendar directory and browser collections |
-| `/calendars/new` | Create a community calendar |
-| `/calendars/[slug]` | Public calendar profile and dated feed |
-| `/calendars/[slug]/manage` | Owner-only drafts and publishing editor |
+| `/login`, `/signup` | Email and social authentication |
+| `/forgot-password`, `/reset-password` | Password recovery |
+| `/account` | Account profile (login required) |
+| `/saved` | Account's saved opportunities (login required) |
+| `/hubs` | Public Hub directory and account collections |
+| `/hubs/new` | Create a community or organizer Hub |
+| `/hubs/[slug]` | Public Hub profile and opportunity feed |
+| `/hubs/[slug]/manage` | Owner-only drafts and publishing editor |
 | `/opportunities/[id]` | Public opportunity detail; unpublished IDs return 404 |
 
-A published post appears in its calendar and the individual Explore results. Drafts are excluded from the public catalog, detail pages, and ICS feed. Unpublishing removes the post from all three. The editor’s registration link directs students to the organizer’s website.
+A published post appears in its Hub and the individual Explore results. Drafts are excluded from the public catalog, detail pages, and ICS feed. Unpublishing removes the post from all three. The editor’s registration link directs students to the organizer’s website. Legacy `/calendars/...` page URLs redirect to their `/hubs/...` equivalents; the underlying API and database retain their original calendar identifiers for compatibility.
 
 ### Storage and ownership
 
-- New calendars and posts are persisted in **`data/unispot.sqlite`**, with WAL journaling and foreign keys. Override its location with `UNISPOT_DB_PATH=/absolute/path/unispot.sqlite`.
-- Deploy using the Node.js runtime with a writable, durable filesystem. Keep the database and its WAL files on persistent storage; this implementation is intended for a single app instance sharing that database.
-- Creating a calendar sets a random, year-long **HttpOnly, SameSite=Lax** ownership cookie. The database stores its SHA-256 hash. Creation, editing, and publishing are authorized on the server. Production cookies use Secure.
-- Management belongs to the browser that created the calendar. Clearing/losing the ownership cookie loses management access; account login, ownership recovery, team roles, and moderation are not implemented.
-- Following and Saved are local browser collections. Following does not enroll the visitor in email notifications.
-- The seven built-in calendars are **curated from official sources by UniSpot**. Their organization names do not imply that those organizations have claimed or operate a UniSpot account. They cannot be edited through the publishing API.
+- Organizations, Hubs, opportunities, profiles and account collections are persisted in Supabase Postgres with RLS.
+- Hub creation requires a verified session and assigns the authenticated account as owner. Management works across devices; API handlers and database policies enforce ownership.
+- Drafts are visible only to their Hub owner. Public catalog/detail/ICS queries explicitly select published posts.
+- The historical SQLite data and JSON catalog were imported: **8 Hubs, 16 organizations and 31 opportunities**. Runtime SQLite access has been removed for Vercel deployment.
+- Following and Saved require login and are synced per account. Following does not enroll a user in email notifications.
+- The seven original Hubs are **curated from official sources by UniSpot**. Their names do not imply official account verification. Demo owner accounts have been provisioned for all eight imported Hubs; private credentials are stored locally outside Git.
+- See **[authentication and deployment setup](docs/AUTH-SETUP.md)** for provider configuration, required email/redirect settings, demo accounts, migrations and verification.
 
 ### API
 
 | Method | Endpoint | Access |
 | --- | --- | --- |
-| GET | `/api/catalog` | Public published catalog, browser-specific `canManage` flags |
-| POST | `/api/calendars` | Creates calendar and ownership cookie |
-| GET | `/api/calendars/[slug]/manage` | Owner only; includes drafts |
-| POST | `/api/calendars/[slug]/opportunities` | Owner only; draft or published post |
-| PATCH | `/api/calendars/[slug]/opportunities/[id]` | Owner only; fields and/or status |
+| GET | `/api/catalog` | Public published catalog, verified account-specific `canManage` flags |
+| POST | `/api/calendars` | Login required; creates an account-owned Hub (legacy API path) |
+| GET | `/api/calendars/[slug]/manage` | Owner only; includes drafts (legacy API path) |
+| POST | `/api/calendars/[slug]/opportunities` | Owner only; draft or published post (legacy API path) |
+| PATCH | `/api/calendars/[slug]/opportunities/[id]` | Owner only; fields and/or status (legacy API path) |
 | GET | `/api/calendars/[slug]/feed` | Public dated posts as a downloadable ICS file |
+| GET / PATCH | `/api/me` | Verified account profile and personal collections |
+| PUT | `/api/me/collections` | Login required; save/unsave or follow/unfollow |
 
 Mutations validate required publishing fields, categories, formats, real calendar dates, date ranges, URL protocols, and input lengths. Events require a date and scholarships require a deadline before publishing. Cross-origin writes are rejected. Validation errors return JSON `{ "error": "…" }`.
 
@@ -100,19 +111,31 @@ To regenerate content and download assets:
 npm run assets
 ```
 
-The preparation script retrieves DevFest metadata and imagery from the organizer pages, downloads source imagery, and derives the public logo/favicon from `mulmod-docs/UniSpot_Logo.svg`. Review dates and current source content when refreshing the catalog. Curated catalog assets are hosted locally; calendar owners may provide external image URLs for their own calendars and posts.
+The preparation script retrieves DevFest metadata and imagery from the organizer pages, downloads source imagery, and derives the public logo/favicon from `mulmod-docs/UniSpot_Logo.svg`. Review dates and current source content when refreshing the catalog. Curated catalog assets are hosted locally; Hub owners may provide external image URLs for their own Hubs and opportunities.
+
+Landing footage, frame posters, source credits, and editorial image slots are configured in `src/data/landing-media.json` and stored in `public/assets/unispot/landing/`. Run `npm run assets:landing` to prepare missing media with FFmpeg. The [landing asset handoff](docs/research/landing-assets.md) includes the image-generation prompts, exact replacement filenames, and source links.
 
 ## Main files
 
 ```text
+src/app/landing-static/route.ts       Preserved Ugency template document, served at /
+src/app/api/unispot-rebrand/route.ts  Compatibility endpoint for the content adapter
+src/lib/landing-adapter.ts           Inline startup, copy, links, and audience switch
+src/lib/landing-paths.ts             Audience controls and stable, role-specific card content
+src/lib/landing-template-media.ts    Asset-only substitutions, including dynamic slides
+src/data/landing-media.json          Replacement media paths and source credits
 src/components/DiscoverPage.tsx       Featured overview and exploration entry points
 src/components/ExplorePage.tsx        Search, filters, sorting, saved collection
-src/components/CalendarDirectory.tsx  All, Following, and My calendars
-src/components/PartnerCalendarPage.tsx Public calendar, date picker, and scoped feed
+src/components/CalendarDirectory.tsx  All, Following, and My Hubs
+src/components/PartnerCalendarPage.tsx Public Hub, date picker, and scoped feed
 src/components/CalendarSocialLinks.tsx Verified/owner-provided social and website links
-src/components/CreateCalendar.tsx     Calendar creation form
+src/components/CreateCalendar.tsx     Hub creation form (legacy component name)
 src/components/ManageCalendar.tsx     Owner-only drafts, editing, and publishing
-src/components/CatalogProvider.tsx    Shared catalog and browser collections
+src/components/CatalogProvider.tsx    Shared Supabase catalog and account collections
+src/components/AuthProvider.tsx       Session and personal-data synchronization
+src/components/AuthForm.tsx           Login/signup/reset and OAuth UI
+src/lib/supabase/                     Browser/server cookie-based Supabase clients
+src/proxy.ts                         Session refresh and protected-page redirects
 src/components/FilterSidebar.tsx      Animated filter groups and mobile drawer
 src/components/CatalogViewToggle.tsx  Animated Grid/List segmented control
 src/components/CatalogView.css        Responsive grid cards, list rows, view transitions
@@ -133,13 +156,21 @@ src/app/globals.css                 UniSpot design tokens and responsive styles
 src/lib/unispot.ts                  Categories, date statuses, calendar generation
 src/lib/opportunity-date.ts         Shared date-only and Ongoing catalog labels
 src/lib/calendar-feed.ts            Shared RFC 5545 calendar serialization
-src/lib/server/catalog-store.ts     SQLite persistence, validation, ownership
+src/lib/server/catalog-store.ts     Supabase persistence, validation, ownership
 src/app/api/                       Catalog, publishing, and ICS endpoints
 public/brand/                       UniSpot SVG assets
 public/assets/unispot/              Downloaded organizer imagery and logos
 ```
 
-Saved collections belong to the current browser/device. No account is needed. Clearing browser storage clears the collection. Filtered views and individual opportunities can be shared by URL.
+The public `/hubs` routes and UI are the product-facing names. Existing component, data, and API identifiers still use `calendar` internally for backwards compatibility; `/calendars/...` page URLs redirect to `/hubs/...`.
+
+`/` is rewritten to `/landing-static`, which serves `src/lib/unispot-landing-source.json` with the preserved template CSS and wrappers. `src/lib/landing-adapter.ts` is embedded in the head: it prepares the header and hero as the HTML arrives, then starts the Framer runtime after the initial content is branded. It does not wait for `window.load` or a seven-second timer. Later runtime mounts are synchronized in the mutation microtask before paint. `/api/unispot-rebrand` exposes the same adapter for compatibility; the landing page does not fetch it separately. `src/lib/landing-template-media.ts` replaces media references in the initial document and responsive/CMS elements. The alternative `LandingPage.tsx` implementation is not used by the root route.
+
+With the app running, `npm run qa:landing` verifies that the captured template's styles, inline geometry, classes and named wrappers remain unchanged, that the replacement media and content adapter load, and that the old delayed startup is absent. Set `UNISPOT_QA_URL` to check a different local port or deployment URL. See [startup/loading QA](docs/research/landing-startup-QA.md) for the current loading behavior and [template restoration QA](docs/research/ugency-restoration-QA.md) for the original restoration baseline.
+
+The Students/Organizers controls are owned by the local audience controller, so selecting a path does not start the template's Monthly/Yearly billing animation. Repeated-click, touch, keyboard, and frame-level verification is recorded in [path switch QA](docs/research/path-switch-QA.md).
+
+Saved collections belong to the signed-in account. Browsing, filters and public opportunity/Hub URLs remain available to guests.
 
 The original design extraction is retained in `docs/research/luma.com/` and `docs/design-references/luma.com/` as historical design research. The later authenticated Home, public feed, Search, registration, panel, and full-page extraction is in `docs/research/luma-home/` with reference/comparison screenshots under `docs/design-references/luma-home/`. The current page uses UniSpot's own stylesheet and content. `npm run qa:reference` compares the historical content-identical reference captures only. See `docs/research/luma-home/QA.md` for current component-style verification.
 

@@ -1,4 +1,3 @@
-import CreateCalendar from "@/components/CreateCalendar";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Create a calendar · UniSpot" };
-export default function Page() { return <CreateCalendar />; }
+export default function Page() { redirect("/hubs/new"); }
