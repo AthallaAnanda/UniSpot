@@ -59,7 +59,7 @@ export async function GET() {
         else document.addEventListener("unispot:ready", startUniSpotRuntime, { once: true });
       </script>`,
     )
-    .replace("</body>", `<a href="${accountHref}" class="unispot-landing-account">${accountLabel}</a><style>.unispot-landing-account{position:fixed;right:24px;bottom:24px;z-index:9999;background:#bb267e;color:white;border-radius:30px;padding:12px 22px;font:500 13px/20px sans-serif;text-decoration:none;box-shadow:0 4px 24px #5b16482b}.unispot-landing-account:hover{background:#a4206d}@media(max-width:600px){.unispot-landing-account{right:16px;bottom:16px;padding:10px 18px}}</style></body>`)
+    .replace("</body>", `<a href="${accountHref}" data-unispot-account>${accountLabel}</a></body>`)
     .replace("</head>", `<script>
       window.addEventListener("click", event => {
         if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
